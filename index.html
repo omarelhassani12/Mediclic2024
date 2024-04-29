@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -77,13 +78,27 @@
 
         .search-filter label {
             margin-right: 10px;
+            color: #333;
         }
 
-        .search-filter input[type="date"],
-        .search-filter select {
-            padding: 8px;
+        .search-filter .input-container {
+            position: relative;
+        }
+
+        .search-filter input[type="date"] {
+            padding: 8px 30px 8px 10px;
             border-radius: 4px;
             border: 1px solid #ccc;
+        }
+
+        .search-filter input[type="date"]::before {
+            content: "\f073";
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #666;
         }
 
         .search-filter #searchBtn {
@@ -148,10 +163,14 @@
         <!-- Search Filter -->
         <section class="search-filter">
             <label for="startDate">Date du début:</label>
-            <input type="date" id="startDate" name="startDate">
+            <div class="input-container">
+                <input type="date" id="startDate" name="startDate">
+            </div>
 
             <label for="endDate">Date de fin:</label>
-            <input type="date" id="endDate" name="endDate">
+            <div class="input-container">
+                <input type="date" id="endDate" name="endDate">
+            </div>
 
             <label for="status">Status:</label>
             <select id="status" name="status">
