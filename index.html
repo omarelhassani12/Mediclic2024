@@ -516,27 +516,10 @@
     
 
     <script>
-        $(document).ready(function() {
-            $('#NVNotesModal').modal('show');
-        });
+        // $(document).ready(function() {
+        //     $('#NVNotesModal').modal('show');
+        // });
     </script>
 
-<script>
-    function toggleDropdown(contentId, iconId) {
-        var dropdownContent = document.getElementById(contentId);
-        var dropdownIcon = document.getElementById(iconId);
-
-        dropdownContent.classList.toggle("active");
-
-        if (dropdownContent.classList.contains("active")) {
-            dropdownContent.style.display = "block";
-            dropdownIcon.classList.add("rotate-icon");
-        } else {
-            dropdownContent.style.display = "none";
-            dropdownIcon.classList.remove("rotate-icon");
-        }
-    }
-</script> 
-    
 </body>
 </html>
