@@ -1,0 +1,38 @@
+.btn-primary2 {
+    background-image: linear-gradient(to left, #37A5E8, #255A9B);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary2:hover {
+    background-image: linear-gradient(to left, #255A9B, #37A5E8);
+    color: #fff;
+    border: none;
+}
+.btn-fermer {
+    color: #3D8CEF;
+    border: none;
+}
+.btn-fermer:hover {
+    color: #3D8CEF;
+    border: none;
+}
+.btn-fermer.active,
+.btn-primary2.active {
+    background-color: #fff;
+    color: #3D8CEF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-fermer.active:hover,
+.btn-primary2.active:hover {
+    background-color: #fff;
+    color: #3D8CEF;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}

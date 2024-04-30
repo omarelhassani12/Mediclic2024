@@ -81,7 +81,7 @@ body {
     background-color: transparent;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	border: 2px solid #3D8CEF;
-    border-radius: 5%;
+    border-radius: 20%;
     padding: 0.5px;
 	height: 25px; 
 }
@@ -89,11 +89,6 @@ body {
 .btn-close-blue:hover {
     color: #3D8CEF;
     text-decoration: none;
-}
-
-.btn-close-blue:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(61, 140, 239, 0.25);
 }
 
 .btn-close-blue:not(:disabled):not(.disabled) {
@@ -292,150 +287,89 @@ input[type="email"]:focus {
     box-shadow: 0 0 0 4px var(--c-grey-100);
 }
 
-/* ////////////////////////////////////////////////////////////////////////
- */
-
-
-
- .row-text {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.text-right-close1,
-.text-right-close2 {
-    flex-basis: calc(50% - 10px);
-    margin-right: 10px;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    background-color: rgba(61, 140, 239, 0.2);
-    padding: 5px 10px;
-    color: #3D8CEF;
-    height: 50px;
-}
-
-.text-right-close1 p,
-.text-right-close2 p {
-    font-size: 9;
-    margin-bottom: 0;
-    margin-right: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.text-right-close i {
-    color: #3D8CEF;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .text-right-close1,
-    .text-right-close2 {
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-.bottom-s {
-    margin-top: 20px;
-    background-color: #a9a9a929;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
-    padding: 10px;
-}
-
-.bottom-s p {
-    flex: 1;
-    font-size: 14px;
-    position: relative;
-    top: 5px;
-    margin-right: 50px;
-    margin-top: 10px;
-    white-space: nowrap;
-}
-
-.bottom-s .ajouter-btn {
-    background-color: #D9D9D9;
-    font-size: 11px;
-    padding: 5px 10px;
-    border: none;
-    flex-shrink: 0;
-}
+/* //////////////////////////////////////////////////////////////////////// */
 
 .btn-icon {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 10px;
-    color: #3D8CEF;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 30px;
 }
 
-.btn-icon .input-icons i {
-    position: relative;
-    top: 7.5px;
-    right: 10px;
-    width: 1px;
+.btn-note {
+	color: #3D8CEF;
+	background-color: #fff;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	cursor: pointer;
 }
+
+.btn-note:hover {
+	color: #3D8CEF;
+	background-color: #fff;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-note span {
+	margin-left: 10px;
+}
+
 .box-diag {
     border: 1px solid #B5B5B5;
-    width: 455px;
-    height: 410px;
-    overflow: hidden;
+    width: 100%;
+    overflow: hidden; 
     border-radius: 4px;
     margin-bottom: 20px;
 }
 
 
- .head-diag {
+.head-diag {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 10px;
     font-weight: bold;
 }
 
+.separator {
+    margin: 0;
+    border: none;
+    border-top: 2px solid #B5B5B5;
+}
+
 .body-diag {
-    height: 360px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 0px;
-    padding-bottom: 5px;
+    padding: 10px;
+    display: none;
+	color: #6C87AE;
 }
 
-.title {
-    font-size: 14px;
+.title-diag .title {
+    font-size: 15px;
     color: #333333;
-}
-
-.subtitle {
-    font-size: 12px;
-    color: #6C87AE;
+	font-weight: normal;
 }
 
 .icons-container {
     display: flex;
 }
 
-.close-icon {
-    color: #E40D0D;
-    cursor: pointer;
-}
 
 .arrow-icon {
     color: #6C87AE;
     cursor: pointer;
 }
 
-.box-btn1,
-.box-btn2 {
-    border: 2px solid;
+.rotate-icon {
+    transform: rotate(180deg); 
+}
+
+
+.box-btn {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
@@ -446,12 +380,8 @@ input[type="email"]:focus {
     margin-right: 10px;
 }
 
-
-.box-btn1 {
-    color: #E40D0D;
-}
-.box-btn2 {
-    color: #6C87AE;
+.box-btn {
+    color: #333333;
 }
 
 .box-btn i {
@@ -459,20 +389,4 @@ input[type="email"]:focus {
     font-size: 1rem;
 }
 
-.box-diag1 {
-    border: 1px solid #B5B5B5;
-    width: 455px;
-    height: 50px;
-    overflow: hidden;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
 
-.head-diag1 {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 10px;
-    font-weight: bold;
-}
