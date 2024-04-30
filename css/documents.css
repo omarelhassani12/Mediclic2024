@@ -110,9 +110,15 @@
     padding: 15px;
 }
 
-
-
-/* Tooltip style */
-
+#tableBody #tooltipLink{
+    color: #031432;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 100px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: default;
+}
 
 
