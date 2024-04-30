@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif; 
 }
+
 
 :root {
 	--c-grey-100: #f4f6f8;
@@ -123,7 +125,7 @@ label {
 /* Style for the icon-lieu class */
 .icon-lieu::before {
     position: relative;
-    content: url('../img/icons/lieu.png'); /* Icon path */
+    content: url('../img/icons/lieu.png'); 
 }
 
 .new-comment select {
