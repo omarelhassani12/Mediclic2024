@@ -1,0 +1,111 @@
+/* Style for dropdown menu */
+.search-filter .dropdown-menu {
+    width: 812px; 
+    padding: 10px;
+}
+
+
+/* Style for dropdown header */
+.search-filter .dropdown-header {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* Style for dropdown body */
+.search-filter .dropdown-body {
+    margin-bottom: 10px;
+}
+.search-filter .dropdown-body form{
+    padding: 20px;
+}
+
+.search-filter .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    color: #333333;
+    text-decoration: none;
+}
+
+.search-filter .dropdown-item img {
+    width: 24px; /* Adjust the image size */
+    margin-right: 10px;
+}
+
+/* Style for dropdown footer */
+.search-filter .dropdown-footer {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search-filter .dropdown-footer button {
+    margin-left: 10px;
+}
+
+
+/* //inputs */
+
+
+
+#Date-du,
+#Date-au {
+    border: 1px solid var(--c-grey-200);
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 26px 0 66px; 
+    width: 100%;
+    font-size: 16px;
+    color: var(--c-grey-500);
+    background-image: url('../img/icons/Heurs.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 24px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+}
+
+#Date-du::-webkit-calendar-picker-indicator ,
+#Date-au::-webkit-calendar-picker-indicator {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#Date-du::placeholder,
+#Date-au::placeholder {
+    color: var(--c-grey-300);
+}
+
+#Date-du:focus,
+#Date-au:focus {
+    border-color: var(--c-grey-300);
+    box-shadow: 0 0 0 4px var(--c-grey-100);
+}
+
+.new-comment select.Service{
+    padding-left: 66px;
+}
+
+#tableBody #Service span{
+    padding: 0px;
+}
+
+#tableBody #Service span{
+    background-color: rgba(65, 132, 247, 0.1);
+    color: #3D8CEF;
+    border-radius: 600px;
+    padding: 15px;
+}

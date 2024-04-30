@@ -426,6 +426,9 @@ transform: rotate(180deg);
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
+.search-filter #searchBtn span{
+    margin-left: 10px;
+}
 
 /* Table */
 table {
