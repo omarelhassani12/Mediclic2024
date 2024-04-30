@@ -39,40 +39,6 @@ body {
     border: none;
 }
 
-
-/* .close-btn {
-    color: #3D8CEF;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 25px;
-    height: 25px;
-    border-radius: 10%;
-    border: 2px solid #3D8CEF;
-    margin-right: 10px;
-}
-
-.close-btn i {
-    margin-bottom: 2px;
-    font-size: 1rem;
-    color: #3D8CEF;
-} */
-
-
-/* .modal-content .btn-close {
-    color: #3D8CEF !important;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 10px;
-    height: 10px;
-    border-radius: 10%;
-    border: 3px solid #3D8CEF;
-    margin-right: 10px;
-}
-*/
 .btn-close-blue {
     box-sizing: content-box;
     line-height: 0;
@@ -136,6 +102,30 @@ label {
     position: relative;
 }
 
+.new-comment i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.new-comment select,
+.new-comment input {
+    padding-left: 30px;
+}
+
+.icon-lieu {
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for the icon-lieu class */
+.icon-lieu::before {
+    position: relative;
+    content: url('../img/icons/lieu.png'); /* Icon path */
+}
+
 .new-comment select {
     flex: 1;
 }
@@ -146,7 +136,6 @@ label,
 }
 
 .new-comment {
-    position: relative;
     width: 100%;
 }
 
@@ -155,7 +144,7 @@ label,
     border: 1px solid var(--c-grey-200);
     border-radius: 6px;
     height: 48px;
-    padding: 0 26px 0 46px; 
+    padding: 0 26px 0 66px; 
     width: 100%;
     appearance: none; 
     -webkit-appearance: none; 
@@ -177,6 +166,8 @@ label,
     }
 }
 
+
+
 label span {
     color: red;
 }
@@ -186,7 +177,7 @@ input[type="text"] {
     border: 1px solid var(--c-grey-200);
     border-radius: 6px;
     height: 48px;
-    padding: 0 26px 0 46px; 
+    padding: 0 26px 0 66px; 
     width: 100%;
     font-size: 16px;
     color: var(--c-grey-500);
@@ -224,7 +215,7 @@ input[type="text"]::placeholder {
     border: 1px solid var(--c-grey-200);
     border-radius: 6px;
     height: 48px;
-    padding: 0 26px 0 46px;
+    padding: 0 26px 0 66px; 
     width: 100%;
     font-size: 16px;
     color: var(--c-grey-500);
@@ -266,7 +257,7 @@ input[type="email"] {
     border: 1px solid var(--c-grey-200);
     border-radius: 6px;
     height: 48px;
-    padding: 0 26px 0 46px;
+    padding: 0 26px 0 66px; 
     width: 100%;
     font-size: 16px;
     color: var(--c-grey-500);
@@ -286,6 +277,8 @@ input[type="email"]:focus {
     border-color: var(--c-grey-300);
     box-shadow: 0 0 0 4px var(--c-grey-100);
 }
+
+
 
 /* //////////////////////////////////////////////////////////////////////// */
 
@@ -366,7 +359,7 @@ input[type="email"]:focus {
 }
 
 .title-diag .title span {
-    margin-left: 35px;
+    margin-left: 20px;
     font-size: 14px; 
     color: #333333;
     font-weight: 600;

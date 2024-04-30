@@ -392,7 +392,7 @@
         </div>
     </div>
 
-    <!-- Notes Modal -->
+    <!-- //Notes Modal -->
     <div class="modal fade" id="NotesModal" tabindex="-1" aria-labelledby="NotesModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
@@ -404,7 +404,7 @@
                     <form action="">
                         <div class="col-xs-12">
                             <div class="col-md-12 btn-icon">
-                                <button type="button" class="btn-note">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVNotesModal">
                                     <i class="fas fa-plus"></i>
                                     <span>Ajouter Nouveau note</span>
                                 </button>
@@ -464,6 +464,37 @@
         </div>
     </div>
 
+    <!-- //NV Notes Modal -->
+    <div class="modal fade" id="NVNotesModal" tabindex="-1" aria-labelledby="NVNotesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NVNotesModalLabel">Nouveau note</h5>
+                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="col-sm-12">
+                            <label for="lieu">Lieu <span>*</span></label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select>
+                                    <option value="Cabinet infirmier Maarif 1">Cabinet infirmier Maarif  1</option>
+                                    <option value="Lieu2">Lieu 2</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary2">Terminer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
@@ -472,10 +503,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    
 
     <script>
         $(document).ready(function() {
-            $('#NotesModal').modal('show');
+            $('#NVNotesModal').modal('show');
         });
     </script>
 
