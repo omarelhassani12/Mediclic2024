@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -338,8 +338,11 @@ transform: rotate(180deg);
     padding: 20px;
 }
 
-/* Main header styling */
+/* Main header */
 .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 100px;
     padding: 20px;
 }
@@ -356,6 +359,22 @@ transform: rotate(180deg);
     font-size: 16px;
     line-height: 1.5; 
 }
+
+.btn-new-patient {
+    background-color: #3D8CEF; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-new-patient:hover {
+    background-color: #1A78EE; 
+}
+
 
 /* Search Filter */
 .search-filter {
@@ -421,6 +440,10 @@ td {
     background-color: #FFFFFF;
     border: 1px solid #E6EDF3;
     color: #031432;
+}
+
+td.nom-complet,td.telephone {
+    color: #6C87AE;  
 }
 
 

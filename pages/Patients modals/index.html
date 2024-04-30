@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patients Modal</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/patient-modal.css">
+</head>
+<body>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#NVPatientModal">
+  Open Timeline Modal
+</button>
+
+<div class="modal fade" id="NVPatientModal" tabindex="-1" aria-labelledby="NVPatientModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="NVPatientModalLabel">Nouveau patient</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <div class="modal-body">
+
+        <form action="">
+            <div class="col-sm-12">
+                <label for="lieu">Lieu <span>*</span></label>
+                <div class="new-comment">
+                    <i class="icon-lieu"></i>
+                    <select>
+                        <option value="Cabinet infirmier Maarif 1">Cabinet infirmier Maarif  1</option>
+                        <option value="Lieu2">Lieu 2</option>
+                    </select>
+                    <i class="icon-down-arrow"></i>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <label for="nom">Nom <span>*</span></label>
+                <div class="new-comment">
+                    <i class="icon-lieu"></i>
+                    <input type="text" id="nom" name="nom" placeholder="Nom">
+                </div>
+            </div>
+            
+            <div class="col-sm-12">
+                <label for="prenom">Prénom <span>*</span></label>
+                <div class="new-comment">
+                    <i class="icon-lieu"></i>
+                    <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                </div>
+            </div>            
+            
+            <div class="col-sm-12">
+                <label for="lieu">Sexe <span>*</span></label>
+                <div class="new-comment">
+                    <i class="icon-lieu"></i>
+                    <select>
+                        <option value="Masculin">Masculin</option>
+                        <option value="f">F</option>
+                    </select>
+                    <i class="icon-down-arrow"></i>
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <label for="Date-de-naisssance">Date de naisssance <span>*</span></label>
+                <div class="new-comment">
+                    <i class="icon-lieu"></i>
+                    <input type="date" id="Date-de-naisssance" name="Date-de-naisssance" placeholder="Date de naisssance">
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <label for="Telephone">Telephone<span>*</span></label>
+                <div class="new-comment">
+                    <i class="icon-lieu"></i>
+                    <input type="tel" id="Telephone" name="Telephone" placeholder="Telephone">
+                </div>
+            </div>
+
+            <div class="col-sm-12">
+                <label for="Email">Email<span>*</span></label>
+                <div class="new-comment">
+                    <i class="icon-lieu"></i>
+                    <input type="email" id="Email" name="Email" placeholder="Email">
+                </div>
+            </div>            
+        </form>
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-fermer" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Close">Fermer</button>
+        <button type="button" class="btn btn-primary2">Terminer</button>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    // $(document).ready(function() {
+    //     $('#NVPatientModal').modal('show');
+    // });
+</script>
+
+</body>
+</html>
+
+
+
+            <!-- <h4>Diagnostiques probables</h4>
+                <div class="col-xs-12">
+                        <div class="row-diag">
+                            <div class="box-diag">
+                                <div class="head-diag">
+                                    <div class="title-diag">
+                                        <div class="title">Ulcère gastroduodénal</div>
+                                        <div class="subtitle">Preuve : nausées</div>
+                                    </div>
+                                    <div class="icons-container">
+                                        <div class="box-btn2"><i class="fas fa-arrow-up arrow-icon"></i></div>
+                                        <div class="box-btn1"><i class="fas fa-times close-icon"></i>                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="body-diag">
+                                    <p>
+                                        L'appendicite est une inflammation de l'appendice, un petit organe en forme de poche qui se trouve rattaché au côlon dans l'abdomen. Les symptômes de l'appendicite comprennent généralement une douleur abdominale intense dans la partie inférieure droite de l'abdomen, de la fièvre, des nausées, des vomissements et parfois des changements dans les selles. Cette condition peut être grave et nécessite souvent une intervention chirurgicale d'urgence pour retirer l'appendice enflammé afin d'éviter des complications potentiellement graves telles que la rupture de l'appendice.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="box-diag1">
+                                <div class="head-diag1">
+                                    <div class="title-diag1">
+                                        <div class="title">Ulcère gastroduodénal</div>
+                                        <div class="subtitle">Preuve : nausées</div>
+                                    </div>
+                                    <div class="icons-container">
+                                        <div class="box-btn2"><i class="fas fa-arrow-down arrow-icon"></i></div>
+                                        <div class="box-btn1"><i class="fas fa-times close-icon"></i>                                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div> -->
