@@ -348,11 +348,30 @@ input[type="email"]:focus {
 	color: #6C87AE;
 }
 
-.title-diag .title {
-    font-size: 15px;
-    color: #333333;
-	font-weight: normal;
+.title-diag {
+    display: flex;
+    align-items: center; 
 }
+
+.title-diag .title {
+    display: flex;
+    align-items: center; 
+}
+
+.icon-lieu {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; 
+}
+
+.title-diag .title span {
+    margin-left: 35px;
+    font-size: 14px; 
+    color: #333333;
+    font-weight: 600;
+}
+
 
 .icons-container {
     display: flex;
