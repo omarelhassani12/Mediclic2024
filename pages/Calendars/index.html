@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../css/buttons-style.css">
     <link rel="stylesheet" href="../../css/documents.css">
     <link rel="stylesheet" href="../../css/message.css">
+    <link rel="stylesheet" href="../../css/calendars.css">
 </head>
 <body>
 
@@ -93,7 +94,7 @@
                         <img src="../../img/icons/Documents.png" alt="Documents Icon">
                         <span class="dropdown-title">Documents</span>
                     </a>
-                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                    <a href="#" class="other-buttons">
                         <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
                         <span class="dropdown-title">Calendriers</span>
                     </a>
@@ -182,7 +183,7 @@
         
         <section class="main-header">
             <div>
-                <h1>Messages</h1>
+                <h1>Mes calendriers</h1>
                 <p>Keep track of patients and their diseases.</p>
             </div>
         </section>
@@ -191,14 +192,6 @@
         <!-- Search Filter -->
         <form id="searchForm" >
             <section class="search-filter">
-                <div class="input-group">
-                    <input type="date" id="startDate" name="startDate" class="form-select">
-                </div>
-        
-                <div class="input-group">
-                    <input type="date" id="endDate" name="endDate" class="form-select">
-                </div>
-
                 <div class="input-group">
                     <input type="text" id="Patient" name="Patient" placeholder="Patient" class="form-select-input search-input">
                 </div>
@@ -225,80 +218,105 @@
             <table>
                 <thead>
                     <tr>
-                        <th>RDV</th>
-                        <th>Patient</th>
-                        <th>Service</th>
+                        <th>ID</th>
                         <th>Professionnel</th>
-                        <th>Spécialité</th>
-                        <th>Statut</th>
+                        <th>Service</th>
                         <th>Lieu</th>
-                        <th>Adresse</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
                     <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
+                        <td>130</td>
+                        <td>Dr ALAMI Karim</td>
                         <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-success"><span></span>Terminé</td>
                         <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#MessageModal">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                        <td>
+                            <a href="../../pages/Calendars/calendrier-details.html" id="badge-message-failed" title="Détails">
+                                <img src="../../img/icons/calender.png" alt="message-icon">
+                            </a>
+                            <span class="link-space"></span>
+                            <a href="" id="badge-message-failed" title="Supprimer">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
                             </a>
                         </td>
                     </tr>
                     <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
-                        <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-success"><span></span>Terminé</td>
+                        <td>130</td>
+                        <td>Dr ALAMI Karim</td>
+                        <td id="Service"><span>Echographie Abdominale</span></td>
                         <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
-                                <span></span>
+                        <td>
+                            <a href="../../pages/Calendars/calendrier-details.html" id="badge-message-failed" title="Détails">
+                                <img src="../../img/icons/calender.png" alt="message-icon">
+                            </a>
+                            <span class="link-space"></span>
+                            <a href="" id="badge-message-failed" title="Supprimer">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
                             </a>
                         </td>
                     </tr>
                     <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
+                        <td>130</td>
+                        <td>Dr ALAMI Karim</td>
                         <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-failed"><span></span>Terminé</td>
                         <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                        <td>
+                            <a href="../../pages/Calendars/calendrier-details.html" id="badge-message-failed" title="Détails">
+                                <img src="../../img/icons/calender.png" alt="message-icon">
+                            </a>
+                            <span class="link-space"></span>
+                            <a href="" id="badge-message-failed" title="Supprimer">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
                             </a>
                         </td>
                     </tr>
                     <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
-                        <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-failed"><span></span>Terminé</td>
+                        <td>130</td>
+                        <td>Dr ALAMI Karim</td>
+                        <td id="Service"><span>Echographie Abdominale</span></td>
                         <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
-                                <span></span>
+                        <td>
+                            <a href="../../pages/Calendars/calendrier-details.html" id="badge-message-failed" title="Détails">
+                                <img src="../../img/icons/calender.png" alt="message-icon">
+                            </a>
+                            <span class="link-space"></span>
+                            <a href="" id="badge-message-failed" title="Supprimer">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
                             </a>
                         </td>
                     </tr>
+                    <tr>
+                        <td>130</td>
+                        <td>Dr ALAMI Karim</td>
+                        <td id="Service"><span>Consultation</span></td>
+                        <td>Centre Infirmier Maarif</td>
+                        <td>
+                            <a href="../../pages/Calendars/calendrier-details.html" id="badge-message-failed" title="Détails">
+                                <img src="../../img/icons/calender.png" alt="message-icon">
+                            </a>
+                            <span class="link-space"></span>
+                            <a href="" id="badge-message-failed" title="Supprimer">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>130</td>
+                        <td>Dr ALAMI Karim</td>
+                        <td id="Service"><span>Echographie Abdominale</span></td>
+                        <td>Centre Infirmier Maarif</td>
+                        <td>
+                            <a href="../../pages/Calendars/calendrier-details.html" id="badge-message-failed" title="Détails">
+                                <img src="../../img/icons/calender.png" alt="message-icon">
+                            </a>
+                            <span class="link-space"></span>
+                            <a href="" id="badge-message-failed" title="Supprimer">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         </section>

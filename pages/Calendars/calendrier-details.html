@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message</title>
+    <title>Calendrier détails</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- for font family style -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -93,7 +93,7 @@
                         <img src="../../img/icons/Documents.png" alt="Documents Icon">
                         <span class="dropdown-title">Documents</span>
                     </a>
-                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                    <a href="#" class="other-buttons">
                         <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
                         <span class="dropdown-title">Calendriers</span>
                     </a>
@@ -182,7 +182,7 @@
         
         <section class="main-header">
             <div>
-                <h1>Messages</h1>
+                <h1>Calendrier détails</h1>
                 <p>Keep track of patients and their diseases.</p>
             </div>
         </section>
@@ -191,14 +191,6 @@
         <!-- Search Filter -->
         <form id="searchForm" >
             <section class="search-filter">
-                <div class="input-group">
-                    <input type="date" id="startDate" name="startDate" class="form-select">
-                </div>
-        
-                <div class="input-group">
-                    <input type="date" id="endDate" name="endDate" class="form-select">
-                </div>
-
                 <div class="input-group">
                     <input type="text" id="Patient" name="Patient" placeholder="Patient" class="form-select-input search-input">
                 </div>
@@ -225,80 +217,29 @@
             <table>
                 <thead>
                     <tr>
-                        <th>RDV</th>
-                        <th>Patient</th>
-                        <th>Service</th>
+                        <th>ID</th>
                         <th>Professionnel</th>
-                        <th>Spécialité</th>
-                        <th>Statut</th>
+                        <th>Service</th>
                         <th>Lieu</th>
-                        <th>Adresse</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
                     <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
+                        <td>130</td>
+                        <td>Dr ALAMI Karim</td>
                         <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-success"><span></span>Terminé</td>
                         <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#MessageModal">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
-                        <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-success"><span></span>Terminé</td>
-                        <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
+                        <td>
                             <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
-                                <span></span>
+                                <img src="../../img/icons/calender.png" alt="message-icon">
                             </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
-                        <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-failed"><span></span>Terminé</td>
-                        <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
                             <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
                             </a>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="nom-complet">01-08-23 05:43 </td>
-                        <td>Radi Amin</td>
-                        <td id="Service"><span>Consultation</span></td>
-                        <td>Dr Alami Karim</td>
-                        <td>Généraliste</td>
-                        <td id="Termine-failed"><span></span>Terminé</td>
-                        <td>Centre Infirmier Maarif</td>
-                        <td>123, boulevard d'anfa</td>
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
-                                <span></span>
-                            </a>
-                        </td>
-                    </tr>
+
                 </tbody>
             </table>
         </section>
