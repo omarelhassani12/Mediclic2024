@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../../css/buttons-style.css">
     <link rel="stylesheet" href="../../css/documents.css">
     <link rel="stylesheet" href="../../css/message.css">
+    <link rel="stylesheet" href="../../css/calendars.css">
+
 </head>
 <body>
 
@@ -182,58 +184,198 @@
         
         <section class="main-header">
             <div>
-                <h1>Calendrier détails</h1>
+                <h1>Calendrier du Dr ALAMI Karim</h1>
                 <p>Keep track of patients and their diseases.</p>
             </div>
+            <div class="right-text">
+                <p class="right-text-p">Echographie Abdominale</p>
+            </div>
+            <button class="btn-new-patient btn-new-horaire" data-bs-toggle="modal" data-bs-target="#NVHoraireModal">Nouveau horaire</button>
         </section>
         
 
-        <!-- Search Filter -->
-        <form id="searchForm" >
-            <section class="search-filter">
-                <div class="input-group">
-                    <input type="text" id="Patient" name="Patient" placeholder="Patient" class="form-select-input search-input">
+    <!-- Specialité(s) Filter -->
+    <form id="specialiteForm">
+        <section class="specialite">
+            <div class="specialite-container">
+                <span class="box-img">
+                    <img src="../../img/icons/specialite.png" alt="specialite-icon" class="specialite-icon">
+                </span>
+                <h3 class="specialite-title">Spécialité(s)</h3>
+            </div>
+            <div class="specialite-results">
+                <div class="results">
+                    <p>Gastro-entérologue</p>
+                    <img src="../../img/icons/X.png" alt="">
                 </div>
-                
-                <div class="input-group">
-                    <input type="text" id="Professionel" name="Professionel" placeholder="Professionel" class="form-select-input search-input">
-                </div>               
-                
-                <select id="status" name="status" class="form-select">
-                    <option value="" disabled selected>Status</option>
-                    <option value="pending">Pending</option>
-                    <option value="completed">Completed</option>
-                    <option value="cancelled">Cancelled</option>
-                </select>
-                
-                <button id="searchBtn" type="submit" class="btn">
-                    <img src="../../img/icons/filter.png" alt="filter" > Filter
-                </button>
-            </section>
-        </form>
+                <div class="results">
+                    <p>Généraliste</p>
+                    <img src="../../img/icons/X.png" alt="">
+                </div>
+            </div>
+            <button type="button" class="btn-note" id="addBtn">
+                <i class="fas fa-plus"></i>
+                <span>Ajouter</span>
+            </button>
+        </section>
+        
+    </form>
+    <!-- Mots-clé(s) Filter -->
+    <form id="specialiteForm">
+        <section class="specialite">
+            <div class="specialite-container">
+                <span class="box-img">
+                    <img src="../../img/icons/mots-cle.png" alt="specialite-icon" class="specialite-icon">
+                </span>
+                <h3 class="specialite-title">Mots-clé(s)</h3>
+            </div>
+            <div class="specialite-results">
+                <div class="results">
+                    <p>Soins</p>
+                    <img src="../../img/icons/X.png" alt="">
+                </div>
+                <div class="results">
+                    <p>ROR</p>
+                    <img src="../../img/icons/X.png" alt="">
+                </div>
+                <div class="results">
+                    <p>Pansements</p>
+                    <img src="../../img/icons/X.png" alt="">
+                </div>
+            </div>
+            <button type="button" class="btn-note" id="addBtn">
+                <i class="fas fa-plus"></i>
+                <span>Ajouter</span>
+            </button>
+        </section>
+        
+    </form>
+    <!-- Specialité(s) Filter -->
+    <form id="specialiteForm">
+        <section class="specialite">
+            <div class="specialite-container">
+                <span class="box-img">
+                    <img src="../../img/icons/Horaire.png" alt="specialite-icon" class="specialite-icon">
+                </span>
+                <h3 class="specialite-title">Horaire(s)</h3>
+            </div>
+            <div class="specialite-results">
+                <div class="results">
+                    <p>Voir les horaires</p>
+                    <img src="../../img/icons/arrow-up.png" alt="">
+                </div>
+            </div>
+            <button type="button" class="btn-note" id="addBtn">
+                <i class="fas fa-plus"></i>
+                <span>Ajouter</span>
+            </button>
+        </section>
+        
+    </form>
+
         
         <!-- Data Table -->
         <section class="data-table">
             <table>
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Professionnel</th>
-                        <th>Service</th>
-                        <th>Lieu</th>
+                        <th>Jour</th>
+                        <th>Patient</th>
+                        <th>Durée</th>
+                        <th>Salle</th>
+                        <th>Type de RDV</th>
+                        <th>Surbooking</th>
+                        <th>N° de surbooking</th>
+                        <th>Assistant à domicile exigé</th>
                         <th></th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
                     <tr>
-                        <td>130</td>
-                        <td>Dr ALAMI Karim</td>
-                        <td id="Service"><span>Consultation</span></td>
-                        <td>Centre Infirmier Maarif</td>
+                        <td>Vendredi</td>
+                        <td id="duree">08:00<img src="../../img/icons/arrow-long-right.png" alt="">10:00</td>
+                        <td>1:00 </td>
+                        <td>Salle 1</td>
+                        <td id="Service"><span>Au Cabinet / Centre</span></td>
+                        <td><img src="../../img/icons/success-booking.png" alt="success-booking"></td>
+                        <td>3</td>
+                        <td><img src="../../img/icons/failed-booking.png" alt="failed-booking"></td>
                         <td>
                             <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/calender.png" alt="message-icon">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
                             </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td id="duree">08:00<img src="../../img/icons/arrow-long-right.png" alt="">10:00</td>
+                        <td>1:00 </td>
+                        <td>Salle 1</td>
+                        <td id="Service"><span>Au Cabinet / Centre</span></td>
+                        <td><img src="../../img/icons/success-booking.png" alt="success-booking"></td>
+                        <td>2</td>
+                        <td>Généraliste</td>
+                        <td>
+                            <a href="" id="badge-message-failed">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td id="duree">08:00<img src="../../img/icons/arrow-long-right.png" alt="">10:00</td>
+                        <td>1:00 </td>
+                        <td>Salle 1</td>
+                        <td id="Service"><span>Au Cabinet / Centre</span></td>
+                        <td><img src="../../img/icons/success-booking.png" alt="success-booking"></td>
+                        <td>3</td>
+                        <td><img src="../../img/icons/failed-booking.png" alt="failed-booking"></td>
+                        <td>
+                            <a href="" id="badge-message-failed">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td id="duree">08:00<img src="../../img/icons/arrow-long-right.png" alt="">10:00</td>
+                        <td>1:00 </td>
+                        <td>Salle 1</td>
+                        <td id="Service"><span>Au Cabinet / Centre</span></td>
+                        <td><img src="../../img/icons/success-booking.png" alt="success-booking"></td>
+                        <td>2</td>
+                        <td>Généraliste</td>
+                        <td>
+                            <a href="" id="badge-message-failed">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td id="duree">08:00<img src="../../img/icons/arrow-long-right.png" alt="">10:00</td>
+                        <td>1:00 </td>
+                        <td>Salle 1</td>
+                        <td id="Service"><span>Au Cabinet / Centre</span></td>
+                        <td><img src="../../img/icons/success-booking.png" alt="success-booking"></td>
+                        <td>3</td>
+                        <td><img src="../../img/icons/failed-booking.png" alt="failed-booking"></td>
+                        <td>
+                            <a href="" id="badge-message-failed">
+                                <img src="../../img/icons/delete1.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vendredi</td>
+                        <td id="duree">08:00<img src="../../img/icons/arrow-long-right.png" alt="">10:00</td>
+                        <td>1:00 </td>
+                        <td>Salle 1</td>
+                        <td id="Service"><span>Au Cabinet / Centre</span></td>
+                        <td><img src="../../img/icons/success-booking.png" alt="success-booking"></td>
+                        <td>2</td>
+                        <td>Généraliste</td>
+                        <td>
                             <a href="" id="badge-message-failed">
                                 <img src="../../img/icons/delete1.png" alt="message-icon">
                             </a>
@@ -262,179 +404,136 @@
 
 
     <!-- //Modals -->
-    <!-- //Messages Modal -->
-    <div class="modal fade" id="MessageModal" tabindex="-1" aria-labelledby="MessageModalLabel" aria-hidden="true">
+    <!-- //Modals -->
+    <!-- //NV Horaire Modal -->
+    <div class="modal fade" id="NVHoraireModal" tabindex="-1" aria-labelledby="NVHoraireModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="MessageModalLabel">Messages</h5>
+              <h5 class="modal-title" id="NVHoraireModalLabel">Nouveau horaire</h5>
               <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-1', 'arrow-icon-1')">
-                        <span class="profil-cercle"></span>
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <span class="profil-badge"></span>
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
-                        </div>
-                        <i id="arrow-icon-1" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-1" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-2', 'arrow-icon-2')">
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
-                        </div>
-                        <i id="arrow-icon-2" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-2" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
-                        </div>
+          <div class="modal-body">
+      
+              <form action="">
+                <div class="col-sm-12">
+                    <label for="days">Jours</label>
+                    <div class="new-comment">
+                        <input type="checkbox" id="lundi" class="day-checkbox" name="days" value="Lundi">
+                        <label for="lundi" class="day-label">Lundi</label>
+                
+                        <input type="checkbox" id="mardi" class="day-checkbox" name="days" value="Mardi">
+                        <label for="mardi" class="day-label">Mardi</label>
+                
+                        <input type="checkbox" id="mercredi" class="day-checkbox" name="days" value="Mercredi">
+                        <label for="mercredi" class="day-label">Mercredi</label>
+                
+                        <input type="checkbox" id="jeudi" class="day-checkbox" name="days" value="Jeudi">
+                        <label for="jeudi" class="day-label">Jeudi</label>
+                
+                        <input type="checkbox" id="vendredi" class="day-checkbox" name="days" value="Vendredi">
+                        <label for="vendredi" class="day-label">Vendredi</label>
+                
+                        <input type="checkbox" id="samedi" class="day-checkbox" name="days" value="Samedi">
+                        <label for="samedi" class="day-label">Samedi</label>
+                
+                        <input type="checkbox" id="dimanche" class="day-checkbox" name="days" value="Dimanche">
+                        <label for="dimanche" class="day-label">Dimanche</label>
                     </div>
                 </div>
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-3')">
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
-                        </div>
-                        <i id="arrow-icon-3" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-3" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-4', 'arrow-icon-4')">
-                        <span class="profil-cercle"></span>
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <span class="profil-badge"></span>
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
-                        </div>
-                        <i id="arrow-icon-4" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-4" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="message-footer">
-                    <div class="col-md-12 btn-icon">
-                        <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVMessageModal">
-                            <i class="fas fa-plus"></i>
-                            <span>Ajouter un message</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary2" data-bs-dismiss="modal" aria-label="Close">Fermer</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- //Messages Modal -->
-    <div class="modal fade" id="NVMessageModal" tabindex="-1" aria-labelledby="NVMessageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="NVMessageModalLabel">Nouveau message</h5>
-                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    
-                    <form action="">
-                        <div class="col-sm-12">
-                            <label for="Objet">Objet </label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <textarea id="Objet" name="Objet" placeholder="Ajouter une objet" rows="2" ></textarea>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Message">Message </label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <textarea id="Message" name="Message" placeholder="Ajouter une message" rows="2" ></textarea>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Documents">Documents</label>
-                            <div class="new-comment new-comment-file">
-                                <div class="file-upload">
-                                    <label for="fileInput" class="label-file">
-                                        <span class="img-cercle">
-                                            <img src="../../img/icons/upload.png" alt="">
-                                        </span> Cliquer pour importer
-                                        <br>
-                                        <span class="upload-text">ou juste dropper and dragger</span>
-                                    </label>
-                                    <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
-                                </div>
-                                <button class="btn-importer">Importer</button>
-                            </div>
-                        </div>
-                        <div id="uploadedFilesContainer" class="col-sm-12">
-                        </div>
 
-                        
-                        <div class="col-sm-12">
-                            <label for="Documents">Type de document</label>
-                            <div class="new-comment select-container">
-                                <img src="../../img/icons/papper-docs.png" alt="" class="icon-left">
-                                <select id="documentType" name="documentType" class="custom-select">
-                                    <option value="ordonnance1">Ordonnance de médicaments</option>
-                                    <option value="ordonnance2">Ordonnance de médicaments 2</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
+                <div class="col-sm-12">
+                    <label for="Début">Début</label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="time" class="debut-input" id="debut-input" name="Début" placeholder="Début">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="Fin">Fin</label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="time" class="fin-input" id="fin-input" name="Fin" placeholder="Fin">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="Duree">Dureé</label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="time" class="duree-input" id="duree-input" name="Dureé" placeholder="Dureé">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="TRDV">Types de rendez-vous</label>
+                    <div class="new-comment">
+                        <input type="checkbox" id="Au cabinet / Centre" class="day-checkbox" name="TRDV" value="Au cabinet / Centre">
+                        <label for="Au cabinet / Centre" class="day-label">Au cabinet / Centre</label>
+                
+                        <input type="checkbox" id="A Domicile" class="day-checkbox" name="TRDV" value="A Domicile">
+                        <label for="A Domicile" class="day-label">A Domicile</label>
+                
+                        <input type="checkbox" id="En vidéo" class="day-checkbox" name="TRDV" value="En vidéo">
+                        <label for="En vidéo" class="day-label">En vidéo</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="SG">Service de garde</label>
+                    <div class="new-comment">
+                        <input type="checkbox" id="Garde de jour" class="day-checkbox" name="SG" value="Garde de jour">
+                        <label for="Garde de jour" class="day-label">Garde de jour</label>
+                
+                        <input type="checkbox" id=" Garde de nuit" class="day-checkbox" name="SG" value=" Garde de nuit">
+                        <label for=" Garde de nuit" class="day-label"> Garde de nuit</label>
+                
+                        <input type="checkbox" id="Garde 24h/24" class="day-checkbox" name="SG" value="Garde 24h/24">
+                        <label for="Garde 24h/24" class="day-label">Garde 24h/24</label>
+                    </div>
+                </div>
+                
+                
+                
+      
+                  <div class="col-sm-12">
+                      <label for="nom">Nom <span>*</span></label>
+                      <div class="new-comment">
+                          <i class="icon-lieu"></i>
+                          <input type="text" id="nom" name="nom" placeholder="Nom">
+                      </div>
+                  </div>
+                  
+                  <div class="col-sm-12">
+                      <label for="prenom">Prénom <span>*</span></label>
+                      <div class="new-comment">
+                          <i class="icon-lieu"></i>
+                          <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                      </div>
+                  </div>            
+                  
+                  <div class="col-sm-12">
+                      <label for="lieu">Sexe <span>*</span></label>
+                      <div class="new-comment">
+                          <i class="icon-lieu"></i>
+                          <select>
+                              <option value="Masculin">Masculin</option>
+                              <option value="f">F</option>
+                          </select>
+                          <i class="icon-down-arrow"></i>
+                      </div>
+                  </div>
+      
+
+              </form>
               
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary2">Envoyer</button>
-                </div>
-            </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-fermer" data-bs-dismiss="modal" aria-label="Close">Fermer</button>
+              <button type="button" class="btn btn-primary2">Valider</button>
+          </div>
+          </div>
         </div>
     </div>
     
@@ -446,6 +545,10 @@
     <script src="../../js/index.js"></script>
     <script src="../../js/messages.js"></script>
     
-
+    <script>
+        $(document).ready(function() {
+            $('#NVHoraireModal').modal('show');
+        });
+    </script>
 </body>
 </html>

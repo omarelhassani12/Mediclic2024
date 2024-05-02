@@ -2,3 +2,178 @@
     display: inline-block;
     width: 10px; 
 }
+
+.right-text .right-text-p{
+    padding: 0px;
+    background-color: rgba(65, 132, 247, 0.1);
+    color: #3D8CEF;
+    border-radius: 600px;
+    padding: 15px;
+}
+.box-img{
+    padding: 0px;
+    background-color: rgba(65, 132, 247, 0.1);
+    color: #3D8CEF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+/* for the specialtie */
+
+.specialite {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border: .5px solid #B5B5B5;
+    border-radius: 5px; 
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.specialite-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.box-img {
+    padding: 10px;
+    background-color: rgba(65, 132, 247, 0.1);
+    border-radius: 10px;
+}
+
+.specialite-icon {
+    width: 30px; 
+}
+
+.specialite-title {
+    margin: 0; 
+    margin-left: 10px; 
+    font-size: 20px;
+}
+
+.specialite-results {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: 20px;
+    color: #3D8CEF;
+}
+.specialite-results .results {
+    display: flex; 
+    align-items: center; 
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: rgba(65, 132, 247, 0.1);
+}
+
+.specialite-results .results p {
+    margin: 0; 
+    margin-right: 10px;
+}
+
+.specialite-results .results img {
+    width: 12px;
+}
+
+#duree img{
+    margin: 0 10px 0 10px;
+}
+
+.btn-new-horaire{
+    position: relative;
+    top: -15px;
+}
+
+/* modal */
+.modal-body{
+    padding: 10px 30px 10px 30px;
+}
+
+/* checkbox */
+.new-comment {
+    display: flex;
+    flex-wrap: wrap; 
+    max-width: 100%; 
+}
+
+.day-checkbox {
+    display: none;
+    margin-right: 15px;
+}
+
+.day-label {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.day-checkbox:checked + .day-label {
+    background-color: #3D8CEF;
+    color: #fff;
+    border-color: #3D8CEF;
+}
+
+.day-checkbox-remaining {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.day-checkbox-remaining input {
+    display: none;
+}
+
+.day-checkbox-remaining label {
+    display: block;
+    padding: 8px 16px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.day-checkbox-remaining input:checked + label {
+    background-color: #3D8CEF;
+    color: #fff;
+    border-color: #3D8CEF;
+}
+
+/* for the time input  */
+
+
+#debut-input,
+#fin-input,
+#duree-input {
+    border: 1px solid var(--c-grey-200);
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 16px 0 66px; /* Adjusted padding */
+    width: 100%;
+    font-size: 16px;
+    color: var(--c-grey-500);
+    position: relative; /* Add relative positioning */
+    overflow: hidden; /* Hide overflow to prevent icon from extending outside */
+}
+
+#debut-input::placeholder,
+#fin-input::placeholder,
+#duree-input::placeholder{
+    color: var(--c-grey-300);
+    margin-left: 40px; /* Adjusted margin for placeholder text */
+}
+
+#debut-input:focus,
+#fin-input:focus,
+#duree-input:focus{
+    border-color: var(--c-grey-300);
+    box-shadow: 0 0 0 4px var(--c-grey-100);
+}
