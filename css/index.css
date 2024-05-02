@@ -78,9 +78,9 @@ body {
 
 .header1 .user-info .special-plus {
     background-color: #40E4AD; 
-    border-radius: 60%;
-    padding: 3px; 
-    margin-right: 10px;
+    border-radius: 90%;
+    padding: 0 5px 0 5px; 
+    margin-right: 25px;
 }
 
 .header1 .user-info .special-plus i {
@@ -189,9 +189,22 @@ body {
     float: left;
     position: fixed;
     margin-top: 100px;
-    height: 100%;
-    overflow-y: auto;
+    height: calc(100% - 100px);
+    overflow-y: auto; 
+    scrollbar-width: thin; 
+    scrollbar-color: transparent transparent;
 }
+
+/* scrolling bar */
+.sidebar::-webkit-scrollbar {
+    width: 6px; 
+    height: 6px; 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
 
 .sidebar-title {
     width: 100%;
@@ -259,25 +272,6 @@ body {
     transform: rotate(180deg);
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 100%;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    display: block;
-    text-decoration: none;
-    color: #333333;
-    padding: 8px 12px;
-    cursor: pointer;
-}
-
-.dropdown-content a:hover {
-    background-color: #ccc;
-}
 
 .dropdown.active .dropdown-content {
     display: block;
@@ -302,10 +296,12 @@ body {
 }
 
 .dropdown .dropdown-content {
-    display: none;
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     min-width: 100%;
     z-index: 1;
+    margin-bottom: 15px;
 }
 
 .dropdown .dropdown-content a {
