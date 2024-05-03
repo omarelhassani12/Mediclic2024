@@ -107,7 +107,7 @@
                         <img src="../../img/icons/Prescriptions.png" alt="Prescriptions Icon">
                         <span class="dropdown-title">Prescriptions</span>
                     </a>
-                    <a href="#" class="other-buttons">
+                    <a href="../../pages/Absences/index.html" class="other-buttons">
                         <img src="../../img/icons/Absences.png" alt="Agenda Icon">
                         <span class="dropdown-title">Absences</span>
                     </a>
@@ -404,7 +404,6 @@
 
 
     <!-- //Modals -->
-    <!-- //Modals -->
     <!-- //NV Horaire Modal -->
     <div class="modal fade" id="NVHoraireModal" tabindex="-1" aria-labelledby="NVHoraireModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -567,24 +566,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../js/index.js"></script>
     <script src="../../js/messages.js"></script>
+    <script src="../../js/calendrier.js"></script>
     
     <script>
-        $(document).ready(function() {
-            $('#NVHoraireModal').modal('show');
-        });
-    </script>
-
-<script>
-    // Sélection de l'élément select
-    const selectElement = document.getElementById("NbrS");
-
-    // Ajout des options de 1 à 10
-    for (let i = 1; i <= 10; i++) {
-        const option = document.createElement("option");
-        option.value = i;
-        option.text = i;
-        selectElement.appendChild(option);
-    }
-</script>   
+        // $(document).ready(function() {
+        //     $('#NVHoraireModal').modal('show');
+        // });
+    </script> 
 </body>
 </html>
