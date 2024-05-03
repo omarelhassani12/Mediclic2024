@@ -184,6 +184,7 @@ a .special-plus i {
 }
 
 /* Sidebar */
+
 .sidebar {
     width: 258px;
     background-color: #FFF;
@@ -341,6 +342,7 @@ a .special-plus i {
 .rotate-icon {
 transform: rotate(180deg);
 }
+
 
 /* Main Content */
 .main-content {
