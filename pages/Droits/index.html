@@ -193,7 +193,7 @@
                     <div class="header">
                         <h6 class="title">Utilisateurs</h6>
                         <div class="col-md-12 btn-icon">
-                            <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVNotesModal">
+                            <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
                                 <i class="fas fa-plus"></i>
                                 <span>Ajouter</span>
                             </button>
@@ -556,57 +556,55 @@
 
 
     <!-- //Modals -->
-    <!-- //Messages Modal -->
-    <div class="modal fade" id="NVReclamationsModal" tabindex="-1" aria-labelledby="NVReclamationsModalLabel" aria-hidden="true">
+    <!-- //NV User Modal -->
+    <div class="modal fade" id="NVUserModal" tabindex="-1" aria-labelledby="NVUserModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="NVReclamationsModalLabel">Nouvelle réclamation</h5>
+                    <h5 class="modal-title" id="NVUserModalLabel">Nouveau utilisateur</h5>
                     <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     
                     <form action="">
-                        <div class="col-sm-12">
-                            <label for="Objet">Objet </label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <textarea id="Objet" name="Objet" placeholder="Ajouter une objet" rows="2" ></textarea>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Réclamations">Réclamations </label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <textarea id="Réclamations" name="Réclamations" placeholder="Ajouter une réclamations" rows="2" ></textarea>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Documents">Documents</label>
-                            <div class="new-comment new-comment-file">
-                                <div class="file-upload">
-                                    <label for="fileInput" class="label-file">
-                                        <span class="img-cercle">
-                                            <img src="../../img/icons/upload.png" alt="">
-                                        </span> Cliquer pour importer
-                                        <br>
-                                        <span class="upload-text">ou juste dropper and dragger</span>
-                                    </label>
-                                    <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
-                                </div>
-                                <button class="btn-importer">Importer</button>
-                            </div>
-                        </div>
-                        <div id="uploadedFilesContainer" class="col-sm-12">
-                        </div>
 
-                        
-                    </form>
-              
+                        <div class="col-sm-12">
+                            <label for="nom">Nom et prénom <span>*</span></label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="text" id="nom" name="nom" placeholder="Nom">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Email">Email<span>*</span></label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="email" id="Email" name="Email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="lieu">Lieu <span>*</span></label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select>
+                                    <option value="Cabinet infirmier Maarif 1">Cabinet infirmier Maarif  1</option>
+                                    <option value="Lieu2">Lieu 2</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Commentaire">Commentaire </label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <textarea id="Commentaire" name="Commentaire" placeholder="Ajouter un commentaire" rows="2" ></textarea>
+                            </div>
+                        </div>
+                    </form>              
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary2">Envoyer</button>
+                    <button type="button" class="btn btn-primary2">Valider</button>
                 </div>
             </div>
         </div>
@@ -620,9 +618,9 @@
     <script src="../../js/index.js"></script>
     <script src="../../js/messages.js"></script>
     <script>
-        // $(document).ready(function() {
-        //     $('#NVReclamationsModal').modal('show');
-        // });
+        $(document).ready(function() {
+            $('#NVUserModal').modal('show');
+        });
     </script>
 
 </body>
