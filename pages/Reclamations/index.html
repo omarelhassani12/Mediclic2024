@@ -182,7 +182,7 @@
         
         <section class="main-header">
             <div>
-                <h1>Messages</h1>
+                <h1>Réclamations</h1>
                 <p>Keep track of patients and their diseases.</p>
             </div>
         </section>
@@ -247,8 +247,8 @@
                         <td>Centre Infirmier Maarif</td>
                         <td>123, boulevard d'anfa</td>
                         <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#MessageModal">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
+                                <img src="../../img/icons/reclamations-icon.png" alt="reclamations-icon">
                             </a>
                         </td>
                     </tr>
@@ -263,7 +263,7 @@
                         <td>123, boulevard d'anfa</td>
                         <td style="cursor: pointer;">
                             <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                                <img src="../../img/icons/reclamations-icon.png" alt="reclamations-icon">
                                 <span></span>
                             </a>
                         </td>
@@ -279,7 +279,7 @@
                         <td>123, boulevard d'anfa</td>
                         <td style="cursor: pointer;">
                             <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                                <img src="../../img/icons/reclamations-icon.png" alt="reclamations-icon">
                             </a>
                         </td>
                     </tr>
@@ -294,7 +294,7 @@
                         <td>123, boulevard d'anfa</td>
                         <td style="cursor: pointer;">
                             <a href="" id="badge-message-failed">
-                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                                <img src="../../img/icons/reclamations-icon.png" alt="reclamations-icon">
                                 <span></span>
                             </a>
                         </td>
@@ -322,11 +322,11 @@
 
     <!-- //Modals -->
     <!-- //Messages Modal -->
-    <div class="modal fade" id="MessageModal" tabindex="-1" aria-labelledby="MessageModalLabel" aria-hidden="true">
+    <div class="modal fade" id="ReclamationsModal" tabindex="-1" aria-labelledby="ReclamationsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="MessageModalLabel">Messages</h5>
+              <h5 class="modal-title" id="ReclamationsModalLabel">Réclamations</h5>
               <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -416,9 +416,9 @@
                 </div>
                 <div class="message-footer">
                     <div class="col-md-12 btn-icon">
-                        <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVMessageModal">
+                        <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVReclamationsModal">
                             <i class="fas fa-plus"></i>
-                            <span>Ajouter un message</span>
+                            <span>Ajouter une réclamation</span>
                         </button>
                     </div>
                 </div>
@@ -432,11 +432,11 @@
         </div>
     </div>
     <!-- //Messages Modal -->
-    <div class="modal fade" id="NVMessageModal" tabindex="-1" aria-labelledby="NVMessageModalLabel" aria-hidden="true">
+    <div class="modal fade" id="NVReclamationsModal" tabindex="-1" aria-labelledby="NVReclamationsModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="NVMessageModalLabel">Nouveau message</h5>
+                    <h5 class="modal-title" id="NVReclamationsModalLabel">Nouvelle réclamation</h5>
                     <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -450,10 +450,10 @@
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <label for="Message">Message </label>
+                            <label for="Réclamations">Réclamations </label>
                             <div class="new-comment">
                                 <i class="icon-lieu"></i>
-                                <textarea id="Message" name="Message" placeholder="Ajouter une message" rows="2" ></textarea>
+                                <textarea id="Réclamations" name="Réclamations" placeholder="Ajouter une réclamations" rows="2" ></textarea>
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -476,16 +476,6 @@
                         </div>
 
                         
-                        <div class="col-sm-12">
-                            <label for="Documents">Type de document</label>
-                            <div class="new-comment select-container">
-                                <img src="../../img/icons/papper-docs.png" alt="" class="icon-left">
-                                <select id="documentType" name="documentType" class="custom-select">
-                                    <option value="ordonnance1">Ordonnance de médicaments</option>
-                                    <option value="ordonnance2">Ordonnance de médicaments 2</option>
-                                </select>
-                            </div>
-                        </div>
                     </form>
               
                 </div>
@@ -504,7 +494,11 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../js/index.js"></script>
     <script src="../../js/messages.js"></script>
-    
+    <script>
+        // $(document).ready(function() {
+        //     $('#NVReclamationsModal').modal('show');
+        // });
+    </script>
 
 </body>
 </html>
