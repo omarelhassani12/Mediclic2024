@@ -238,3 +238,10 @@
 .toggle-checkbox:checked + .toggle-label::before {
     transform: translateX(14px);
 }
+
+
+
+
+.col-sm-12 label a img{
+    width: 20px;
+}
