@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../css/buttons-style.css">
     <link rel="stylesheet" href="../../css/documents.css">
     <link rel="stylesheet" href="../../css/message.css">
+    <link rel="stylesheet" href="../../css/calendars.css">
     <link rel="stylesheet" href="../../css/droits.css">
 </head>
 <body>
@@ -289,12 +290,261 @@
                 </div>
                 <div class="column-60">
                     <div class="header">
-                        
+                        <h6 class="title">Permissions</h6>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="Activer-tous" name="surbooking" value="Activer-tous" class="toggle-checkbox">
+                            <label for="Activer-tous" class="toggle-label"></label>
+                            <span class="toggle-text">Activer tous</span>
+                        </div>
                     </div>
                     <div class="content">
-                        
+                        <div class="message-left-top" onclick="toggleDropdown('message-center-1', 'arrow-icon-1')">
+                            <span class="box-img">
+                                <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                            </span>
+                            <div class="title-info-message">
+                                <p class="title-name">Mes rendez-vous</p>
+                            </div>
+                            <span class="total-active">4/9</span>
+                            <img src="../../img/icons/arrow-up-black.png" alt="">
+                        </div>
+                        <div id="message-center-1" class="message-center" style="display: none;">
+                            <div class="message-text">
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter un rendez-vous" name="surbooking" value="Consulter un rendez-vous" class="toggle-checkbox">
+                                    <label for="Consulter un rendez-vous" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter un rendez-vous</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Ajouter un rendez-vous" name="surbooking" value="Ajouter un rendez-vous" class="toggle-checkbox">
+                                    <label for="Ajouter un rendez-vous" class="toggle-label"></label>
+                                    <span class="toggle-text">Ajouter un rendez-vous</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Modifier un rendez-vous" name="surbooking" value="Modifier un rendez-vous" class="toggle-checkbox">
+                                    <label for="Modifier un rendez-vous" class="toggle-label"></label>
+                                    <span class="toggle-text">Modifier un rendez-vous</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Déplacer un rendez-vous" name="surbooking" value="Déplacer un rendez-vous" class="toggle-checkbox">
+                                    <label for="Déplacer un rendez-vous" class="toggle-label"></label>
+                                    <span class="toggle-text">Déplacer un rendez-vous</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Annuler un rendez-vous" name="surbooking" value="Annuler un rendez-vous" class="toggle-checkbox">
+                                    <label for="Annuler un rendez-vous" class="toggle-label"></label>
+                                    <span class="toggle-text">Annuler un rendez-vous</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Adresser un patient" name="surbooking" value="Adresser un patient" class="toggle-checkbox">
+                                    <label for="Adresser un patient" class="toggle-label"></label>
+                                    <span class="toggle-text">Adresser un patient</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="(Dé)Bloquer le patient" name="surbooking" value="(Dé)Bloquer le patient" class="toggle-checkbox">
+                                    <label for="(Dé)Bloquer le patient" class="toggle-label"></label>
+                                    <span class="toggle-text">(Dé)Bloquer le patient</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Y ajouter une note" name="surbooking" value="Y ajouter une note" class="toggle-checkbox">
+                                    <label for="Y ajouter une note" class="toggle-label"></label>
+                                    <span class="toggle-text">Y ajouter une note</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Y consulter les réclamations" name="surbooking" value="Y consulter les réclamations" class="toggle-checkbox">
+                                    <label for="Y consulter les réclamations" class="toggle-label"></label>
+                                    <span class="toggle-text">Y consulter les réclamations</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Y ajouter une réclamation" name="surbooking" value="Y ajouter une réclamation" class="toggle-checkbox">
+                                    <label for="Y ajouter une réclamation" class="toggle-label"></label>
+                                    <span class="toggle-text">Y ajouter une réclamation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-left-top" onclick="toggleDropdown('message-center-2', 'arrow-icon-2')">
+                            <span class="box-img">
+                                <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                            </span>
+                            <div class="title-info-message">
+                                <p class="title-name">Mes calendriers</p>
+                            </div>
+                            <span class="total-active">1/2</span>
+                            <img src="../../img/icons/arrow-up-black.png" alt="">
+                        </div>
+                        <div id="message-center-2" class="message-center" style="display: none;">
+                            <div class="message-text">
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter la calendrier" name="surbooking" value="Consulter la calendrier" class="toggle-checkbox">
+                                    <label for="Consulter la calendrier" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter la calendrier</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Configurer la calendrier" name="surbooking" value="Configurer la calendrier" class="toggle-checkbox">
+                                    <label for="Configurer la calendrier" class="toggle-label"></label>
+                                    <span class="toggle-text">Configurer la calendrier</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-2')">
+                            <span class="box-img">
+                                <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                            </span>
+                            <div class="title-info-message">
+                                <p class="title-name">Mes patients</p>
+                            </div>
+                            <span class="total-active">3/5</span>
+                            <img src="../../img/icons/arrow-up-black.png" alt="">
+                        </div>
+                        <div id="message-center-3" class="message-center" style="display: none;">
+                            <div class="message-text">
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les patients" name="surbooking" value="Consulter les patients" class="toggle-checkbox">
+                                    <label for="Consulter les patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les notes des patients" name="surbooking" value="Consulter les notes des patients" class="toggle-checkbox">
+                                    <label for="Consulter les notes des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les notes des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Y ajouter des notes" name="surbooking" value="Y ajouter des notes" class="toggle-checkbox">
+                                    <label for="Y ajouter des notes" class="toggle-label"></label>
+                                    <span class="toggle-text">Y ajouter des notes</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les suivis des patients" name="surbooking" value="Consulter les suivis des patients" class="toggle-checkbox">
+                                    <label for="Consulter les suivis des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les suivis des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les prescriptions des patients" name="surbooking" value="Consulter les prescriptions des patients" class="toggle-checkbox">
+                                    <label for="Consulter les prescriptions des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les prescriptions des patients</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-2')">
+                            <span class="box-img">
+                                <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                            </span>
+                            <div class="title-info-message">
+                                <p class="title-name">Mes patients</p>
+                            </div>
+                            <span class="total-active">3/5</span>
+                            <img src="../../img/icons/arrow-up-black.png" alt="">
+                        </div>
+                        <div id="message-center-3" class="message-center" style="display: none;">
+                            <div class="message-text">
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les patients" name="surbooking" value="Consulter les patients" class="toggle-checkbox">
+                                    <label for="Consulter les patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les notes des patients" name="surbooking" value="Consulter les notes des patients" class="toggle-checkbox">
+                                    <label for="Consulter les notes des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les notes des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Y ajouter des notes" name="surbooking" value="Y ajouter des notes" class="toggle-checkbox">
+                                    <label for="Y ajouter des notes" class="toggle-label"></label>
+                                    <span class="toggle-text">Y ajouter des notes</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les suivis des patients" name="surbooking" value="Consulter les suivis des patients" class="toggle-checkbox">
+                                    <label for="Consulter les suivis des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les suivis des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les prescriptions des patients" name="surbooking" value="Consulter les prescriptions des patients" class="toggle-checkbox">
+                                    <label for="Consulter les prescriptions des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les prescriptions des patients</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-2')">
+                            <span class="box-img">
+                                <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                            </span>
+                            <div class="title-info-message">
+                                <p class="title-name">Mes patients</p>
+                            </div>
+                            <span class="total-active">3/5</span>
+                            <img src="../../img/icons/arrow-up-black.png" alt="">
+                        </div>
+                        <div id="message-center-3" class="message-center" style="display: none;">
+                            <div class="message-text">
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les patients" name="surbooking" value="Consulter les patients" class="toggle-checkbox">
+                                    <label for="Consulter les patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les notes des patients" name="surbooking" value="Consulter les notes des patients" class="toggle-checkbox">
+                                    <label for="Consulter les notes des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les notes des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Y ajouter des notes" name="surbooking" value="Y ajouter des notes" class="toggle-checkbox">
+                                    <label for="Y ajouter des notes" class="toggle-label"></label>
+                                    <span class="toggle-text">Y ajouter des notes</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les suivis des patients" name="surbooking" value="Consulter les suivis des patients" class="toggle-checkbox">
+                                    <label for="Consulter les suivis des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les suivis des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les prescriptions des patients" name="surbooking" value="Consulter les prescriptions des patients" class="toggle-checkbox">
+                                    <label for="Consulter les prescriptions des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les prescriptions des patients</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-2')">
+                            <span class="box-img">
+                                <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                            </span>
+                            <div class="title-info-message">
+                                <p class="title-name">Mes patients</p>
+                            </div>
+                            <span class="total-active">3/5</span>
+                            <img src="../../img/icons/arrow-up-black.png" alt="">
+                        </div>
+                        <div id="message-center-3" class="message-center" style="display: none;">
+                            <div class="message-text">
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les patients" name="surbooking" value="Consulter les patients" class="toggle-checkbox">
+                                    <label for="Consulter les patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les notes des patients" name="surbooking" value="Consulter les notes des patients" class="toggle-checkbox">
+                                    <label for="Consulter les notes des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les notes des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Y ajouter des notes" name="surbooking" value="Y ajouter des notes" class="toggle-checkbox">
+                                    <label for="Y ajouter des notes" class="toggle-label"></label>
+                                    <span class="toggle-text">Y ajouter des notes</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les suivis des patients" name="surbooking" value="Consulter les suivis des patients" class="toggle-checkbox">
+                                    <label for="Consulter les suivis des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les suivis des patients</span>
+                                </div>
+                                <div class="toggle-container">
+                                    <input type="checkbox" id="Consulter les prescriptions des patients" name="surbooking" value="Consulter les prescriptions des patients" class="toggle-checkbox">
+                                    <label for="Consulter les prescriptions des patients" class="toggle-label"></label>
+                                    <span class="toggle-text">Consulter les prescriptions des patients</span>
+                                </div>
+                            </div>
+                        </div>
+
+             
                     </div>
-                    Content for 60% width 
                     <div class="footer">
 
                     </div>
