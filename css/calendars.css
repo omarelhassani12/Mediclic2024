@@ -177,3 +177,64 @@
     border-color: var(--c-grey-300);
     box-shadow: 0 0 0 4px var(--c-grey-100);
 }
+
+/* for the Surbooking radio */
+
+.toggle-container {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: auto;
+    height: 34px;
+}
+
+.toggle-container label {
+    margin-left: 10px;
+}
+
+.toggle-checkbox {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.toggle-label {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border: 1px solid #B5B5B5;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: #2196F3;
+}
+
+.toggle-checkbox + .toggle-label::before {
+    content: '';
+    position: absolute;
+    top: -.5px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+.toggle-checkbox:checked + .toggle-label::before {
+    transform: translateX(14px);
+}

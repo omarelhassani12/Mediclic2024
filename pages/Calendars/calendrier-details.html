@@ -493,38 +493,53 @@
                         <label for="Garde 24h/24" class="day-label">Garde 24h/24</label>
                     </div>
                 </div>
+
+
+                <div class="col-sm-12">
+                    <div class="toggle-container">
+                        <input type="checkbox" id="Surbooking" name="surbooking" value="Surbooking" class="toggle-checkbox">
+                        <label for="Surbooking" class="toggle-label"></label>
+                        <span class="toggle-text">Surbooking</span>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12">
+                    <label for="NbrS">Nombre de surbooking <img src="../../img/icons/info.png" alt=""></label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <select id="NbrS" name="NbrS">
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="toggle-container">
+                        <input type="checkbox" id="Assistant à domicile exigé" name="surbooking" value="Assistant à domicile exigé" class="toggle-checkbox">
+                        <label for="Assistant à domicile exigé" class="toggle-label"></label>
+                        <span class="toggle-text">Assistant à domicile exigé</span>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="ADE">Assistant à domicile exigé <img src="../../img/icons/info.png" alt=""></label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <select id="ADE" name="ADE">
+                            <option value="Anasthésiste - Réanimateur">Anasthésiste - Réanimateur</option>
+                            <option value="Anasthésiste - Réanimateur2">Anasthésiste - Réanimateur2</option>
+                        </select>
+                    </div>
+                </div>
                 
-                
-                
-      
-                  <div class="col-sm-12">
-                      <label for="nom">Nom <span>*</span></label>
-                      <div class="new-comment">
-                          <i class="icon-lieu"></i>
-                          <input type="text" id="nom" name="nom" placeholder="Nom">
-                      </div>
-                  </div>
-                  
-                  <div class="col-sm-12">
-                      <label for="prenom">Prénom <span>*</span></label>
-                      <div class="new-comment">
-                          <i class="icon-lieu"></i>
-                          <input type="text" id="prenom" name="prenom" placeholder="Prénom">
-                      </div>
-                  </div>            
-                  
-                  <div class="col-sm-12">
-                      <label for="lieu">Sexe <span>*</span></label>
-                      <div class="new-comment">
-                          <i class="icon-lieu"></i>
-                          <select>
-                              <option value="Masculin">Masculin</option>
-                              <option value="f">F</option>
-                          </select>
-                          <i class="icon-down-arrow"></i>
-                      </div>
-                  </div>
-      
+
+                <div class="col-sm-12">
+                    <label for="Consignes">Consignes</label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <textarea id="Consignes" name="Consignes" placeholder="Quelles sont vos consignes préalables pour cette disponibilité ?" rows="2" ></textarea>
+                    </div>
+                </div>
 
               </form>
               
@@ -550,5 +565,18 @@
             $('#NVHoraireModal').modal('show');
         });
     </script>
+
+<script>
+    // Sélection de l'élément select
+    const selectElement = document.getElementById("NbrS");
+
+    // Ajout des options de 1 à 10
+    for (let i = 1; i <= 10; i++) {
+        const option = document.createElement("option");
+        option.value = i;
+        option.text = i;
+        selectElement.appendChild(option);
+    }
+</script>   
 </body>
 </html>
