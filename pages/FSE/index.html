@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suivi des dossiers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/patient-modal.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/buttons-style.css">
+    <link rel="stylesheet" href="../../css/documents.css">
+    <link rel="stylesheet" href="../../css/message.css">
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo">
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <i class="far fa-file-alt" style="margin-right: 15px; "></i>
+                <a href="../../pages/Messages/index.html">
+                    <i class="far fa-comment-alt" style="margin-right: 15px; "></i>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <i class="far fa-bell" ></i>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <i class="fas fa-plus"></i> 
+                    </span>
+                </a>    
+            </span>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" alt="Profile Image">
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3 class="sidebar-title">Tableau de bord</h3>
+        <ul class="sidebar-menu">
+            <!-- First Dropdown -->
+            <div class="dropdown" id="dropdownBtn1">
+                <a onclick="toggleDropdown('dropdownContent1', 'dropdownIcon1')" class="dropdown-btn">
+                    <span class="dropdown-title">Administration</span>
+                    <i id="dropdownIcon1" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent1">
+                    <a href="../../index.html" class="other-buttons">
+                        <img src="../../img/icons/Patients.png" alt="Patients Icon">
+                        <span class="dropdown-title">Patients</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Agenda.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Agenda</span>
+                    </a>
+                    <a href="../../pages/Documents/index.html" class="other-buttons">
+                        <img src="../../img/icons/Documents.png" alt="Documents Icon">
+                        <span class="dropdown-title">Documents</span>
+                    </a>
+                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                        <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
+                        <span class="dropdown-title">Calendriers</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Suivis.png" alt="Suivis Icon">
+                        <span class="dropdown-title">Suivis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Prescriptions.png" alt="Prescriptions Icon">
+                        <span class="dropdown-title">Prescriptions</span>
+                    </a>
+                    <a href="../../pages/Absences/index.html" class="other-buttons">
+                        <img src="../../img/icons/Absences.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Absences</span>
+                    </a>
+                    <a href="../../pages/Reclamations/index.html" class="other-buttons">
+                        <img src="../../img/icons/Reclamations.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Réclamations</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/DMP.png" alt="DMP Icon">
+                        <span class="dropdown-title">DMP</span>
+                    </a>
+                    <a href="../../pages/FSE/index.html" class="other-buttons">
+                        <img src="../../img/icons/FSE.png" alt="FSE Icon">
+                        <span class="dropdown-title">FSE</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Paiements.png" alt="Paiements Icon">
+                        <span class="dropdown-title">Paiements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Statistiques.png" alt="Statistiques Icon">
+                        <span class="dropdown-title">Statistiques</span>
+                    </a>
+                
+                </div>
+            </div>
+
+            <!-- Second Dropdown -->
+            <div class="dropdown" id="dropdownBtn2">
+                <a onclick="toggleDropdown('dropdownContent2', 'dropdownIcon2')" class="dropdown-btn">
+                    <span class="dropdown-title">Communauté</span>
+                    <i id="dropdownIcon2" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent2">
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Forum.png" alt="Forum Icon">
+                        <span class="dropdown-title">Forum</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Annonces.png" alt="Annonces Icon">
+                        <span class="dropdown-title">Annonces</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Evénements.png" alt="Evénements Icon">
+                        <span class="dropdown-title">Evénements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Blog.png" alt="Blog Icon">
+                        <span class="dropdown-title">Blog</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Avis.png" alt="Avis Icon">
+                        <span class="dropdown-title">Avis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Market.png" alt="Market Icon">
+                        <span class="dropdown-title">Market</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Emploi.png" alt="Emploi Icon">
+                        <span class="dropdown-title">Emploi</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/E-learning.png" alt="E-learning Icon">
+                        <span class="dropdown-title">E-learning</span>
+                    </a>              
+                </div>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="main-header">
+            <div>
+                <h1>Suivi des dossiers</h1>
+                <p>Keep track of patients and their diseases.</p>
+            </div>
+        </section>
+        
+
+        <!-- Search Filter -->
+        <form id="searchForm" >
+            <section class="search-filter">
+                <div class="input-group">
+                    <input type="date" id="startDate" name="startDate" class="form-select">
+                </div>
+        
+                <div class="input-group">
+                    <input type="date" id="endDate" name="endDate" class="form-select">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="Dossier" name="Dossier" placeholder="Dossier" class="form-select-input search-input">
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" id="Bénéficiare" name="Bénéficiare" placeholder="Bénéficiare" class="form-select-input search-input">
+                </div>               
+                
+                <select id="Demande" name="Demande" class="form-select">
+                    <option value="" disabled selected>Demande</option>
+                    <option value="Demande">Demande</option>
+                </select>
+                <select id="Paiement-mutuelle" name="Paiement-mutuelle" class="form-select">
+                    <option value="" disabled selected>Paiement mutuelle</option>
+                    <option value="Paiement mutuelle">Paiement mutuelle</option>
+                </select>
+                <select id="Message" name="Message" class="form-select">
+                    <option value="" disabled selected>Message</option>
+                    <option value="Message">Message</option>
+                </select>
+                
+                <button id="searchBtn" type="submit" class="btn">
+                    <img src="../../img/icons/filter.png" alt="filter" > Filter
+                </button>
+            </section>
+        </form>
+        
+        <!-- Data Table -->
+        <section class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dossier</th>
+                        <th>Date</th>
+                        <th>Assuré</th>
+                        <th>Bénéficiare</th>
+                        <th>Montant total</th>
+
+                        <th>AMO</th>
+                        <th>Statut</th>
+                        <th>A rembourser</th>
+                        <th>Remboursé</th>
+                        <th>Reste</th>
+                        
+                        <th>AMC</th>
+                        <th>Statut</th>
+                        <th>A rembourser</th>
+                        <th>Remboursé</th>
+                        <th>Reste</th>
+
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225">FSE080447</a></td>
+                        <td>12/03/2024</td>
+                        <td>Radi Amin</td>
+                        <td>Radi Amin</td>
+                        <td>214.00</td>
+
+                        <td>CNSS</td>
+                        <td id="Termine-success"><span></span>Remboursée</td>
+                        <td>196.00</td>
+                        <td>196.00</td>
+                        <td>00.00</td>
+
+                        <td>-</td>
+                        <td>-</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+
+
+                        <td style="cursor: pointer;">
+                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
+                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Navigation Card -->
+        <section class="navigation-card">
+            <div class="card-navigation">
+                <button id="prevBtn" class="btn-nav">
+                    <img src="../../img/icons/arrow-left.png" alt="arrow-left">Previous
+                </button>
+                <span class="pages">
+                 </span>
+                <button id="nextBtn" class="btn-nav">
+                    Next<img src="../../img/icons/arrow-right.png" alt="arrow-right">
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- //Modals -->
+    <!-- //Messages Modal -->
+    <div class="modal fade" id="ReclamationsModal" tabindex="-1" aria-labelledby="ReclamationsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ReclamationsModalLabel">Réclamations</h5>
+              <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-1', 'arrow-icon-1')">
+                        <span class="profil-cercle"></span>
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <span class="profil-badge"></span>
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-1" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-1" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-2', 'arrow-icon-2')">
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-2" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-2" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-3')">
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-3" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-3" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-4', 'arrow-icon-4')">
+                        <span class="profil-cercle"></span>
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <span class="profil-badge"></span>
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-4" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-4" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-footer">
+                    <div class="col-md-12 btn-icon">
+                        <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVReclamationsModal">
+                            <i class="fas fa-plus"></i>
+                            <span>Ajouter une réclamation</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary2" data-bs-dismiss="modal" aria-label="Close">Fermer</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //Messages Modal -->
+    <div class="modal fade" id="NVReclamationsModal" tabindex="-1" aria-labelledby="NVReclamationsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NVReclamationsModalLabel">Nouvelle réclamation</h5>
+                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <form action="">
+                        <div class="col-sm-12">
+                            <label for="Objet">Objet </label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <textarea id="Objet" name="Objet" placeholder="Ajouter une objet" rows="2" ></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Réclamations">Réclamations </label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <textarea id="Réclamations" name="Réclamations" placeholder="Ajouter une réclamations" rows="2" ></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Documents">Documents</label>
+                            <div class="new-comment new-comment-file">
+                                <div class="file-upload">
+                                    <label for="fileInput" class="label-file">
+                                        <span class="img-cercle">
+                                            <img src="../../img/icons/upload.png" alt="">
+                                        </span> Cliquer pour importer
+                                        <br>
+                                        <span class="upload-text">ou juste dropper and dragger</span>
+                                    </label>
+                                    <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                </div>
+                                <button class="btn-importer">Importer</button>
+                            </div>
+                        </div>
+                        <div id="uploadedFilesContainer" class="col-sm-12">
+                        </div>
+
+                        
+                    </form>
+              
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary2">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/messages.js"></script>
+    <script>
+        // $(document).ready(function() {
+        //     $('#NVReclamationsModal').modal('show');
+        // });
+    </script>
+
+</body>
+</html>
