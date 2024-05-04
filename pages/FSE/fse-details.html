@@ -181,60 +181,85 @@
     <!-- Main Content -->
     <main class="main-content">
         
+
         <section class="main-header">
-            <div class="buttons-right">
-                <div class="col-md-12 btn-icon">
-                    <button type="button" class="btn-note" >
-                        <span>Ajouter</span>
-                    </button>
+            <div class="top-content">
+                <div class="left-content">
+                    <div class="image-box">
+                        <img src="../../img/icons/folder-icon.png" alt="folder-icon">
+                    </div>
+                    <div class="left-title">
+                        <div class="title">FSE080447</div>
+                        <div class="subtitle">
+                            <img src="../../img/icons/calendries-black.png" alt="Subtitle Image">
+                            <span>Transmis le 12/03/2024</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-12 btn-icon">
-                    <button type="button" class="btn-note" >
-                        <i class="fas fa-plus"></i>
-                        <span>Ajouter</span>
-                    </button>
+                <div class="right-content">
+                    <div class="buttons-right">
+                        <div class="col-md-12 btn-icon-without-bg">
+                            <button type="button" class="btn-note-without-bg" >
+                                <span>Historique des messages</span>
+                            </button>
+                        </div>
+                        <div class="col-md-12 btn-icon">
+                            <button type="button" class="btn-note" >
+                                <span>Historique des remboursements</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="bottom-content">
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Assuré :</span>
+                        <span class="item-value">Radi Amine</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Bénéficiare :</span>
+                        <span class="item-value">Radi Amine</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Montant :</span>
+                        <span class="item-value">214.00 Dhs</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Statut :</span>
+                        <span class="item-value" id="status-a-rembourser"><span></span>Remboursement partiel</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">N° Assuré :</span>
+                        <span class="item-value">080447</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Date :</span>
+                        <span class="item-value">24/03/2024</span>
+                    </div>
+                </div>
+            </div>
+
+            
         </section>
         
-
-        <!-- Search Filter -->
-        <form id="searchForm" >
-            <section class="search-filter">
-                <div class="input-group">
-                    <input type="date" id="startDate" name="startDate" class="form-select">
-                </div>
         
-                <div class="input-group">
-                    <input type="date" id="endDate" name="endDate" class="form-select">
-                </div>
-
-                <div class="input-group">
-                    <input type="text" id="Dossier" name="Dossier" placeholder="Dossier" class="form-select-input search-input">
-                </div>
-                
-                <div class="input-group">
-                    <input type="text" id="Bénéficiare" name="Bénéficiare" placeholder="Bénéficiare" class="form-select-input search-input">
-                </div>               
-                
-                <select id="Demande" name="Demande" class="form-select">
-                    <option value="" disabled selected>Demande</option>
-                    <option value="Demande">Demande</option>
-                </select>
-                <select id="Paiement-mutuelle" name="Paiement-mutuelle" class="form-select">
-                    <option value="" disabled selected>Paiement mutuelle</option>
-                    <option value="Paiement mutuelle">Paiement mutuelle</option>
-                </select>
-                <select id="Message" name="Message" class="form-select">
-                    <option value="" disabled selected>Message</option>
-                    <option value="Message">Message</option>
-                </select>
-                
-                <button id="searchBtn" type="submit" class="btn">
-                    <img src="../../img/icons/filter.png" alt="filter" > Filter
-                </button>
-            </section>
-        </form>
         
         <!-- Data Table -->
         <section class="data-table">
