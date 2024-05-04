@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../../css/buttons-style.css">
     <link rel="stylesheet" href="../../css/documents.css">
     <link rel="stylesheet" href="../../css/message.css">
+    <link rel="stylesheet" href="../../css/calendars.css">
     <link rel="stylesheet" href="../../css/fse.css">
 </head>
 <body>
@@ -52,21 +53,21 @@
             <span class="circle-background">
                 <img src="../../img/doctor.png" alt="Header Image">
             </span>
-            <b class="title">Avis N°12</b>
+            <b class="title-header2">Avis N°12</b>
             <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
         </div>
         <div class="header-content">
             <span class="circle-background">
                 <img src="../../img/doctor.png" alt="Header Image">
             </span>
-            <b class="title">Avis N°12</b>
+            <b class="title-header2">Avis N°12</b>
             <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
         </div>
         <div class="header-content">
             <span class="circle-background">
                 <img src="../../img/doctor.png" alt="Header Image">
             </span>
-            <b class="title">Avis N°12</b>
+            <b class="title-header2">Avis N°12</b>
             <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
         </div>
     </header>
@@ -254,371 +255,173 @@
                         <span class="item-value">24/03/2024</span>
                     </div>
                 </div>
-            </div>
-
-            
+            </div>  
         </section>
         
         
         
-        <!-- Data Table -->
-        <section class="data-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dossier</th>
-                        <th>Date</th>
-                        <th>Assuré</th>
-                        <th>Bénéficiare</th>
-                        <th>Montant total</th>
-
-                        <th>AMO</th>
-                        <th>Statut</th>
-                        <th>A rembourser</th>
-                        <th>Remboursé</th>
-                        <th>Reste</th>
-                        
-                        <th>AMC</th>
-                        <th>Statut</th>
-                        <th>A rembourser</th>
-                        <th>Remboursé</th>
-                        <th>Reste</th>
-
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>40.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>9.00</td>
-                        <td>3.00</td>
-                        <td>5.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-
-                        <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#ReclamationsModal">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Total Card -->
-        <section class="navigation-card total-card">
-            <div class="card-navigation">
-                <span class="empty"></span>
-                <span class="empty"></span>
-                <span class="empty"></span>
-                <span class="spacer"></span>
-                <span class="title">Total par page:</span>
-                <span class="total-count total-montant" id="totalCount"></span>
-
-                <span class="empty"></span>
-                <span class="empty"></span>
-                <span class="spacer"></span>
-                <span class="total-a-rembourser"></span>
-                <span class="total-rembourse"></span>
-                <span class="total-reste"></span>
-
-                <span class="empty"></span>
-                <span class="spacer"></span>
-                <span class="total-a-rembourser-1"></span>
-                <span class="total-rembourse-1"></span>
-                <span class="total-reste-1"></span>
-                <span class="empty"></span>
+        <section class="body-item">
+            <div class="message-left-top" onclick="toggleDropdown('message-center-1', 'arrow-icon-1')">
+                <span class="box-img">
+                    <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                </span>
+                <div class="title-info-message">
+                    <p class="title-name">Pharmacie</p>
+                </div>
+                <img src="../../img/icons/arrow-up-black.png" alt="">
+            </div>
+            <div id="message-center-1" class="message-center" style="display: none;">
+                <div class="message-text">
+                    <div class="body-content">
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Professionnel :</span>
+                                <span class="item-value">Dr Alami Karim</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Montant :</span>
+                                <span class="item-value">230.00 DH</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Tansmis le :</span>
+                                <span class="item-value">12/03/2024</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Statut :</span>
+                                <span class="item-value" id="status-demande"><span></span>Demande</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Code TOTP de vérification :</span>
+                                <span class="item-value">3989</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data Table -->
+                    <section class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Article vendu</th>
+                                    <th>Présentation</th>
+                                    <th>Prix</th>
+                                    <th>Quantité</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>DOLIPRANE 1G / B10</td>
+                                    <td>10</td>
+                                    <td>14</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
             </div>
         </section>
 
-
-        <!-- Navigation Card -->
-        <section class="navigation-card">
-            <div class="card-navigation">
-                <button id="prevBtn" class="btn-nav">
-                    <img src="../../img/icons/arrow-left.png" alt="arrow-left">Previous
-                </button>
-                <span class="pages">
-                 </span>
-                <button id="nextBtn" class="btn-nav">
-                    Next<img src="../../img/icons/arrow-right.png" alt="arrow-right">
-                </button>
+        <section class="body-item">
+            <div class="message-left-top" onclick="toggleDropdown('message-center-2', 'arrow-icon-2')">
+                <span class="box-img">
+                    <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                </span>
+                <div class="title-info-message">
+                    <p class="title-name">Médecin</p>
+                </div>
+                <img src="../../img/icons/arrow-up-black.png" alt="">
+            </div>
+            <div id="message-center-2" class="message-center" style="display: none;">
+                <div class="message-text">
+                    <div class="body-content">
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Professionnel :</span>
+                                <span class="item-value">Dr Alami Karim</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Montant :</span>
+                                <span class="item-value">230.00 DH</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Tansmis le :</span>
+                                <span class="item-value">12/03/2024</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Statut :</span>
+                                <span class="item-value" id="status-demande"><span></span>Demande</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data Table -->
+                    <section class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>TNR</th>
+                                    <th>TNR</th>
+                                    <th>Prix</th>
+                                    <th>BR</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>Consultation</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- Data Table -->
+                    <section class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Médicament</th>
+                                    <th>Indication</th>
+                                    <th>Qté totale</th>
+                                    <th>Qté délivrée</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>DOLIPRANE Comprimé 1 g</td>
+                                    <td>Arthrose</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
             </div>
         </section>
+
 
     </main>
     
