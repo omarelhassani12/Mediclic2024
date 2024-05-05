@@ -1,0 +1,354 @@
+/* for fse details styling */
+
+
+ .main-header {
+    display: flex;
+    flex-direction: column; 
+    background-color: #FAF9F9;
+    border: 0.5px solid #B5B5B5;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+    width: 100%;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+}
+
+.image-box {
+    background-color: rgba(61, 140, 239, 0.25);
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.image-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    font-size: 30px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.subtitle {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #667085;
+}
+
+.subtitle img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* bottom header */
+/* using grid */
+
+.bottom-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+/* .bottom-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: 200;
+    color: #667085;
+}
+
+.item-value {
+    font-size: 20px;
+    color: #333333;
+} */
+
+
+.bottom-item:nth-child(1),
+.bottom-item:nth-child(4),
+.bottom-item:nth-child(7) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bottom-item:nth-child(2),
+.bottom-item:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bottom-item:nth-child(3),
+.bottom-item:nth-child(6) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.bottom-item:nth-child(5) {
+    position: relative;
+    left: -31px;
+}
+.bottom-item:nth-child(6) {
+    position: relative;
+    left: -20px;
+}
+
+
+.bottom-item img{
+    width: 30px;
+    height: 30px;
+}
+
+.item-info {
+    margin-left: 10px; 
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: 200;
+    color: #667085;
+}
+
+.item-value {
+    font-size: 20px;
+    color: #333333;
+}
+
+#status-a-rembourser{
+    margin-left: 30px;
+}
+
+
+/* right buttons */
+
+.btn-icon-without-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+    width: auto;
+}
+
+.btn-note-without-bg {
+    background-color: transparent;
+	color: #255A9B;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	cursor: pointer;
+    height: 50px;
+    margin: 8px;
+}
+
+.btn-note-without-bg:hover {
+	color: #255A9B;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-note-without-bg span {
+	margin-left: 10px;
+}
+
+/* for the dropdown  */
+
+.body-item {
+    background-color: #FFF; 
+    border: 1px solid #B5B5B5; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.body-item #message-center-1{
+    padding: 20px 30px;
+    margin: 0;
+}
+.body-item #message-center-2{
+    padding: 20px 30px;
+    margin: 0;
+}
+
+.message-left-top {
+    border-bottom: 1px solid #B5B5B5; 
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #333333;
+    margin: 0;
+}
+
+.box-img {
+    margin-right: 10px;
+}
+
+.title-info-message {
+    flex: 1;
+}
+
+.title-info-message .title-name{
+    margin: 0 0 0 10px;
+}
+
+
+.message-text {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.message-text table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#tableBody table {
+    border-collapse: collapse;
+}
+
+#tableBody thead tr {
+    border: 1px solid transparent;
+}
+
+#tableBody td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+#tableBody td:first-child {
+    border-left: 1px solid #ccc; 
+}
+
+#tableBody td:last-child {
+    border-right: 1px solid #ccc; 
+}
+
+/* item body content */
+.body-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.body-content .bottom-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+.body-content .bottom-item:nth-child(1),
+.body-content .bottom-item:nth-child(5) {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.body-content .bottom-item:nth-child(2),
+.body-content .bottom-item:nth-child(3) {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.body-content .bottom-item:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.body-content .bottom-item:nth-child(5) {
+    position: relative;
+    left: 0;
+}
+
+.body-content .bottom-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.body-content .bottom-item .item-info {
+    margin-top: 10px;
+}
+
+.body-content .bottom-item .item-info .item-name {
+    font-size: 18px;
+    color: #667085;
+}
+
+.body-content .bottom-item .item-info .item-value {
+    font-size: 18px;
+    color: #333333;
+}
+
+#status-demande{
+    margin-left: 20px;
+}
+
