@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Droits</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/patient-modal.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <!-- <link rel="stylesheet" href="../../css/buttons-style.css">
+    <link rel="stylesheet" href="../../css/documents.css">
+    <link rel="stylesheet" href="../../css/message.css">
+    <link rel="stylesheet" href="../../css/calendars.css"> 
+    <link rel="stylesheet" href="../../css/droits.css">-->
+    <link rel="stylesheet" href="../../css/profil.css">
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo">
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <i class="far fa-file-alt" style="margin-right: 15px; "></i>
+                <a href="../../pages/Messages/index.html">
+                    <i class="far fa-comment-alt" style="margin-right: 15px; "></i>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <i class="far fa-bell" ></i>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <i class="fas fa-plus"></i> 
+                    </span>
+                </a>    
+            </span>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" alt="Profile Image">
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3 class="sidebar-title">Tableau de bord</h3>
+        <ul class="sidebar-menu">
+            <!-- First Dropdown -->
+            <div class="dropdown" id="dropdownBtn1">
+                <a onclick="toggleDropdown('dropdownContent1', 'dropdownIcon1')" class="dropdown-btn">
+                    <span class="dropdown-title">Administration</span>
+                    <i id="dropdownIcon1" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent1">
+                    <a href="../../index.html" class="other-buttons">
+                        <img src="../../img/icons/Patients.png" alt="Patients Icon">
+                        <span class="dropdown-title">Patients</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Agenda.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Agenda</span>
+                    </a>
+                    <a href="../../pages/Documents/index.html" class="other-buttons">
+                        <img src="../../img/icons/Documents.png" alt="Documents Icon">
+                        <span class="dropdown-title">Documents</span>
+                    </a>
+                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                        <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
+                        <span class="dropdown-title">Calendriers</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Suivis.png" alt="Suivis Icon">
+                        <span class="dropdown-title">Suivis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Prescriptions.png" alt="Prescriptions Icon">
+                        <span class="dropdown-title">Prescriptions</span>
+                    </a>
+                    <a href="../../pages/Absences/index.html" class="other-buttons">
+                        <img src="../../img/icons/Absences.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Absences</span>
+                    </a>
+                    <a href="../../pages/Reclamations/index.html" class="other-buttons">
+                        <img src="../../img/icons/Reclamations.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Réclamations</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/DMP.png" alt="DMP Icon">
+                        <span class="dropdown-title">DMP</span>
+                    </a>
+                    <a href="../../pages/FSE/index.html" class="other-buttons">
+                        <img src="../../img/icons/FSE.png" alt="FSE Icon">
+                        <span class="dropdown-title">FSE</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Paiements.png" alt="Paiements Icon">
+                        <span class="dropdown-title">Paiements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Statistiques.png" alt="Statistiques Icon">
+                        <span class="dropdown-title">Statistiques</span>
+                    </a>
+                
+                </div>
+            </div>
+
+            <!-- Second Dropdown -->
+            <div class="dropdown" id="dropdownBtn2">
+                <a onclick="toggleDropdown('dropdownContent2', 'dropdownIcon2')" class="dropdown-btn">
+                    <span class="dropdown-title">Communauté</span>
+                    <i id="dropdownIcon2" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent2">
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Forum.png" alt="Forum Icon">
+                        <span class="dropdown-title">Forum</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Annonces.png" alt="Annonces Icon">
+                        <span class="dropdown-title">Annonces</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Evénements.png" alt="Evénements Icon">
+                        <span class="dropdown-title">Evénements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Blog.png" alt="Blog Icon">
+                        <span class="dropdown-title">Blog</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Avis.png" alt="Avis Icon">
+                        <span class="dropdown-title">Avis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Market.png" alt="Market Icon">
+                        <span class="dropdown-title">Market</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Emploi.png" alt="Emploi Icon">
+                        <span class="dropdown-title">Emploi</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/E-learning.png" alt="E-learning Icon">
+                        <span class="dropdown-title">E-learning</span>
+                    </a>              
+                </div>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->   
+    <main class="main-content">
+        <section class="main-body">
+            <div class="row">
+                <!-- column 20% width -->
+                <div class="column-20">
+                    <div class="profile-circle">
+                        <img src="../../img/icons/user-icon.png" alt="Profile Image" class="profile-img">
+                        <div class="button-circle">
+                            <img src="../../img/icons/edit-icon.png" alt="edit-icon" class="edit-icon">
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <p class="profile-name">Dr. Alami Karim</p>
+                        <p class="profile-specialty">Généraliste</p>
+                        <nav class="nav-profile">
+                            <ul>
+                                <li><a href="#">Formations</a></li>
+                                <li><a href="#">Parcours</a></li>
+                                <li><a href="#">Galerie</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Langues</a></li>
+                                <li><a href="#">Tarifs</a></li>
+                                <li><a href="#">Transports</a></li>
+                                <li><a href="#">Paiements</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>                
+    
+                <!-- column 50% width -->
+
+                <div class="column-50">
+                    <div class="flex-column">
+                        <div class="header">
+                            <h6 class="title">Formations</h6>
+                            <div class="btn-container"> 
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <section class="data-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Formation</th>
+                                            <th>Etablissement</th>
+                                            <th>Ville</th>
+                                            <th>Pays</th>
+                                            <th>Du</th>
+                                            <th>Au</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                        <tr>
+                                            <td>Cardiologique</td>
+                                            <td>Faculté de médecine Lile</td>
+                                            <td>Rabat</td>
+                                            <td>Maroc</td>
+                                            <td>10-10-2011</td>
+                                            <td>10-10-2015</td>
+                                            <td><img src="../../img/icons/delete1.png" alt="delete-icon"/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="flex-column">
+                        <div class="header">
+                            <h6 class="title">Parcours</h6>
+                            <div class="btn-container"> 
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <section class="data-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Parcours</th>
+                                            <th>Structure</th>
+                                            <th>Ville</th>
+                                            <th>Pays</th>
+                                            <th>Du</th>
+                                            <th>Au</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                        <tr>
+                                            <td>Service Cardiologique</td>
+                                            <td>Hopital Avicienne</td>
+                                            <td>Rabat</td>
+                                            <td>Maroc</td>
+                                            <td>10-10-2011</td>
+                                            <td>10-10-2015</td>
+                                            <td><img src="../../img/icons/delete1.png" alt="delete-icon"/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="flex-column">
+                        <div class="header">
+                            <h6 class="title">Tarifs</h6>
+                            <div class="btn-container"> 
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <section class="data-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Type de RDV</th>
+                                            <th>Tarif</th>
+                                            <th>Lieu</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                        <tr>
+                                            <td>Délivrance d'ordonnance</td>
+                                            <td>Au cabinet</td>
+                                            <td>200 DH</td>
+                                            <td>Centre Infirmier Maarif</td>
+                                            <td><img src="../../img/icons/delete1.png" alt="delete-icon"/></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="flex-column">
+                        <div class="header">
+                            <h6 class="title">Moyens de paiement</h6>
+                            <div class="btn-container">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="content content-items">
+                            <div class="payment-method">
+                                <div class="payment-text">
+                                    Carte bancaire
+                                </div>
+                                <div class="payment-drop-icon">
+                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment-text">
+                                    Espèce
+                                </div>
+                                <div class="payment-drop-icon">
+                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment-text">
+                                    Carte bancaire
+                                </div>
+                                <div class="payment-drop-icon">
+                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="flex-column">
+                        <div class="header">
+                            <h6 class="title">Langues</h6>
+                            <div class="btn-container">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="content content-items">
+                            <div class="payment-method">
+                                <div class="payment-text">
+                                    Francais
+                                </div>
+                                <div class="payment-drop-icon">
+                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment-text">
+                                    Anglais
+                                </div>
+                                <div class="payment-drop-icon">
+                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                </div>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment-text">
+                                    Arabe
+                                </div>
+                                <div class="payment-drop-icon">
+                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="flex-column">
+                        <div class="header-contact">
+                            <div class="title-container">
+                                <h6 class="title title-header-contact">Contact</h6>
+                            </div>
+                            <div class=" btn-container-contact">
+                                <div class="custom-contact-button">
+                                    Cabinet infirmier Maarif
+                                    <div class="white-box">
+                                        Cabinet médical
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content content-contact-items">
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/@.png" alt="@">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">belefdil.abdelhakim@gmail.com</h3>
+                                        <p class="sub-title-contact">Email</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/@.png" alt="@">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">http://dem.mediclic.ma</h3>
+                                        <p class="sub-title-contact">Site web</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/@.png" alt="@">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">06 05 21 35 76</h3>
+                                        <p class="sub-title-contact">N° de téléphone</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/@.png" alt="@">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">Voiture, Bus, Tramway</h3>
+                                        <p class="sub-title-contact">Moyens de transport</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/@.png" alt="@">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">123, boulevard d'anfa, Casablanca</h3>
+                                        <p class="sub-title-contact">Adresse</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/@.png" alt="@">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">Mercredi, 08:00 - 12:00</h3>
+                                        <p class="sub-title-contact">Horaire</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.836517728408!2d-7.643009484192865!3d33.588764244547776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b5abdbeb48f%3A0x15fa35cb2f7c62b0!2s123%2C%20boulevard%20d'anfa%2C%20Casablanca!5e0!3m2!1sen!2sma!4v1630296476720!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="flex-column">
+                        <div class="header">
+                            <h6 class="title">Galerie</h6>
+                            <div class="btn-container">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="content galerie-items">
+                            <div class="gallery-item">
+                                <img src="../../img/galerie/1.png" alt="Image 1">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../../img/galerie/2.png" alt="Image 2">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../../img/galerie/3.png" alt="Image 3">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../../img/galerie/4.png" alt="Image 4">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../../img/galerie/5.png" alt="Image 5">
+                            </div>
+                            <div class="gallery-item">
+                                <img src="../../img/galerie/6.png" alt="Image 6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-column">
+                        <div class="header">
+                            <h6 class="title">Transport</h6>
+                            <div class="btn-container">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="content content-contact-items content-transport-items">
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/Voiture-icon.png" alt="Voiture-icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">5 Place du Champ de Foire</h3>
+                                        <p class="sub-title-contact">Voiture</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/Tramway-icon.png" alt="Tramway-icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">Margaux Blanchard</h3>
+                                        <p class="sub-title-contact">Tramway</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-contact-item">
+                                <div class="item-contact-header">
+                                    <div class="item-image">
+                                        <img src="../../img/icons/Bus-icon.png" alt="Bus-icon">
+                                    </div>
+                                    <div class="item-text">
+                                        <h3 class="title-contact">Suite a-5107 Somerset Dr</h3>
+                                        <p class="sub-title-contact">Bus</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+    
+                <!-- column with 30% width -->
+                <div class="column-30">
+                    <div class="content">
+                        <h6 class="small-title">Présentation</h6>
+                        <p id="full-text" class="excerpt">Tesrteuuuuuur !! Bonjour à tous ! Je suis le Dr Karim ALAMI, un médecin généraliste et cardiologue passionné par mon métier. Avec un parcours de succès et une expertise solide, je suis là pour vous offrir les meilleurs soins médicaux.
+                            Après avoir obtenu mon diplôme de médecine générale à la Faculté de Médecine Henri Warembourg, j'ai décidé de me spécialiser en cardiologie. J'ai do</p>
+                        <div class="shadow-bottom toggle-shadow"></div>
+                        <button type="button" class="btn-note" onclick="toggleFullText()">
+                            <span>Afficher Plus</span><i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>                     
+                    <div class="langues">
+                        <h6 class="section-title">Langues</h6>
+                        <span class="langues-item">Anglais, </span>
+                        <span class="langues-item">Francais, </span>
+                        <span class="langues-item">Arabe</span>
+                    </div>
+                    <div class="avis">
+                        <div class="avis-item">
+                            <h6 class="section-title">Avis</h6>
+                            <div class="toggle-container">
+                                <input type="checkbox" id="Consulter-un-rendez-vous" name="surbooking" value="Consulter un rendez-vous" class="toggle-checkbox">
+                                <label for="Consulter-un-rendez-vous" class="toggle-label"></label>
+                            </div>
+                        </div>
+                        <p>38 avis pour ce professionnel</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    
+
+    <!-- //Modals -->
+    <!-- //NV User Modal -->
+    <div class="modal fade" id="NVUserModal" tabindex="-1" aria-labelledby="NVUserModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NVUserModalLabel">Nouveau utilisateur</h5>
+                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="col-sm-12">
+                            <label for="nom">Nom et prénom <span>*</span></label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="text" id="nom" name="nom" placeholder="Nom">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Email">Email<span>*</span></label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="email" id="Email" name="Email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="lieu">Lieu <span>*</span></label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select>
+                                    <option value="Cabinet infirmier Maarif 1">Cabinet infirmier Maarif  1</option>
+                                    <option value="Lieu2">Lieu 2</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Commentaire">Commentaire </label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <textarea id="Commentaire" name="Commentaire" placeholder="Ajouter un commentaire" rows="2" ></textarea>
+                            </div>
+                        </div>
+                    </form>              
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary2">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/messages.js"></script>
+    <script src="../../js/droits.js"></script>
+    <script>
+        // $(document).ready(function() {
+        //     $('#NVUserModal').modal('show');
+        // });
+    </script>
+
+    <script>
+       function toggleFullText() {
+            var paragraph = document.getElementById("full-text");
+            var shadow = document.querySelector(".shadow-bottom");
+
+            if (paragraph.style.maxHeight) {
+                paragraph.style.maxHeight = null;
+                shadow.classList.remove("toggle-shadow");
+            } else {
+                paragraph.style.maxHeight = paragraph.scrollHeight + "px";
+                shadow.classList.add("toggle-shadow");
+            }
+        }
+
+    </script>
+
+</body>
+</html>

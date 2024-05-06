@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/patient-modal.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/buttons-style.css">
+    <link rel="stylesheet" href="../../css/documents.css">
+    <link rel="stylesheet" href="../../css/message.css">
+    <link rel="stylesheet" href="../../css/calendars.css">
+    <link rel="stylesheet" href="../../css/fse.css">
+    <link rel="stylesheet" href="../../css/fse-details.css">
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo">
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <i class="far fa-file-alt" style="margin-right: 15px; "></i>
+                <a href="../../pages/Messages/index.html">
+                    <i class="far fa-comment-alt" style="margin-right: 15px; "></i>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <i class="far fa-bell" ></i>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <i class="fas fa-plus"></i> 
+                    </span>
+                </a>    
+            </span>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" alt="Profile Image">
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h3 class="sidebar-title">Tableau de bord</h3>
+        <ul class="sidebar-menu">
+            <!-- First Dropdown -->
+            <div class="dropdown" id="dropdownBtn1">
+                <a onclick="toggleDropdown('dropdownContent1', 'dropdownIcon1')" class="dropdown-btn">
+                    <span class="dropdown-title">Administration</span>
+                    <i id="dropdownIcon1" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent1">
+                    <a href="../../index.html" class="other-buttons">
+                        <img src="../../img/icons/Patients.png" alt="Patients Icon">
+                        <span class="dropdown-title">Patients</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Agenda.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Agenda</span>
+                    </a>
+                    <a href="../../pages/Documents/index.html" class="other-buttons">
+                        <img src="../../img/icons/Documents.png" alt="Documents Icon">
+                        <span class="dropdown-title">Documents</span>
+                    </a>
+                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                        <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
+                        <span class="dropdown-title">Calendriers</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Suivis.png" alt="Suivis Icon">
+                        <span class="dropdown-title">Suivis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Prescriptions.png" alt="Prescriptions Icon">
+                        <span class="dropdown-title">Prescriptions</span>
+                    </a>
+                    <a href="../../pages/Absences/index.html" class="other-buttons">
+                        <img src="../../img/icons/Absences.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Absences</span>
+                    </a>
+                    <a href="../../pages/Reclamations/index.html" class="other-buttons">
+                        <img src="../../img/icons/Reclamations.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Réclamations</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/DMP.png" alt="DMP Icon">
+                        <span class="dropdown-title">DMP</span>
+                    </a>
+                    <a href="../../pages/FSE/index.html" class="other-buttons">
+                        <img src="../../img/icons/FSE.png" alt="FSE Icon">
+                        <span class="dropdown-title">FSE</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Paiements.png" alt="Paiements Icon">
+                        <span class="dropdown-title">Paiements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Statistiques.png" alt="Statistiques Icon">
+                        <span class="dropdown-title">Statistiques</span>
+                    </a>
+                
+                </div>
+            </div>
+
+            <!-- Second Dropdown -->
+            <div class="dropdown" id="dropdownBtn2">
+                <a onclick="toggleDropdown('dropdownContent2', 'dropdownIcon2')" class="dropdown-btn">
+                    <span class="dropdown-title">Communauté</span>
+                    <i id="dropdownIcon2" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent2">
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Forum.png" alt="Forum Icon">
+                        <span class="dropdown-title">Forum</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Annonces.png" alt="Annonces Icon">
+                        <span class="dropdown-title">Annonces</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Evénements.png" alt="Evénements Icon">
+                        <span class="dropdown-title">Evénements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Blog.png" alt="Blog Icon">
+                        <span class="dropdown-title">Blog</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Avis.png" alt="Avis Icon">
+                        <span class="dropdown-title">Avis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Market.png" alt="Market Icon">
+                        <span class="dropdown-title">Market</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Emploi.png" alt="Emploi Icon">
+                        <span class="dropdown-title">Emploi</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/E-learning.png" alt="E-learning Icon">
+                        <span class="dropdown-title">E-learning</span>
+                    </a>              
+                </div>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="main-header">
+            <div class="top-content">
+                <div class="left-content">
+                    <div class="image-box">
+                        <img src="../../img/icons/folder-icon.png" alt="folder-icon">
+                    </div>
+                    <div class="left-title">
+                        <div class="title">FSE080447</div>
+                        <div class="subtitle">
+                            <img src="../../img/icons/calendries-black.png" alt="Subtitle Image">
+                            <span>Transmis le 12/03/2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="buttons-right">
+                        <div class="col-md-12 btn-icon-without-bg">
+                            <button type="button" class="btn-note-without-bg" >
+                                <span>Historique des messages</span>
+                            </button>
+                        </div>
+                        <div class="col-md-12 btn-icon">
+                            <button type="button" class="btn-note" >
+                                <span>Historique des remboursements</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Assuré :</span>
+                        <span class="item-value">Radi Amine</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Bénéficiare :</span>
+                        <span class="item-value">Radi Amine</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Montant :</span>
+                        <span class="item-value">214.00 Dhs</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Statut :</span>
+                        <span class="item-value" id="status-a-rembourser"><span></span>Remboursement partiel</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">N° Assuré :</span>
+                        <span class="item-value">080447</span>
+                    </div>
+                </div>
+                <div class="bottom-item">
+                    <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                    <div class="item-info">
+                        <span class="item-name">Date :</span>
+                        <span class="item-value">24/03/2024</span>
+                    </div>
+                </div>
+            </div>  
+        </section>
+
+        <section class="body-item">
+            <div class="message-left-top" onclick="toggleDropdown('message-center-1', 'arrow-icon-1')">
+                <span class="box-img">
+                    <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                </span>
+                <div class="title-info-message">
+                    <p class="title-name">Pharmacie</p>
+                </div>
+                <i id="arrow-icon-1" class="fas fa-chevron-up rotate-icon"></i>
+            </div>
+            <div id="message-center-1" class="message-center" style="display: none;">
+                <div class="message-text">
+                    <div class="body-content">
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Professionnel :</span>
+                                <span class="item-value">Dr Alami Karim</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Montant :</span>
+                                <span class="item-value">230.00 DH</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Tansmis le :</span>
+                                <span class="item-value">12/03/2024</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Statut :</span>
+                                <span class="item-value" id="status-demande"><span></span>Demande</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Code TOTP de vérification :</span>
+                                <span class="item-value">3989</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data Table -->
+                    <section class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Article vendu</th>
+                                    <th>Présentation</th>
+                                    <th>Prix</th>
+                                    <th>Quantité</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>DOLIPRANE 1G / B10</td>
+                                    <td>10</td>
+                                    <td>14</td>
+                                    <td>2</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="body-item">
+            <div class="message-left-top" onclick="toggleDropdown('message-center-2', 'arrow-icon-2')">
+                <span class="box-img">
+                    <img src="../../img/icons/specialite.png" alt="" class="specialite-icon">
+                </span>
+                <div class="title-info-message">
+                    <p class="title-name">Médecin</p>
+                </div>
+                <i id="arrow-icon-2" class="fas fa-chevron-up rotate-icon"></i>
+            </div>
+            <div id="message-center-2" class="message-center" style="display: none;">
+                <div class="message-text">
+                    <div class="body-content">
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Professionnel :</span>
+                                <span class="item-value">Dr Alami Karim</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Montant :</span>
+                                <span class="item-value">230.00 DH</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Tansmis le :</span>
+                                <span class="item-value">12/03/2024</span>
+                            </div>
+                        </div>
+                        <div class="bottom-item">
+                            <img src="../../img/icons/user-icon-grey.png" alt="user-icon-grey">
+                            <div class="item-info">
+                                <span class="item-name">Statut :</span>
+                                <span class="item-value" id="status-demande"><span></span>Demande</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Data Table -->
+                    <section class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>TNR</th>
+                                    <th>TNR</th>
+                                    <th>Prix</th>
+                                    <th>BR</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>Consultation</td>
+                                    <td>150</td>
+                                    <td>200</td>
+                                    <td>70</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <!-- Data Table -->
+                    <section class="data-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Médicament</th>
+                                    <th>Indication</th>
+                                    <th>Qté totale</th>
+                                    <th>Qté délivrée</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td>DOLIPRANE Comprimé 1 g</td>
+                                    <td>Arthrose</td>
+                                    <td>5</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/messages.js"></script>
+    <script>
+        // $(document).ready(function() {
+        //     $('#NVReclamationsModal').modal('show');
+        // });
+    </script>
+
+</body>
+</html>
