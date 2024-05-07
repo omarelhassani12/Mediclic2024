@@ -597,10 +597,49 @@
                         </div>
                         <p>38 avis pour ce professionnel</p>
                     </div>
+
+                    <div class="evaluations-items">
+                        <div class="row">
+                            <div class="col">
+                                <label for="input-1" class="control-label">Ponctualité</label>
+                                <input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="6" data-step="0.1" value="2">
+                            </div>
+                            <div class="col">
+                                <label for="input-2" class="control-label">Compétences</label>
+                                <input id="input-2" name="input-2" class="rating rating-loading" data-min="0" data-max="6" data-step="0.1" value="4">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="input-3" class="control-label">Courtoisie</label>
+                                <input id="input-3" name="input-3" class="rating rating-loading" data-min="0" data-max="6" data-step="0.1" value="5">
+                            </div>
+                        </div>
+                    </div>
+                
                 </div>
                 
             </div>
         </section>
+        <section class="footer-body">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="../../img/icons/delete-info-icon.png" alt="Image" class="footer-img">
+                    <div class="footer-text">
+                        <h5 class="footer-title">Supprimer mon compte</h5>
+                        <p class="footer-subtitle">
+                            Cela supprimera immédiatement toutes vos données. Soyez prudent,
+                            <a href="#" class="footer-anchor">en savoir plus</a>
+                            .
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <button class="footer-button">Supprimer mon compte</button>
+                </div>
+            </div>
+        </section>
+        
     </main>
     
 
@@ -665,27 +704,14 @@
     <script src="../../js/index.js"></script>
     <script src="../../js/messages.js"></script>
     <script src="../../js/droits.js"></script>
+    <script src="../../js/rating.js"></script>
+    <script src="../../js/profil.js"></script>
     <script>
         // $(document).ready(function() {
         //     $('#NVUserModal').modal('show');
         // });
     </script>
 
-    <script>
-       function toggleFullText() {
-            var paragraph = document.getElementById("full-text");
-            var shadow = document.querySelector(".shadow-bottom");
-
-            if (paragraph.style.maxHeight) {
-                paragraph.style.maxHeight = null;
-                shadow.classList.remove("toggle-shadow");
-            } else {
-                paragraph.style.maxHeight = paragraph.scrollHeight + "px";
-                shadow.classList.add("toggle-shadow");
-            }
-        }
-
-    </script>
 
 </body>
 </html>
