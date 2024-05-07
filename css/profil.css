@@ -2,6 +2,10 @@
     text-decoration: none;
 }
 
+.header-content .content{
+    text-decoration: underline;
+}
+
 .row {
     display: flex;
     justify-content: flex-start;
@@ -160,6 +164,12 @@
     padding: 50px;
 }
 
+.payment-methods {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .payment-method {
     display: flex;
     align-items: center;
@@ -176,6 +186,36 @@
 .payment-drop-icon img {
     max-width: 100px;
     height: auto;
+}
+
+/* buttons select */
+#newPaymentInput, 
+#newlanguesInput {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.new-comment {
+    position: relative;
+}
+
+.new-comment select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.icon-lieu,
+.icon-down-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hidden{
+    display: none;
 }
 
 
@@ -284,6 +324,7 @@ iframe {
 
 
 /* galerie content */
+
 .galerie-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -294,6 +335,10 @@ iframe {
 .gallery-item {
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item img {
@@ -301,6 +346,24 @@ iframe {
     height: auto;
     display: block;
 }
+
+.btn-supprimer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background-color: transparent;
+    border: none;
+}
+
+.delete-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+
 
 /* transport content */
 .content-transport-items{
@@ -343,11 +406,24 @@ iframe {
     flex-direction: column;
     position: relative;
 }
+.content-small-header{
+    display: flex;
+    align-items: center;
+}
 
 .small-title {
     font-size: 18px;
     margin-bottom: 10px;
     color: #667085;
+}
+
+.btn-container-title{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.btn-container-title .btn-note{
+    color: #2196F3 !important;
 }
 
 .excerpt {

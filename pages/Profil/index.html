@@ -10,12 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/patient-modal.css">
     <link rel="stylesheet" href="../../css/index.css">
-    <!-- <link rel="stylesheet" href="../../css/buttons-style.css">
     <link rel="stylesheet" href="../../css/documents.css">
     <link rel="stylesheet" href="../../css/message.css">
-    <link rel="stylesheet" href="../../css/calendars.css"> 
-    <link rel="stylesheet" href="../../css/droits.css">-->
     <link rel="stylesheet" href="../../css/profil.css">
+    <link rel="stylesheet" href="../../css/buttons-style.css">
+    <style>
+        /* .hidden {
+            display: none;
+        } */
+    </style>
 </head>
 <body>
 
@@ -211,15 +214,14 @@
                 </div>                
     
                 <!-- column 50% width -->
-
                 <div class="column-50">
                     <div class="flex-column">
                         <div class="header">
                             <h6 class="title">Formations</h6>
                             <div class="btn-container"> 
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVFormationModal">
                                     <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
+                                    <span>Ajouter</span>
                                 </button>
                             </div>
                         </div>
@@ -245,7 +247,11 @@
                                             <td>Maroc</td>
                                             <td>10-10-2011</td>
                                             <td>10-10-2015</td>
-                                            <td><img src="../../img/icons/delete1.png" alt="delete-icon"/></td>
+                                            <td>
+                                                <img src="../../img/icons/edit-blue-icon-1.png" alt="delete-icon"/>
+                                                <span class="ver-line"></span>
+                                                <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -256,9 +262,9 @@
                         <div class="header">
                             <h6 class="title">Parcours</h6>
                             <div class="btn-container"> 
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVParcoursModal">
                                     <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
+                                    <span>Ajouter</span>
                                 </button>
                             </div>
                         </div>
@@ -284,7 +290,11 @@
                                             <td>Maroc</td>
                                             <td>10-10-2011</td>
                                             <td>10-10-2015</td>
-                                            <td><img src="../../img/icons/delete1.png" alt="delete-icon"/></td>
+                                            <td>
+                                                <img src="../../img/icons/edit-blue-icon-1.png" alt="edit-icon"/>
+                                                <span class="ver-line"></span>
+                                                <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -295,9 +305,9 @@
                         <div class="header">
                             <h6 class="title">Tarifs</h6>
                             <div class="btn-container"> 
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVTarifsModal">
                                     <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
+                                    <span>Ajouter</span>
                                 </button>
                             </div>
                         </div>
@@ -319,47 +329,68 @@
                                             <td>Au cabinet</td>
                                             <td>200 DH</td>
                                             <td>Centre Infirmier Maarif</td>
-                                            <td><img src="../../img/icons/delete1.png" alt="delete-icon"/></td>
+                                            <td>
+                                                <img src="../../img/icons/edit-blue-icon-1.png" alt="edit-icon"/>
+                                                <span class="ver-line"></span>
+                                                <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </section>
                         </div>
                     </div>
+
                     <div class="flex-column">
                         <div class="header">
                             <h6 class="title">Moyens de paiement</h6>
                             <div class="btn-container">
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                <button type="button" class="btn-note" id="modifierPaymentButton">
                                     <i class="fas fa-plus"></i>
                                     <span>Modifier</span>
-                                </button>
+                                </button>                                
                             </div>
                         </div>
                         
                         <div class="content content-items">
-                            <div class="payment-method">
-                                <div class="payment-text">
-                                    Carte bancaire
+                           <div class="payment-methods">
+                                <div class="payment-method">
+                                    <div class="payment-text">
+                                        Carte bancaire
+                                    </div>
+                                    <div class="payment-drop-icon">
+                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                    </div>
                                 </div>
-                                <div class="payment-drop-icon">
-                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                <div class="payment-method">
+                                    <div class="payment-text">
+                                        Espèce
+                                    </div>
+                                    <div class="payment-drop-icon">
+                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="payment-method">
-                                <div class="payment-text">
-                                    Espèce
+                                <div class="payment-method">
+                                    <div class="payment-text">
+                                        Carte bancaire
+                                    </div>
+                                    <div class="payment-drop-icon">
+                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                    </div>
                                 </div>
-                                <div class="payment-drop-icon">
-                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                </div>
-                            </div>
-                            <div class="payment-method">
-                                <div class="payment-text">
-                                    Carte bancaire
-                                </div>
-                                <div class="payment-drop-icon">
-                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                           </div>
+
+                            <div id="newPaymentInput" class="hidden">
+                                <div class="col-sm-12">
+                                    <div class="new-comment">
+                                        <i class="icon-lieu"></i>
+                                        <select >
+                                            <option value="visa">Visa</option>
+                                            <option value="mastercard">Mastercard</option>
+                                            <option value="paypal">Paypal</option>
+                                        </select>
+                                        <i class="icon-down-arrow"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +400,7 @@
                         <div class="header">
                             <h6 class="title">Langues</h6>
                             <div class="btn-container">
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                <button type="button" class="btn-note" id="modifierlanguesButton">
                                     <i class="fas fa-plus"></i>
                                     <span>Modifier</span>
                                 </button>
@@ -377,33 +408,50 @@
                         </div>
                         
                         <div class="content content-items">
-                            <div class="payment-method">
-                                <div class="payment-text">
-                                    Francais
+                            <div class="payment-methods">
+                                <div class="payment-method">
+                                    <div class="payment-text">
+                                        Francais
+                                    </div>
+                                    <div class="payment-drop-icon">
+                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                    </div>
                                 </div>
-                                <div class="payment-drop-icon">
-                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                <div class="payment-method">
+                                    <div class="payment-text">
+                                        Anglais
+                                    </div>
+                                    <div class="payment-drop-icon">
+                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <div class="payment-text">
+                                        Arabe
+                                    </div>
+                                    <div class="payment-drop-icon">
+                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="payment-method">
-                                <div class="payment-text">
-                                    Anglais
-                                </div>
-                                <div class="payment-drop-icon">
-                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                </div>
-                            </div>
-                            <div class="payment-method">
-                                <div class="payment-text">
-                                    Arabe
-                                </div>
-                                <div class="payment-drop-icon">
-                                    <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
+
+                            <div id="newlanguesInput" class="hidden">
+                                <div class="col-sm-12">
+                                    <div class="new-comment">
+                                        <i class="icon-lieu"></i>
+                                        <select >
+                                            <option value="francais">Francais</option>
+                                            <option value="anglais">Anglais</option>
+                                            <option value="arabe">Arabe</option>
+                                        </select>
+                                        <i class="icon-down-arrow"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         
                     </div>
+
                     <div class="flex-column">
                         <div class="header-contact">
                             <div class="title-container">
@@ -488,45 +536,87 @@
                         </div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.836517728408!2d-7.643009484192865!3d33.588764244547776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b5abdbeb48f%3A0x15fa35cb2f7c62b0!2s123%2C%20boulevard%20d'anfa%2C%20Casablanca!5e0!3m2!1sen!2sma!4v1630296476720!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
+                    
                     <div class="flex-column">
                         <div class="header">
                             <h6 class="title">Galerie</h6>
                             <div class="btn-container">
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
+                                <button type="button" class="btn-note" id="ModifierGalerieButton">
                                     <i class="fas fa-plus"></i>
                                     <span>Modifier</span>
                                 </button>
                             </div>
                         </div>
                         
-                        <div class="content galerie-items">
-                            <div class="gallery-item">
-                                <img src="../../img/galerie/1.png" alt="Image 1">
+                        <div class="content">
+                            <div class="galerie-items">
+                                <div class="gallery-item">
+                                    <button class="btn-supprimer hidden" id="supprimerButton1">
+                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon1">
+                                    </button>
+                                    <img src="../../img/galerie/1.png" alt="Image 1">
+                                </div>
+                                <div class="gallery-item">
+                                    <button class="btn-supprimer hidden" id="supprimerButton2">
+                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon2">
+                                    </button>
+                                    <img src="../../img/galerie/2.png" alt="Image 2">
+                                </div>
+                                <div class="gallery-item">
+                                    <button class="btn-supprimer hidden" id="supprimerButton3">
+                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon3">
+                                    </button>
+                                    <img src="../../img/galerie/3.png" alt="Image 3">
+                                </div>
+                                <div class="gallery-item">
+                                    <button class="btn-supprimer hidden" id="supprimerButton4">
+                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon4">
+                                    </button>
+                                    <img src="../../img/galerie/4.png" alt="Image 4">
+                                </div>
+                                <div class="gallery-item">
+                                    <button class="btn-supprimer hidden" id="supprimerButton5">
+                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon5">
+                                    </button>
+                                    <img src="../../img/galerie/5.png" alt="Image 5">
+                                </div>
+                                <div class="gallery-item">
+                                    <button class="btn-supprimer hidden" id="supprimerButton6">
+                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon6">
+                                    </button>
+                                    <img src="../../img/galerie/6.png" alt="Image 6">
+                                </div>
                             </div>
-                            <div class="gallery-item">
-                                <img src="../../img/galerie/2.png" alt="Image 2">
+                            
+                            <div class="col-sm-12 hidden" id="uploadedFilesContainer">
+                                <label for="Documents">Documents</label>
+                                <div class="new-comment new-comment-file">
+                                    <div class="file-upload">
+                                        <label for="fileInput" class="label-file">
+                                            <span class="img-cercle">
+                                                <img src="../../img/icons/upload.png" alt="">
+                                            </span> Cliquer pour importer
+                                            <br>
+                                            <span class="upload-text">ou juste dropper and dragger</span>
+                                        </label>
+                                        <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                    </div>
+                                    <button class="btn-importer">Importer</button>
+                                </div>
+                                </div>
+                            <div id="uploadedFilesContainer" class="col-sm-12 hidden">
                             </div>
-                            <div class="gallery-item">
-                                <img src="../../img/galerie/3.png" alt="Image 3">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="../../img/galerie/4.png" alt="Image 4">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="../../img/galerie/5.png" alt="Image 5">
-                            </div>
-                            <div class="gallery-item">
-                                <img src="../../img/galerie/6.png" alt="Image 6">
-                            </div>
+
                         </div>
                     </div>
+
                     <div class="flex-column">
                         <div class="header">
                             <h6 class="title">Transport</h6>
                             <div class="btn-container">
                                 <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
                                     <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
+                                    <span>Ajouter</span>
                                 </button>
                             </div>
                         </div>
@@ -573,7 +663,15 @@
                 <!-- column with 30% width -->
                 <div class="column-30">
                     <div class="content">
-                        <h6 class="small-title">Présentation</h6>
+                        <div class="content-small-header">
+                            <h6 class="small-title">Présentation</h6>
+                            <div class="btn-container-title"> 
+                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVPresentationModal">
+                                    <i class="fas fa-plus"></i>
+                                    <span>Modifier</span>
+                                </button>
+                            </div>
+                        </div>
                         <p id="full-text" class="excerpt">Tesrteuuuuuur !! Bonjour à tous ! Je suis le Dr Karim ALAMI, un médecin généraliste et cardiologue passionné par mon métier. Avec un parcours de succès et une expertise solide, je suis là pour vous offrir les meilleurs soins médicaux.
                             Après avoir obtenu mon diplôme de médecine générale à la Faculté de Médecine Henri Warembourg, j'ai décidé de me spécialiser en cardiologie. J'ai do</p>
                         <div class="shadow-bottom toggle-shadow"></div>
@@ -619,6 +717,7 @@
                 
                 </div>
                 
+                
             </div>
         </section>
         <section class="footer-body">
@@ -644,46 +743,230 @@
     
 
     <!-- //Modals -->
-    <!-- //NV User Modal -->
-    <div class="modal fade" id="NVUserModal" tabindex="-1" aria-labelledby="NVUserModalLabel" aria-hidden="true">
+    <!-- //NV Formation Modal -->
+    <div class="modal fade" id="NVFormationModal" tabindex="-1" aria-labelledby="NVFormationModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="NVUserModalLabel">Nouveau utilisateur</h5>
+                    <h5 class="modal-title" id="NVFormationModalLabel">Ajouter une formation</h5>
                     <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form action="">
                         <div class="col-sm-12">
-                            <label for="nom">Nom et prénom <span>*</span></label>
+                            <label for="Titre">Formation</label>
                             <div class="new-comment">
                                 <i class="icon-lieu"></i>
-                                <input type="text" id="nom" name="nom" placeholder="Nom">
+                                <input type="text" id="Titre" name="Titre" placeholder="Titre">
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <label for="Email">Email<span>*</span></label>
+                            <label for="Structure">Structure</label>
                             <div class="new-comment">
                                 <i class="icon-lieu"></i>
-                                <input type="email" id="Email" name="Email" placeholder="Email">
+                                <input type="text" id="Structure" name="Structure" placeholder="Structure">
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <label for="lieu">Lieu <span>*</span></label>
+                            <label for="Pays">Pays</label>
                             <div class="new-comment">
                                 <i class="icon-lieu"></i>
-                                <select>
-                                    <option value="Cabinet infirmier Maarif 1">Cabinet infirmier Maarif  1</option>
-                                    <option value="Lieu2">Lieu 2</option>
+                                <select >
+                                    <option value="Choisissez une pays" disabled aria-readonly="true" selected>Choisissez une pays</option>
+                                    <option value="pay1">pay1</option>
                                 </select>
                                 <i class="icon-down-arrow"></i>
                             </div>
                         </div>
                         <div class="col-sm-12">
-                            <label for="Commentaire">Commentaire </label>
+                            <label for="Ville">Ville</label>
                             <div class="new-comment">
                                 <i class="icon-lieu"></i>
-                                <textarea id="Commentaire" name="Commentaire" placeholder="Ajouter un commentaire" rows="2" ></textarea>
+                                <select >
+                                    <option value="Choisissez une ville" disabled aria-readonly="true" selected>Choisissez une ville</option>
+                                    <option value="ville1">ville1</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Date-du">Date de début</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="date" id="Date-du" name="Date-du" placeholder="Date de début" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Date-au">Date de fin</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="date" id="Date-au" name="Date-au" placeholder="Date de fin" class="form-control">
+                            </div>
+                        </div>
+                    </form>              
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary2">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //NV Parcours Modal -->
+    <div class="modal fade" id="NVParcoursModal" tabindex="-1" aria-labelledby="NVParcoursModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NVParcoursModalLabel">Ajouter une Parcours</h5>
+                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="col-sm-12">
+                            <label for="Titre">Poste</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="text" id="Titre" name="Titre" placeholder="Titre">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Structure">Structure</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="text" id="Structure" name="Structure" placeholder="Structure">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Pays">Pays</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select >
+                                    <option value="Choisissez une pays" disabled aria-readonly="true" selected>Choisissez une pays</option>
+                                    <option value="pay1">pay1</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Ville">Ville</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select >
+                                    <option value="Choisissez une ville" disabled aria-readonly="true" selected>Choisissez une ville</option>
+                                    <option value="ville1">ville1</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Date-du">Date de début</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="date" id="Date-du" name="Date-du" placeholder="Date de début" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Date-au">Date de fin</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="date" id="Date-au" name="Date-au" placeholder="Date de fin" class="form-control">
+                            </div>
+                        </div>
+                    </form>              
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary2">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //NV Tarifs Modal -->
+    <div class="modal fade" id="NVTarifsModal" tabindex="-1" aria-labelledby="NVTarifsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NVTarifsModalLabel">Ajouter une Tarifs</h5>
+                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="col-sm-12">
+                            <label for="Type">Type</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select id="Type">
+                                    <option value="Choisissez une type" disabled aria-readonly="true" selected>Choisissez une type</option>
+                                    <option value="Délivrance d'ordonnance">Délivrance d'ordonnance</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="TypeDeRDV">Type de RDV</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select id="TypeDeRDV">
+                                    <option value="Choisissez une type de RDV" disabled aria-readonly="true" selected>Choisissez une type de RDV</option>
+                                    <option value="au cabinet">au cabinet</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="col-sm-12">
+                            <label for="Tarif">Tarif</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="text" id="Tarif" name="Tarif" placeholder="Tarif">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Lieu">Lieu</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select >
+                                    <option value="Choisissez une ville" disabled aria-readonly="true" selected>Choisissez une lieu</option>
+                                    <option value="Centre infirmier maarif">Centre infirmier maarif</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
+                            </div>
+                        </div>
+                    </form>              
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary2">Valider</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //NV Presentation Modal -->
+    <div class="modal fade" id="NVPresentationModal" tabindex="-1" aria-labelledby="NVPresentationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NVPresentationModalLabel">Assistant de rédaction</h5>
+                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="col-sm-12">
+                            <label for="Nombre-de-mots">Nombre de mots dans la description</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <input type="text" id="Nombre-de-mots" name="Nombre-de-mots" placeholder="Nombre-de-mots">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Léger">Style</label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <select >
+                                    <option value="Choisissez une ville" disabled aria-readonly="true" selected>Choisissez une Léger</option>
+                                    <option value="Léger">Léger</option>
+                                </select>
+                                <i class="icon-down-arrow"></i>
                             </div>
                         </div>
                     </form>              
@@ -707,11 +990,49 @@
     <script src="../../js/rating.js"></script>
     <script src="../../js/profil.js"></script>
     <script>
-        // $(document).ready(function() {
-        //     $('#NVUserModal').modal('show');
-        // });
+        $(document).ready(function() {
+            $('#NVPresentationModal').modal('show');
+        });
     </script>
 
+    <script>
+        function toggleVisibilitySingle(buttonId, targetId) {
+            const button = document.getElementById(buttonId);
+            const target = document.getElementById(targetId);
 
+            if (!button || !target) {
+                console.error("Button or target element not found.");
+                return;
+            }
+
+            button.addEventListener("click", function() {
+                target.classList.toggle("hidden");
+            });
+        }
+
+        function toggleVisibilityMultiple(buttonId, targetIds) {
+            const button = document.getElementById(buttonId);
+            const targets = targetIds.map(id => document.getElementById(id)).filter(Boolean);
+
+            if (!button || targets.length === 0) {
+                console.error("Button or target elements not found.");
+                return;
+            }
+
+            button.addEventListener("click", function() {
+                targets.forEach(target => {
+                    target.classList.toggle("hidden");
+                });
+            });
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            toggleVisibilitySingle("modifierlanguesButton", "newlanguesInput");
+            toggleVisibilitySingle("modifierPaymentButton", "newPaymentInput");
+
+            toggleVisibilityMultiple("ModifierGalerieButton", ["supprimerButton1", "supprimerButton2", "supprimerButton3", "supprimerButton4", "supprimerButton5", "supprimerButton6", "uploadedFilesContainer"]);
+        });
+
+    </script>
 </body>
 </html>
