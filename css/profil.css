@@ -394,6 +394,13 @@ iframe {
     border-right: 1px solid #ccc;
 }
 
+#tableBody .icon-anchor{
+    cursor: pointer;
+}
+.ver-line {
+    display: inline-block;
+    margin-right: 10px;
+}
 
 /* Third column */
 
