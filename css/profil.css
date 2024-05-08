@@ -744,3 +744,32 @@ iframe {
     background-color: #E40D0D;
     border: 1px solid rgba(228, 13, 13, 1); 
 }
+
+
+input[type="number"] {
+    border: 1px solid var(--c-grey-200);
+    border-radius: 6px;
+    height: 48px;
+    padding: 0 26px 0 66px; 
+    width: 100%;
+    font-size: 16px;
+    color: var(--c-grey-500);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 36px;
+    outline: none;
+
+    &::placeholder {
+        color: var(--c-grey-300);
+    }
+
+    &:focus {
+        border-color: var(--c-grey-300);
+        box-shadow: 0 0 0 4px var(--c-grey-100);
+    }
+}
+
+
+input[type="number"]::placeholder {
+    color: var(--c-grey-300);
+}
