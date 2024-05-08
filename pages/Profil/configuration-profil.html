@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Droits</title>
+    <title>Configuration Profil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- for font family style -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../../css/message.css">
     <link rel="stylesheet" href="../../css/profil.css">
     <link rel="stylesheet" href="../../css/buttons-style.css">
+    <!-- <link rel="stylesheet" href="../../css/update-password.css"> -->
+    <link rel="stylesheet" href="../../css/configuration-profil.css">
 
 </head>
 <body>
@@ -181,560 +183,143 @@
 
     <!-- Main Content -->   
     <main class="main-content">
-        <section class="main-body">
-            <div class="row">
-                <!-- column 20% width -->
-                <div class="column-20">
-                    <div class="profile-circle">
-                        <img src="../../img/icons/user-icon.png" alt="Profile Image" class="profile-img">
-                        <div class="button-circle">
-                            <img src="../../img/icons/edit-icon.png" alt="edit-icon" class="edit-icon">
-                        </div>
-                    </div>
-                    <div class="profile-details">
-                        <p class="profile-name">Dr. Alami Karim</p>
-                        <p class="profile-specialty">Généraliste</p>
-                        <nav class="nav-profile">
-                            <ul>
-                                <li><a href="#">Formations</a></li>
-                                <li><a href="#">Parcours</a></li>
-                                <li><a href="#">Galerie</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">Langues</a></li>
-                                <li><a href="#">Tarifs</a></li>
-                                <li><a href="#">Transports</a></li>
-                                <li><a href="#">Paiements</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>                
-    
-                <!-- column 50% width -->
-                <div class="column-50">
-                    <div class="flex-column">
-                        <div class="header">
-                            <h6 class="title">Formations</h6>
-                            <div class="btn-container"> 
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVFormationModal">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Ajouter</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <section class="data-table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Formation</th>
-                                            <th>Etablissement</th>
-                                            <th>Ville</th>
-                                            <th>Pays</th>
-                                            <th>Du</th>
-                                            <th>Au</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tableBody">
-                                        <tr>
-                                            <td>Cardiologique</td>
-                                            <td>Faculté de médecine Lile</td>
-                                            <td>Rabat</td>
-                                            <td>Maroc</td>
-                                            <td>10-10-2011</td>
-                                            <td>10-10-2015</td>
-                                            <td>
-                                                <a href="#" class="icon-anchor"><img src="../../img/icons/edit-blue-icon-1.png" alt="edit-icon"/></a>
-                                                <span class="ver-line"></span>
-                                                <a href="#" class="icon-anchor"><img src="../../img/icons/delete1.png" alt="delete-icon"/></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="flex-column">
-                        <div class="header">
-                            <h6 class="title">Parcours</h6>
-                            <div class="btn-container"> 
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVParcoursModal">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Ajouter</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <section class="data-table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Parcours</th>
-                                            <th>Structure</th>
-                                            <th>Ville</th>
-                                            <th>Pays</th>
-                                            <th>Du</th>
-                                            <th>Au</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tableBody">
-                                        <tr>
-                                            <td>Service Cardiologique</td>
-                                            <td>Hopital Avicienne</td>
-                                            <td>Rabat</td>
-                                            <td>Maroc</td>
-                                            <td>10-10-2011</td>
-                                            <td>10-10-2015</td>
-                                            <td>
-                                                <a href="#" class="icon-anchor"><img src="../../img/icons/edit-blue-icon-1.png" alt="edit-icon"/></a>
-                                                <span class="ver-line"></span>
-                                                <a href="#" class="icon-anchor"><img src="../../img/icons/delete1.png" alt="delete-icon"/></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </section>
-                        </div>
-                    </div>
-                    <div class="flex-column">
-                        <div class="header">
-                            <h6 class="title">Tarifs</h6>
-                            <div class="btn-container"> 
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVTarifsModal">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Ajouter</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <section class="data-table">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>Type</th>
-                                            <th>Type de RDV</th>
-                                            <th>Tarif</th>
-                                            <th>Lieu</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="tableBody">
-                                        <tr>
-                                            <td>Délivrance d'ordonnance</td>
-                                            <td>Au cabinet</td>
-                                            <td>200 DH</td>
-                                            <td>Centre Infirmier Maarif</td>
-                                            <td>
-                                                <a href="#" class="icon-anchor"><img src="../../img/icons/edit-blue-icon-1.png" alt="edit-icon"/></a>
-                                                <span class="ver-line"></span>
-                                                <a href="#" class="icon-anchor"><img src="../../img/icons/delete1.png" alt="delete-icon"/></a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="flex-column">
-                        <div class="header">
-                            <h6 class="title">Moyens de paiement</h6>
-                            <div class="btn-container">
-                                <button type="button" class="btn-note" id="modifierPaymentButton">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
-                                </button>                                
-                            </div>
-                        </div>
-                        
-                        <div class="content content-items">
-                           <div class="payment-methods">
-                                <div class="payment-method">
-                                    <div class="payment-text">
-                                        Carte bancaire
-                                    </div>
-                                    <div class="payment-drop-icon">
-                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                    </div>
-                                </div>
-                                <div class="payment-method">
-                                    <div class="payment-text">
-                                        Espèce
-                                    </div>
-                                    <div class="payment-drop-icon">
-                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                    </div>
-                                </div>
-                                <div class="payment-method">
-                                    <div class="payment-text">
-                                        Carte bancaire
-                                    </div>
-                                    <div class="payment-drop-icon">
-                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                    </div>
-                                </div>
-                           </div>
-
-                            <div id="newPaymentInput" class="hidden">
-                                <div class="col-sm-12">
-                                    <div class="new-comment">
-                                        <i class="icon-lieu"></i>
-                                        <select >
-                                            <option value="visa">Visa</option>
-                                            <option value="mastercard">Mastercard</option>
-                                            <option value="paypal">Paypal</option>
-                                        </select>
-                                        <i class="icon-down-arrow"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="flex-column">
-                        <div class="header">
-                            <h6 class="title">Langues</h6>
-                            <div class="btn-container">
-                                <button type="button" class="btn-note" id="modifierlanguesButton">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="content content-items">
-                            <div class="payment-methods">
-                                <div class="payment-method">
-                                    <div class="payment-text">
-                                        Francais
-                                    </div>
-                                    <div class="payment-drop-icon">
-                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                    </div>
-                                </div>
-                                <div class="payment-method">
-                                    <div class="payment-text">
-                                        Anglais
-                                    </div>
-                                    <div class="payment-drop-icon">
-                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                    </div>
-                                </div>
-                                <div class="payment-method">
-                                    <div class="payment-text">
-                                        Arabe
-                                    </div>
-                                    <div class="payment-drop-icon">
-                                        <img src="../../img/icons/drop-icon.png" alt="payment-drop-icon">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="newlanguesInput" class="hidden">
-                                <div class="col-sm-12">
-                                    <div class="new-comment">
-                                        <i class="icon-lieu"></i>
-                                        <select >
-                                            <option value="francais">Francais</option>
-                                            <option value="anglais">Anglais</option>
-                                            <option value="arabe">Arabe</option>
-                                        </select>
-                                        <i class="icon-down-arrow"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    <div class="flex-column">
-                        <div class="header-contact">
-                            <div class="title-container">
-                                <h6 class="title title-header-contact">Contact</h6>
-                            </div>
-                            <div class=" btn-container-contact">
-                                <div class="custom-contact-button">
-                                    Cabinet infirmier Maarif
-                                    <div class="white-box">
-                                        Cabinet médical
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="content content-contact-items">
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/@.png" alt="@">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">belefdil.abdelhakim@gmail.com</h3>
-                                        <p class="sub-title-contact">Email</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/@.png" alt="@">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">http://dem.mediclic.ma</h3>
-                                        <p class="sub-title-contact">Site web</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/@.png" alt="@">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">06 05 21 35 76</h3>
-                                        <p class="sub-title-contact">N° de téléphone</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/@.png" alt="@">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">Voiture, Bus, Tramway</h3>
-                                        <p class="sub-title-contact">Moyens de transport</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/@.png" alt="@">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">123, boulevard d'anfa, Casablanca</h3>
-                                        <p class="sub-title-contact">Adresse</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/@.png" alt="@">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">Mercredi, 08:00 - 12:00</h3>
-                                        <p class="sub-title-contact">Horaire</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.836517728408!2d-7.643009484192865!3d33.588764244547776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b5abdbeb48f%3A0x15fa35cb2f7c62b0!2s123%2C%20boulevard%20d'anfa%2C%20Casablanca!5e0!3m2!1sen!2sma!4v1630296476720!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                    
-                    <div class="flex-column">
-                        <div class="header">
-                            <h6 class="title">Galerie</h6>
-                            <div class="btn-container">
-                                <button type="button" class="btn-note" id="ModifierGalerieButton">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
-                                </button>
-                            </div>
-                        </div>
-                        
-                        <div class="content">
-                            <div class="galerie-items">
-                                <div class="gallery-item">
-                                    <button class="btn-supprimer hidden" id="supprimerButton1">
-                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon1">
-                                    </button>
-                                    <img src="../../img/galerie/1.png" alt="Image 1">
-                                </div>
-                                <div class="gallery-item">
-                                    <button class="btn-supprimer hidden" id="supprimerButton2">
-                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon2">
-                                    </button>
-                                    <img src="../../img/galerie/2.png" alt="Image 2">
-                                </div>
-                                <div class="gallery-item">
-                                    <button class="btn-supprimer hidden" id="supprimerButton3">
-                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon3">
-                                    </button>
-                                    <img src="../../img/galerie/3.png" alt="Image 3">
-                                </div>
-                                <div class="gallery-item">
-                                    <button class="btn-supprimer hidden" id="supprimerButton4">
-                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon4">
-                                    </button>
-                                    <img src="../../img/galerie/4.png" alt="Image 4">
-                                </div>
-                                <div class="gallery-item">
-                                    <button class="btn-supprimer hidden" id="supprimerButton5">
-                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon5">
-                                    </button>
-                                    <img src="../../img/galerie/5.png" alt="Image 5">
-                                </div>
-                                <div class="gallery-item">
-                                    <button class="btn-supprimer hidden" id="supprimerButton6">
-                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon6">
-                                    </button>
-                                    <img src="../../img/galerie/6.png" alt="Image 6">
-                                </div>
-                            </div>
-                            
-                            <div class="col-sm-12 hidden" id="uploadedFilesContainer">
-                                <label for="Documents">Documents</label>
-                                <div class="new-comment new-comment-file">
-                                    <div class="file-upload">
-                                        <label for="fileInput" class="label-file">
-                                            <span class="img-cercle">
-                                                <img src="../../img/icons/upload.png" alt="">
-                                            </span> Cliquer pour importer
-                                            <br>
-                                            <span class="upload-text">ou juste dropper and dragger</span>
-                                        </label>
-                                        <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
-                                    </div>
-                                    <button class="btn-importer">Importer</button>
-                                </div>
-                                </div>
-                            <div id="uploadedFilesContainer" class="col-sm-12 hidden">
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="flex-column">
-                        <div class="header">
-                            <h6 class="title">Transport</h6>
-                            <div class="btn-container">
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVUserModal">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Ajouter</span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="content content-contact-items content-transport-items">
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/Voiture-icon.png" alt="Voiture-icon">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">5 Place du Champ de Foire</h3>
-                                        <p class="sub-title-contact">Voiture</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/Tramway-icon.png" alt="Tramway-icon">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">Margaux Blanchard</h3>
-                                        <p class="sub-title-contact">Tramway</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="grid-contact-item">
-                                <div class="item-contact-header">
-                                    <div class="item-image">
-                                        <img src="../../img/icons/Bus-icon.png" alt="Bus-icon">
-                                    </div>
-                                    <div class="item-text">
-                                        <h3 class="title-contact">Suite a-5107 Somerset Dr</h3>
-                                        <p class="sub-title-contact">Bus</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-    
-                <!-- column with 30% width -->
-                <div class="column-30">
-                    <div class="content">
-                        <div class="content-small-header">
-                            <h6 class="small-title">Présentation</h6>
-                            <div class="btn-container-title"> 
-                                <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVPresentationModal">
-                                    <i class="fas fa-plus"></i>
-                                    <span>Modifier</span>
-                                </button>
-                            </div>
-                        </div>
-                        <p id="full-text" class="excerpt">Tesrteuuuuuur !! Bonjour à tous ! Je suis le Dr Karim ALAMI, un médecin généraliste et cardiologue passionné par mon métier. Avec un parcours de succès et une expertise solide, je suis là pour vous offrir les meilleurs soins médicaux.
-                            Après avoir obtenu mon diplôme de médecine générale à la Faculté de Médecine Henri Warembourg, j'ai décidé de me spécialiser en cardiologie. J'ai do</p>
-                        <div class="shadow-bottom toggle-shadow"></div>
-                        <button type="button" class="btn-note" onclick="toggleFullText()">
-                            <span>Afficher Plus</span><i class="fas fa-chevron-down"></i>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="steps">
+                    <progress id="progress" value=0 max=100 ></progress>
+                    <div class="step-item">
+                        <button class="step-button text-center" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1
                         </button>
-                    </div>                     
-                    <div class="langues">
-                        <h6 class="section-title">Langues</h6>
-                        <span class="langues-item">Anglais, </span>
-                        <span class="langues-item">Francais, </span>
-                        <span class="langues-item">Arabe</span>
+                        <div class="step-title">
+                            Identité
+                        </div>
                     </div>
-                    <div class="avis">
-                        <div class="avis-item">
-                            <h6 class="section-title">Avis</h6>
-                            <div class="toggle-container">
-                                <input type="checkbox" id="Consulter-un-rendez-vous" name="surbooking" value="Consulter un rendez-vous" class="toggle-checkbox">
-                                <label for="Consulter-un-rendez-vous" class="toggle-label"></label>
+                    <div class="step-item">
+                        <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2
+                        </button>
+                        <div class="step-title">
+                            Parcours
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3
+                        </button>
+                        <div class="step-title">
+                            Profile
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            4
+                        </button>
+                        <div class="step-title">
+                            Formations
+                        </div>
+                    </div>
+                    <div class="step-item">
+                        <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            5
+                        </button>
+                        <div class="step-title">
+                            Parcours
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="cards">
+                    <div class="card">
+                        <div  id="headingOne">
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                <form action="#">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Nom" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Prénom" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="date" placeholder="Date de naissance" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <select name="sexe" id="sexe" class="text-input">
+                                            <option value="male">homme</option>
+                                            <option value="female">femme</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="tel" placeholder="Téléphone" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="email" placeholder="E-mail" class="text-input">
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                        <p>38 avis pour ce professionnel</p>
                     </div>
+                    <div class="card">
+                        <div  id="headingTwo">
+                    
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                your content goes here...2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div  id="headingThree">
+                    
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                your content goes here...3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div  id="headingFour">
+                    
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                your content goes here...4
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div  id="headingFive">
+                    
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                your content goes here...5
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="evaluations-items">
-                        <div class="row">
-                            <div class="col">
-                                <label for="input-1" class="control-label">Ponctualité</label>
-                                <input id="input-1" name="input-1" class="rating rating-loading" data-min="0" data-max="6" data-step="0.1" value="2">
-                            </div>
-                            <div class="col">
-                                <label for="input-2" class="control-label">Compétences</label>
-                                <input id="input-2" name="input-2" class="rating rating-loading" data-min="0" data-max="6" data-step="0.1" value="4">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <label for="input-3" class="control-label">Courtoisie</label>
-                                <input id="input-3" name="input-3" class="rating rating-loading" data-min="0" data-max="6" data-step="0.1" value="5">
-                            </div>
-                        </div>
-                    </div>
-                
-                </div>
-                
-                
+            <div class="navigation-buttons">
+                <button class="btn btn-secondary prev-button"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
+                <button class="btn btn-primary next-button"><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
             </div>
-        </section>
-        <section class="footer-body">
-            <div class="footer-content">
-                <div class="footer-left">
-                    <img src="../../img/icons/delete-info-icon.png" alt="Image" class="footer-img">
-                    <div class="footer-text">
-                        <h5 class="footer-title">Supprimer mon compte</h5>
-                        <p class="footer-subtitle">
-                            Cela supprimera immédiatement toutes vos données. Soyez prudent,
-                            <a href="#" class="footer-anchor">en savoir plus</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-                <div class="footer-right">
-                    <button class="footer-button">Supprimer mon compte</button>
-                </div>
-            </div>
-        </section>
-        
+            
+        </div>
     </main>
     
 
@@ -985,50 +570,12 @@
     <script src="../../js/droits.js"></script>
     <script src="../../js/rating.js"></script>
     <script src="../../js/profil.js"></script>
+    <script src="../../js/configuration-profil.js"></script>
     <script>
         // $(document).ready(function() {
         //     $('#NVPresentationModal').modal('show');
         // });
     </script>
 
-    <script>
-        function toggleVisibilitySingle(buttonId, targetId) {
-            const button = document.getElementById(buttonId);
-            const target = document.getElementById(targetId);
-
-            if (!button || !target) {
-                console.error("Button or target element not found.");
-                return;
-            }
-
-            button.addEventListener("click", function() {
-                target.classList.toggle("hidden");
-            });
-        }
-
-        function toggleVisibilityMultiple(buttonId, targetIds) {
-            const button = document.getElementById(buttonId);
-            const targets = targetIds.map(id => document.getElementById(id)).filter(Boolean);
-
-            if (!button || targets.length === 0) {
-                console.error("Button or target elements not found.");
-                return;
-            }
-
-            button.addEventListener("click", function() {
-                targets.forEach(target => {
-                    target.classList.toggle("hidden");
-                });
-            });
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            toggleVisibilitySingle("modifierlanguesButton", "newlanguesInput");
-            toggleVisibilitySingle("modifierPaymentButton", "newPaymentInput");
-
-            toggleVisibilityMultiple("ModifierGalerieButton", ["supprimerButton1", "supprimerButton2", "supprimerButton3", "supprimerButton4", "supprimerButton5", "supprimerButton6", "uploadedFilesContainer"]);
-        });
-
-    </script>
 </body>
 </html>
