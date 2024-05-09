@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../../css/message.css">
     <link rel="stylesheet" href="../../css/profil.css">
     <link rel="stylesheet" href="../../css/buttons-style.css">
-    <!-- <link rel="stylesheet" href="../../css/update-password.css"> -->
     <link rel="stylesheet" href="../../css/configuration-profil.css">
 
 </head>
@@ -279,7 +278,94 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="card-body">
-                                your content goes here...2
+                                <div class="lieu-items">
+                                    <div class="lieu-item">
+                                        <div class="lieu-item-left">
+                                            <div class="box-img">
+                                                <img src="../../img/icons/docs.png" alt="folder-icon" class="lieu-img">
+                                            </div>
+                                            <p class="lieu-title">8 avune de phare</p>
+                                        </div>
+                                        <div class="lieu-item-right">
+                                            <button class="lieu-item-delete">
+                                                <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertical-line">
+                                    <span class="verti-line"></span>
+                                </div>
+                                <form action="#" class="form-step">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="text" id="lieu" name="lieu" placeholder="lieu"  class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="text" id="typeDelieu" name="typeDelieu" placeholder="type de lieu" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="row mt-3">
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="email" id="email" name="email" placeholder="Email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <!-- <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="form-control">
+                                            </div>
+                                        </div> -->
+                                    </div>
+
+                                    <div class="row mt-3">
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="text" id="Addresse" name="Addresse" placeholder="Addresse" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <input type="text" id="Transport" name="Transport" placeholder="Transport" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    
+                                </form>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.836517728408!2d-7.643009484192865!3d33.588764244547776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b5abdbeb48f%3A0x15fa35cb2f7c62b0!2s123%2C%20boulevard%20d'anfa%2C%20Casablanca!5e0!3m2!1sen!2sma!4v1630296476720!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                <div class="col-sm-12">
+                                    <div class="new-comment">
+                                        <i class="icon-lieu"></i>
+                                        <input type="number" id="Rayon" name="Rayon" placeholder="Rayon" class="form-control">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -290,7 +376,187 @@
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
                             <div class="card-body">
-                                your content goes here...3
+                                <form action="" class="form-step-3">
+                                    <div class="row">
+                                        <div class="col-sm-6" >
+                                            <div class="col-sm-12">
+                                                <div class="new-comment new-comment-file">
+                                                    <div class="file-upload">
+                                                        <label for="fileInput" class="label-file">
+                                                            <span class="img-cercle">
+                                                                <img src="../../img/icons/upload.png" alt="">
+                                                            </span> Cliquer pour importer
+                                                            <br>
+                                                            <span class="upload-text">ou juste dropper and dragger</span>
+                                                        </label>
+                                                        <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                                    </div>
+                                                    <button class="btn-importer">Importer</button>
+                                                </div>
+                                            </div>
+                                            <div id="uploadedFilesContainer" class="col-sm-12">
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <textarea name="Présentation" placeholder="Présentation" 
+                                                            id="Présentation" cols="30" rows="10" class="form-control"
+                                                            data-bs-toggle="modal" data-bs-target="#NVPresentationModal"
+                                                    ></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-6">
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select  class="Service" class="form-select">
+                                                    <option value="" disabled selected>Spécialité <span>*</span></option>
+                                                    <option value="Spécialité1">Spécialité</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select  class="Service" class="form-select">
+                                                    <option value="" disabled selected>Choisissez parmi les spécialités</option>
+                                                    <option value="Choisissez parmi les spécialités2">Choisissez parmi les spécialités2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select class="Service" class="form-select">
+                                                    <option value="" disabled selected>Francais</option>
+                                                    <option value="Francais2">Francais</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select  class="Service" class="form-select">
+                                                    <option value="" disabled selected>Moyen(s) de paiement accepté(s)</option>
+                                                    <option value="Moyen(s) de paiement accepté(s)2">Moyen(s) de paiement accepté(s)2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select  class="Service" class="form-select">
+                                                    <option value="" disabled selected>Service <span>*</span></option>
+                                                    <option value="Service1">Service</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select  class="Service" class="form-select">
+                                                    <option value="" disabled selected>Type de rendez-vous</option>
+                                                    <option value="Type de rendez-vous2">Type de rendez-vous2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select class="Service" class="form-select">
+                                                    <option value="" disabled selected>Lieu</option>
+                                                    <option value="Lieu2">Lieu</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="new-comment">
+                                                <i class="icon-lieu"></i>
+                                                <select  class="Service" class="form-select">
+                                                    <option value="" disabled selected>Tarif (en Dhs)</option>
+                                                    <option value="Tarif (en Dhs)2">Tarif (en Dhs)2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-column">
+                                        <div class="header">
+                                            <h6 class="title">Galerie</h6>
+                                            <div class="btn-container">
+                                                <button type="button" class="btn-note" id="ModifierGalerieButton">
+                                                    <i class="fas fa-plus"></i>
+                                                    <span>Modifier</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="content">
+                                            <div class="galerie-items">
+                                                <div class="gallery-item">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton1">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon1">
+                                                    </button>
+                                                    <img src="../../img/galerie/1.png" alt="Image 1">
+                                                </div>
+                                                <div class="gallery-item">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton2">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon2">
+                                                    </button>
+                                                    <img src="../../img/galerie/2.png" alt="Image 2">
+                                                </div>
+                                                <div class="gallery-item">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton3">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon3">
+                                                    </button>
+                                                    <img src="../../img/galerie/3.png" alt="Image 3">
+                                                </div>
+                                                <div class="gallery-item">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton4">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon4">
+                                                    </button>
+                                                    <img src="../../img/galerie/4.png" alt="Image 4">
+                                                </div>
+                                                <div class="gallery-item">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton5">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon5">
+                                                    </button>
+                                                    <img src="../../img/galerie/5.png" alt="Image 5">
+                                                </div>
+                                                <div class="gallery-item">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton6">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon6">
+                                                    </button>
+                                                    <img src="../../img/galerie/6.png" alt="Image 6">
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-12 hidden" id="uploadedFilesContainer">
+                                                <label for="Documents">Documents</label>
+                                                <div class="new-comment new-comment-file">
+                                                    <div class="file-upload">
+                                                        <label for="fileInput" class="label-file">
+                                                            <span class="img-cercle">
+                                                                <img src="../../img/icons/upload.png" alt="">
+                                                            </span> Cliquer pour importer
+                                                            <br>
+                                                            <span class="upload-text">ou juste dropper and dragger</span>
+                                                        </label>
+                                                        <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                                    </div>
+                                                    <button class="btn-importer">Importer</button>
+                                                </div>
+                                                </div>
+                                            <div id="uploadedFilesContainer" class="col-sm-12 hidden">
+                                            </div>
+                
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -301,7 +567,43 @@
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-bs-parent="#accordionExample">
                             <div class="card-body">
-                                your content goes here...4
+                                <div class="lieu-items">
+                                    <div class="lieu-item">
+                                        <div class="lieu-item-left">
+                                            <div class="box-img">
+                                                <img src="../../img/icons/docs.png" alt="folder-icon" class="lieu-img">
+                                            </div>
+                                            <p class="lieu-title">Formation 1</p>
+                                        </div>
+                                        <div class="lieu-item-right">
+                                            <button class="lieu-item-delete">
+                                                <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertical-line">
+                                    <span class="verti-line"></span>
+                                </div>
+
+                                <form action="#" class="form-step mt-5">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Formation" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Établissement" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Ville" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="date" placeholder="Date de debut" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="date" placeholder="Date de fin" class="text-input">
+                                    </div>
+                                </form>
+                            
                             </div>
                         </div>
                     </div>
@@ -312,7 +614,43 @@
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                             data-bs-parent="#accordionExample">
                             <div class="card-body">
-                                your content goes here...5
+                                <div class="lieu-items">
+                                    <div class="lieu-item">
+                                        <div class="lieu-item-left">
+                                            <div class="box-img">
+                                                <img src="../../img/icons/docs.png" alt="folder-icon" class="lieu-img">
+                                            </div>
+                                            <p class="lieu-title">Parcours 1</p>
+                                        </div>
+                                        <div class="lieu-item-right">
+                                            <button class="lieu-item-delete">
+                                                <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertical-line">
+                                    <span class="verti-line"></span>
+                                </div>
+
+                                <form action="#" class="form-step mt-5">
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Parcours" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Établissement" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" placeholder="Ville" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="date" placeholder="Date de debut" class="text-input">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="date" placeholder="Date de fin" class="text-input">
+                                    </div>
+                                </form>
+                            
                             </div>
                         </div>
                     </div>
@@ -329,219 +667,26 @@
     
 
     <!-- //Modals -->
-    <!-- //NV Formation Modal -->
-    <div class="modal fade" id="NVFormationModal" tabindex="-1" aria-labelledby="NVFormationModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="NVFormationModalLabel">Ajouter une formation</h5>
-                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="col-sm-12">
-                            <label for="Titre">Formation</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="text" id="Titre" name="Titre" placeholder="Titre">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Structure">Structure</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="text" id="Structure" name="Structure" placeholder="Structure">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Pays">Pays</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <select >
-                                    <option value="Choisissez une pays" disabled aria-readonly="true" selected>Choisissez une pays</option>
-                                    <option value="pay1">pay1</option>
-                                </select>
-                                <i class="icon-down-arrow"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Ville">Ville</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <select >
-                                    <option value="Choisissez une ville" disabled aria-readonly="true" selected>Choisissez une ville</option>
-                                    <option value="ville1">ville1</option>
-                                </select>
-                                <i class="icon-down-arrow"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Date-du">Date de début</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="date" id="Date-du" name="Date-du" placeholder="Date de début" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Date-au">Date de fin</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="date" id="Date-au" name="Date-au" placeholder="Date de fin" class="form-control">
-                            </div>
-                        </div>
-                    </form>              
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary2">Valider</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //NV Parcours Modal -->
-    <div class="modal fade" id="NVParcoursModal" tabindex="-1" aria-labelledby="NVParcoursModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="NVParcoursModalLabel">Ajouter une Parcours</h5>
-                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="col-sm-12">
-                            <label for="Titre">Poste</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="text" id="Titre" name="Titre" placeholder="Titre">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Structure">Structure</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="text" id="Structure" name="Structure" placeholder="Structure">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Pays">Pays</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <select >
-                                    <option value="Choisissez une pays" disabled aria-readonly="true" selected>Choisissez une pays</option>
-                                    <option value="pay1">pay1</option>
-                                </select>
-                                <i class="icon-down-arrow"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Ville">Ville</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <select >
-                                    <option value="Choisissez une ville" disabled aria-readonly="true" selected>Choisissez une ville</option>
-                                    <option value="ville1">ville1</option>
-                                </select>
-                                <i class="icon-down-arrow"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Date-du">Date de début</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="date" id="Date-du" name="Date-du" placeholder="Date de début" class="form-control">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Date-au">Date de fin</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="date" id="Date-au" name="Date-au" placeholder="Date de fin" class="form-control">
-                            </div>
-                        </div>
-                    </form>              
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary2">Valider</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- //NV Tarifs Modal -->
-    <div class="modal fade" id="NVTarifsModal" tabindex="-1" aria-labelledby="NVTarifsModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="NVTarifsModalLabel">Ajouter une Tarifs</h5>
-                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form action="">
-                        <div class="col-sm-12">
-                            <label for="Type">Type</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <select id="Type">
-                                    <option value="Choisissez une type" disabled aria-readonly="true" selected>Choisissez une type</option>
-                                    <option value="Délivrance d'ordonnance">Délivrance d'ordonnance</option>
-                                </select>
-                                <i class="icon-down-arrow"></i>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="TypeDeRDV">Type de RDV</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <select id="TypeDeRDV">
-                                    <option value="Choisissez une type de RDV" disabled aria-readonly="true" selected>Choisissez une type de RDV</option>
-                                    <option value="au cabinet">au cabinet</option>
-                                </select>
-                                <i class="icon-down-arrow"></i>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-12">
-                            <label for="Tarif">Tarif</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <input type="number" id="Tarif" name="Tarif" placeholder="Tarif">
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Lieu">Lieu</label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <select >
-                                    <option value="Choisissez une ville" disabled aria-readonly="true" selected>Choisissez une lieu</option>
-                                    <option value="Centre infirmier maarif">Centre infirmier maarif</option>
-                                </select>
-                                <i class="icon-down-arrow"></i>
-                            </div>
-                        </div>
-                    </form>              
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary2">Valider</button>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- //NV Presentation Modal -->
     <div class="modal fade" id="NVPresentationModal" tabindex="-1" aria-labelledby="NVPresentationModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="NVPresentationModalLabel">Assistant de rédaction</h5>
+                    <h5 class="modal-title" id="NVPresentationModalLabel">Nouveau note</h5>
                     <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form action="">
                         <div class="col-sm-12">
+                            <p>
+                                Si vous le souhaitez, nous pouvons vous proposer une présentation selon les informations que vous avez renseignées et le style et nombre de mots que vous désirez :
+                            </p>
+                        </div>
+                        <div class="col-sm-12">
                             <label for="Nombre-de-mots">Nombre de mots dans la description</label>
                             <div class="new-comment">
                                 <i class="icon-lieu"></i>
-                                <input type="number" id="Nombre-de-mots" name="Nombre-de-mots" placeholder="Nombre-de-mots">
+                                <input type="number" id="Nombre-de-mots" name="Nombre-de-mots" placeholder="Nombre de mots">
                             </div>
                         </div>
                         <div class="col-sm-12">
@@ -577,9 +722,9 @@
     <script src="../../js/profil.js"></script>
     <script src="../../js/configuration-profil.js"></script>
     <script>
-        // $(document).ready(function() {
-        //     $('#NVPresentationModal').modal('show');
-        // });
+        $(document).ready(function() {
+            $('#NVPresentationModal').modal('show');
+        });
     </script>
 
 </body>
