@@ -296,74 +296,98 @@
                                 <div class="vertical-line">
                                     <span class="verti-line"></span>
                                 </div>
-                                <form action="#" class="form-step">
+                                <form action="#" class="form-step mb-5">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="text" id="lieu" name="lieu" placeholder="lieu"  class="form-control">
+                                            <div class="input-group-step2">
+                                                <input type="text" id="lieu" name="lieu" placeholder="lieu" class="text-input-step2 form-control">
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="text" id="typeDelieu" name="typeDelieu" placeholder="type de lieu" class="form-control">
+                                            <div class="input-group-step2">
+                                                <input type="text" id="typeDelieu" name="typeDelieu" placeholder="type de lieu" class="text-input-step2 form-control">
                                             </div>
                                         </div>
                                     </div>
-        
+                                
                                     <div class="row mt-3">
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="form-control">
+                                            <div class="input-group-step2">
+                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="text-input-step2 form-control">
+                                                <div class="lieu-item-right delete-btn">
+                                                    <button class="lieu-item-delete">
+                                                        <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="form-control">
+                                            <div class="input-group-step2">
+                                                <input type="text" id="Site Web" name="Site Web" placeholder="Télephone" class="text-input-step2 form-control">
                                             </div>
                                         </div>
                                     </div>
-
+                                
                                     <div class="row mt-3">
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="email" id="email" name="email" placeholder="Email" class="form-control">
+                                            <div class="input-group-step2">
+                                                <input type="email" id="email" name="email" placeholder="Email" class="text-input-step2 form-control">
                                             </div>
                                         </div>
-                                        <!-- <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="form-control">
+                                        <div class="col-sm-6">
+                                            <div class="input-group inp-multiple">
+                                                <select id="days" name="days" class="days-input">
+                                                    <option value="lundi">Lundi</option>
+                                                    <option value="mardi">Mardi</option>
+                                                    <option value="mercredi">Mercredi</option>
+                                                    <option value="jeudi">Jeudi</option>
+                                                    <option value="vendredi">Vendredi</option>
+                                                    <option value="samedi">Samedi</option>
+                                                    <option value="dimanche">Dimanche</option>
+                                                </select>
+                                                <div class="time-input-group">
+                                                    <input type="time" id="startTime" name="startTime" class=" time-input" required>
+                                                    <span class="time-separator">to</span>
+                                                    <input type="time" id="endTime" name="endTime" class=" time-input" required>
+                                                </div>
+                                                <div class="lieu-item-right delete-btn">
+                                                    <button class="lieu-item-delete">
+                                                        <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div> -->
+                                        </div>
+                                        
                                     </div>
-
+                                
                                     <div class="row mt-3">
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="text" id="Addresse" name="Addresse" placeholder="Addresse" class="form-control">
+                                            <div class="input-group-step2">
+                                                <input type="text" id="Addresse" name="Addresse" placeholder="Addresse" class="text-input-step2 ">
+                                                <div class="lieu-item-right delete-btn">
+                                                    <button class="lieu-item-delete">
+                                                        <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <input type="text" id="Transport" name="Transport" placeholder="Transport" class="form-control">
+                                            <div class="input-group-step2">
+                                                <input type="text" id="Transport" name="Transport" placeholder="Transport" class="text-input-step2 form-control">
+                                                <div class="lieu-item-right delete-btn">
+                                                    <button class="lieu-item-delete">
+                                                        <img src="../../img/icons/delete1.png" alt="delete-icon"/>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-        
-                                    
                                 </form>
+                                
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.836517728408!2d-7.643009484192865!3d33.588764244547776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b5abdbeb48f%3A0x15fa35cb2f7c62b0!2s123%2C%20boulevard%20d'anfa%2C%20Casablanca!5e0!3m2!1sen!2sma!4v1630296476720!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                <div class="col-sm-12">
-                                    <div class="new-comment">
-                                        <i class="icon-lieu"></i>
-                                        <input type="number" id="Rayon" name="Rayon" placeholder="Rayon" class="form-control">
+                                <div class="col-sm-12 mt-5">
+                                    <div class="input-group-step2">
+                                        <input type="number" id="Rayon" name="Rayon" placeholder="Rayon" class="text-input-step2 form-control">
                                     </div>
                                 </div>
                             </div>
@@ -398,10 +422,9 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
-                                            <div class="new-comment">
-                                                <i class="icon-lieu"></i>
+                                            <div class="input-group-step2">
                                                 <textarea name="Présentation" placeholder="Présentation" 
-                                                            id="Présentation" cols="30" rows="10" class="form-control"
+                                                            id="Présentation" cols="30" rows="10" class="text-input-textarea form-control"
                                                             data-bs-toggle="modal" data-bs-target="#NVPresentationModal"
                                                     ></textarea>
                                             </div>
