@@ -50,12 +50,17 @@
     margin-bottom: 18px;
 }
 
+.completed-step {
+    background-color: green; /* Example style for completed steps */
+    color: white;
+}
+
 
 
 /* to customize progress bar */
 
 #progress::-webkit-progress-value {
-    background-color: #2867A8;
+    background-color: green;
     transition: .5s ease;
 }
 
