@@ -23,21 +23,29 @@ function updateStepState(index, visited) {
     if (visited) {
         numberSpan.style.display = 'none'; // Hide the hidden number span
         checkIcon.style.display = 'inline-block'; // Display the check icon
-        button.setAttribute('aria-expanded', 'true'); // Mark step as expanded
+        button.setAttribute('aria-expanded', 'true'); // Always set aria-expanded to 'true'
         button.classList.add('completed-step'); // Add a class for completed step styling
     } else {
         numberSpan.style.display = 'inline-block'; // Display the hidden number span
         checkIcon.style.display = 'none'; // Hide the check icon
-        button.setAttribute('aria-expanded', 'false'); // Mark step as collapsed
+        button.setAttribute('aria-expanded', 'true'); // Always set aria-expanded to 'true'
         button.classList.remove('completed-step'); // Remove completed step styling
     }
-
 }
 
+// Set initial state for all steps
+Array.from(stepButtons).forEach((button, index) => {
+    updateStepState(index, false); // Initialize all steps as default style
+});
 
-// Event listeners for step buttons
+// Set initial state for the first step as completed
+updateStepState(0, true);
+updateProgress(); // Update progress bar
+
+// Event listener for step buttons
 Array.from(stepButtons).forEach((button, index) => {
     button.addEventListener('click', () => {
+        console.log('Step button clicked:', index); // Log the click event
         currentIndex = index; // Update current index
         const visited = stepStates[index];
         if (!visited) {
@@ -48,15 +56,26 @@ Array.from(stepButtons).forEach((button, index) => {
     });
 });
 
-// Next button event listener
+// Écouteur d'événements pour le bouton suivant (nextButton)
 nextButton.addEventListener('click', () => {
     if (currentIndex < stepButtons.length - 1) {
-        currentIndex++; // Increment current index
-        updateStepState(currentIndex, false); // Mark current step as default style
-        stepButtons[currentIndex].click(); // Trigger click on next step
-        updateProgress(); // Update progress bar
+        currentIndex++; // Incrémenter l'index actuel
+        updateStepState(currentIndex, false); // Marquer l'étape actuelle comme style par défaut
+        stepButtons[currentIndex].click(); // Déclencher le clic sur l'étape suivante
+        updateProgress(); // Mettre à jour la barre de progression
+
+        // Vérifier si l'étape suivante est la dernière étape
+        if (currentIndex === stepButtons.length - 1) {
+            // Modifier le texte du bouton suivant
+            nextButton.textContent = 'Terminer'; // Modifier par 'Terminer' ou tout autre texte désiré
+        }
+    } else {
+        // Gérer l'action du bouton Terminer ici
+        // Par exemple, afficher un message de réalisation ou naviguer vers une autre page
+        console.log('Bouton Terminer cliqué');
     }
 });
+
 
 // Previous button event listener
 prevButton.addEventListener('click', () => {
@@ -68,9 +87,4 @@ prevButton.addEventListener('click', () => {
         updateProgress(); // Update progress bar
     }
 });
-
-
-// Set initial state for the first step
-updateStepState(0, true);
-
 
