@@ -413,7 +413,7 @@
                                                             <br>
                                                             <span class="upload-text">ou juste dropper and dragger</span>
                                                         </label>
-                                                        <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                                        <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this, 'uploadedFilesContainer')">
                                                     </div>
                                                     <button class="btn-importer">Importer</button>
                                                 </div>
@@ -433,8 +433,7 @@
                                     <div class="row mt-6">
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select  class="Service" class="form-select">
+                                                <select  class="Service" id="Service" class="form-select">
                                                     <option value="" disabled selected>Spécialité <span>*</span></option>
                                                     <option value="Spécialité1">Spécialité</option>
                                                 </select>
@@ -442,8 +441,7 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select  class="Service" class="form-select">
+                                                <select  class="Service" id="Service" class="form-select">
                                                     <option value="" disabled selected>Choisissez parmi les spécialités</option>
                                                     <option value="Choisissez parmi les spécialités2">Choisissez parmi les spécialités2</option>
                                                 </select>
@@ -451,8 +449,7 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select class="Service" class="form-select">
+                                                <select class="Service" id="Service" class="form-select">
                                                     <option value="" disabled selected>Francais</option>
                                                     <option value="Francais2">Francais</option>
                                                 </select>
@@ -460,8 +457,7 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select  class="Service" class="form-select">
+                                                <select  class="Service" id="Service" class="form-select">
                                                     <option value="" disabled selected>Moyen(s) de paiement accepté(s)</option>
                                                     <option value="Moyen(s) de paiement accepté(s)2">Moyen(s) de paiement accepté(s)2</option>
                                                 </select>
@@ -471,17 +467,15 @@
                                     <div class="row mt-5">
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select  class="Service" class="form-select">
-                                                    <option value="" disabled selected>Service <span>*</span></option>
+                                                <select  class="Service" id="Service" class="form-select">
+                                                    <option value="" disabled selected>Service</option>
                                                     <option value="Service1">Service</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select  class="Service" class="form-select">
+                                                <select  class="Service" id="Service" class="form-select">
                                                     <option value="" disabled selected>Type de rendez-vous</option>
                                                     <option value="Type de rendez-vous2">Type de rendez-vous2</option>
                                                 </select>
@@ -489,8 +483,7 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select class="Service" class="form-select">
+                                                <select class="Service" id="Service" class="form-select">
                                                     <option value="" disabled selected>Lieu</option>
                                                     <option value="Lieu2">Lieu</option>
                                                 </select>
@@ -498,83 +491,88 @@
                                         </div>
                                         <div class="col-sm-6">
                                             <div class="new-comment">
-                                                <i class="icon-lieu"></i>
-                                                <select  class="Service" class="form-select">
+                                                <select  class="Service" id="Service" class="form-select">
                                                     <option value="" disabled selected>Tarif (en Dhs)</option>
                                                     <option value="Tarif (en Dhs)2">Tarif (en Dhs)2</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                    <div class="col-md-12 btn-icon">
+                                        <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVReclamationsModal">
+                                            <i class="fas fa-plus"></i>
+                                            <span>Ajouter un tarif</span>
+                                        </button>
+                                    </div>
 
                                     <div class="flex-column">
                                         <div class="header">
                                             <h6 class="title">Galerie</h6>
                                             <div class="btn-container">
-                                                <button type="button" class="btn-note" id="ModifierGalerieButton">
+                                                <button type="button" class="btn-note" id="ModifierGalerieButton2">
                                                     <i class="fas fa-plus"></i>
                                                     <span>Modifier</span>
                                                 </button>
                                             </div>
                                         </div>
                                         
-                                        <div class="content">
+                                        <div class="content-galarie">
                                             <div class="galerie-items">
                                                 <div class="gallery-item">
-                                                    <button class="btn-supprimer hidden" id="supprimerButton1">
-                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon1">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton1-1">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon1-1">
                                                     </button>
                                                     <img src="../../img/galerie/1.png" alt="Image 1">
                                                 </div>
                                                 <div class="gallery-item">
-                                                    <button class="btn-supprimer hidden" id="supprimerButton2">
-                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon2">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton2-1">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon2-1">
                                                     </button>
                                                     <img src="../../img/galerie/2.png" alt="Image 2">
                                                 </div>
                                                 <div class="gallery-item">
-                                                    <button class="btn-supprimer hidden" id="supprimerButton3">
-                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon3">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton3-1">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon3-1">
                                                     </button>
                                                     <img src="../../img/galerie/3.png" alt="Image 3">
                                                 </div>
                                                 <div class="gallery-item">
-                                                    <button class="btn-supprimer hidden" id="supprimerButton4">
-                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon4">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton4-1">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon4-1">
                                                     </button>
                                                     <img src="../../img/galerie/4.png" alt="Image 4">
                                                 </div>
                                                 <div class="gallery-item">
-                                                    <button class="btn-supprimer hidden" id="supprimerButton5">
-                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon5">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton5-1">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon5-1">
                                                     </button>
                                                     <img src="../../img/galerie/5.png" alt="Image 5">
                                                 </div>
                                                 <div class="gallery-item">
-                                                    <button class="btn-supprimer hidden" id="supprimerButton6">
-                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon6">
+                                                    <button class="btn-supprimer hidden" id="supprimerButton6-1">
+                                                        <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon6-1">
                                                     </button>
                                                     <img src="../../img/galerie/6.png" alt="Image 6">
                                                 </div>
                                             </div>
-                                            
-                                            <div class="col-sm-12 hidden" id="uploadedFilesContainer">
-                                                <label for="Documents">Documents</label>
+                                            <div class="col-sm-12 hidden" id="uploadedFilesContainer2">
+                                                <label for="fileInput2">Documents</label>
                                                 <div class="new-comment new-comment-file">
                                                     <div class="file-upload">
-                                                        <label for="fileInput" class="label-file">
+                                                        <label for="fileInput2" class="label-file">
                                                             <span class="img-cercle">
                                                                 <img src="../../img/icons/upload.png" alt="">
                                                             </span> Cliquer pour importer
                                                             <br>
                                                             <span class="upload-text">ou juste dropper and dragger</span>
                                                         </label>
-                                                        <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                                        <input type="file" id="fileInput2" name="Documents2" multiple onchange="displayUploadedFiles(this, 'uploadedFilesContainer2')">
                                                     </div>
                                                     <button class="btn-importer">Importer</button>
                                                 </div>
-                                                </div>
-                                            <div id="uploadedFilesContainer" class="col-sm-12 hidden">
+                                            </div>
+                                            <div id="uploadedFilesContainer2" class="col-sm-12 hidden">
                                             </div>
                 
                                         </div>
@@ -749,6 +747,8 @@
         //     $('#NVPresentationModal').modal('show');
         // });
     </script>
+
+    
 
 </body>
 </html>

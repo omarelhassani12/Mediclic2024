@@ -48,4 +48,5 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleVisibilitySingle("modifierPaymentButton", "newPaymentInput");
 
     toggleVisibilityMultiple("ModifierGalerieButton", ["supprimerButton1", "supprimerButton2", "supprimerButton3", "supprimerButton4", "supprimerButton5", "supprimerButton6", "uploadedFilesContainer"]);
+    toggleVisibilityMultiple("ModifierGalerieButton2", ["supprimerButton1-1", "supprimerButton2-1", "supprimerButton3-1", "supprimerButton4-1", "supprimerButton5-1", "supprimerButton6-1", "uploadedFilesContainer2"]);
 });
