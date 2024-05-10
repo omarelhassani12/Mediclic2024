@@ -29,6 +29,24 @@ input[type="text"].search-input:focus {
 
 
 /* termine badge */
+#Termine-warring {
+    color: #F3B414;
+    position: relative;
+}
+
+#Termine-warring span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: #F3B414;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 4px rgba(243, 180, 20, 0.24);;
+    position: relative;
+    left: -10px;
+    top: 5px;
+    transform: translateY(-50%);
+}
+
 #Termine-success {
     color: #2EA47C;
     position: relative;
