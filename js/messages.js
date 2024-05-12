@@ -43,9 +43,9 @@ function displayUploadedFiles(input) {
 
             const statusIcon = document.createElement('span');
             statusIcon.classList.add('status-icon');
-            statusIcon.innerHTML = '<img src="../../img/icons/cancel.png">'; // Loading icon
+            statusIcon.innerHTML = '<img src="../../img/icons/cancel.png">'; 
             statusIcon.addEventListener('click', () => {
-                fileItem.remove(); // Remove the file item when status icon is clicked
+                fileItem.remove(); 
             });
             fileInfo.appendChild(statusIcon);
 
@@ -68,7 +68,7 @@ function displayUploadedFiles(input) {
 }
 
 
-// for disply the size as 153Bytes sur 156Bytes
+// for disply the size
 function simulateFileUpload(file, progressBar, fileSizeText, statusIcon, fileItem, progressBarContainer) {
     const fileSize = file.size;
     let uploadedBytes = 0;
@@ -85,7 +85,7 @@ function simulateFileUpload(file, progressBar, fileSizeText, statusIcon, fileIte
 
             fileSizeText.textContent = formatFileSize(fileSize);
         } else {
-            statusIcon.innerHTML = '<img src="../../img/icons/cancel.png">'; // Loading icon
+            statusIcon.innerHTML = '<img src="../../img/icons/cancel.png">'; 
             fileSizeText.textContent = formatFileSize(uploadedBytes) + ' sur ' + formatFileSize(fileSize);
         }
     }, 100);
@@ -104,9 +104,9 @@ function getIconHTML(fileType) {
 }
 
 function formatFileSize(bytes) {
-    if (bytes === 0) return '0 Bytes';
+    if (bytes === 0) return '0 B';
     const k = 1024;
-    const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+    const sizes = ['B', 'KB', 'MB', 'GB', 'TB'];
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
 }

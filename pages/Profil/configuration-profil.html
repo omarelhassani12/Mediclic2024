@@ -539,7 +539,7 @@
                                     <div class="header">
                                         <h6 class="title">Galerie</h6>
                                         <div class="btn-container">
-                                            <button type="button" class="btn-note" id="ModifierGalerieButton2">
+                                            <button type="button" class="btn-note">
                                                 <i class="fas fa-plus"></i>
                                                 <span>Modifier</span>
                                             </button>
@@ -549,58 +549,60 @@
                                     <div class="content-galarie-img">
                                         <div class="galerie-items">
                                             <div class="gallery-item">
-                                                <button class="btn-supprimer hidden" id="supprimerButton1-1">
-                                                    <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon1-1">
+                                                <button class="btn-supprimer " id="supprimerButton1-1">
+                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon1-1">
                                                 </button>
                                                 <img src="../../img/galerie/1.png" alt="Image 1">
                                             </div>
                                             <div class="gallery-item">
-                                                <button class="btn-supprimer hidden" id="supprimerButton2-1">
-                                                    <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon2-1">
+                                                <button class="btn-supprimer " id="supprimerButton2-1">
+                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon2-1">
                                                 </button>
                                                 <img src="../../img/galerie/2.png" alt="Image 2">
                                             </div>
                                             <div class="gallery-item">
-                                                <button class="btn-supprimer hidden" id="supprimerButton3-1">
-                                                    <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon3-1">
+                                                <button class="btn-supprimer " id="supprimerButton3-1">
+                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon3-1">
                                                 </button>
                                                 <img src="../../img/galerie/3.png" alt="Image 3">
                                             </div>
                                             <div class="gallery-item">
-                                                <button class="btn-supprimer hidden" id="supprimerButton4-1">
-                                                    <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon4-1">
+                                                <button class="btn-supprimer " id="supprimerButton4-1">
+                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon4-1">
                                                 </button>
                                                 <img src="../../img/galerie/4.png" alt="Image 4">
                                             </div>
                                             <div class="gallery-item">
-                                                <button class="btn-supprimer hidden" id="supprimerButton5-1">
-                                                    <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon5-1">
+                                                <button class="btn-supprimer " id="supprimerButton5-1">
+                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon5-1">
                                                 </button>
                                                 <img src="../../img/galerie/5.png" alt="Image 5">
                                             </div>
                                             <div class="gallery-item">
-                                                <button class="btn-supprimer hidden" id="supprimerButton6-1">
-                                                    <img src="../../img/icons/delete-X-icon.png" alt="Delete" class="delete-icon" id="deleteIcon6-1">
+                                                <button class="btn-supprimer " id="supprimerButton6-1">
+                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon6-1">
                                                 </button>
                                                 <img src="../../img/galerie/6.png" alt="Image 6">
                                             </div>
                                         </div>
-                                        <div class="col-sm-6" id="uploadedFilesContainer2">
-                                            <div class="new-comment new-comment-file">
-                                                <div class="file-upload">
-                                                    <label for="fileInput2" class="label-file">
-                                                        <span class="img-cercle">
-                                                            <img src="../../img/icons/upload.png" alt="">
-                                                        </span> Cliquer pour importer
-                                                        <br>
-                                                        <span class="upload-text">ou juste dropper and dragger</span>
-                                                    </label>
-                                                    <input type="file" id="fileInput2" name="Documents2" multiple onchange="displayUploadedFiles(this, 'uploadedFilesContainer2')">
+                                        <div class="upload">
+                                            <div class="col-sm-6" id="uploadedFilesContainer2">
+                                                <div class="new-comment new-comment-file">
+                                                    <div class="file-upload">
+                                                        <label for="fileInput2" class="label-file">
+                                                            <span class="img-cercle">
+                                                                <img src="../../img/icons/upload.png" alt="">
+                                                            </span> Cliquer pour importer
+                                                            <br>
+                                                            <span class="upload-text">ou juste dropper and dragger</span>
+                                                        </label>
+                                                        <input type="file" id="fileInput2" name="Documents2" multiple onchange="displayUploadedFiles(this, 'uploadedFilesContainer2')">
+                                                    </div>
+                                                    <button class="btn-importer">Importer</button>
                                                 </div>
-                                                <button class="btn-importer">Importer</button>
                                             </div>
-                                        </div>
-                                        <div id="uploadedFilesContainer2" class="col-sm-6">
+                                            <!-- <div id="uploadedFilesContainer2">
+                                            </div> -->
                                         </div>
             
                                     </div>
