@@ -26,3 +26,4 @@ document.querySelectorAll('.message-center').forEach(section => {
     });
     updateActiveCounter(sectionId);
 });
+
