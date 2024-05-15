@@ -246,3 +246,72 @@ radioButtons.forEach(radioButton => {
         }
     });
 });
+
+
+// for the files uploading
+function displayUploadedFiles(input) {
+    const filesContainer = document.getElementById('uploadedFilesContainer');
+    const files = input.files;
+
+    if (files.length > 0) {
+        const fileList = document.createElement('ul');
+        fileList.classList.add('uploaded-files-list');
+
+        for (let i = 0; i < files.length; i++) {
+            const fileItem = document.createElement('li');
+            fileItem.classList.add('file-item');
+
+            const fileIcon = document.createElement('span');
+            fileIcon.classList.add('file-icon');
+            const fileType = getFileType(files[i].type);
+            fileIcon.innerHTML = getIconHTML(fileType);
+
+            const fileDetails = document.createElement('div');
+            fileDetails.classList.add('file-details');
+
+            const fileInfo = document.createElement('div');
+            fileInfo.classList.add('file-info');
+
+            const fileName = document.createElement('div');
+            fileName.classList.add('file-name');
+            fileName.textContent = files[i].name.length > 25 ? files[i].name.slice(0, 25) + '...' : files[i].name;
+            fileInfo.appendChild(fileName);
+
+            const fileSize = document.createElement('div');
+            fileSize.classList.add('file-size');
+            const fileSizeText = document.createElement('span');
+            fileSizeText.textContent = '0 Bytes sur ' + formatFileSize(files[i].size);
+            fileSize.appendChild(fileSizeText);
+            fileInfo.appendChild(fileSize);
+
+            const progressBarContainer = document.createElement('div');
+            progressBarContainer.classList.add('progress-bar');
+            const progressBar = document.createElement('div');
+            progressBar.classList.add('progress');
+            progressBar.style.width = '0%';
+            progressBarContainer.appendChild(progressBar);
+            fileInfo.appendChild(progressBarContainer);
+
+            const statusIcon = document.createElement('span');
+            statusIcon.classList.add('status-icon');
+            statusIcon.innerHTML = '<img src="../../img/icons/cancel.png">';
+            statusIcon.addEventListener('click', () => {
+                fileItem.remove();
+            });
+            fileInfo.appendChild(statusIcon);
+
+            fileDetails.appendChild(fileInfo);
+
+            fileItem.appendChild(fileIcon);
+            fileItem.appendChild(fileDetails);
+
+            fileList.appendChild(fileItem);
+
+            // Simulate file upload progress
+            simulateFileUpload(files[i], progressBar, fileSizeText, statusIcon, fileItem, progressBarContainer);
+        }
+
+        // Append the file list to the container
+        filesContainer.appendChild(fileList);
+    }
+}

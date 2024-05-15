@@ -10,10 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/patient-modal.css">
     <link rel="stylesheet" href="../../css/index.css">
-    <link rel="stylesheet" href="../../css/documents.css">
     <link rel="stylesheet" href="../../css/message.css">
-    <link rel="stylesheet" href="../../css/profil.css">
-    <link rel="stylesheet" href="../../css/buttons-style.css">
     <link rel="stylesheet" href="../../css/confirmation-rdv.css">
 
 </head>
@@ -243,37 +240,12 @@
                 <div class="cards">
                     <div class="card">
                         <div  id="headingOne">
-                            
                         </div>
-                    
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="card-header">
                                 <p class="card-title">Vous prenez un rendez-vous pour</p>
                             </div>
-                            <!-- <div class="card-body">
-                                <input type="radio" id="radio1" name="card-radio" class="hidden-radio">
-                                <label for="radio1" class="card-radio">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <img src="../../img/icons/vous-meme-black.svg" alt="vous-meme">
-                                            <p class="card-name">Vous meme</p>
-                                        </div>
-                                    </div>
-                                </label>
-                            
-                                <input type="radio" id="radio2" name="card-radio" class="hidden-radio">
-                                <label for="radio2" class="card-radio">
-                                    <div class="card">
-                                        <div class="card-content">
-                                            <img src="../../img/icons/un-proche-black.svg" alt="un proche">
-                                            <p class="card-name">Un proche</p>
-                                        </div>
-                                    </div>
-                                </label>
-                            </div> -->
-
-
                             <div class="card-body">
                                 <div class="card-radios">
                                     <input type="radio" id="radio1" name="card-radio" class="hidden-radio">
@@ -309,9 +281,6 @@
                                 </div>
                                 
                             </div>
-                            
-                            
-                            
                         </div>
                     </div>
                     <div class="card">
@@ -319,133 +288,177 @@
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="card-header">
-                                <p class="card-title">Lieux</p>
-                                <button class="btn ajouter-button"><i class="fas fa-plus"></i><span>Ajouter</span></button>
                             </div>
-                            <div class="card-body">
-                                <div class="lieu-items">
-                                    <div class="lieu-item">
-                                        <div class="lieu-item-left">
-                                            <div class="box-img">
-                                                <img src="../../img/icons/docs.png" alt="folder-icon" class="lieu-img">
+                            <div class="card-body step2">
+                                <div class="info-patient">
+                                    <div class="title-info-patient">
+                                        Informations sur le patient
+                                    </div>
+                                    <div class="body-info">
+                                        <div class="info-items">
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">Radi Amine</h3>
+                                                    <p class="info-subtitle">Nom</p>
+                                                </div>
                                             </div>
-                                            <p class="lieu-title">8 avune de phare</p>
-                                        </div>
-                                        <div class="lieu-item-right">
-                                            <button class="lieu-item-delete">
-                                                <img src="../../img/icons/delete1.png" alt="delete-icon"/>
-                                            </button>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">0661318810</h3>
+                                                    <p class="info-subtitle">Téléphone</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">ali@gmail.com</h3>
+                                                    <p class="info-subtitle">E-mail</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="vertical-line">
-                                    <span class="verti-line"></span>
-                                </div>
-                                <form action="#" class="form-step mb-5">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="input-group-step2">
-                                                <input type="text" id="lieu" name="lieu" placeholder="lieu" class="text-input-step2 form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group-step2">
-                                                <input type="text" id="typeDelieu" name="typeDelieu" placeholder="type de lieu" class="text-input-step2 form-control">
-                                            </div>
-                                        </div>
+                                <div class="info-rdv">
+                                    <div class="title-info-patient">
+                                        Informations sur le rendez-vous
                                     </div>
-                                
-                                    <div class="row mt-3">
-                                        <div class="col-sm-6">
-                                            <div class="input-group-step2">
-                                                <input type="tel" id="Telephone" name="Telephone" placeholder="Télephone" class="text-input-step2 form-control">
-                                                <div class="lieu-item-right add-btn">
-                                                    <button class="lieu-item-add">
-                                                        <img src="../../img/icons/add-icon.png" alt="add-icon"/>
-                                                    </button>
+                                    <div class="body-info">
+                                        <div class="info-items">
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">Dr Alami Karim</h3>
+                                                    <p class="info-subtitle">Professionnel</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">Généraliste</h3>
+                                                    <p class="info-subtitle">Spécialité</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">Cabinet/Centre</h3>
+                                                    <p class="info-subtitle">Lieu</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">Consultation</h3>
+                                                    <p class="info-subtitle">Service</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">25/05/2024</h3>
+                                                    <p class="info-subtitle">Date</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">14 : 35</h3>
+                                                    <p class="info-subtitle">Heure</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">Casablanca</h3>
+                                                    <p class="info-subtitle">Lieu</p>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="info-img">
+                                                    <div class="info-img-box">
+                                                        <img src="../../img/icons/docs.png" alt="Patient Image">
+                                                    </div>
+                                                </div>
+                                                <div class="info-text">
+                                                    <h3 class="info-title">Boulevard d'anfa</h3>
+                                                    <p class="info-subtitle">Adresse</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group-step2">
-                                                <input type="text" id="Site Web" name="Site Web" placeholder="Télephone" class="text-input-step2 form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="row mt-3">
-                                        <div class="col-sm-6">
-                                            <div class="input-group-step2">
-                                                <input type="email" id="email" name="email" placeholder="Email" class="text-input-step2 form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group inp-multiple">
-                                                <select id="days" name="days" class="days-input">
-                                                    <option value="lundi">Lundi</option>
-                                                    <option value="mardi">Mardi</option>
-                                                    <option value="mercredi">Mercredi</option>
-                                                    <option value="jeudi">Jeudi</option>
-                                                    <option value="vendredi">Vendredi</option>
-                                                    <option value="samedi">Samedi</option>
-                                                    <option value="dimanche">Dimanche</option>
-                                                </select>
-                                                <div class="time-input-group">
-                                                    <input type="time" id="startTime" name="startTime" class=" time-input" required>
-                                                    <span class="time-separator">to</span>
-                                                    <input type="time" id="endTime" name="endTime" class=" time-input" required>
-                                                </div>
-                                                <div class="lieu-item-right add-btn">
-                                                    <button class="lieu-item-add">
-                                                        <img src="../../img/icons/add-icon.png" alt="add-icon"/>
-                                                    </button>
+                                        <div class="upload-items">
+                                            <div class="col-sm-12">
+                                                <div class="new-comment new-comment-file">
+                                                    <div class="file-upload">
+                                                        <label for="fileInput" class="label-file">
+                                                            <span class="img-cercle">
+                                                                <img src="../../img/icons/upload.png" alt="">
+                                                            </span> Cliquer pour importer
+                                                            <br>
+                                                            <span class="upload-text">ou juste dropper and dragger</span>
+                                                        </label>
+                                                        <input type="file" id="fileInput3" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                                    </div>
+                                                    <button class="btn-importer">Importer</button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        
-                                    </div>
-                                
-                                    <div class="row mt-3">
-                                        <div class="col-sm-6">
-                                            <div class="input-group-step2">
-                                                <input type="text" id="Addresse" name="Addresse" placeholder="Addresse" class="text-input-step2 ">
-                                                <div class="lieu-item-right add-btn">
-                                                    <button class="lieu-item-add">
-                                                        <img src="../../img/icons/add-icon.png" alt="add-icon"/>
-                                                    </button>
-                                                </div>
+                                            <div id="uploadedFilesContainer" class="col-sm-12">
                                             </div>
                                         </div>
-                                        <div class="col-sm-6">
-                                            <div class="input-group-step2">
-                                                <input type="text" id="Transport" name="Transport" placeholder="Transport" class="text-input-step2 form-control">
-                                                <div class="lieu-item-right add-btn">
-                                                    <button class="lieu-item-add">
-                                                        <img src="../../img/icons/add-icon.png" alt="add-icon"/>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                                
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.836517728408!2d-7.643009484192865!3d33.588764244547776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b5abdbeb48f%3A0x15fa35cb2f7c62b0!2s123%2C%20boulevard%20d'anfa%2C%20Casablanca!5e0!3m2!1sen!2sma!4v1630296476720!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                <div class="col-sm-12 mt-5">
-                                    <div class="input-group-step2">
-                                        <input type="number" id="Rayon" name="Rayon" placeholder="Rayon" class="text-input-step2 form-control">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div class="card">
                         <div  id="headingThree">
                     
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-bs-parent="#accordionExample">
 
-                            <div class="">
+                            <div class="card-body">
                                 <form action="" class="flex-column">
                                     <div class="header">
                                         <h6 class="title">Galerie</h6>
@@ -560,76 +573,6 @@
                                         </div>
                                     </div>
                                 </form>
-                                <div class="flex-column">
-                                    <div class="header">
-                                        <h6 class="title">Galerie</h6>
-                                        <div class="btn-container">
-                                            <button type="button" class="btn-note">
-                                                <i class="fas fa-plus"></i>
-                                                <span>Modifier</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="content-galarie-img">
-                                        <div class="galerie-items">
-                                            <div class="gallery-item">
-                                                <button class="btn-supprimer " id="supprimerButton1-1">
-                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon1-1">
-                                                </button>
-                                                <img src="../../img/galerie/1.png" alt="Image 1">
-                                            </div>
-                                            <div class="gallery-item">
-                                                <button class="btn-supprimer " id="supprimerButton2-1">
-                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon2-1">
-                                                </button>
-                                                <img src="../../img/galerie/2.png" alt="Image 2">
-                                            </div>
-                                            <div class="gallery-item">
-                                                <button class="btn-supprimer " id="supprimerButton3-1">
-                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon3-1">
-                                                </button>
-                                                <img src="../../img/galerie/3.png" alt="Image 3">
-                                            </div>
-                                            <div class="gallery-item">
-                                                <button class="btn-supprimer " id="supprimerButton4-1">
-                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon4-1">
-                                                </button>
-                                                <img src="../../img/galerie/4.png" alt="Image 4">
-                                            </div>
-                                            <div class="gallery-item">
-                                                <button class="btn-supprimer " id="supprimerButton5-1">
-                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon5-1">
-                                                </button>
-                                                <img src="../../img/galerie/5.png" alt="Image 5">
-                                            </div>
-                                            <div class="gallery-item">
-                                                <button class="btn-supprimer " id="supprimerButton6-1">
-                                                    <img src="../../img/icons/delete-white.png" alt="Delete" class="delete-icon" id="deleteIcon6-1">
-                                                </button>
-                                                <img src="../../img/galerie/6.png" alt="Image 6">
-                                            </div>
-                                        </div>
-                                        <div class="upload">
-                                            <div class="col-sm-6" id="uploadedFilesContainer2">
-                                                <div class="new-comment new-comment-file">
-                                                    <div class="file-upload">
-                                                        <label for="fileInput2" class="label-file">
-                                                            <span class="img-cercle">
-                                                                <img src="../../img/icons/upload.png" alt="">
-                                                            </span> Cliquer pour importer
-                                                            <br>
-                                                            <span class="upload-text">ou juste dropper and dragger</span>
-                                                        </label>
-                                                        <input type="file" id="fileInput2" name="Documents2" multiple onchange="displayUploadedFiles(this, 'uploadedFilesContainer2')">
-                                                    </div>
-                                                    <button class="btn-importer">Importer</button>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -746,17 +689,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../js/index.js"></script>
-    <script src="../../js/messages.js"></script>
-    <script src="../../js/droits.js"></script>
-    <script src="../../js/rating.js"></script>
-    <script src="../../js/profil.js"></script>
     <script src="../../js/confirmation-rdv.js"></script>
     <script>
         // $(document).ready(function() {
         //     $('#NVPresentationModal').modal('show');
         // });
     </script>
-   
-    
 </body>
 </html>
