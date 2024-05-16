@@ -239,7 +239,7 @@
                         <td>Dr Alami Karim</td>
                         <td id="Termine-complete"><span class="bg"><span></span>Terminé</span></td>
                         <td style="cursor: pointer;">
-                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#MessageModal" style="margin-right: 10px;">
+                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#QuestionModal" style="margin-right: 10px;">
                                 <img src="../../img/icons/message-icon.png" alt="message-icon">
                             </a>
                             <a href="" id="badge-message-failed">
@@ -298,104 +298,40 @@
 
     <!-- //Modals -->
     <!-- //Messages Modal -->
-    <div class="modal fade" id="MessageModal" tabindex="-1" aria-labelledby="MessageModalLabel" aria-hidden="true">
+    <div class="modal fade" id="QuestionModal" tabindex="-1" aria-labelledby="QuestionModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="MessageModalLabel">Messages</h5>
+              <h5 class="modal-title" id="QuestionModalLabel">Question</h5>
               <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-1', 'arrow-icon-1')">
-                        <span class="profil-cercle"></span>
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <span class="profil-badge"></span>
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
-                        </div>
-                        <i id="arrow-icon-1" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-1" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
-                        </div>
+                <div class="question-container">
+                    <div class="col-md-12">
+                        <h5>Le médecin <b>Dr ALAMI Karim</b> qui va répondre à votre demande, souhaite savoir si vous aviez le(s) symptôme(s) suivant(s):</h5>
                     </div>
                 </div>
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-2', 'arrow-icon-2')">
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
-                        </div>
-                        <i id="arrow-icon-2" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-2" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
+                <div class="question-body">
+                    <div class="col-md-12 question-item">
+                        <div class="question-text">Fièvre</div>
+                        <div>
+                            <button type="button" class=" btn-oui">Oui</button>
+                            <button type="button" class=" btn-non">Non</button>
                         </div>
                     </div>
-                </div>
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-3')">
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
-                        </div>
-                        <i id="arrow-icon-3" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-3" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
+                    <div class="col-md-12 question-item">
+                        <div class="question-text">Fièvre</div>
+                        <div>
+                            <button type="button" class=" btn-oui">Oui</button>
+                            <button type="button" class=" btn-non">Non</button>
                         </div>
                     </div>
-                </div>
-                <div class="message-container">
-                    <div class="message-left-top" onclick="toggleDropdown('message-center-4', 'arrow-icon-4')">
-                        <span class="profil-cercle"></span>
-                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
-                        <span class="profil-badge"></span>
-                        <div class="user-info-message">
-                            <p class="user-name">Radi Amine</p>
-                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                    <div class="col-md-12 question-item">
+                        <div class="question-text">Fièvre</div>
+                        <div>
+                            <button type="button" class=" btn-oui">Oui</button>
+                            <button type="button" class=" btn-non">Non</button>
                         </div>
-                        <i id="arrow-icon-4" class="fas fa-chevron-up rotate-icon"></i>
-                    </div>
-                    <div id="message-center-4" class="message-center" style="display: none;">
-                        <div class="message-title">
-                            <p>Object: Symptômes</p>
-                        </div>
-                        <div class="message-text">
-                            <p>
-                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="message-footer">
-                    <div class="col-md-12 btn-icon">
-                        <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVMessageModal">
-                            <i class="fas fa-plus"></i>
-                            <span>Ajouter un message</span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -407,71 +343,7 @@
           </div>
         </div>
     </div>
-    <!-- //NV Messages Modal -->
-    <div class="modal fade" id="NVMessageModal" tabindex="-1" aria-labelledby="NVMessageModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="NVMessageModalLabel">Nouveau message</h5>
-                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    
-                    <form action="">
-                        <div class="col-sm-12">
-                            <label for="Objet">Objet </label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <textarea id="Objet" name="Objet" placeholder="Ajouter une objet" rows="2" ></textarea>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Message">Message </label>
-                            <div class="new-comment">
-                                <i class="icon-lieu"></i>
-                                <textarea id="Message" name="Message" placeholder="Ajouter une message" rows="2" ></textarea>
-                            </div>
-                        </div>
-                        <div class="col-sm-12">
-                            <label for="Documents">Documents</label>
-                            <div class="new-comment new-comment-file">
-                                <div class="file-upload">
-                                    <label for="fileInput" class="label-file">
-                                        <span class="img-cercle">
-                                            <img src="../../img/icons/upload.png" alt="">
-                                        </span> Cliquer pour importer
-                                        <br>
-                                        <span class="upload-text">ou juste dropper and dragger</span>
-                                    </label>
-                                    <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
-                                </div>
-                                <button class="btn-importer">Importer</button>
-                            </div>
-                        </div>
-                        <div id="uploadedFilesContainer" class="col-sm-12">
-                        </div>
 
-                        
-                        <div class="col-sm-12">
-                            <label for="Documents">Type de document</label>
-                            <div class="new-comment select-container">
-                                <img src="../../img/icons/papper-docs.png" alt="" class="icon-left">
-                                <select id="documentType" name="documentType" class="custom-select">
-                                    <option value="ordonnance1">Ordonnance de médicaments</option>
-                                    <option value="ordonnance2">Ordonnance de médicaments 2</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-              
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
-                    <button type="button" class="btn btn-primary2">Envoyer</button>
-                </div>
-            </div>
-        </div>
-    </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -480,6 +352,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../js/index.js"></script>
     <script src="../../js/messages.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#QuestionModal').modal('show');
+        });
+    </script>
     
 
 </body>
