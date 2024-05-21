@@ -215,21 +215,54 @@ function formatFileSize(bytes) {
 
 
 const radioButtons = document.querySelectorAll('.hidden-radio');
-    
+   
+
+
 radioButtons.forEach(radioButton => {
     radioButton.addEventListener('change', () => {
         const card = radioButton.closest('.card-radio');
+        const imgGroupClass = card.querySelector('.card-img').classList[1]; // Get second class name which indicates group
+        const imgCheckedGroupClass = card.querySelector('.card-img-checked').classList[1]; // Get second class name which indicates checked group
+
+        const allGroupImages = document.querySelectorAll(`.${imgGroupClass}`);
+        const allCheckedGroupImages = document.querySelectorAll(`.${imgCheckedGroupClass}`);
+
+        // Reset all images in the group
+        allGroupImages.forEach(img => img.style.display = 'block');
+        allCheckedGroupImages.forEach(img => img.style.display = 'none');
+
+        // Show the checked image for the selected radio button
         const cardImg = card.querySelector('.card-img');
         const cardImgChecked = card.querySelector('.card-img-checked');
-        if (radioButton.checked) {
-            cardImg.style.display = 'none';
-            cardImgChecked.style.display = 'block';
-        } else {
-            cardImg.style.display = 'block';
-            cardImgChecked.style.display = 'none';
-        }
+
+        cardImg.style.display = 'none';
+        cardImgChecked.style.display = 'block';
     });
 });
+
+// some update for the first card in the steps to disply two substeps
+function showSecondCard() {
+    document.getElementById('first-card').style.display = 'none';
+    document.getElementById('second-card').style.display = 'block';
+    document.getElementById('title-radio-1').style.display = 'none';
+    document.getElementById('title-radio-2').style.display = 'block';
+    
+    document.getElementById('navigation-buttons-first').style.display = 'none';
+    document.getElementById('navigation-buttons-second').style.display = 'flex';
+    
+}
+
+function showFirstCard() {
+    document.getElementById('first-card').style.display = 'block';
+    document.getElementById('second-card').style.display = 'none';
+    document.getElementById('title-radio-1').style.display = 'block';
+    document.getElementById('title-radio-2').style.display = 'none';
+    
+    
+    document.getElementById('navigation-buttons-first').style.display = 'flex';
+    document.getElementById('navigation-buttons-second').style.display = 'none';
+}
+
 
 
 const selectListOpt = document.getElementById('selectListOpt');

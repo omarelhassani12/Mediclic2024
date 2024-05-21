@@ -243,43 +243,72 @@
                         </div>
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
+                            
                             <div class="card-header">
-                                <p class="card-title">Vous prenez un rendez-vous pour</p>
+                                <p class="card-title" id="title-radio-1">Vous avez un avis sur</p>
+                                <p class="card-title" id="title-radio-2" style="display: none;">Vous prenez un rendez-vous pour</p>
                             </div>
                             <div class="card-body">
-                                <div class="card-radios">
-                                    <input type="radio" id="radio1" name="card-radio" class="hidden-radio">
-                                    <label for="radio1" class="card-radio">
-                                        <div class="card">
-                                            <div class="card-content">
-                                                <img src="../../img/icons/vous-meme-black.svg" alt="vous-meme" class="card-img">
-                                                <img src="../../img/icons/vous-meme.svg" alt="vous-meme-checked" class="card-img-checked">
-                                                <p class="card-name">Vous meme</p>
+                                <div class="first-card" id="first-card">
+                                    <div class="card-radios">
+                                        <input type="radio" id="radio-g1-1" name="radio-g1" class="hidden-radio" >
+                                        <label for="radio-g1-1" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/des-symptôme-black.svg" alt="vous-meme" class="card-img img-group1-radio1">
+                                                    <img src="../../img/icons/des-symptôme.svg" alt="vous-meme-checked" class="card-img-checked img-checked-group1-radio1">
+                                                    <p class="card-name">Des symptôme</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </label>
-                                
-                                    <input type="radio" id="radio2" name="card-radio" class="hidden-radio">
-                                    <label for="radio2" class="card-radio">
-                                        <div class="card">
-                                            <div class="card-content">
-                                                <img src="../../img/icons/un-proche-black.svg" alt="un proche" class="card-img">
-                                                <img src="../../img/icons/un-proche.svg" alt="un-proche-checked" class="card-img-checked">
-                                                <p class="card-name">Un proche</p>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio-g1-2" name="radio-g1" class="hidden-radio" >
+                                        <label for="radio-g1-2" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/une-ordanance-black.svg" alt="un proche" class="card-img img-group1-radio2">
+                                                    <img src="../../img/icons/une-ordanance.svg" alt="un-proche-checked" class="card-img-checked img-checked-group1-radio2">
+                                                    <p class="card-name">Une ordanance</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </label>
+                                        </label>
+                                    </div>
                                 </div>
-
-                                <div id="selectList">
-                                    <label for="selectList" id="selectList-title">Sélectionnez un proche</label>
-                                    <select id="selectListOpt" >
-                                        <option value="option1">Radi Mourad</option>
-                                        <option value="option1">Radi Mourad</option>
-                                        <option value="option1">Radi Mourad</option>
-                                    </select>
+                    
+                                <div class="second-card" id="second-card" style="display: none;">
+                                    <div class="card-radios">
+                                        <input type="radio" id="radio-g2-1" name="radio-g2" class="hidden-radio">
+                                        <label for="radio-g2-1" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/vous-meme-black.svg" alt="vous-meme" class="card-img img-group2-radio1">
+                                                    <img src="../../img/icons/vous-meme.svg" alt="vous-meme-checked" class="card-img-checked img-checked-group2-radio1">
+                                                    <p class="card-name">Vous meme</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio2" name="radio-g2" class="hidden-radio">
+                                        <label for="radio2" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/un-proche-black.svg" alt="un proche" class="card-img img-group2-radio2">
+                                                    <img src="../../img/icons/un-proche.svg" alt="un-proche-checked" class="card-img-checked img-checked-group2-radio2">
+                                                    <p class="card-name">Un proche</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                    
+                                    <div id="selectList">
+                                        <label for="selectList" id="selectList-title">Sélectionnez un proche</label>
+                                        <select id="selectListOpt">
+                                            <option value="option1">Radi Mourad</option>
+                                            <option value="option2">Radi Mourad</option>
+                                            <option value="option3">Radi Mourad</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -630,7 +659,12 @@
                 </div>
             </div>
 
-            <div class="navigation-buttons">
+            <div class="navigation-buttons-first" id="navigation-buttons-first">
+                <button class="btn prev-button-f" onclick="showFirstCard()"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
+                <button class="btn next-button-f" onclick="showSecondCard()"><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="navigation-buttons-second" id="navigation-buttons-second">
                 <button class="btn prev-button"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
                 <button class="btn next-button"><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
             </div>
@@ -695,5 +729,6 @@
         //     $('#NVPresentationModal').modal('show');
         // });
     </script>
+
 </body>
 </html>

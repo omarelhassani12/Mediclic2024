@@ -149,7 +149,8 @@
 
 
 
-.navigation-buttons {
+.navigation-buttons-first,
+.navigation-buttons-second {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -157,45 +158,68 @@
     padding-bottom: 100px;
 }
 
+
+.navigation-buttons-second{
+    display: none;
+}
+
 .prev-button, .next-button {
     padding: 10px 20px;
     border-radius: 5px;
     margin: 0 10px;
     font-size: 16px;
+    border: none;
+}
+
+.prev-button, .prev-button:hover, .next-button, .next-button:hover {
+    background-color: transparent;
+    border: transparent;
 }
 
 .prev-button {
-    background-color: none;
     color: #333;
-    border: none;
 }
 
-.prev-button:hover {
-    background-color: none !important;
-    color: #333;
-    border: none;
-}
-
-.prev-button span{
+.prev-button span {
     margin-left: 15px !important;
 }
 
 .next-button {
     color: #3D8CEF;
-    background-color: none !important;
-    border: none;
 }
-.next-button:hover {
-    /* background: linear-gradient(to right, #37A5E8, #255A9B); */
-    /* color: #fff; */
-    background-color: none !important;
-    color: #3D8CEF;
+
+.next-button span {
+    margin-right: 15px !important;
+}
+.prev-button-f, .next-button-f {
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 16px;
     border: none;
 }
 
-.next-button span{
+.prev-button-f, .prev-button-f:hover, .next-button-f, .next-button-f:hover {
+    background-color: transparent;
+    border: transparent;
+}
+
+.prev-button-f {
+    color: #333;
+}
+
+.prev-button-f span {
+    margin-left: 15px !important;
+}
+
+.next-button-f {
+    color: #3D8CEF;
+}
+
+.next-button-f span {
     margin-right: 15px !important;
 }
+
 
 
 /* cards & inputs */
@@ -219,6 +243,22 @@
     padding: 0;
 }
 
+#first-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+#second-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 
 
 .card-header{
@@ -238,7 +278,7 @@
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
@@ -306,6 +346,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 10%;
 }
 
