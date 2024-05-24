@@ -78,14 +78,18 @@ body {
 
 .header1 .user-info .special-plus {
     background-color: #40E4AD; 
-    border-radius: 90%;
-    padding: 0 5px 0 5px; 
+    border-radius: 50%; /* Ensure it's fully rounded */
+    padding: 5px; /* Add padding to make it larger */
     margin-right: 25px;
+    display: inline-block; 
 }
 
-.header1 .user-info .special-plus i {
-    color: #fff; 
+.header1 .user-info .special-plus img {
+    width: 20px; 
+    height: 20px; /* Ensure the image has a fixed height */
+    margin: 0 auto; 
 }
+
 
 /* Styles for individual icons */
 .user-info-icons a{
@@ -111,7 +115,7 @@ a .special-plus i {
 .notification-badge .badge {
     position: relative;
     top: -10px;
-    right: 10px;
+    right: 23px;
     background-color: red;
     width: 3px;
     height: 16px;
