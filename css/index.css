@@ -400,6 +400,10 @@ transform: rotate(180deg);
     margin-left: 60px;
 }
 
+.hidden{
+    display: none;
+}
+
 
 /* Main header */
 .main-header {
