@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/buttons-style.css">
 
-    <style>
-       
-    </style>
 </head>
 <body>
 
@@ -27,6 +24,7 @@
             <span class="user-info-icons ">
                 <a href="#">
                     <i class="far fa-file-alt" style="margin-right: 15px; "></i>
+                </a>
                 <a href="./pages/Messages/index.html">
                     <i class="far fa-comment-alt" style="margin-right: 15px; "></i>
                 </a>
@@ -74,6 +72,9 @@
 
     <!-- Sidebar -->
     <aside class="sidebar">
+        <div class="toggle-btn">
+            <button id="toggleBtn" class="toggle-button"><img src="./img/icons/toggle-left.svg" alt="toggle-left"></img></button>
+        </div>
         <h3 class="sidebar-title">Tableau de bord</h3>
         <ul class="sidebar-menu">
             <!-- First Dropdown -->
@@ -299,12 +300,12 @@
         <section class="navigation-card">
             <div class="card-navigation">
                 <button id="prevBtn" class="btn-nav">
-                    <img src="./img/icons/arrow-left.png" alt="arrow-left">Previous
+                    <img src="/vidal/static/src/omar/img/icons/arrow-left.png" alt="arrow-left"/>Previous
                 </button>
                 <span class="pages">
                  </span>
                 <button id="nextBtn" class="btn-nav">
-                    Next<img src="./img/icons/arrow-right.png" alt="arrow-right">
+                    Next<img src="/vidal/static/src/omar/img/icons/arrow-right.png" alt="arrow-right"/>
                 </button>
             </div>
         </section>
@@ -521,8 +522,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/side-bar-toggles.js"></script>
     
-
     <script>
         // $(document).ready(function() {
         //     $('#NVNotesModal').modal('show');

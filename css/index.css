@@ -196,6 +196,7 @@ a .special-plus i {
     margin-top: 100px;
     height: calc(100% - 100px);
     overflow-y: auto; 
+    transition: width 0.3s ease;
     scrollbar-width: thin; 
     scrollbar-color: transparent transparent;
 }
@@ -348,7 +349,57 @@ transform: rotate(180deg);
 .main-content {
     margin-left: 258px; 
     padding: 20px;
+    transition: margin-left 0.3s ease;
 }
+
+/* for small side */
+
+.sidebar.small {
+    width: 60px;
+}
+
+.sidebar.small .sidebar-title {
+    display: none;
+}
+.sidebar.small .sidebar-menu {
+    margin-top: 35px;
+}
+
+.sidebar .dropdown-title {
+    display: inline-block;
+    transition: opacity 0.3s ease;
+}
+
+.sidebar.small .dropdown-title {
+    display: none;
+}
+
+.toggle-btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    position: absolute  ;
+    top: 2%;
+    right: -0%;
+    z-index: 1;
+}
+
+.toggle-button img{
+    width: 20px;
+}
+
+.main-content.small {
+    margin-left: 60px;
+}
+
 
 /* Main header */
 .main-header {
