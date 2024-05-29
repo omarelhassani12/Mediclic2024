@@ -354,6 +354,7 @@ transform: rotate(180deg);
     margin-left: 258px; 
     padding: 20px;
     transition: margin-left 0.3s ease;
+    overflow-x: auto;
 }
 
 /* for small side */
@@ -500,7 +501,7 @@ table {
 }
 
 th, td {
-    padding: 15px; 
+    padding: 10px; 
     text-align: center;
 }
 
