@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../css/documents.css">
     <link rel="stylesheet" href="../../css/message.css">
     <link rel="stylesheet" href="../../css/fse.css">
+    <link rel="stylesheet" href="../../css/table.css">
 </head>
 <body>
 
@@ -254,243 +255,245 @@
         
         <!-- Data Table -->
         <section class="data-table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Dossier</th>
-                        <th>Date</th>
-                        <th>Assuré</th>
-                        <th>Bénéficiare</th>
-                        <th>Montant total</th>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dossier</th>
+                            <th>Date</th>
+                            <th>Assuré</th>
+                            <th>Bénéficiare</th>
+                            <th>Montant total</th>
 
-                        <th>AMO</th>
-                        <th>Statut</th>
-                        <th>A rembourser</th>
-                        <th>Remboursé</th>
-                        <th>Reste</th>
+                            <th>AMO</th>
+                            <th>Statut</th>
+                            <th>A rembourser</th>
+                            <th>Remboursé</th>
+                            <th>Reste</th>
+                            
+                            <th>AMC</th>
+                            <th>Statut</th>
+                            <th>A rembourser</th>
+                            <th>Remboursé</th>
+                            <th>Reste</th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-demande"><span></span>Demande</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>10.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>                        
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-remboursé"><span></span>Remboursée</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-a-rembourser"><span></span>A rembourser</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-demande"><span></span>Demande</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-remboursé"><span></span>Remboursée</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-a-rembourser"><span></span>A rembourser</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-demande"><span></span>Demande</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-remboursé"><span></span>Remboursée</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
+                            <td>12/03/2024</td>
+                            <td>Radi Amin</td>
+                            <td>Radi Amin</td>
+                            <td>214.00</td>
+                            <td>CNSS</td>
+                            <td id="status-a-rembourser"><span></span>A rembourser</td>
+                            <td>196.00</td>
+                            <td>196.00</td>
+                            <td>00.00</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+                            <td>0.00</td>
+
+                            <td style="cursor: pointer;">
+                                <a href="../../pages/FSE/fse-details.html">
+                                    <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
+                                </a>
+                            </td>
+                        </tr>
+
+        
                         
-                        <th>AMC</th>
-                        <th>Statut</th>
-                        <th>A rembourser</th>
-                        <th>Remboursé</th>
-                        <th>Reste</th>
-
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody id="tableBody">
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Demande</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>10.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>                        
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-remboursé"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-a-rembourser"><span></span>A rembourser</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Demande</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-remboursé"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-a-rembourser"><span></span>A rembourser</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-demande"><span></span>Demande</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-remboursé"><span></span>Remboursée</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="nom-complet"><a href="https://dem.mediclic.ma/folder?folder_id=225" id="dossier">FSE080447</a></td>
-                        <td>12/03/2024</td>
-                        <td>Radi Amin</td>
-                        <td>Radi Amin</td>
-                        <td>214.00</td>
-                        <td>CNSS</td>
-                        <td id="status-a-rembourser"><span></span>A rembourser</td>
-                        <td>196.00</td>
-                        <td>196.00</td>
-                        <td>00.00</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-                        <td>0.00</td>
-
-                        <td style="cursor: pointer;">
-                            <a href="../../pages/FSE/fse-details.html">
-                                <img src="../../img/icons/FSE-icon.png" alt="FSE-icon">
-                            </a>
-                        </td>
-                    </tr>
-
-      
-                    
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
         <!-- Total Card -->

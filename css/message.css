@@ -290,12 +290,14 @@ input[type="text"].search-input:focus {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #333;
+    font-size: 13px;
 }
 
 .uploaded-files-list li .file-details .file-info .file-size {
     margin-right: 10px;
     color: #A9A9A9;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .progress-bar {
