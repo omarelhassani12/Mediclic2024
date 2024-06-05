@@ -17,18 +17,19 @@
     display: flex;
     flex-direction: column;
 }
+
 .header-container{
     display: flex;
     justify-content: space-between;
     padding: 20px 15px;
+    padding-top: 3%;
 }
 
 .steps-title{
     color: #3D8CEF;
-    margin-left: 10px;
+    margin-left: 0px;
+    margin-top: 1.5%;
 }
-
-
 
 .div-horizontal {
     background-color: #A9A9A957;
@@ -55,28 +56,30 @@
     align-items: center;
     margin-bottom: 5rem;
     position: relative;
-    width: 75%;
+    width: 80%;
 }
 
 .step-button {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
     transition: .4s;
-    margin-right: 15px;
+    margin-right: 5px;
     background-color: #D9D9D9;
     color: #fff;
 }
 
 .step-button[aria-expanded="true"] {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #D9D9D9;
     color: #fff;
 }
 
 .done {
+    width: 40px;
+    height: 40px;
     background-color: #2867A8;
     color: #fff;
 }
@@ -97,6 +100,7 @@
 }
 
 .step-title {
+    font-size: 13px;
     color: #D9D9D9;
 }
 
@@ -110,7 +114,8 @@
     width: 60px;
     z-index: 5;
     height: 5px;
-    margin-left: 15px;
+    margin-left: 0px;
+    margin-right: 15px;
     border-radius: 10px;
 }
 
@@ -259,6 +264,18 @@
     width: 100%;
 }
 
+#third-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 120%;
+}
+
+.card-radios .card-radio{
+    width: 30%;
+    margin-right: 10px;
+}
 
 
 .card-header{
@@ -297,6 +314,7 @@
     border-radius: 3%;
     width: 35%;
     margin-top: 10%;
+    height: 150px;
 }
 
 .hidden-radio {
@@ -307,8 +325,14 @@
     display: none; 
 }
 
+.card{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .card img {
-    width: 50%;
+    width: 25%;
     height: auto;
 }
 
@@ -332,6 +356,7 @@
 .hidden-radio:checked + label .card-content {
     background-color: #3D8CEF;
     color: #fff;
+    height: 100%;
 }
 
 .hidden-radio:checked + label .card-img {

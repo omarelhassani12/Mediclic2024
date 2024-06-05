@@ -188,9 +188,9 @@
         <div class="container">
             <div class="container-header">
                 <div class="header-container">
-                    <h1 class="steps-title">
-                        Confirmation RDV
-                    </h1>
+                    <h4 class="steps-title">
+                        Avis
+                    </h4>
                     <div class="steps">
                         <div class="step-item">
                             <button class="step-button text-center" type="button" data-bs-toggle="collapse"
@@ -252,7 +252,6 @@
                             
                             <div class="card-header">
                                 <p class="card-title" id="title-radio-1">Vous avez un avis sur</p>
-                                <p class="card-title" id="title-radio-2" style="display: none;">Vous prenez un rendez-vous pour</p>
                             </div>
                             <div class="card-body">
                                 <div class="first-card" id="first-card">
@@ -313,6 +312,57 @@
                                             <option value="option2">Radi Mourad</option>
                                             <option value="option3">Radi Mourad</option>
                                         </select>
+                                    </div>
+                                </div>
+
+                                  <!-- Third Card Content -->
+                                <div class="third-card" id="third-card" style="display: none;">
+                                    <div class="card-radios">
+                                        <input type="radio" id="radio-g3-1" name="radio-g3" class="hidden-radio" >
+                                        <label for="radio-g3-1" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/method-text-black.svg" alt="vous-meme" class="card-img img-group1-radio1">
+                                                    <img src="../../img/icons/method-text.svg" alt="vous-meme-checked" class="card-img-checked img-checked-group1-radio1">
+                                                    <p class="card-name">Une texte</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio-g3-2" name="radio-g3" class="hidden-radio" >
+                                        <label for="radio-g3-2" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/method-corps-black.svg" alt="un proche" class="card-img img-group1-radio2">
+                                                    <img src="../../img/icons/method-corps.svg" alt="un-proche-checked" class="card-img-checked img-checked-group1-radio2">
+                                                    <p class="card-name">Un corps</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio-g3-3" name="radio-g3" class="hidden-radio" >
+                                        <label for="radio-g3-3" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/method-vocal-black.svg" alt="un proche" class="card-img img-group1-radio2">
+                                                    <img src="../../img/icons/method-vocal.svg" alt="un-proche-checked" class="card-img-checked img-checked-group1-radio2">
+                                                    <p class="card-name">Mode vocal</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <!-- Fourth Card Content -->
+                                <div class="fourth-card" id="fourth-card" style="display: none;">
+                                    <div class="third-card-view" id="third-card-view-1" style="display: none;">
+                                        <p>Content for Une texte</p>
+                                    </div>
+                                    <div class="third-card-view" id="third-card-view-2" style="display: none;">
+                                        <p>Content for Un corps</p>
+                                    </div>
+                                    <div class="third-card-view" id="third-card-view-3" style="display: none;">
+                                        <p>Content for Mode vocal</p>
                                     </div>
                                 </div>
                             </div>
@@ -666,8 +716,8 @@
             </div>
 
             <div class="navigation-buttons-first" id="navigation-buttons-first">
-                <button class="btn prev-button-f" onclick="showFirstCard()"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
-                <button class="btn next-button-f" onclick="showSecondCard()"><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
+                <button class="btn prev-button-f" onclick="showPreviousCard()"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
+                <button class="btn next-button-f" onclick="showNextCard()"><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
             </div>
 
             <div class="navigation-buttons-second" id="navigation-buttons-second">

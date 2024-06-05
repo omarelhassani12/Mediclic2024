@@ -211,75 +211,6 @@ function formatFileSize(bytes) {
 
 
 
-// for the radio button click
-
-
-const radioButtons = document.querySelectorAll('.hidden-radio');
-   
-
-
-radioButtons.forEach(radioButton => {
-    radioButton.addEventListener('change', () => {
-        const card = radioButton.closest('.card-radio');
-        const imgGroupClass = card.querySelector('.card-img').classList[1]; // Get second class name which indicates group
-        const imgCheckedGroupClass = card.querySelector('.card-img-checked').classList[1]; // Get second class name which indicates checked group
-
-        const allGroupImages = document.querySelectorAll(`.${imgGroupClass}`);
-        const allCheckedGroupImages = document.querySelectorAll(`.${imgCheckedGroupClass}`);
-
-        // Reset all images in the group
-        allGroupImages.forEach(img => img.style.display = 'block');
-        allCheckedGroupImages.forEach(img => img.style.display = 'none');
-
-        // Show the checked image for the selected radio button
-        const cardImg = card.querySelector('.card-img');
-        const cardImgChecked = card.querySelector('.card-img-checked');
-
-        cardImg.style.display = 'none';
-        cardImgChecked.style.display = 'block';
-    });
-});
-
-// some update for the first card in the steps to disply two substeps
-function showSecondCard() {
-    document.getElementById('first-card').style.display = 'none';
-    document.getElementById('second-card').style.display = 'block';
-    document.getElementById('title-radio-1').style.display = 'none';
-    document.getElementById('title-radio-2').style.display = 'block';
-    
-    document.getElementById('navigation-buttons-first').style.display = 'none';
-    document.getElementById('navigation-buttons-second').style.display = 'flex';
-    
-}
-
-function showFirstCard() {
-    document.getElementById('first-card').style.display = 'block';
-    document.getElementById('second-card').style.display = 'none';
-    document.getElementById('title-radio-1').style.display = 'block';
-    document.getElementById('title-radio-2').style.display = 'none';
-    
-    
-    document.getElementById('navigation-buttons-first').style.display = 'flex';
-    document.getElementById('navigation-buttons-second').style.display = 'none';
-}
-
-
-
-const selectListOpt = document.getElementById('selectListOpt');
-const selectListTitle  = document.getElementById('selectList-title');
-        
-radioButtons.forEach(radioButton => {
-    radioButton.addEventListener('change', () => {
-        if (radioButton.id === 'radio2' && radioButton.checked) {
-            selectListOpt.style.display = 'block';
-            selectListTitle.style.display = 'block';
-        } else {
-            selectListOpt.style.display = 'none';
-            selectListTitle.style.display = 'none';
-        }
-    });
-});
-
 
 // for the files uploading
 function displayUploadedFiles(input) {
@@ -348,3 +279,163 @@ function displayUploadedFiles(input) {
         filesContainer.appendChild(fileList);
     }
 }
+
+
+
+
+// let currentCardIndex = 0;
+// const cards = ['first-card', 'second-card', 'third-card', 'fourth-card'];
+
+// function showCard(index) {
+//     cards.forEach((cardId, i) => {
+//         const card = document.getElementById(cardId);
+//         card.style.display = (i === index) ? 'block' : 'none';
+//     });
+// }
+
+// function showNextCard() {
+//     if (currentCardIndex < cards.length - 1) {
+//         currentCardIndex++;
+//         showCard(currentCardIndex);
+//     }
+// }
+
+// function showPreviousCard() {
+//     if (currentCardIndex > 0) {
+//         currentCardIndex--;
+//         showCard(currentCardIndex);
+//     }
+// }
+
+// // Initialize to show the first card
+// showCard(currentCardIndex);
+
+// let currentCardIndex = 0;
+// const cards = ['first-card', 'second-card', 'third-card', 'fourth-card'];
+// const cardTitles = [
+//     'Vous avez un avis sur',
+//     'Vous prenez un rendez-vous pour',
+//     'Choisissez la méthode d\'avis',
+//     'Title for the fourth card'
+// ];
+
+// function showCard(index) {
+//     cards.forEach((cardId, i) => {
+//         const card = document.getElementById(cardId);
+//         card.style.display = (i === index) ? 'block' : 'none';
+//     });
+
+//     // Update the card header title
+//     const cardHeaderTitle = document.getElementById('title-radio-1');
+//     cardHeaderTitle.textContent = cardTitles[index];
+// }
+
+
+// function showNextCard() {
+//     if (currentCardIndex < cards.length - 1) {
+//         currentCardIndex++;
+//         showCard(currentCardIndex);
+//     }
+// }
+
+// function showPreviousCard() {
+//     if (currentCardIndex > 0) {
+//         currentCardIndex--;
+//         showCard(currentCardIndex);
+//     }
+// }
+
+// // Initialize to show the first card
+// showCard(currentCardIndex);
+
+
+
+let currentCardIndex = 0;
+const cards = ['first-card', 'second-card', 'third-card', 'fourth-card'];
+const cardTitles = [
+    'Vous avez un avis sur',
+    'Vous prenez un rendez-vous pour',
+    'Choisissez la méthode d\'avis',
+    ''
+];
+
+function showCard(index) {
+    cards.forEach((cardId, i) => {
+        const card = document.getElementById(cardId);
+        card.style.display = (i === index) ? 'block' : 'none';
+    });
+
+    // Update the card header title
+    const cardHeaderTitle = document.getElementById('title-radio-1');
+    cardHeaderTitle.textContent = cardTitles[index];
+}
+
+// Function to handle 'next' button click
+function showNextCard() {
+    if (currentCardIndex === 2) {
+        handleThirdCardSelection();
+    } else if (currentCardIndex < cards.length - 1) {
+        currentCardIndex++;
+        showCard(currentCardIndex);
+    }
+}
+
+// Function to handle 'previous' button click
+function showPreviousCard() {
+    if (currentCardIndex > 0) {
+        currentCardIndex--;
+        showCard(currentCardIndex);
+    }
+}
+
+// Function to show specific views based on radio selection in the third card
+function handleThirdCardSelection() {
+    const selectedRadio = document.querySelector('input[name="radio-g3"]:checked');
+    if (selectedRadio) {
+        const selectedViewId = `third-card-view-${selectedRadio.id.split('-')[2]}`;
+        const thirdCardViews = document.querySelectorAll('.third-card-view');
+        thirdCardViews.forEach(view => {
+            view.style.display = (view.id === selectedViewId) ? 'block' : 'none';
+        });
+        currentCardIndex++;
+        showCard(currentCardIndex);
+    }
+}
+
+// Initialize to show the first card
+showCard(currentCardIndex);
+
+
+// Radio button functionality
+document.getElementById('accordionExample').addEventListener('change', (event) => {
+    if (event.target.classList.contains('hidden-radio')) {
+        const card = event.target.closest('.card-radio');
+        const imgGroupClass = card.querySelector('.card-img').classList[1];
+        const imgCheckedGroupClass = card.querySelector('.card-img-checked').classList[1];
+
+        const allGroupImages = document.querySelectorAll(`.${imgGroupClass}`);
+        const allCheckedGroupImages = document.querySelectorAll(`.${imgCheckedGroupClass}`);
+
+        allGroupImages.forEach(img => img.style.display = 'block');
+        allCheckedGroupImages.forEach(img => img.style.display = 'none');
+
+        const cardImg = card.querySelector('.card-img');
+        const cardImgChecked = card.querySelector('.card-img-checked');
+
+        cardImg.style.display = 'none';
+        cardImgChecked.style.display = 'block';
+    }
+});
+
+const selectListOpt = document.getElementById('selectListOpt');
+const selectListTitle = document.getElementById('selectList-title');
+
+document.getElementById('accordionExample').addEventListener('change', (event) => {
+    if (event.target.id === 'radio2' && event.target.checked) {
+        selectListOpt.style.display = 'block';
+        selectListTitle.style.display = 'block';
+    } else if (event.target.name === 'radio-g2') {
+        selectListOpt.style.display = 'none';
+        selectListTitle.style.display = 'none';
+    }
+});
