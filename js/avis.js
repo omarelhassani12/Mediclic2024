@@ -281,35 +281,7 @@ function displayUploadedFiles(input) {
 }
 
 
-
-
-// let currentCardIndex = 0;
-// const cards = ['first-card', 'second-card', 'third-card', 'fourth-card'];
-
-// function showCard(index) {
-//     cards.forEach((cardId, i) => {
-//         const card = document.getElementById(cardId);
-//         card.style.display = (i === index) ? 'block' : 'none';
-//     });
-// }
-
-// function showNextCard() {
-//     if (currentCardIndex < cards.length - 1) {
-//         currentCardIndex++;
-//         showCard(currentCardIndex);
-//     }
-// }
-
-// function showPreviousCard() {
-//     if (currentCardIndex > 0) {
-//         currentCardIndex--;
-//         showCard(currentCardIndex);
-//     }
-// }
-
-// // Initialize to show the first card
-// showCard(currentCardIndex);
-
+// //////////////////////////////////////////////////////
 // let currentCardIndex = 0;
 // const cards = ['first-card', 'second-card', 'third-card', 'fourth-card'];
 // const cardTitles = [
@@ -348,6 +320,7 @@ function displayUploadedFiles(input) {
 // // Initialize to show the first card
 // showCard(currentCardIndex);
 
+// //////////////////////////////////////////////////////
 
 
 let currentCardIndex = 0;
@@ -365,12 +338,10 @@ function showCard(index) {
         card.style.display = (i === index) ? 'block' : 'none';
     });
 
-    // Update the card header title
     const cardHeaderTitle = document.getElementById('title-radio-1');
     cardHeaderTitle.textContent = cardTitles[index];
 }
 
-// Function to handle 'next' button click
 function showNextCard() {
     if (currentCardIndex === 2) {
         handleThirdCardSelection();
@@ -380,7 +351,6 @@ function showNextCard() {
     }
 }
 
-// Function to handle 'previous' button click
 function showPreviousCard() {
     if (currentCardIndex > 0) {
         currentCardIndex--;
@@ -388,7 +358,6 @@ function showPreviousCard() {
     }
 }
 
-// Function to show specific views based on radio selection in the third card
 function handleThirdCardSelection() {
     const selectedRadio = document.querySelector('input[name="radio-g3"]:checked');
     if (selectedRadio) {
@@ -402,11 +371,12 @@ function handleThirdCardSelection() {
     }
 }
 
-// Initialize to show the first card
 showCard(currentCardIndex);
 
 
-// Radio button functionality
+
+// //////////////////////////////////////////////////////
+
 document.getElementById('accordionExample').addEventListener('change', (event) => {
     if (event.target.classList.contains('hidden-radio')) {
         const card = event.target.closest('.card-radio');
