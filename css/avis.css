@@ -179,6 +179,7 @@
 .prev-button, .prev-button:hover, .next-button, .next-button:hover {
     background-color: transparent;
     border: transparent;
+    color: #3D8CEF;
 }
 
 .prev-button {
@@ -489,3 +490,282 @@
     height: 20px;
 }
 
+
+/* for the text avis */
+.update-password-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.image-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.image-box .img-rounded-cercle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(58, 142, 246, 0.15);;
+}
+
+.image-box .img-rounded-cercle .rounded-image {
+    width: 30px;
+    height: 30px;
+}
+
+.paragraph-title {
+    text-align: center;
+    width: 80%;
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0 20px 0;   
+}
+
+.form-update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.password-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+.password-section .row {
+    width: 100%;
+}
+
+
+.col-sm-6 label{
+    color: #667085;
+    position: relative;
+    left: 20px;
+}
+
+.input-group {
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.input-group .text-input {
+    padding: 12px 10px 12px 40px;
+    border-radius: 8px;
+    border: 1px solid #B5B5B5;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 24px;
+    margin: 5px 15px;
+}
+
+.input-group textarea.text-input {
+    padding-top: 5px;
+    background-image: url('../../img/icons/password-icon.png'); 
+    background-position: 10px 10px; 
+}
+
+.button-new-exemple .next-button, .next-button:hover {
+    background-color: transparent;
+    border: transparent;
+    color: #3D8CEF;
+    font-size: 13px;
+}
+
+.button-new-exemple .next-button img{
+    margin-right: 10px;
+    width: 12px;
+}
+
+.text-exemple {
+    width: 96%;
+    background-color: rgba(169, 169, 169, 0.15);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.11);
+    border: .5px solid #B5B5B5;
+    border-radius: 8px;
+    position: relative;
+    padding: 15px 20px;
+    font-size: 14px;
+}
+
+.copy-button {
+    background-color: #D9D9D9;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.11);
+    border: .5px solid #B5B5B5;
+    color: #000;
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.copy-button:hover {
+    background-color: #e6e6e3;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.11);
+    border: .5px solid #B5B5B5;
+    color: #000;
+    font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* for audio button */
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.microphone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+
+.microphone .microphone-img {
+    width: 150px;
+} 
+
+.timer {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #667085;
+
+}
+
+/* waveform    */
+  .wave-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10%;
+  }
+  
+  .wave {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wave span {
+    display: block;
+    width: 2px;
+    height: 100%;
+    margin: 0 2px;
+    border-radius: 50px;
+    background: radial-gradient(#EBA1FF, #E3A6FF);
+    animation: wave 1s ease-in-out infinite;
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: scaleY(0.4);
+    }
+    20% {
+      transform: scaleY(0.8);
+    }
+    40% {
+      transform: scaleY(1);
+    }
+    60% {
+      transform: scaleY(0.8);
+    }
+    80% {
+      transform: scaleY(0.4);
+    }
+  }
+  
+/* container recording */
+
+.audio-container-recording{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.timer-recording{
+    margin-top: 5%;
+    font-size: 18px;
+    font-weight: normal;
+    color: #667085;
+}
+
+.microphone .microphone-vs-img{
+    width: 50px;
+}
+
+  /* for bottom buttons */
+
+  .bottom-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 10%;
+  }
+  
+  .bg-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgba(238, 22, 22, 0.57);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .play-pause-btn {
+    width: 80%;
+    height: 80%;
+    background-color: #D22F2F;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+  }
+  
+  
+.bg-icon .play-pause-btn .pause-icon {
+    width: 40px; 
+    height: 40px; 
+  }
+  
+.btn-recording, .btn-recording:hover{
+    background-color: none;
+    color: #031432;
+    border: none;
+}
