@@ -371,347 +371,139 @@ document.getElementById('accordionExample').addEventListener('change', (event) =
 });
 
 
-// for wavefrom
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const waveContainer = document.querySelector('.wave');
-//     const numberOfSpans = 60; 
-  
-//     for (let i = 0; i < numberOfSpans; i++) {
-//       const span = document.createElement('span');
-//       span.style.animationDelay = `-${i * 0.19}s`; 
-//       waveContainer.appendChild(span);
-//     }
-//   });
-
-// // start recording
-// document.addEventListener('DOMContentLoaded', () => {
-//     const microphoneButton = document.querySelector('.audio-container .microphone');
-//     const audioContainer = document.querySelector('.audio-container');
-//     const audioContainerRecording = document.querySelector('.audio-container-recording');
-    
-//     microphoneButton.addEventListener('click', () => {
-//       audioContainer.style.display = 'none';
-//       audioContainerRecording.style.display = 'flex';
-//     });
-//   });
-  
+// for wavefrom and recoreing audio formats
 
 
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const waveContainer = document.querySelector('.wave');
-//     const numberOfSpans = 60; 
-  
-//     for (let i = 0; i < numberOfSpans; i++) {
-//       const span = document.createElement('span');
-//       span.style.animationDelay = `-${i * 0.19}s`; 
-//       waveContainer.appendChild(span);
-//     }
-  
-//     const microphoneButton = document.querySelector('.audio-container .microphone');
-//     const audioContainer = document.querySelector('.audio-container');
-//     const audioContainerRecording = document.querySelector('.audio-container-recording');
-//     const playPauseButton = document.querySelector('.play-pause-btn');
-//     let mediaRecorder;
-//     let audioChunks = [];
-//     let isRecordingPaused = false;
-  
-//     // Request user permission to access audio input
-//     navigator.mediaDevices.getUserMedia({ audio: true })
-//       .then(stream => {
-//         mediaRecorder = new MediaRecorder(stream);
-  
-//         mediaRecorder.addEventListener('dataavailable', event => {
-//           audioChunks.push(event.data);
-//         });
-  
-//         mediaRecorder.addEventListener('stop', () => {
-//           const audioBlob = new Blob(audioChunks);
-//           const audioUrl = URL.createObjectURL(audioBlob);
-//           const audio = new Audio(audioUrl);
-//           audio.play();
-//           // Pause the wave animation when recording stops
-//           document.querySelectorAll('.wave span').forEach(span => {
-//             span.style.animationPlayState = 'paused';
-//           });
-//         });
-  
-//         microphoneButton.addEventListener('click', () => {
-//           audioContainer.style.display = 'none';
-//           audioContainerRecording.style.display = 'flex';
-//           mediaRecorder.start();
-//         });
-  
-//         playPauseButton.addEventListener('click', () => {
-//           if (isRecordingPaused) {
-//             mediaRecorder.resume();
-//             isRecordingPaused = false;
-//             playPauseButton.querySelector('img').src = '../../img/icons/pause-icon.svg';
-//             // Resume the wave animation
-//             document.querySelectorAll('.wave span').forEach(span => {
-//               span.style.animationPlayState = 'running';
-//             });
-//           } else {
-//             mediaRecorder.pause();
-//             isRecordingPaused = true;
-//             playPauseButton.querySelector('img').src = '../../img/icons/play-icon.svg';
-//             // Pause the wave animation
-//             document.querySelectorAll('.wave span').forEach(span => {
-//               span.style.animationPlayState = 'paused';
-//             });
-//           }
-//         });
-  
-//         document.querySelector('.btn-recording span:contains("Annuler")').addEventListener('click', () => {
-//           audioContainer.style.display = 'block';
-//           audioContainerRecording.style.display = 'none';
-//           mediaRecorder.stop();
-//           audioChunks = [];
-//           // Pause the wave animation
-//           document.querySelectorAll('.wave span').forEach(span => {
-//             span.style.animationPlayState = 'paused';
-//           });
-//         });
-  
-//         document.querySelector('.btn-recording span:contains("Enregistrer")').addEventListener('click', () => {
-//           mediaRecorder.stop();
-//           // Pause the wave animation
-//           document.querySelectorAll('.wave span').forEach(span => {
-//             span.style.animationPlayState = 'paused';
-//           });
-//         });
-//       })
-//       .catch(error => {
-//         console.error('Error accessing audio input:', error);
-//       });
-//   });
-  
-
-
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     const waveContainer = document.querySelector('.wave');
-//     const numberOfSpans = 60; 
-  
-//     for (let i = 0; i < numberOfSpans; i++) {
-//       const span = document.createElement('span');
-//       span.style.animationDelay = `-${i * 0.19}s`; 
-//       waveContainer.appendChild(span);
-//     }
-  
-//     const microphoneButton = document.querySelector('.audio-container .microphone');
-//     const audioContainer = document.querySelector('.audio-container');
-//     const audioContainerRecording = document.querySelector('.audio-container-recording');
-//     const playPauseButton = document.querySelector('.play-pause-btn');
-//     const timerRecording = document.querySelector('.timer-recording');
-//     let mediaRecorder;
-//     let audioChunks = [];
-//     let isRecordingPaused = false;
-//     let startTime = null;
-//     let timerInterval = null;
-  
-//     // Function to update the timer display
-//     function updateTimer() {
-//       const currentTime = new Date().getTime();
-//       const elapsedTime = currentTime - startTime;
-//       const minutes = Math.floor(elapsedTime / 60000);
-//       const seconds = Math.floor((elapsedTime % 60000) / 1000);
-//       timerRecording.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-//     }
-  
-//     // Request user permission to access audio input
-//     navigator.mediaDevices.getUserMedia({ audio: true })
-//       .then(stream => {
-//         mediaRecorder = new MediaRecorder(stream);
-  
-//         mediaRecorder.addEventListener('dataavailable', event => {
-//           audioChunks.push(event.data);
-//         });
-  
-//         mediaRecorder.addEventListener('stop', () => {
-//           clearInterval(timerInterval); // Stop the timer
-//           const audioBlob = new Blob(audioChunks);
-//           const audioUrl = URL.createObjectURL(audioBlob);
-//           const audio = new Audio(audioUrl);
-//           audio.play();
-//           // Pause the wave animation when recording stops
-//           document.querySelectorAll('.wave span').forEach(span => {
-//             span.style.animationPlayState = 'paused';
-//           });
-//         });
-  
-//         microphoneButton.addEventListener('click', () => {
-//           audioContainer.style.display = 'none';
-//           audioContainerRecording.style.display = 'flex';
-//           mediaRecorder.start();
-//           startTime = new Date().getTime(); // Record start time
-//           timerInterval = setInterval(updateTimer, 1000); // Update timer every second
-//         });
-  
-//         playPauseButton.addEventListener('click', () => {
-//           if (isRecordingPaused) {
-//             mediaRecorder.resume();
-//             isRecordingPaused = false;
-//             playPauseButton.querySelector('img').src = '../../img/icons/pause-icon.svg';
-//             // Resume the wave animation
-//             document.querySelectorAll('.wave span').forEach(span => {
-//               span.style.animationPlayState = 'running';
-//             });
-//             startTime = new Date().getTime() - (startTime - new Date().getTime()); // Adjust start time for pause
-//             timerInterval = setInterval(updateTimer, 1000); // Restart timer
-//           } else {
-//             mediaRecorder.pause();
-//             isRecordingPaused = true;
-//             playPauseButton.querySelector('img').src = '../../img/icons/play-icon.svg';
-//             // Pause the wave animation
-//             document.querySelectorAll('.wave span').forEach(span => {
-//               span.style.animationPlayState = 'paused';
-//             });
-//             clearInterval(timerInterval); // Stop the timer
-//           }
-//         });
-  
-//         document.querySelector('.btn-recording span:contains("Annuler")').addEventListener('click', () => {
-//           audioContainer.style.display = 'block';
-//           audioContainerRecording.style.display = 'none';
-//           mediaRecorder.stop();
-//           audioChunks = [];
-//           clearInterval(timerInterval); // Stop the timer
-//           // Pause the wave animation
-//           document.querySelectorAll('.wave span').forEach(span => {
-//             span.style.animationPlayState = 'paused';
-//           });
-//         });
-  
-//         document.querySelector('.btn-recording span:contains("Enregistrer")').addEventListener('click', () => {
-//           mediaRecorder.stop();
-//           clearInterval(timerInterval); // Stop the timer
-//           // Pause the wave animation
-//           document.querySelectorAll('.wave span').forEach(span => {
-//             span.style.animationPlayState = 'paused';
-//           });
-//         });
-//       })
-//       .catch(error => {
-//         console.error('Error accessing audio input:', error);
-//       });
-//   });
 
 document.addEventListener('DOMContentLoaded', () => {
     const waveContainer = document.querySelector('.wave');
-    const numberOfSpans = 60; 
+    const numberOfSpans = 60;
     
     for (let i = 0; i < numberOfSpans; i++) {
-      const span = document.createElement('span');
-      span.style.animationDelay = `-${i * 0.19}s`; 
-      waveContainer.appendChild(span);
+        const span = document.createElement('span');
+        span.style.animationDelay = `-${i * 0.19}s`;
+        waveContainer.appendChild(span);
     }
-    
+
     const microphoneButton = document.querySelector('.audio-container .microphone');
     const audioContainer = document.querySelector('.audio-container');
     const audioContainerRecording = document.querySelector('.audio-container-recording');
     const playPauseButton = document.querySelector('.play-pause-btn');
     const timerRecording = document.querySelector('.timer-recording');
+    const cancelBtn = document.getElementById('cancel-btn');
+    const saveBtn = document.getElementById('save-btn');
+
     let mediaRecorder;
     let audioChunks = [];
     let isRecordingPaused = false;
     let startTime = null;
     let timerInterval = null;
-    
-    // Function to update the timer display
+    let isRecordingSaved = false;
+
     function updateTimer() {
-      const currentTime = new Date().getTime();
-      const elapsedTime = currentTime - startTime;
-      const minutes = Math.floor(elapsedTime / 60000);
-      const seconds = Math.floor((elapsedTime % 60000) / 1000);
-      timerRecording.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        const currentTime = new Date().getTime();
+        const elapsedTime = currentTime - startTime;
+        const minutes = Math.floor(elapsedTime / 60000);
+        const seconds = Math.floor((elapsedTime % 60000) / 1000);
+        timerRecording.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
     }
-    
-    // Function to save the recorded audio
-    function saveRecording() {
-      const blob = new Blob(audioChunks, { type: 'audio/wav' }); // Adjust type if needed
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      document.body.appendChild(a);
-      a.style = 'display: none';
-      a.href = url;
-      a.download = 'recorded_audio.wav'; // Adjust file name if needed
-      a.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(a);
+
+    async function saveRecording() {
+        const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+        const blobUrl = URL.createObjectURL(audioBlob);
+
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = 'recorded_audio.wav';
+        a.click();
+        window.URL.revokeObjectURL(blobUrl);
     }
-    
-    // Request user permission to access audio input
+
     navigator.mediaDevices.getUserMedia({ audio: true })
-      .then(stream => {
-        mediaRecorder = new MediaRecorder(stream);
-    
-        mediaRecorder.addEventListener('dataavailable', event => {
-          audioChunks.push(event.data);
-        });
-    
-        mediaRecorder.addEventListener('stop', () => {
-          clearInterval(timerInterval); // Stop the timer
-          saveRecording(); // Save the recorded audio
-          audioChunks = []; // Clear audio chunks
-          // Pause the wave animation when recording stops
-          document.querySelectorAll('.wave span').forEach(span => {
-            span.style.animationPlayState = 'paused';
-          });
-        });
-    
-        microphoneButton.addEventListener('click', () => {
-          audioContainer.style.display = 'none';
-          audioContainerRecording.style.display = 'flex';
-          mediaRecorder.start();
-          startTime = new Date().getTime(); // Record start time
-          timerInterval = setInterval(updateTimer, 1000); // Update timer every second
-        });
-    
-        playPauseButton.addEventListener('click', () => {
-          if (isRecordingPaused) {
-            mediaRecorder.resume();
-            isRecordingPaused = false;
-            playPauseButton.querySelector('img').src = '../../img/icons/pause-icon.svg';
-            // Resume the wave animation
-            document.querySelectorAll('.wave span').forEach(span => {
-              span.style.animationPlayState = 'running';
+        .then(stream => {
+            mediaRecorder = new MediaRecorder(stream);
+
+            mediaRecorder.addEventListener('dataavailable', event => {
+                audioChunks.push(event.data);
             });
-            startTime = new Date().getTime() - (startTime - new Date().getTime()); // Adjust start time for pause
-            timerInterval = setInterval(updateTimer, 1000); // Restart timer
-          } else {
-            mediaRecorder.pause();
-            isRecordingPaused = true;
-            playPauseButton.querySelector('img').src = '../../img/icons/play-icon.svg';
-            // Pause the wave animation
-            document.querySelectorAll('.wave span').forEach(span => {
-              span.style.animationPlayState = 'paused';
+
+            mediaRecorder.addEventListener('stop', () => {
+                clearInterval(timerInterval);
+                saveRecording();
+                audioChunks = [];
+                document.querySelectorAll('.wave span').forEach(span => {
+                    span.style.animationPlayState = 'paused';
+                });
+                isRecordingSaved = true;
             });
-            clearInterval(timerInterval); // Stop the timer
-          }
+
+            microphoneButton.addEventListener('click', () => {
+                audioContainer.style.display = 'none';
+                audioContainerRecording.style.display = 'flex';
+                mediaRecorder.start();
+                startTime = new Date().getTime();
+                timerInterval = setInterval(updateTimer, 1000);
+                isRecordingSaved = false;
+            });
+
+            playPauseButton.addEventListener('click', () => {
+                if (isRecordingSaved) {
+                    audioChunks = [];
+                    startTime = null;
+                    timerRecording.textContent = '00:00';
+                    audioContainer.style.display = 'none';
+                    audioContainerRecording.style.display = 'flex';
+                    mediaRecorder.start();
+                    startTime = new Date().getTime();
+                    timerInterval = setInterval(updateTimer, 1000);
+                    playPauseButton.querySelector('img').src = '../../img/icons/pause-icon.svg';
+                    isRecordingSaved = false;
+                    document.querySelectorAll('.wave span').forEach(span => {
+                        span.style.animationPlayState = 'running';
+                    });
+                } else {
+                    if (mediaRecorder.state === 'recording') {
+                        mediaRecorder.pause();
+                        clearInterval(timerInterval);
+                        playPauseButton.querySelector('img').src = '../../img/icons/play-icon.svg';
+                        document.querySelectorAll('.wave span').forEach(span => {
+                            span.style.animationPlayState = 'paused';
+                        });
+                    } else if (mediaRecorder.state === 'paused') {
+                        mediaRecorder.resume();
+                        startTime = new Date().getTime() - (startTime - new Date().getTime());
+                        timerInterval = setInterval(updateTimer, 1000);
+                        playPauseButton.querySelector('img').src = '../../img/icons/pause-icon.svg';
+                        document.querySelectorAll('.wave span').forEach(span => {
+                            span.style.animationPlayState = 'running';
+                        });
+                    }
+                }
+            });
+
+            cancelBtn.addEventListener('click', () => {
+                audioContainer.style.display = 'flex';
+                audioContainerRecording.style.display = 'none';
+                mediaRecorder.stop();
+                clearInterval(timerInterval);
+                document.querySelectorAll('.wave span').forEach(span => {
+                    span.style.animationPlayState = 'paused';
+                });
+            });
+
+            saveBtn.addEventListener('click', () => {
+                if (mediaRecorder.state !== 'inactive') {
+                    mediaRecorder.stop();
+                    clearInterval(timerInterval);
+                    audioChunks = [];
+                    startTime = null;
+                    timerRecording.textContent = '00:00';
+                    playPauseButton.querySelector('img').src = '../../img/icons/play-icon.svg';
+                    isRecordingSaved = true;
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error accessing audio input:', error);
         });
-    
-        document.querySelector('.btn-recording span:contains("Annuler")').addEventListener('click', () => {
-          audioContainer.style.display = 'block';
-          audioContainerRecording.style.display = 'none';
-          mediaRecorder.stop();
-          clearInterval(timerInterval); // Stop the timer
-          // Pause the wave animation
-          document.querySelectorAll('.wave span').forEach(span => {
-            span.style.animationPlayState = 'paused';
-          });
-        });
-    
-        document.querySelector('.btn-recording span:contains("Enregistrer")').addEventListener('click', () => {
-          mediaRecorder.stop();
-          clearInterval(timerInterval); // Stop the timer
-        });
-      })
-      .catch(error => {
-        console.error('Error accessing audio input:', error);
-      });
-  });
-  
-  
+});
