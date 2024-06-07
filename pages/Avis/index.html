@@ -253,7 +253,7 @@
                             <div class="card-header">
                                 <p class="card-title" id="title-radio-1">Vous avez un avis sur</p>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body cardOnce">
                                 <!-- Third Card Content -->
                                 <div class="first-card" id="first-card">
                                     <div class="card-radios">
@@ -280,8 +280,8 @@
                                         </label>
                                     </div>
                                 </div>
-                                
-                                <!-- Third Card Content -->
+
+                                <!-- second Card Content -->
                                 <div class="second-card" id="second-card" style="display: none;">
                                     <div class="card-radios">
                                         <input type="radio" id="radio-g2-1" name="radio-g2" class="hidden-radio">
@@ -385,7 +385,43 @@
                                     </div>
 
                                     <div class="third-card-view" id="third-card-view-2" style="display: none;">
-                                        <p>Content for Un corps</p>
+                                        <div class="third-card-view-container">
+                                            <p class="third-card-view-2-title">Vous prenez un rendez-vous pour</p>
+                                            <p class="radio-title">Vous êtes</p>
+                                            <div class="card-radios">
+                                                <input type="radio" id="radio-g4-1" name="radio-g4" class="hidden-radio">
+                                                <label for="radio-g4-1" class="card-radio">
+                                                    <div class="card">
+                                                        <div class="card-content">
+                                                            <img src="../../img/icons/Homme-black.svg" alt="Homme" class="card-img img-group2-radio1">
+                                                            <img src="../../img/icons/Homme.svg" alt="Homme-checked" class="card-img-checked img-checked-group2-radio1">
+                                                            <p class="card-name">Homme</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            
+                                                <input type="radio" id="radio-g4-2" name="radio-g4" class="hidden-radio">
+                                                <label for="radio-g4-2" class="card-radio">
+                                                    <div class="card">
+                                                        <div class="card-content">
+                                                            <img src="../../img/icons/Femme-black.svg" alt="Femme" class="card-img img-group2-radio2">
+                                                            <img src="../../img/icons/Femme.svg" alt="Femme-checked" class="card-img-checked img-checked-group2-radio2">
+                                                            <p class="card-name">Femme</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                            
+                                            <div class="container-age">
+                                                <div id="selectAge">
+                                                    <label for="selectAgeOpt" id="selectAge-title">Votre âge</label>
+                                                    <div class="input-container">
+                                                        <img src="../../img/icons/Homme-black.svg" alt="Icon" class="input-icon">
+                                                        <input type="number" id="selectAgeOpt" class="btn-age" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     
                                     <div class="third-card-view" id="third-card-view-3" style="display: none;">
@@ -427,6 +463,111 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- Fifth Card Content -->
+                                <!-- <div class="fifth-card" id="fifth-card" style="display: none;">
+                                    <div class="fifth-card-view" id="fifth-card-view-1" style="display: none;">
+                                        <p>Fifth card view for Homme</p>
+                                    </div>
+                                    <div class="fifth-card-view" id="fifth-card-view-2" style="display: none;">
+                                        <p>Fifth card view for Femme</p>
+                                    </div>
+                                </div> -->
+                                 <!-- Fifth Card Content -->
+                                 <!-- <div class="fifth-card" id="fifth-card" style="display: none;">
+                                    <div class="fifth-card-view" id="fifth-card-view-1" style="display: none;">
+                                        <div class="fifth-card-container">
+                                            <div class="fifth-card-image-container">
+                                                <img src="../../img/icons/human-body.svg" alt="Homme Image" class="fifth-card-image">
+                                            </div>
+                                            <div class="fifth-card-content">
+                                                <p>Fifth card view for Homme</p>
+                                                <label for="someInput">Some Input:</label>
+                                                <input type="text" id="someInput" class="text-input">
+                                                <button class="btn submit-button">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fifth-card-view" id="fifth-card-view-2" style="display: none;">
+                                        <div class="fifth-card-container">
+                                            <div class="fifth-card-image-container">
+                                                <img src="../../img/icons/human-body.svg" alt="Femme Image" class="fifth-card-image">
+                                            </div>
+                                            <div class="fifth-card-content">
+                                                <p>Fifth card view for Femme</p>
+                                                <label for="someInput2">Some Input:</label>
+                                                <input type="text" id="someInput2" class="text-input">
+                                                <button class="btn submit-button">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+
+                                <div class="fifth-card" id="fifth-card" style="display: none;">
+                                    <div class="fifth-card-view" id="fifth-card-view-1" style="display: none;">
+                                        <div class="fifth-card-container">
+                                            <div class="fifth-card-image-container">
+                                                <img src="../../img/icons/human-body.svg" alt="Homme Image" class="fifth-card-image">
+                                            </div>
+                                            <div class="fifth-card-content">
+                                                <div class="clickable-items">
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"></div>
+                                                        <div class="clickable-item-title">Absence de pouls</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"></div>
+                                                        <div class="clickable-item-title">Augmentation des pulsions</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"></div>
+                                                        <div class="clickable-item-title">Douleur dans la poitrine</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"></div>
+                                                        <div class="clickable-item-title">Opression dans la poitrine</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"></div>
+                                                        <div class="clickable-item-title">Palpitation</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"></div>
+                                                        <div class="clickable-item-title">Rythme cardiaque irrégulier</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"></div>
+                                                        <div class="clickable-item-title">Souffle au coeur</div>
+                                                    </div>
+                                                </div>
+                                                <div class="symptomes">
+                                                    <p class="symptomes-paragraph">
+                                                        Vous ne trouvez pas votre symptôme ! Essayer la recherche parmis les 1600 symptômes répertoriés
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fifth-card-view" id="fifth-card-view-2" style="display: none;">
+                                        <div class="fifth-card-container">
+                                            <!-- Left side for image -->
+                                            <div class="fifth-card-image-container">
+                                                <img src="../../img/icons/human-body.svg" alt="Femme Image" class="fifth-card-image">
+                                            </div>
+                                            <!-- Right side for text and inputs -->
+                                            <div class="fifth-card-content">
+                                                <p>Fifth card view for Femme</p>
+                                                <label for="someInput2">Some Input:</label>
+                                                <input type="text" id="someInput2" class="text-input">
+                                                <button class="btn submit-button">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+
+
                             </div>
                         </div>
                     </div>

@@ -283,13 +283,63 @@ function displayUploadedFiles(input) {
 
 
 // ////////////////////////////////////////////
+// let currentCardIndex = 0;
+// const cards = ['first-card', 'second-card', 'third-card', 'fourth-card'];
+// const cardTitles = [
+//     'Vous avez un avis sur',
+//     'Vous prenez un rendez-vous pour',
+//     'Choisissez la méthode d\'avis',
+//     ''
+// ];
+
+// function showCard(index) {
+//     cards.forEach((cardId, i) => {
+//         const card = document.getElementById(cardId);
+//         card.style.display = (i === index) ? 'block' : 'none';
+//     });
+
+//     const cardHeaderTitle = document.getElementById('title-radio-1');
+//     cardHeaderTitle.textContent = cardTitles[index];
+// }
+
+// function showNextCard() {
+//     if (currentCardIndex === 2) {
+//         handleThirdCardSelection();
+//     } else if (currentCardIndex < cards.length - 1) {
+//         currentCardIndex++;
+//         showCard(currentCardIndex);
+//     }
+// }
+
+// function showPreviousCard() {
+//     if (currentCardIndex > 0) {
+//         currentCardIndex--;
+//         showCard(currentCardIndex);
+//     }
+// }
+
+// function handleThirdCardSelection() {
+//     const selectedRadio = document.querySelector('input[name="radio-g3"]:checked');
+//     if (selectedRadio) {
+//         const selectedViewId = `third-card-view-${selectedRadio.id.split('-')[2]}`;
+//         const thirdCardViews = document.querySelectorAll('.third-card-view');
+//         thirdCardViews.forEach(view => {
+//             view.style.display = (view.id === selectedViewId) ? 'block' : 'none';
+//         });
+//         currentCardIndex++;
+//         showCard(currentCardIndex);
+//     }
+// }
+
+// showCard(currentCardIndex);
 let currentCardIndex = 0;
-const cards = ['first-card', 'second-card', 'third-card', 'fourth-card'];
+const cards = ['first-card', 'second-card', 'third-card', 'fourth-card', 'fifth-card'];
 const cardTitles = [
     'Vous avez un avis sur',
     'Vous prenez un rendez-vous pour',
     'Choisissez la méthode d\'avis',
-    ''
+    '',
+    '' 
 ];
 
 function showCard(index) {
@@ -305,6 +355,8 @@ function showCard(index) {
 function showNextCard() {
     if (currentCardIndex === 2) {
         handleThirdCardSelection();
+    } else if(currentCardIndex === 3){
+        handleFifthCardSelection();
     } else if (currentCardIndex < cards.length - 1) {
         currentCardIndex++;
         showCard(currentCardIndex);
@@ -324,7 +376,20 @@ function handleThirdCardSelection() {
         const selectedViewId = `third-card-view-${selectedRadio.id.split('-')[2]}`;
         const thirdCardViews = document.querySelectorAll('.third-card-view');
         thirdCardViews.forEach(view => {
-            view.style.display = (view.id === selectedViewId) ? 'block' : 'none';
+            view.style.display = (view.id === selectedViewId) ? 'flex' : 'none';
+        });
+        currentCardIndex++;
+        showCard(currentCardIndex);
+    }
+}
+
+function handleFifthCardSelection() {
+    const selectedRadio = document.querySelector('input[name="radio-g4"]:checked');
+    if (selectedRadio) {
+        const selectedViewId = `fifth-card-view-${selectedRadio.id.split('-')[2]}`;
+        const fifthCardViews = document.querySelectorAll('.fifth-card-view');
+        fifthCardViews.forEach(view => {
+            view.style.display = (view.id === selectedViewId) ? 'flex' : 'none';
         });
         currentCardIndex++;
         showCard(currentCardIndex);
