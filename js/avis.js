@@ -333,13 +333,14 @@ function displayUploadedFiles(input) {
 
 // showCard(currentCardIndex);
 let currentCardIndex = 0;
-const cards = ['first-card', 'second-card', 'third-card', 'fourth-card', 'fifth-card'];
+const cards = ['first-card', 'second-card', 'third-card', 'fourth-card', 'fifth-card', 'sixth-card'];
 const cardTitles = [
     'Vous avez un avis sur',
     'Vous prenez un rendez-vous pour',
     'Choisissez la méthode d\'avis',
     '',
-    '' 
+    '',
+    'Veuillez répondre à ces questions',
 ];
 
 function showCard(index) {
