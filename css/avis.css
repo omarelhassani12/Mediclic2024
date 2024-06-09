@@ -562,6 +562,65 @@
     background-color: transparent;
 }
 
+/* for that questions*/
+.symptomes1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.symptomes-inputs1 {
+    flex: 1;
+    min-width: 200px;
+    max-width: 410px;
+}
+
+.symptomes-inputs label{
+    color: #667085;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.container-input {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.container-input label {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.container-input .input-icon-left,
+.container-input .input-icon-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.container-input .input-icon-left {
+    left: 10px;
+    width: 20px;
+}
+
+.container-input .input-icon-right {
+    right: 10px;
+    width: 30px;
+}
+
+.symptomes-input {
+    padding-left: 40px; 
+    padding-right: 40px; 
+    width: 100%;
+}
+.small-cards-container .small-card{
+    margin-bottom: 8px;
+}
 
 /* for the radio styling */
 
