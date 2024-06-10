@@ -179,8 +179,8 @@
 }
 
 .prev-button, .prev-button:hover, .next-button, .next-button:hover {
-    background-color: transparent;
-    border: transparent;
+    background-color: none;
+    border: none;
     color: #3D8CEF;
 }
 
@@ -208,8 +208,8 @@
 }
 
 .prev-button-f, .prev-button-f:hover, .next-button-f, .next-button-f:hover {
-    background-color: transparent;
-    border: transparent;
+    background-color: none;
+    border: none;
 }
 
 .prev-button-f {

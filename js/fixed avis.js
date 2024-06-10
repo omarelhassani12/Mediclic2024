@@ -1,17 +1,15 @@
 
+
 let currentCardIndex = 0;
-const cards = ['first-card', 'second-card', 'third-card', 'fourth-card', 'fifth-card', 'sixth-card', 'seventh-card', 'eighth-card'];
+const cards = ['first-card', 'second-card', 'third-card', 'fourth-card', 'fifth-card', 'sixth-card'];
 const cardTitles = [
     'Vous avez un avis sur',
     'Vous prenez un rendez-vous pour',
-    'Choisissez la méthode d\'avis',
+    'Choisissez la mÃ©thode d\'avis',
     '',
     '',
-    'Veuillez répondre à ces questions',
-    '',
-    '',
+    'Veuillez rÃ©pondre Ã  ces questions',
 ];
-
 function showCard(index) {
     cards.forEach((cardId, i) => {
         const card = document.getElementById(cardId);
@@ -21,6 +19,7 @@ function showCard(index) {
     const cardHeaderTitle = document.getElementById('title-radio-1');
     cardHeaderTitle.textContent = cardTitles[index];
 }
+
 
 
 function handleThirdCardSelection() {
@@ -52,7 +51,7 @@ function handleFifthCardSelection() {
 showCard(currentCardIndex);
 
 
-
+            
 document.addEventListener('DOMContentLoaded', () => {
 const stepButtons = document.querySelectorAll('.step-button');
 const progressBars = document.querySelectorAll('.progress-bar');
@@ -130,7 +129,7 @@ nextButton.addEventListener('click', () => {
             nextButton.textContent = 'Terminer';
         }
     } else {
-        console.log('Bouton Terminer cliqué');
+        console.log('Bouton Terminer cliquÃ©');
     }
 });
 
@@ -198,9 +197,9 @@ function displayUploadedFiles(input, targetContainerId) {
 
             const statusIcon = document.createElement('span');
             statusIcon.classList.add('status-icon');
-            statusIcon.innerHTML = '<img src="../../img/icons/cancel.png">'; 
+            statusIcon.innerHTML = '<img src="../../img/icons/cancel.png">'; // Loading icon
             statusIcon.addEventListener('click', () => {
-                fileItem.remove();
+                fileItem.remove(); // Remove the file item when status icon is clicked
             });
             fileInfo.appendChild(statusIcon);
 
@@ -332,15 +331,50 @@ function displayUploadedFiles(input) {
 
             fileList.appendChild(fileItem);
 
+            // Simulate file upload progress
             simulateFileUpload(files[i], progressBar, fileSizeText, statusIcon, fileItem, progressBarContainer);
         }
 
+        // Append the file list to the container
         filesContainer.appendChild(fileList);
     }
 }
 
 
 
+// ////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+/* Commenté par Badr
+document.getElementById('accordionExample').addEventListener('change', (event) => {
+    if (event.target.classList.contains('hidden-radio')) {
+        const card = event.target.closest('.card-radio');
+        const imgGroupClass = card.querySelector('.card-img').classList[1];
+        const imgCheckedGroupClass = card.querySelector('.card-img-checked').classList[1];
+
+        const allGroupImages = document.querySelectorAll(`.${imgGroupClass}`);
+        const allCheckedGroupImages = document.querySelectorAll(`.${imgCheckedGroupClass}`);
+
+        allGroupImages.forEach(img => img.style.display = 'block');
+        allCheckedGroupImages.forEach(img => img.style.display = 'none');
+
+        const cardImg = card.querySelector('.card-img');
+        const cardImgChecked = card.querySelector('.card-img-checked');
+
+        cardImg.style.display = 'none';
+        cardImgChecked.style.display = 'block';
+    }
+});
+
+*/
+/* Fonction corrigé */
 document.addEventListener('DOMContentLoaded', function() {
     const accordion = document.getElementById('accordionExample');
     if (accordion) {
@@ -370,7 +404,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
 const selectListOpt = document.getElementById('selectListOpt');
 const selectListTitle = document.getElementById('selectList-title');
 
@@ -386,6 +419,7 @@ document.getElementById('accordionExample').addEventListener('change', (event) =
 
 
 
+// document.addEventListener('DOMContentLoaded', () => {
     const waveContainer = document.getElementById('wave');
     const numberOfSpans = 60;
 
@@ -523,5 +557,5 @@ document.getElementById('accordionExample').addEventListener('change', (event) =
         .catch(error => {
             console.error('Error accessing audio input:', error);
         });
-});
 
+});

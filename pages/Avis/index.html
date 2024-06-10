@@ -1257,9 +1257,23 @@
     <script src="../../js/side-bar-toggles.js"></script>
 
     <script>
-        // $(document).ready(function() {
-        //     $('#NVPresentationModal').modal('show');
-        // });
+        function showNextCard() {
+            if (currentCardIndex === 2) {
+                handleThirdCardSelection();
+            } else if(currentCardIndex === 3){
+                handleFifthCardSelection();
+            } else if (currentCardIndex < cards.length - 1) {
+                currentCardIndex++;
+                showCard(currentCardIndex);
+            }
+        }
+
+        function showPreviousCard() {
+            if (currentCardIndex > 0) {
+                currentCardIndex--;
+                showCard(currentCardIndex);
+            }
+        }
     </script>
 
 </body>
