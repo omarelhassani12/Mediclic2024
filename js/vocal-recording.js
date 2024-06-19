@@ -1,7 +1,5 @@
 
-
-
-
+document.addEventListener('DOMContentLoaded', () => {
 
     const waveContainer = document.getElementById('wave');
     const numberOfSpans = 60;
@@ -140,3 +138,4 @@
         .catch(error => {
             console.error('Error accessing audio input:', error);
         });
+    });
