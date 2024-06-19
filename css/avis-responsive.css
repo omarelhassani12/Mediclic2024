@@ -1,0 +1,51 @@
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 10%;
+    }
+
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-top: 5%;
+    }
+
+    .steps {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .step-button {
+        margin: 0 0 1rem 0;
+    }
+
+    .navigation-buttons {
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+    }
+
+    .prev-button, .next-button,
+    .prev-button-f, .next-button-f,
+    .prev-button-s, .next-button-s {
+        margin: 1rem 0;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .cards {
+        width: 90%;
+        margin: 5% 0 10% 0;
+    }
+
+    #first-card, #second-card, #third-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .radios-3 {
+        top: -20px;
+    }
+}

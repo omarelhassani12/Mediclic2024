@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation avis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/patient-modal.css"/>
+    <link rel="stylesheet" href="../../css/index-edit.css"/>
+    <link rel="stylesheet" href="../../css/message.css"/>
+    <link rel="stylesheet" href="../../css/avis.css"/>
+    <link rel="stylesheet" href="../../css/avis-responsive.css"/>
+
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo">
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <i class="far fa-file-alt" style="margin-right: 15px; "></i>
+                <a href="../../pages/Messages/index.html">
+                    <i class="far fa-comment-alt" style="margin-right: 15px; "></i>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <i class="far fa-bell" ></i>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <i class="fas fa-plus"></i> 
+                    </span>
+                </a>    
+            </span>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" alt="Profile Image">
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+  
+    <!-- Main Content -->   
+    <main class="main-content">
+        <div class="container">
+            <div class="container-header">
+                <div class="header-container">
+                    <h4 class="steps-title">
+                        Avis
+                    </h4>
+                    <div class="steps">
+                        <div class="step-item">
+                            <button class="step-button text-center" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class="text-hidden">1</span>
+                                <i class="fas fa-check-circle step-done" style="display: none;"></i>
+                            </button>
+                            <div class="step-title">
+                                Patient
+                            </div>
+                            <progress id="progress1" class="progress-bar" value="0" max="100" ></progress>
+                        </div>
+                        <div class="step-item">
+                            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class="text-hidden">2</span>
+                                <i class="fas fa-check-circle step-done" style="display: none;"></i>
+                            </button>
+                            <div class="step-title">
+                                Symptômes
+                            </div>
+                            <progress id="progress2" class="progress-bar" value="0" max="100" ></progress>
+                        </div>
+                        <div class="step-item">
+                            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class="text-hidden">3</span>
+                                <i class="fas fa-check-circle step-done" style="display: none;"></i>
+                            </button>
+                            <div class="step-title">
+                                Questionnaire
+                            </div>
+                            <progress id="progress3" class="progress-bar" value="0" max="100" ></progress>
+                        </div>
+                        <div class="step-item">
+                            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <span class="text-hidden">4</span>
+                                <i class="fas fa-check-circle step-done" style="display: none;"></i>
+                            </button>
+                            <div class="step-title">
+                                Synthèse
+                            </div>
+                            <progress id="progress4" class="progress-bar" value="0" max="100" ></progress>
+                        </div>
+                        <div class="step-item">
+                            <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <span class="text-hidden">5</span>
+                                <i class="fas fa-check-circle step-done" style="display: none;"></i>
+                            </button>
+                            <div class="step-title">
+                                Hypothèses
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="div-horizontal">
+                    <progress id="progressX" class="progress-barX" value="0" max="100" ></progress>
+                </span>
+            </div>
+            <div class="accordion" id="accordionExample">
+            
+                <div class="cards">
+                    <div class="card">
+                        <div  id="headingOne">
+                            
+                        </div>
+                    
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="card-header">
+                                <p class="card-title" id="title-radio-1">Vous avez un avis sur</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="first-card" id="first-card">
+                                    <div class="card-radios">
+                                        <input type="radio" id="radio-g1-1" name="radio-g1" class="hidden-radio"/>
+                                        <label for="radio-g1-1" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/des-symptôme-black.svg" alt="vous-meme" class="card-img img-group1-radio1"/>
+                                                    <img src="../../img/icons/des-symptôme.svg" alt="vous-meme-checked" class="card-img-checked img-checked-group1-radio1"/>
+                                                    <p class="card-name">Des symptôme</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio-g1-2" name="radio-g1" class="hidden-radio"/>
+                                        <label for="radio-g1-2" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/une-ordanance-black.svg" alt="un proche" class="card-img img-group1-radio2"/>
+                                                    <img src="../../img/icons/une-ordanance.svg" alt="un-proche-checked" class="card-img-checked img-checked-group1-radio2"/>
+                                                    <p class="card-name">Une ordanance</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="second-card" id="second-card" style="display: none;">
+                                    <div class="card-radios">
+                                        <input type="radio" id="radio-g2-1" name="radio-g2" class="hidden-radio"/>
+                                        <label for="radio-g2-1" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/vous-meme-black.svg" alt="vous-meme" class="card-img img-group2-radio1"/>
+                                                    <img src="../../img/icons/vous-meme.svg" alt="vous-meme-checked" class="card-img-checked img-checked-group2-radio1"/>
+                                                    <p class="card-name">Vous meme</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio2" name="radio-g2" class="hidden-radio"/>
+                                        <label for="radio2" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/un-proche-black.svg" alt="un proche" class="card-img img-group2-radio2"/>
+                                                    <img src="../../img/icons/un-proche.svg" alt="un-proche-checked" class="card-img-checked img-checked-group2-radio2"/>
+                                                    <p class="card-name">Un proche</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                    
+                                    <div id="selectList">
+                                        <label for="selectList" id="selectList-title">Sélectionnez un proche</label>
+                                        <select id="selectListOpt">
+                                            <option value="option1">Radi Mourad</option>
+                                            <option value="option2">Radi Mourad</option>
+                                            <option value="option3">Radi Mourad</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div  id="headingTwo">
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="card-header">
+                            </div>
+                            <div class="card-body">
+                                <div class="third-card" id="third-card" >
+                                    <p class="card-title" id="title-radio-1">Choisissez la méthode d'avis</p>
+                                    <div class="card-radios radios-3">
+                                        <input type="radio" id="radio-g3-1" name="radio-g3" value="text" class="hidden-radio"/>
+                                        <label for="radio-g3-1" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/method-text-black.svg" alt="vous-meme" class="card-img img-group1-radio1"/>
+                                                    <img src="../../img/icons/method-text.svg" alt="vous-meme-checked" class="card-img-checked img-checked-group1-radio1"/>
+                                                    <p class="card-name">Une texte</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio-g3-2" name="radio-g3" value="body" class="hidden-radio"/>
+                                        <label for="radio-g3-2" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/method-corps-black.svg" alt="un proche" class="card-img img-group1-radio2"/>
+                                                    <img src="../../img/icons/method-corps.svg" alt="un-proche-checked" class="card-img-checked img-checked-group1-radio2"/>
+                                                    <p class="card-name">Un corps</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    
+                                        <input type="radio" id="radio-g3-3" name="radio-g3" value="vocal" class="hidden-radio"/>
+                                        <label for="radio-g3-3" class="card-radio">
+                                            <div class="card">
+                                                <div class="card-content">
+                                                    <img src="../../img/icons/method-vocal-black.svg" alt="un proche" class="card-img img-group1-radio2"/>
+                                                    <img src="../../img/icons/method-vocal.svg" alt="un-proche-checked" class="card-img-checked img-checked-group1-radio2"/>
+                                                    <p class="card-name">Mode vocal</p>
+                                                </div>
+                                            </div>
+                                        </label>
+
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="fourth-card" id="fourth-card">
+                                    <div class="third-card-view" id="third-card-view-1" style="display: none;">
+                                        <div class="update-password-content">
+                                            <div class="image-box">
+                                                <div class="img-rounded-cercle">
+                                                    <img src="../../img/icons/lock-icon.png" alt="Image" class="rounded-image"/>
+                                                </div>
+                                                <p class="paragraph-title">Veuillez renseigner l'âge, le sexe et décrire au mieux les symptômes, leur contexte, les allergies, les maladies, l'historique médical, les antécédents familiaux et tout autre élément pertinent concernant le patient.</p>
+                                            </div>
+                                            <div class="button-new-exemple">
+                                                <button class="btn next-btn"><img src="../../img/icons/add-icon.png" alt=""><span>Voir un exemple</span></button>
+                                            </div>
+                                            <div class="text-exemple">
+                                                <p class="paraghraph">Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures.Il a également constaté avoir eu une diminution de l'appétit et une légère fièvre.Il n'a pas voyager dernièrement, et il n'y a pas de contexte d'intoxication alimentaire autour de lui.Il n'a pas d'allergie.Il est obèse et diabétique.</p>
+                                                <button class="btn copy-button">copier</button>
+                                            </div>
+                                        
+                                            <form action="" class="form-update">
+                                                <div class="col-sm-12">
+                                                    <div class="input-group">
+                                                        <textarea id="Presentation" name="Presentation" placeholder="Presentation" class="text-input" rows="1"></textarea>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="third-card-view third-card-view-2" id="third-card-view-2" style="display: none;">
+                                        <div class="third-card-view-container">
+                                            <p class="third-card-view-3-title">Vous prenez un rendez-vous pour</p>
+                                            <p class="radio-title">Vous êtes</p>
+                                            <div class="card-radios">
+                                                <input type="radio" id="radio-g4-1" name="radio-g4" value="homme" class="hidden-radio"/>
+                                                <label for="radio-g4-1" class="card-radio">
+                                                    <div class="card">
+                                                        <div class="card-content">
+                                                            <img src="../../img/icons/Homme-black.svg" alt="Homme" class="card-img img-group2-radio1"/>
+                                                            <img src="../../img/icons/Homme.svg" alt="Homme-checked" class="card-img-checked img-checked-group2-radio1"/>
+                                                            <p class="card-name">Homme</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            
+                                                <input type="radio" id="radio-g4-2" name="radio-g4" value="femme" class="hidden-radio"/>
+                                                <label for="radio-g4-2" class="card-radio">
+                                                    <div class="card">
+                                                        <div class="card-content">
+                                                            <img src="../../img/icons/Femme-black.svg" alt="Femme" class="card-img img-group2-radio2"/>
+                                                            <img src="../../img/icons/Femme.svg" alt="Femme-checked" class="card-img-checked img-checked-group2-radio2"/>
+                                                            <p class="card-name">Femme</p>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+
+                                            <div class="container-age">
+                                                <div id="selectAge">
+                                                    <label for="selectAgeOpt" id="selectAge-title">Votre âge</label>
+                                                    <div class="input-container">
+                                                        <img src="../../img/icons/Homme-black.svg" alt="Icon" class="input-icon"/>
+                                                        <input type="number" id="selectAgeOpt" class="btn-age" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                           
+                                    <div class="third-card-view" id="third-card-view-3" style="display: none;">
+                                        <div class="update-password-content">
+                                            <div class="image-box">
+                                                <div class="img-rounded-cercle">
+                                                    <img src="../../img/icons/lock-icon.png" alt="Image" class="rounded-image"/>
+                                                </div>
+                                                <p class="paragraph-title">Veuillez renseigner l'âge, le sexe et décrire au mieux les symptômes, leur contexte, les allergies, les maladies, l'historique médical, les antécédents familiaux et tout autre élément pertinent concernant le patient.</p>
+                                            </div>
+
+                                            <div class="audio-container" id="audio-container">
+                                                <button class="microphone" id="microphone">
+                                                    <img src="../../img/icons/vocal-button.svg" class="microphone-img" alt="microphone icon"/>
+                                                </button>
+                                                <div class="timer" id="timer">00:00</div>
+                                            </div>
+                                            
+                                            <div class="audio-container-recording" id="audio-container-recording" style="display: none;">
+                                                <button class="microphone">
+                                                    <img src="../../img/icons/vocal-icon-red.svg" class="microphone-vs-img" alt="microphone icon"/>
+                                                </button>
+                                                <div class="timer-recording" id="timer-recording">00:00</div>
+                                                <div class="wave-container" id="wave-container">
+                                                    <div class="wave" id="wave"></div>
+                                                </div>
+                                                <div class="bottom-buttons">
+                                                    <button class="btn btn-recording" id="cancel-btn"><span>Annuler</span></button>
+                                                    <div class="bg-icon">
+                                                        <button class="play-pause-btn" id="play-pause-btn">  
+                                                            <img src="../../img/icons/pause-icon.svg" alt="pause-icon" class="pause-icon"/>
+                                                        </button>
+                                                    </div>
+                                                    <button class="btn btn-recording" id="save-btn"><span>Enregister</span></button>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="fifth-card" id="fifth-card" style="display: none;">
+                                    <div class="fifth-card-view" id="fifth-card-view-1" style="display: none;">
+                                        <div class="fifth-card-container">
+                                            <div class="fifth-card-image-container">
+                                                <img src="../../img/icons/human-body.svg" alt="Homme Image" class="fifth-card-image"/>
+                                            </div>
+                                            <div class="fifth-card-content">
+                                                <div class="clickable-items">
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Absence de pouls</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Augmentation des pulsions</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Douleur dans la poitrine</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Opression dans la poitrine</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Palpitation</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Rythme cardiaque irrégulier</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Souffle au coeur</div>
+                                                    </div>
+                                                </div>
+                                                <div class="symptomes">
+                                                    <p class="symptomes-paragraph">
+                                                        Vous ne trouvez pas votre symptôme ! Essayer la recherche parmis les 1600 symptômes répertoriés
+                                                    </p>
+                                                </div>
+                                                <div class="symptomes-inputs">
+                                                    <div class="container-input">
+                                                        <img src="../../img/icons/folder.svg" alt="Left Icon" class="input-icon-left"/>
+                                                        <input type="text" class="symptomes-input" placeholder="Enter symptomes"/>
+                                                        <img src="../../img/icons/refresh.svg" alt="Right Icon" class="input-icon-right"/>
+                                                    </div>
+                                                
+                                                    <div class="small-cards-container">
+                                                        <div class="small-card">
+                                                            <div class="card-content">
+                                                                <p class="small-card-title">Card Content 1</p>
+                                                                <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="small-card">
+                                                            <div class="card-content">
+                                                                <p class="small-card-title">Card Content 2</p>
+                                                                <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="long-card-container">
+                                                        <div class="long-card">
+                                                            <p class="long-card-title"><b>Symptôme alpha</b> ne correspond à aucun symptom</p>
+                                                            <button class="ajouter-button">Ajouter</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fifth-card-view" id="fifth-card-view-2" style="display: none;">
+                                        <div class="fifth-card-container">
+                                            <div class="fifth-card-image-container">
+                                                <img src="../../img/icons/human-body.svg" alt="Homme Image" class="fifth-card-image"/>
+                                            </div>
+                                            <div class="fifth-card-content">
+                                                <div class="clickable-items">
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Absence de pouls</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Augmentation des pulsions</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Douleur dans la poitrine</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Opression dans la poitrine</div>
+                                                    </div>
+                                                    <div class="clickable-item">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/add-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Palpitation</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Rythme cardiaque irrégulier</div>
+                                                    </div>
+                                                    <div class="clickable-item-added">
+                                                        <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                        <div class="clickable-item-title">Souffle au coeur</div>
+                                                    </div>
+                                                </div>
+                                                <div class="symptomes">
+                                                    <p class="symptomes-paragraph">
+                                                        Vous ne trouvez pas votre symptôme ! Essayer la recherche parmis les 1600 symptômes répertoriés
+                                                    </p>
+                                                </div>
+                                                <div class="symptomes-inputs">
+                                                    <div class="container-input">
+                                                        <img src="../../img/icons/folder.svg" alt="Left Icon" class="input-icon-left"/>
+                                                        <input type="text" class="symptomes-input" placeholder="Enter symptomes"/>
+                                                        <img src="../../img/icons/refresh.svg" alt="Right Icon" class="input-icon-right"/>
+                                                    </div>
+                                                
+                                                    <div class="small-cards-container">
+                                                        <div class="small-card">
+                                                            <div class="card-content">
+                                                                <p class="small-card-title">Card Content 1</p>
+                                                                <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="small-card">
+                                                            <div class="card-content">
+                                                                <p class="small-card-title">Card Content 2</p>
+                                                                <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="long-card-container">
+                                                        <div class="long-card">
+                                                            <p class="long-card-title"><b>Symptôme alpha</b> ne correspond à aucun symptom</p>
+                                                            <button class="ajouter-button">Ajouter</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div  id="headingThree">
+                    
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+
+                            <div class="card-body">
+                                <div class="sixth-card" id="sixth-card" >
+                                    <div class="sixth-card-container">
+                                        <div class="container-questions">
+                                            
+                                            <div class="question-item">
+                                                <div class="question-text">Êtes-vous diabétique ?</div>
+                                                <div class="question-buttons">
+                                                    <button class="btn1 btn-oui">Oui</button>
+                                                    <button class="btn1 btn-non">Non</button>
+                                                    <button class="btn1 btn-peut-etre">Peut-être</button>
+                                                </div>
+                                            </div>
+                                            <div class="question-item">
+                                                <div class="question-text">Êtes-vous en surpoids ou obèse ?</div>
+                                                <div class="question-buttons">
+                                                    <button class="btn1 btn-oui">Oui</button>
+                                                    <button class="btn1 btn-non">Non</button>
+                                                    <button class="btn1 btn-peut-etre">Peut-être</button>
+                                                </div>
+                                            </div>
+                                            <div class="question-item">
+                                                <div class="question-text">Avez-vous de l'hypertension ?</div>
+                                                <div class="question-buttons">
+                                                    <button class="btn1 btn-oui">Oui</button>
+                                                    <button class="btn1 btn-non">Non</button>
+                                                    <button class="btn1 btn-peut-etre">Peut-être</button>
+                                                </div>
+                                            </div>
+                                            <div class="question-item">
+                                                <div class="question-text">Avez-vous un taux de cholestérol élevé ?</div>
+                                                <div class="question-buttons">
+                                                    <button class="btn1 btn-oui">Oui</button>
+                                                    <button class="btn1 btn-non">Non</button>
+                                                    <button class="btn1 btn-peut-etre">Peut-être</button>
+                                                </div>
+                                            </div>
+                                            <div class="question-item">
+                                                <div class="question-text">Fumez-vous des cigarettes depuis au moins 10 ans ?</div>
+                                                <div class="question-buttons">
+                                                    <button class="btn1 btn-oui">Oui</button>
+                                                    <button class="btn1 btn-non">Non</button>
+                                                    <button class="btn1 btn-peut-etre">Peut-être</button>
+                                                </div>
+                                            </div>
+                                        </div>                                            
+
+                                        <div class="symptomes1">
+                                            <div class="symptomes-inputs symptomes-inputs1">
+                                                <label for="symptomes-input0">Avez-vous des allergie(s) connue(s) ?</label>
+                                                <div class="container-input">
+                                                    <img src="../../img/icons/folder.svg" alt="Left Icon" class="input-icon-left"/>
+                                                    <input type="text" class="symptomes-input" id="symptomes-input0" placeholder="Enter symptomes"/>
+                                                    <img src="../../img/icons/refresh.svg" alt="Right Icon" class="input-icon-right"/>
+                                                </div>
+                                            
+                                                <div class="small-cards-container">
+                                                    <div class="small-card">
+                                                        <div class="card-content">
+                                                            <p class="small-card-title">Douleur irradiant au bras</p>
+                                                            <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="small-card">
+                                                        <div class="card-content">
+                                                            <p class="small-card-title">Expectorations</p>
+                                                            <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                            <div class="symptomes-inputs">
+                                                <label for="symptomes-input1">Avez-vous des maladie(s) connue(s) ?</label>
+                                                <div class="container-input">
+                                                    <img src="../../img/icons/folder.svg" alt="Left Icon" class="input-icon-left"/>
+                                                    <input type="text" class="symptomes-input" id="symptomes-input1" placeholder="Enter symptomes"/>
+                                                    <img src="../../img/icons/refresh.svg" alt="Right Icon" class="input-icon-right"/>
+                                                </div>
+                                            
+                                                <div class="small-cards-container">
+                                                    <div class="small-card">
+                                                        <div class="card-content">
+                                                            <p class="small-card-title">Douleur irradiant au bras</p>
+                                                            <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="small-card">
+                                                        <div class="card-content">
+                                                            <p class="small-card-title">Expectorations</p>
+                                                            <button class="btn-card-icon"><img src="../../img/icons/x.svg" alt="Card Icon" class="card-icon"/></button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div  id="headingFour">
+                    
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="card-header"></div>
+                            <div class="card-body">
+                                <div class="seventh-card" id="seventh-card" >
+                                    <div class="seventh-card-container">
+                                        <div class="update-password-content">
+                                            <div class="image-box">
+                                                <div class="img-rounded-cercle">
+                                                    <img src="../../img/icons/lock-icon.png" alt="Image" class="rounded-image"/>
+                                                </div>
+                                                <p class="paraghraph-title">Cette évaluation médicale n'est pas un diagnostic</p>
+                                                <p class="paragraph-sub-title">L'évaluation médicale est à titre informatif et n'est en aucun cas un avis médical qualifié.</p>
+                                            </div>
+                                        </div>
+                                        <div class="update-password-content">
+                                            <div class="image-box">
+                                                <div class="img-rounded-cercle">
+                                                    <img src="../../img/icons/lock-icon.png" alt="Image" class="rounded-image"/>
+                                                </div>
+                                                <p class="paraghraph-title">Ne pas utiliser cet outil en cas d'urgence</p>
+                                                <p class="paragraph-sub-title">Dans une telle situation, prenez contact avec les urgences locales immédiatement.</p>
+                                            </div>
+                                        </div>
+                                        <div class="update-password-content">
+                                            <div class="image-box">
+                                                <div class="img-rounded-cercle">
+                                                    <img src="../../img/icons/lock-icon.png" alt="Image" class="rounded-image"/>
+                                                </div>
+                                                <p class="paraghraph-title">Vos données sont sécurisées</p>
+                                                <p class="paragraph-sub-title">Les informations que vous entrez restent anonymes et ne sont en aucun cas partagées.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div  id="headingFive">
+                    
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="card-body">
+
+                                <div class="eighth-card" id="eighth-card">
+                                    <div class="eighth-card-container">
+                                        <div class="eighth-card-image">
+                                            <img src="../../img/icons/human-body.svg" alt="human-body"/>
+                                        </div>
+                                        <div class="eighth-card-content">
+                                            <h2 class="eighth-card-title">Récapulatif</h2>
+
+                                            <div class="content-row">
+                                                <div class="content-item-card">
+                                                    <div class="card-left">
+                                                        <p class="card-item-title">Age</p>
+                                                        <p class="card-value">32 <span class="small-text">ans</span></p>
+                                                    </div>
+                                                    <div class="card-right">
+                                                        <div class="rounded-img-box">
+                                                            <img src="../../img/icons/docs.svg" alt="Age Image"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-item-card">
+                                                    <div class="card-left">
+                                                        <p class="card-item-title">Sexe</p>
+                                                        <p class="card-value">Homme</p>
+                                                    </div>
+                                                    <div class="card-right">
+                                                        <div class="rounded-img-box">
+                                                            <img src="../../img/icons/docs.svg" alt="Sex Image"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="content-row">
+                                                <div class="content-item">
+                                                    <p class="content-item-title">Symptômes</p>
+                                                    <div class="content-item-body">
+                                                        <div class="clickable-items">
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Absence de pouls</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Augmentation des pulsions</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Douleur dans la poitrine</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Opression dans la poitrine</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Palpitation</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Rythme cardiaque irrégulier</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Souffle au coeur</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="content-item">
+                                                    <p class="content-item-title">Allergies et maladies</p>
+                                                    <div class="content-item-body">
+                                                        <div class="clickable-items">
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Absence de pouls</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Augmentation des pulsions</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Douleur dans la poitrine</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Opression dans la poitrine</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Palpitation</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Rythme cardiaque irrégulier</div>
+                                                            </div>
+                                                            <div class="clickable-item-added">
+                                                                <div class="clickable-item-icon"><img src="../../img/icons/added-icon-white.svg" alt="" class="img-icon"/></div>
+                                                                <div class="clickable-item-title">Souffle au coeur</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+             <!-- Navigation Buttons for Card Navigation -->
+            <div class="navigation-buttons" id="card-navigation-buttons">
+                <button class="btn prev-button-f" id="goBackToFirstCard" onclick="goBackToFirstCardInFirstStep()"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
+                <button class="btn next-button-f" id="navigateToSecondCard" onclick="navigateToSecondCardInFirstStep()"><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="navigation-buttons" id="sexe-navigation-buttons"  style="display: none;">
+                <button class="btn prev-button-s"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
+                <button class="btn next-button-s"><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="navigation-buttons" id="step-navigation-buttons" style="display: none;">
+                <button class="btn prev-button"><i class="fas fa-arrow-left"></i><span>Précédent</span></button>
+                <button class="btn next-button" ><span>Suivante</span><i class="fas fa-arrow-right"></i></button>
+            </div>
+            
+        </div>
+    </main>
+    
+
+    <!-- //Modals -->
+    <!-- //ConfirmationDemande Modal -->
+    <div class="modal fade" id="ConfirmationDemandeModal" tabindex="-1" aria-labelledby="ConfirmationDemandeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="">
+                        <div class="col-sm-12">
+                            <div class="update-password-content-modal">
+                                <div class="image-box-modal">
+                                    <div class="img-rounded-cercle-modal">
+                                        <img src="../../img/icons/lock-icon.png" alt="Image" class="rounded-image-modal"/>
+                                    </div>
+                                    <p class="paragraph-title-modal">Votre demande a bien été envoyée !</p>
+                                    <p class="paragraph-sub-title-modal">Un médecin va vous répondre dans les plus brefs délais. Vous pouvez suivre vos demandes sur la page suivi des damandes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>              
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary2">Suivi des deamandes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <!-- <script src="../../js/avis.js"></script> -->
+    <script src="../../js/avis-steps.js"></script>
+    <script src="../../js/vocal-recording.js"></script>
+
+    <script>
+        // $(document).ready(function() {
+        //     $('#ConfirmationDemandeModal').modal('show');
+        // });
+    </script>
+
+</body>
+</html>
