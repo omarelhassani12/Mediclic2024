@@ -93,7 +93,6 @@ prevButton.addEventListener('click', () => {
 
 
 
-// for the drop and drag files
 
 function displayUploadedFiles(input, targetContainerId) {
     const filesContainer = document.getElementById(targetContainerId);
@@ -162,9 +161,6 @@ function displayUploadedFiles(input, targetContainerId) {
     }
 }
 
-
-
-
 // for disply the size as 153Bytes sur 156Bytes
 function simulateFileUpload(file, progressBar, fileSizeText, statusIcon, fileItem, progressBarContainer) {
     const fileSize = file.size;
@@ -178,7 +174,13 @@ function simulateFileUpload(file, progressBar, fileSizeText, statusIcon, fileIte
             clearInterval(progressInterval);
             statusIcon.innerHTML = '<img src="../../img/icons/delete.png">'; 
             progressBarContainer.style.display = 'none';
-            fileItem.removeChild(statusIcon); 
+            if (statusIcon.parentNode === fileItem) {
+                fileItem.removeChild(statusIcon);
+            } else {
+                statusIcon.addEventListener('click', () => {
+                    fileItem.remove();
+                });
+            }
 
             fileSizeText.textContent = formatFileSize(fileSize);
         } else {
@@ -207,7 +209,6 @@ function formatFileSize(bytes) {
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
 }
-
 
 // for the radio button click
 

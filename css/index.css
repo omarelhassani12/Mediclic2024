@@ -91,22 +91,6 @@ body {
 }
 
 
-/* Styles for individual icons */
-.user-info-icons a{
-    color: #fff;
-    text-decoration: none;
-}
-.user-info-icons a .fas.fa-file-alt,
-.user-info-icons a .fas.fa-envelope,
-.user-info-icons a .fas.fa-bell,
-a .special-plus i {
-    font-size: 1.5rem;
-    color: transparent;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    padding: 5px;
-}
-
 /* Notification badge */
 .notification-badge {
     position: relative;

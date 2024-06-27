@@ -1,0 +1,404 @@
+@media (min-width: 1024px) {
+    .dropdown .dropdown-toggle,
+    .user-name-mobile,
+    .photo-profil-mobile{
+        display: none !important;
+    }
+
+}
+@media (min-width: 769px) {
+    .dropdown .dropdown-toggle,
+    .user-name-mobile,
+    .photo-profil-mobile{
+        display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    .user-info-icons {
+        display: none;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-toggle{
+       color: #fff;
+       margin-right: 15px;
+    }
+    .dropdown-toggle::after {
+        content: none; 
+    }    
+    .dropdown-menu {
+        display: none;
+    }
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: -20px;
+        left: 40px;
+        background-color: #1678F2;
+        border-radius: 5px;
+    }
+    .user-info-icons-dropdown{
+        display: flex;
+        width: 100%;
+    }
+    .user-info-icons-dropdown{
+        padding: 5px;
+        min-width: 200px;
+    }
+    .user-info-icons-dropdown a{
+        margin: 0;
+    }
+    .user-info .user-name{
+        display: none;
+        font-size: 8px;
+    }
+    .user-info .photo-profil{
+        display: none;
+    }
+        
+    .user-info .user-name-mobile{
+        display: none;
+        font-size: 12px;
+        position: relative;
+        top: 10px;
+    }
+    .user-info .notification-badge .badge{
+        position: relative;
+        top: -35px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header1, .header2 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center !important;
+    }
+
+    .header1 .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header1 .user-info {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .header1 .user-info-icons {
+        margin-bottom: 10px;
+    }
+
+    .header1 .user-info .profile-image {
+        width: 35px;
+        height: 35px;
+        margin-left: 0;
+    }
+
+    .header1 .user-name {
+        font-size: 14px;
+    }
+
+    .header2 .header-content {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header2 .title-header2 {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .header2 .content {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding-top: 10%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: -40px;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .sidebar .sidebar-title {
+        display: none;
+    }
+    .sidebar .sidebar-menu {
+        margin-top: 35px;
+    }
+    
+    .sidebar .dropdown-title {
+        display: inline-block;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar .dropdown-title {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 50px; 
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+        overflow-x: auto;
+    }
+
+    .main-content.small {
+        margin-left: 60px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: -40px;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .sidebar .sidebar-title {
+        display: none;
+    }
+    .sidebar .sidebar-menu {
+        margin-top: 35px;
+    }
+    
+    .sidebar .dropdown-title {
+        display: inline-block;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar .dropdown-title {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 50px; 
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+        overflow-x: auto;
+    }
+
+    .main-content.small {
+        margin-left: 60px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .data-table table,
+    .data-table thead,
+    .data-table tbody,
+    .data-table th,
+    .data-table td,
+    .data-table tr {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 12px !important;
+    }
+
+    .data-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .data-table thead th {
+        text-align: left !important;
+    }
+
+    .data-table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 0.625rem;
+    }
+
+    .data-table td {
+        text-align: right;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        left: 0px;
+        padding-left: 100px;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    .data-table td:before {
+        position: absolute;
+        top: 10px;
+        left: 5px;
+        width: 45%;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        width: auto; 
+        padding-right: 0;
+        color: #333;
+    }
+
+    .data-table #table1 td:nth-of-type(1):before { content: "Article vendu"; }
+    .data-table #table1 td:nth-of-type(2):before { content: "Présentation"; }
+    .data-table #table1 td:nth-of-type(3):before { content: "Prix"; }
+    .data-table #table1 td:nth-of-type(4):before { content: "Quantité"; }
+
+    .data-table #table2 td:nth-of-type(1):before { content: "TNR"; }
+    .data-table #table2 td:nth-of-type(2):before { content: "TNR"; }
+    .data-table #table2 td:nth-of-type(3):before { content: "Prix"; }
+    .data-table #table2 td:nth-of-type(4):before { content: "BR"; }
+
+    .data-table #table3 td:nth-of-type(1):before { content: "Médicament"; }
+    .data-table #table3 td:nth-of-type(2):before { content: "Indication"; }
+    .data-table #table3 td:nth-of-type(3):before { content: "Qté totale"; }
+    .data-table #table3 td:nth-of-type(4):before { content: "Qté délivrée"; }
+
+    .data-table td:last-child {
+        border-bottom: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .top-content .left-content,
+    .top-content .right-content .buttons-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .bottom-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .bottom-item:nth-child(1),
+    .bottom-item:nth-child(2),
+    .bottom-item:nth-child(3),
+    .bottom-item:nth-child(4),
+    .bottom-item:nth-child(5),
+    .bottom-item:nth-child(6) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        width: 100%;
+        box-sizing: border-box;
+    }   
+
+    .bottom-item:nth-child(5),
+    .bottom-item:nth-child(6){
+        position: relative;
+        left: 2px;
+    }
+    
+    .bottom-item img {
+        width: 25px;
+        height: 25px;
+        margin-right: 0px;
+    }
+    
+    .item-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .item-name {
+        font-size: 12px;
+        font-weight: 200;
+        color: #667085;
+    }
+    
+    .item-value {
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        color: #333333;
+        margin-top: 5px;
+        padding: 0;
+    }
+    
+    #status-a-rembourser {
+        margin-left: 30px;
+    }   
+}
+
+
+@media (max-width: 768px) {
+    .body-item .message-center .message-text .body-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .body-item .message-center .message-text .body-content .bottom-item:nth-child(1),
+    .body-item .message-center .message-text .body-content .bottom-item:nth-child(2),
+    .body-item .message-center .message-text .body-content .bottom-item:nth-child(3),
+    .body-item .message-center .message-text .body-content .bottom-item:nth-child(4),
+    .body-item .message-center .message-text .body-content .bottom-item:nth-child(5) {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }  
+}

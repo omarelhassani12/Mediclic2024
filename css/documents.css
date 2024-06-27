@@ -1,11 +1,9 @@
-/* Style for dropdown menu */
 .search-filter .dropdown-menu {
     width: 812px; 
     padding: 10px;
 }
 
 
-/* Style for dropdown header */
 .search-filter .dropdown-header {
     font-size: 18px;
     font-weight: bold;
@@ -13,7 +11,6 @@
     margin-bottom: 10px;
 }
 
-/* Style for dropdown body */
 .search-filter .dropdown-body {
     margin-bottom: 10px;
 }
@@ -122,3 +119,10 @@
 }
 
 
+.dropleft .dropdown-menu {
+    left: 0% !important; 
+    right: auto !important; 
+}
+.dropdown-menu {
+    transform: translateX(-100%) !important;
+}

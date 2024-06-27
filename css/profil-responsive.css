@@ -1,0 +1,422 @@
+@media (min-width: 1024px) {
+    .dropdown .dropdown-toggle,
+    .user-name-mobile,
+    .photo-profil-mobile{
+        display: none !important;
+    }
+
+}
+@media (min-width: 769px) {
+    .dropdown .dropdown-toggle,
+    .user-name-mobile,
+    .photo-profil-mobile{
+        display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    .user-info-icons {
+        display: none;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-toggle{
+       color: #fff;
+       margin-right: 15px;
+    }
+    .dropdown-toggle::after {
+        content: none; 
+    }    
+    .dropdown-menu {
+        display: none;
+    }
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: -20px;
+        right: 50px;
+        background-color: #1678F2;
+        border-radius: 5px;
+    }
+
+    #tableBody .dropleft .dropdown-menu.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -20px;
+        right: 50px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    .user-info-icons-dropdown{
+        display: flex;
+        width: 100%;
+    }
+    .user-info-icons-dropdown{
+        padding: 5px;
+        min-width: 200px;
+    }
+    .user-info-icons-dropdown a{
+        margin: 0;
+    }
+    .user-info .user-name{
+        display: none;
+        font-size: 8px;
+    }
+    .user-info .photo-profil{
+        display: none;
+    }
+        
+    .user-info .user-name-mobile{
+        display: none;
+        font-size: 12px;
+        position: relative;
+        top: 10px;
+    }
+    .user-info .notification-badge .badge{
+        position: relative;
+        top: -35px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header1, .header2 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center !important;
+    }
+
+    .header1 .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header1 .user-info {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .header1 .user-info-icons {
+        margin-bottom: 10px;
+    }
+
+    .header1 .user-info .profile-image {
+        width: 35px;
+        height: 35px;
+        margin-left: 0;
+    }
+
+    .header1 .user-name {
+        font-size: 14px;
+    }
+
+    .header2 .header-content {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header2 .title-header2 {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .header2 .content {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding-top: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .modal-dialog-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px !important;
+        margin-right: auto !important;
+    }
+    .modal-dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -200px;
+    }
+}
+@media (max-width: 480px) {
+    .modal-dialog-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px !important;
+        margin-right: auto !important;
+    }
+    .modal-dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: -40px;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .sidebar .sidebar-title {
+        display: none;
+    }
+    .sidebar .sidebar-menu {
+        margin-top: 35px;
+    }
+    
+    .sidebar .dropdown-title {
+        display: inline-block;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar .dropdown-title {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 50px; 
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+        overflow-x: auto;
+    }
+
+    .main-content.small {
+        margin-left: 60px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: -40px;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .sidebar .sidebar-title {
+        display: none;
+    }
+    .sidebar .sidebar-menu {
+        margin-top: 35px;
+    }
+    
+    .sidebar .dropdown-title {
+        display: inline-block;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar .dropdown-title {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 50px; 
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+        overflow-x: auto;
+    }
+
+    .main-content.small {
+        margin-left: 60px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .column-20 {
+        width: 20%;
+    }
+
+    .column-50 {
+        width: 50%;
+    }
+
+    .column-30 {
+        width: 30%;
+    }
+
+    .column-20, .column-50, .column-30 {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    
+
+    .column-20 {
+        width: 100%;
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-profile {
+        display: flex;
+        align-items: center;
+        padding: 10px; 
+    }
+    
+}
+@media (max-width: 768px) {
+
+    .content-small-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .small-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #667085;
+    }
+    
+    .btn-container-title{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    
+    .btn-container-title .btn-note{
+        color: #2196F3 !important;
+        position: relative;
+        left: 50px;
+        top: 15px;
+    }
+
+    .shadow-bottom {
+        position: relative; 
+        left: -20px;
+    }
+    
+    .column-30 .content .btn-note {
+        color: #6C87AE;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        right: -50%;
+    }
+    
+    .column-30 .content .btn-note span{
+        margin-right: 20px;
+    }
+    
+    
+    
+
+    .footer-content {
+        flex-direction: column; 
+        justify-content: space-between; 
+        height: auto;
+    }
+
+    .footer-left {
+        margin-bottom: 0;
+        align-items: flex-start; 
+    }
+}
+
+@media (max-width: 768px){
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    thead tr th {
+        text-align: left !important;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 0.625rem;
+    }
+
+    td {
+        text-align: right;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 80px;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        padding-right: 0.625rem;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        width: auto; 
+        padding-right: 0;
+        color: #333;
+    }
+
+    td:nth-of-type(1):before { content: "ID"; }
+    td:nth-of-type(2):before { content: "Nom Complet"; }
+    td:nth-of-type(3):before { content: "Sexe"; }
+    td:nth-of-type(4):before { content: "Email"; }
+    td:nth-of-type(5):before { content: "Age"; }
+    td:nth-of-type(6):before { content: "Téléphone"; }
+    td:nth-of-type(7):before { content: ""; }
+
+    td:last-child {
+        border-bottom: 0;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/patient-modal.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/buttons-style.css">
+    <link rel="stylesheet" href="../../css/documents.css">
+    <link rel="stylesheet" href="../../css/message.css">
+    <link rel="stylesheet" href="../../css/messages-responsive.css">
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo"/>
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="../../pages/Messages/index.html">
+                    <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                    </span>
+                </a>
+            </span>
+            <div class="dropdown" id="dropdown-user-info">
+                
+                <a href="#" class="dropdown-toggle"><img src="../../img/icons/list-icon.svg" alt="list"/></a>
+                <div class="dropdown-menu">
+                    <span class="user-info-icons-dropdown">
+                        <a href="#">
+                            <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="../../pages/Messages/index.html">
+                            <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="#">
+                            <span class="notification-badge" style="margin-right: 5px;">
+                                <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                                <span class="badge"><small>5</small></span>
+                            </span>                            
+                        </a>
+                        <a href="#">
+                            <span class="special-plus">
+                                <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil" alt="Profile Image"/>
+            <span class="user-name-mobile">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil-mobile" alt="Profile Image"/>
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="toggle-btn">
+            <button class="toggle-button">
+                <img src="../../img/icons/toggle-left.svg" class="toggle-img toggle-img-left" alt="toggle-left">
+                <img src="../../img/icons/toggle-right.svg" class="toggle-img toggle-img-right hidden" alt="toggle-right">
+            </button>
+        </div>
+        <h3 class="sidebar-title">Tableau de bord</h3>
+        <ul class="sidebar-menu">
+            <!-- First Dropdown -->
+            <div class="dropdown" id="dropdownBtn1">
+                <a onclick="toggleDropdown('dropdownContent1', 'dropdownIcon1')" class="dropdown-btn">
+                    <span class="dropdown-title">Administration</span>
+                    <i id="dropdownIcon1" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent1">
+                    <a href="../../index.html" class="other-buttons">
+                        <img src="../../img/icons/Patients.png" alt="Patients Icon">
+                        <span class="dropdown-title">Patients</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Agenda.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Agenda</span>
+                    </a>
+                    <a href="../../pages/Documents/index.html" class="other-buttons">
+                        <img src="../../img/icons/Documents.png" alt="Documents Icon">
+                        <span class="dropdown-title">Documents</span>
+                    </a>
+                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                        <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
+                        <span class="dropdown-title">Calendriers</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Suivis.png" alt="Suivis Icon">
+                        <span class="dropdown-title">Suivis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Prescriptions.png" alt="Prescriptions Icon">
+                        <span class="dropdown-title">Prescriptions</span>
+                    </a>
+                    <a href="../../pages/Absences/index.html" class="other-buttons">
+                        <img src="../../img/icons/Absences.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Absences</span>
+                    </a>
+                    <a href="../../pages/Reclamations/index.html" class="other-buttons">
+                        <img src="../../img/icons/Reclamations.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Réclamations</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/DMP.png" alt="DMP Icon">
+                        <span class="dropdown-title">DMP</span>
+                    </a>
+                    <a href="../../pages/FSE/index.html" class="other-buttons">
+                        <img src="../../img/icons/FSE.png" alt="FSE Icon">
+                        <span class="dropdown-title">FSE</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Paiements.png" alt="Paiements Icon">
+                        <span class="dropdown-title">Paiements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Statistiques.png" alt="Statistiques Icon">
+                        <span class="dropdown-title">Statistiques</span>
+                    </a>
+                
+                </div>
+            </div>
+
+            <!-- Second Dropdown -->
+            <div class="dropdown" id="dropdownBtn2">
+                <a onclick="toggleDropdown('dropdownContent2', 'dropdownIcon2')" class="dropdown-btn">
+                    <span class="dropdown-title">Communauté</span>
+                    <i id="dropdownIcon2" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent2">
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Forum.png" alt="Forum Icon">
+                        <span class="dropdown-title">Forum</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Annonces.png" alt="Annonces Icon">
+                        <span class="dropdown-title">Annonces</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Evénements.png" alt="Evénements Icon">
+                        <span class="dropdown-title">Evénements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Blog.png" alt="Blog Icon">
+                        <span class="dropdown-title">Blog</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Avis.png" alt="Avis Icon">
+                        <span class="dropdown-title">Avis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Market.png" alt="Market Icon">
+                        <span class="dropdown-title">Market</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Emploi.png" alt="Emploi Icon">
+                        <span class="dropdown-title">Emploi</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/E-learning.png" alt="E-learning Icon">
+                        <span class="dropdown-title">E-learning</span>
+                    </a>              
+                </div>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="main-header">
+            <div>
+                <h1>Messages</h1>
+                <p>Keep track of patients and their diseases.</p>
+            </div>
+        </section>
+        
+
+        <!-- Search Filter -->
+        <form id="searchForm" >
+            <section class="search-filter">
+                <div class="input-group">
+                    <input type="date" id="startDate" name="startDate" class="form-select">
+                </div>
+        
+                <div class="input-group">
+                    <input type="date" id="endDate" name="endDate" class="form-select">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="Patient" name="Patient" placeholder="Patient" class="form-select-input search-input">
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" id="Professionel" name="Professionel" placeholder="Professionel" class="form-select-input search-input">
+                </div>               
+                
+                <select id="status" name="status" class="form-select">
+                    <option value="" disabled selected>Status</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                    <option value="cancelled">Cancelled</option>
+                </select>
+                
+                <button id="searchBtn" type="submit" class="btn">
+                    <img src="../../img/icons/filter.png" alt="filter" > Filter
+                </button>
+            </section>
+        </form>
+        
+        <!-- Data Table -->
+        <section class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>RDV</th>
+                        <th>Patient</th>
+                        <th>Service</th>
+                        <th>Professionnel</th>
+                        <th>Spécialité</th>
+                        <th>Statut</th>
+                        <th>Lieu</th>
+                        <th>Adresse</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td class="nom-complet">01-08-23 05:43 </td>
+                        <td>Radi Amin</td>
+                        <td id="Service"><span>Consultation</span></td>
+                        <td>Dr Alami Karim</td>
+                        <td>Généraliste</td>
+                        <td id="Termine-success"><span></span>Terminé</td>
+                        <td>Centre Infirmier Maarif</td>
+                        <td>123, boulevard d'anfa</td>
+                        <td style="cursor: pointer;">
+                            <a href="" id="badge-message-failed" data-bs-toggle="modal" data-bs-target="#MessageModal">
+                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nom-complet">01-08-23 05:43 </td>
+                        <td>Radi Amin</td>
+                        <td id="Service"><span>Consultation</span></td>
+                        <td>Dr Alami Karim</td>
+                        <td>Généraliste</td>
+                        <td id="Termine-success"><span></span>Terminé</td>
+                        <td>Centre Infirmier Maarif</td>
+                        <td>123, boulevard d'anfa</td>
+                        <td style="cursor: pointer;">
+                            <a href="" id="badge-message-failed">
+                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                                <span></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nom-complet">01-08-23 05:43 </td>
+                        <td>Radi Amin</td>
+                        <td id="Service"><span>Consultation</span></td>
+                        <td>Dr Alami Karim</td>
+                        <td>Généraliste</td>
+                        <td id="Termine-failed"><span></span>Terminé</td>
+                        <td>Centre Infirmier Maarif</td>
+                        <td>123, boulevard d'anfa</td>
+                        <td style="cursor: pointer;">
+                            <a href="" id="badge-message-failed">
+                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="nom-complet">01-08-23 05:43 </td>
+                        <td>Radi Amin</td>
+                        <td id="Service"><span>Consultation</span></td>
+                        <td>Dr Alami Karim</td>
+                        <td>Généraliste</td>
+                        <td id="Termine-failed"><span></span>Terminé</td>
+                        <td>Centre Infirmier Maarif</td>
+                        <td>123, boulevard d'anfa</td>
+                        <td style="cursor: pointer;">
+                            <a href="" id="badge-message-failed">
+                                <img src="../../img/icons/message-icon.png" alt="message-icon">
+                                <span></span>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Navigation Card -->
+        <section class="navigation-card">
+            <div class="card-navigation">
+                <button id="prevBtn" class="btn-nav">
+                    <img src="../../img/icons/arrow-left.png" alt="arrow-left">Previous
+                </button>
+                <span class="pages">
+                 </span>
+                <button id="nextBtn" class="btn-nav">
+                    Next<img src="../../img/icons/arrow-right.png" alt="arrow-right">
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- //Modals -->
+    <!-- //Messages Modal -->
+    <div class="modal fade" id="MessageModal" tabindex="-1" aria-labelledby="MessageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="MessageModalLabel">Messages</h5>
+              <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-1', 'arrow-icon-1')">
+                        <span class="profil-cercle"></span>
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <span class="profil-badge"></span>
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-1" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-1" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-2', 'arrow-icon-2')">
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-2" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-2" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-3', 'arrow-icon-3')">
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-3" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-3" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-container">
+                    <div class="message-left-top" onclick="toggleDropdown('message-center-4', 'arrow-icon-4')">
+                        <span class="profil-cercle"></span>
+                        <img src="../../img/icons/user-img.png" alt="User Image" class="user-image">
+                        <span class="profil-badge"></span>
+                        <div class="user-info-message">
+                            <p class="user-name">Radi Amine</p>
+                            <p class="message-date-time">Le 29 juin 2023 à 10:30</p>
+                        </div>
+                        <i id="arrow-icon-4" class="fas fa-chevron-up rotate-icon"></i>
+                    </div>
+                    <div id="message-center-4" class="message-center" style="display: none;">
+                        <div class="message-title">
+                            <p>Object: Symptômes</p>
+                        </div>
+                        <div class="message-text">
+                            <p>
+                                Il a des douleurs abdominales sévères, des nausées et des vomissements depuis 48 heures. Il a également constaté avoir eu une diminution de l’appétit et une légère fièvre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-footer">
+                    <div class="col-md-12 btn-icon">
+                        <button type="button" class="btn-note" data-bs-toggle="modal" data-bs-target="#NVMessageModal">
+                            <i class="fas fa-plus"></i>
+                            <span>Ajouter un message</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary2" data-bs-dismiss="modal" aria-label="Close">Fermer</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- //NV Messages Modal -->
+    <div class="modal fade" id="NVMessageModal" tabindex="-1" aria-labelledby="NVMessageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="NVMessageModalLabel">Nouveau message</h5>
+                    <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <form action="">
+                        <div class="col-sm-12">
+                            <label for="Objet">Objet </label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <textarea id="Objet" name="Objet" placeholder="Ajouter une objet" rows="2" ></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Message">Message </label>
+                            <div class="new-comment">
+                                <i class="icon-lieu"></i>
+                                <textarea id="Message" name="Message" placeholder="Ajouter une message" rows="2" ></textarea>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <label for="Documents">Documents</label>
+                            <div class="new-comment new-comment-file">
+                                <div class="file-upload">
+                                    <label for="fileInput" class="label-file">
+                                        <span class="img-cercle">
+                                            <img src="../../img/icons/upload.png" alt="">
+                                        </span> Cliquer pour importer
+                                        <br>
+                                        <span class="upload-text">ou juste dropper and dragger</span>
+                                    </label>
+                                    <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                                </div>
+                                <button class="btn-importer">Importer</button>
+                            </div>
+                        </div>
+                        <div id="uploadedFilesContainer" class="col-sm-12">
+                        </div>
+
+                        
+                        <div class="col-sm-12">
+                            <label for="Documents">Type de document</label>
+                            <div class="new-comment select-container">
+                                <img src="../../img/icons/papper-docs.png" alt="" class="icon-left">
+                                <select id="documentType" name="documentType" class="custom-select">
+                                    <option value="ordonnance1">Ordonnance de médicaments</option>
+                                    <option value="ordonnance2">Ordonnance de médicaments 2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+              
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-fermer" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary2">Envoyer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/messages.js"></script>
+    <script src="../../js/side-bar-toggles.js"></script>    
+    <script src="../../js/index-responsive.js"></script>    
+
+</body>
+</html>

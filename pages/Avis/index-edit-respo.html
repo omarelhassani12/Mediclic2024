@@ -20,18 +20,19 @@
     <!-- First Header -->
     <header class="header1">
         <div>
-            <img src="../../img/Logo.png" alt="Logo">
+            <img src="../../img/Logo.png" alt="Logo"/>
         </div>
         <div class="user-info">
-            <span class="user-info-icons ">
+            <span class="user-info-icons">
                 <a href="#">
-                    <i class="far fa-file-alt" style="margin-right: 15px; "></i>
+                    <i class="far fa-file-alt" style="margin-right: 15px;"></i>
+                </a>
                 <a href="../../pages/Messages/index.html">
-                    <i class="far fa-comment-alt" style="margin-right: 15px; "></i>
+                    <i class="far fa-comment-alt" style="margin-right: 15px;"></i>
                 </a>
                 <a href="#">
                     <span class="notification-badge" style="margin-right: 5px;">
-                        <i class="far fa-bell" ></i>
+                        <i class="far fa-bell"></i>
                         <span class="badge"><small>5</small></span>
                     </span>                            
                 </a>
@@ -41,10 +42,38 @@
                     </span>
                 </a>    
             </span>
+            <div class="dropdown" id="dropdown-user-info">
+                
+                <a href="#" class="dropdown-toggle"><img src="../../img/icons/list-icon.svg" alt="list"/></a>
+                <div class="dropdown-menu">
+                    <span class="user-info-icons-dropdown">
+                        <a href="#">
+                            <i class="far fa-file-alt" style="margin-right: 15px;"></i>
+                        </a>
+                        <a href="../../pages/Messages/index.html">
+                            <i class="far fa-comment-alt" style="margin-right: 15px;"></i>
+                        </a>
+                        <a href="#">
+                            <span class="notification-badge" style="margin-right: 5px;">
+                                <i class="far fa-bell"></i>
+                                <span class="badge"><small>5</small></span>
+                            </span>                            
+                        </a>
+                        <a href="#">
+                            <span class="special-plus">
+                                <i class="fas fa-plus"></i> 
+                            </span>
+                        </a>    
+                    </span>
+                </div>
+            </div>
             <span class="user-name">DR Alami Karim</span>
-            <img src="../../img/doctor.png" alt="Profile Image">
+            <img src="../../img/doctor.png" class="photo-profil" alt="Profile Image"/>
+            <span class="user-name-mobile">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil-mobile" alt="Profile Image"/>
         </div>
     </header>
+    
 
     <!-- Second Header -->
     <header class="header2">
@@ -420,9 +449,10 @@
                                                 <div class="symptomes-inputs">
                                                     <div class="container-input">
                                                         <img src="../../img/icons/folder.svg" alt="Left Icon" class="input-icon-left"/>
-                                                        <input type="text" class="symptomes-input" placeholder="Enter symptomes"/>
+                                                        <input type="text" class="symptomes-input" placeholder="Enter symptoms"/>
                                                         <img src="../../img/icons/refresh.svg" alt="Right Icon" class="input-icon-right"/>
                                                     </div>
+                                                    
                                                 
                                                     <div class="small-cards-container">
                                                         <div class="small-card">
@@ -826,7 +856,7 @@
     <!-- //Modals -->
     <!-- //ConfirmationDemande Modal -->
     <div class="modal fade" id="ConfirmationDemandeModal" tabindex="-1" aria-labelledby="ConfirmationDemandeModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-left">
             <div class="modal-content">
                 <div class="modal-body">
                     <form action="">
@@ -856,14 +886,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../js/index.js"></script>
-    <!-- <script src="../../js/avis.js"></script> -->
     <script src="../../js/avis-steps.js"></script>
     <script src="../../js/vocal-recording.js"></script>
+    <script src="../../js/index-responsive.js"></script>
 
     <script>
-        // $(document).ready(function() {
-        //     $('#ConfirmationDemandeModal').modal('show');
-        // });
+
+
+
     </script>
 
 </body>

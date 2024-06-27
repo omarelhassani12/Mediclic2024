@@ -408,6 +408,7 @@
 }
 
 /* for the symptomes inputs */
+
 .symptomes-inputs{
     display: flex;
     flex-direction: column;
