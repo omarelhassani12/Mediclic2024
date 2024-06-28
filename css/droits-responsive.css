@@ -1,0 +1,321 @@
+@media (min-width: 1024px) {
+    .dropdown .dropdown-toggle,
+    .user-name-mobile,
+    .photo-profil-mobile{
+        display: none !important;
+    }
+
+}
+@media (min-width: 769px) {
+    .dropdown .dropdown-toggle,
+    .user-name-mobile,
+    .photo-profil-mobile{
+        display: none !important;
+    }
+}
+@media (max-width: 768px) {
+    .user-info-icons {
+        display: none;
+    }
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-toggle{
+       color: #fff;
+       margin-right: 15px;
+    }
+    .dropdown-toggle::after {
+        content: none; 
+    }    
+    .dropdown-menu {
+        display: none;
+    }
+    .dropdown-menu.show {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: -20px;
+        right: -290px;
+        background-color: #1678F2;
+        border-radius: 5px;
+    }
+
+    .user-info-icons-dropdown{
+        display: flex;
+        width: 100%;
+    }
+    .user-info-icons-dropdown{
+        padding: 5px;
+        min-width: 200px;
+    }
+    .user-info-icons-dropdown a{
+        margin: 0;
+    }
+    .user-info .user-name{
+        display: none;
+        font-size: 8px;
+    }
+    .user-info .photo-profil{
+        display: none;
+    }
+        
+    .user-info .user-name-mobile{
+        display: none;
+        font-size: 12px;
+        position: relative;
+        top: 10px;
+    }
+    .user-info .notification-badge .badge{
+        position: relative;
+        top: -35px;
+        right: -15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header1, .header2 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center !important;
+    }
+
+    .header1 .logo-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header1 .user-info {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .header1 .user-info-icons {
+        margin-bottom: 10px;
+    }
+
+    .header1 .user-info .profile-image {
+        width: 35px;
+        height: 35px;
+        margin-left: 0;
+    }
+
+    .header1 .user-name {
+        font-size: 14px;
+    }
+
+    .header2 .header-content {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .header2 .title-header2 {
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    .header2 .content {
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    .main-content {
+        padding-top: 10%;
+    }
+}
+@media (max-width: 768px) {
+    .modal-dialog-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 250px !important;
+        margin-right: auto !important;
+    }
+    .modal-dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -200px;
+    }
+}
+@media (max-width: 480px) {
+    .modal-dialog-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px !important;
+        margin-right: auto !important;
+    }
+    .modal-dialog{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: -40px;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .sidebar .sidebar-title {
+        display: none;
+    }
+    .sidebar .sidebar-menu {
+        margin-top: 35px;
+    }
+    
+    .sidebar .dropdown-title {
+        display: inline-block;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar .dropdown-title {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 50px; 
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+        overflow-x: auto;
+    }
+
+    .main-content.small {
+        margin-left: 60px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar {
+        position: relative;
+        top: -40px;
+        display: block;
+        transform: translateX(0);
+    }
+
+    .sidebar .sidebar-title {
+        display: none;
+    }
+    .sidebar .sidebar-menu {
+        margin-top: 35px;
+    }
+    
+    .sidebar .dropdown-title {
+        display: inline-block;
+        transition: opacity 0.3s ease;
+    }
+    
+    .sidebar .dropdown-title {
+        display: none;
+    }
+
+    .toggle-btn{
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 50px; 
+        padding: 20px;
+        transition: margin-left 0.3s ease;
+        overflow-x: auto;
+    }
+
+    .main-content.small {
+        margin-left: 60px;
+    }
+
+    .toggle-button {
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-40, .column-60 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .btn-note {
+        left: 0;
+        top: 10px;
+    }
+
+    .footer .btn-delete {
+        left: 0;
+        text-align: center;
+        font-size: 11px;
+    }
+    .footer .btn-delete img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .info-box img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .info-box .info-left .user-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-box .info-left .info .user-name {
+        font-size: 13px;
+    }
+
+    .info-box .info-left .info .user-location {
+        font-size: 12px;
+    }
+
+    .message-left-top {
+        margin: 20px 0;
+    }
+
+    .title-name{
+        font-size: 12px;
+    }
+
+    .message-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 150%;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        position: relative;
+        left: -77px;
+        font-size: 13px;
+    }
+}
