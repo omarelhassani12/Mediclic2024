@@ -402,3 +402,18 @@
         box-sizing: border-box;
     }  
 }
+
+@media (max-width: 768px) {
+    * {
+        font-size: 12px !important; 
+    }
+
+    .image-box img{
+        width: 20px;
+        height: 20px;
+    }
+    .specialite-icon{
+        width: 15px;
+        height: 15px;
+    }
+}

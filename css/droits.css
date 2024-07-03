@@ -151,7 +151,7 @@
 
 .info-box .info-left .info .user-name {
     color: #333333;
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 18px;
     margin-bottom: 0px;
     margin-left: 0px;
@@ -160,18 +160,21 @@
 
 .info-box .info-left .info .user-location {
     position: relative;
+    font-size: 12px;
     left: -8px;
     color: #B5B5B5;
 }
 
 .info-box .info-left .info .user-location img {
+    width: 25px;
+    height: 25px;
     margin: 0;
 }
 
 
 .info-box img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -182,6 +185,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right:20px;
 }
 
 .footer .total-users {
@@ -194,18 +198,18 @@
 }
 
 .footer .total-users p {
-    margin: 0 10px 0 10px;
+    margin: 0;
+    margin-right: 10px;
 }
 
 .footer .total-users b {
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 .btn-delete{
     color: #E40D0D;
-    position: relative;
-    left: -26%;
     margin-top: 5px;
+    margin-right: 10px;
     margin-bottom: 0;
 }
 

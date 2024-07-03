@@ -133,6 +133,7 @@
         align-items: center;
         height: auto;
         padding-top: 5%;
+        margin-top: 20px;
     }
 
     .steps {
@@ -169,7 +170,7 @@
     
 
     .navigation-buttons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         top: 0;
         margin-bottom:300px;
@@ -193,6 +194,10 @@
         margin-bottom: 2rem;
     }
 
+    #third-card .title-radio-1{
+        margin-bottom: 20px;
+    }
+
     .card-radios .card-radio .card .card-content img{
         width: 50px;
     }
@@ -202,11 +207,14 @@
     
 
     .radios-3 {
-        top: -20px;
+        top: -10px;
     }
 
+    #fourth-card{
+        top: 10px;
+    }
     #fifth-card {
-        top: -50px;
+        top: -40px;
     }
 
     .fifth-card-container {
@@ -838,5 +846,11 @@
         align-items: center;
         position: relative;
         left: -300px;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 12px !important; 
     }
 }

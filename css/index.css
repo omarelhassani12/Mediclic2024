@@ -456,7 +456,7 @@ transform: rotate(180deg);
 
 .search-filter .custom-date-input,
 .search-filter .form-select {
-    width: 100%;
+    width: 80%;
     border-radius: 4px;
     padding: 8px;
     border: 1px solid #ccc;
@@ -465,6 +465,7 @@ transform: rotate(180deg);
 }
 
 .search-filter #searchBtn {
+    width: 20%;
     margin-left: 10px;
     flex-shrink: 0;
     border-radius: 4px;

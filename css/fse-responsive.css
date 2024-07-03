@@ -479,7 +479,8 @@
         align-items: center;
         justify-content: flex-start;
         font-size: 12px;
-        padding: 5px 10px;
+        padding: 0px 5px;
+        height: 35px;
         box-sizing: border-box;
         transition: background-color 0.3s ease;
     }
@@ -488,19 +489,29 @@
         background-image: linear-gradient(to right, #37A5E8, #255A9B);
         color: #fff;
         border: none;
-        padding: 5px 10px;
+        padding: 0px 5px;
         border-radius: 5px;
         cursor: pointer;
     }
     
-    .btn-icon .btn-note .add-icon {
-        width: 15px;
+    .btn-icon,
+    .btn-note, 
+    .add-icon {
+        padding: 0px 5px;
+    }
+
+    .btn-icon img,
+    .btn-note img{
+        width: 20px;
+    }
+    .add-icon img {
+        width: 20px;
     }
 
 
-    .btn-icon .btn-note .imprimer-icon,
-    .btn-icon .btn-note .refresh-icon{
-        width: 20px;
+    .buttons-right .btn-icon .btn-note .imprimer-icon,
+    .buttons-right .btn-icon .btn-note .refresh-icon{
+        width: 20px !important;
     }
 
     .total-card .card-navigation {
@@ -523,5 +534,11 @@
 
     .total-card .card-navigation span {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 12px !important; 
     }
 }

@@ -263,67 +263,6 @@
     }
 }
 
-/* @media (max-width: 768px) {
-    .image-box .img-rounded-cercle {
-        width: 60px;
-        height: 60px;
-    }
-
-    .rounded-image {
-        width: 30px;
-        height: 30px;
-    }
-
-    .text-title {
-        font-size: 16px;
-    }
-
-    .paragraph-title {
-        font-size: 12px;
-        width: 100%;
-    }
-
-    .password-section {
-        width: 120% !important;
-    }
-
-    .input-group .text-input {
-        padding: 10px 8px 10px 35px;
-        margin: 5px 10px;
-        width: 100% !important;
-    }
-
-    .update-button {
-        width: 100% !important;
-        font-size: 12px;
-        padding: 5px 10px !important;
-    }
-
-    .input-group .text-input::placeholder {
-        font-size: 10px !important;
-    }
-    
-    
-}
-
-@media (max-width: 480px) {
-    .text-title {
-        font-size: 14px;
-    }
-
-    .paragraph-title {
-        font-size: 10px;
-    }
-
-    .update-button {
-        width: 100%;
-    }
-    
-    .input-group .text-input::placeholder {
-        font-size: 10px !important;
-    }
-    
-} */
 
 @media (max-width: 768px) {
     .image-box .img-rounded-cercle {
@@ -381,5 +320,11 @@
 
     .input-group .password-input::placeholder {
         font-size: 10px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 12px !important; 
     }
 }

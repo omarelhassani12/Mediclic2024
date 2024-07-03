@@ -516,3 +516,9 @@
         border-top: none;
     }
 }
+
+@media (max-width: 768px) {
+    * {
+        font-size: 12px !important; 
+    }
+}

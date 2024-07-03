@@ -37,7 +37,7 @@
         flex-direction: row;
         position: absolute;
         top: -20px;
-        /* right: 50px; */
+        right: -300px;
         background-color: #1678F2;
         border-radius: 5px;
     }
@@ -126,35 +126,22 @@
 }
 
 @media (max-width: 768px) {
-    .modal-dialog-left {
+    .modal-dialog{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 100px !important;
-        margin-right: auto !important;
-    }
-    .modal-dialog{
-                display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
-        left: -300px;
+        left: -250px;
     }
-}
-@media (max-width: 480px) {
-    .modal-dialog-left {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 100px !important;
-        margin-right: auto !important;
+
+    .question-item{
+        font-size: 12px !important;
+        padding: 5px 10px !important;
     }
-    .modal-dialog{
-                display: flex;
-                justify-content: center;
-        align-items: center;
-        position: relative;
-        left: -300px;
+    .question-item .btn-oui,
+    .question-item .btn-non{
+        font-size: 12px;
+        padding: 3px 10px;
     }
 }
 
@@ -260,6 +247,7 @@
         justify-content: center;
         flex-direction: column;
         align-items: center !important;
+        padding-left: 10%;
     }
     
     .input-group {
@@ -270,19 +258,27 @@
     .form-select{
         width: 95% !important;
     }
+    #Patient, 
+    #Professionel{
+        width: 92% !important;
+        padding: 0px 0px 0px 36px !important;
+        height: 40px;
+    }
+    
     #status{
+        width: 83% !important;
         position: relative;
-        left: -10px;
-        width: 85% !important;
+        left: -8px;
+        height: 40px;
         margin-bottom: 8px;
     }
-    .form-select-input {
-        width: 94% !important;
-    }
+    
     #searchBtn {
         position: relative;
-        left: -25px;
-        width: 85% !important;
+        left: -22px;
+        width: 83% !important;
+        padding: 7px 0 !important;
+        height: 38px;
     }
 }
 
@@ -304,40 +300,8 @@
 }
 
 
-/* 
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
-    }
 
-    thead tr {
-        display: block;
-    }
-
-    tbody{
-        display: flex;
-        flex-direction: column;
-    }
-
-    tbody tr {
-        margin-bottom: .5rem;
-        display: block;
-    }
-
-    td {
-        padding: 5%;
-        width: 100% !important;
-    }
-
-    td:last-child {
-        border-bottom: 0;
-        margin-bottom: 5%;
-    }
-}
- */
-
- @media (max-width: 440px){
+ @media (max-width: 768px){
 
     table, thead, tbody, th, td, tr {
         display: block;
@@ -391,16 +355,15 @@
     td:nth-of-type(2):before { content: "RDV"; }
     td:nth-of-type(3):before { content: "Professionnel"; }
     td:nth-of-type(4):before { content: "Statut"; }
-    td:nth-of-type(5):before { content: ""; }
-    td:nth-of-type(6):before { content: ""; }
+    td:nth-of-type(5):before { content: "Détails"; }
+    td:nth-of-type(6):before { content: "Action"; }
 
     td:last-child {
         border-bottom: 0;
         margin-bottom: 10px;
     }
 }
- @media (max-width: 243px){
-
+@media (max-width: 243px){
     table, thead, tbody, th, td, tr {
         display: block;
         width: 100%;
@@ -437,13 +400,14 @@
     td:before {
         position: absolute;
         top: 10px;
+        left: 10px;
         width: 45%;
         padding-right: 0.625rem;
         white-space: nowrap;
         text-align: left;
         font-weight: bold;
         width: auto; 
-        padding-right: 0;
+        padding-right: 100px;
         color: #333;
     }
 
@@ -451,11 +415,23 @@
     td:nth-of-type(2):before { content: "RDV"; }
     td:nth-of-type(3):before { content: "Professionnel"; }
     td:nth-of-type(4):before { content: "Statut"; }
-    td:nth-of-type(5):before { content: ""; }
-    td:nth-of-type(6):before { content: ""; }
+    td:nth-of-type(5):before { content: "Détails"; }
+    td:nth-of-type(6):before { content: "Action"; }
 
     td:last-child {
         border-bottom: 0;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 12px !important; 
+    }
+    .main-header div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

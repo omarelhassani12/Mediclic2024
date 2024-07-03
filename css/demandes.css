@@ -130,6 +130,9 @@ input[type="text"].search-input:focus {
 }
 
 
+#searchBtn{
+    width: 15% !important;
+}
 
 /* Question modal */
 .question-container .col-md-12{
@@ -139,6 +142,10 @@ input[type="text"].search-input:focus {
     border-radius: 5px;
     margin-bottom: 20px;
     margin-top: 40px;
+}
+
+.modal-body .question-container .col-md-12 h5 {
+    font-size: 14px;
 }
 
 .question-item {
@@ -153,7 +160,7 @@ input[type="text"].search-input:focus {
 }
 
 .question-text {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -167,6 +174,7 @@ input[type="text"].search-input:focus {
     cursor: pointer;
     border: .5px solid #b5b5b5;
     box-shadow: outset 0 2px 4px #B5B5B5;
+    font-size: 12px;
 }
 
 .btn-non,
@@ -177,5 +185,6 @@ input[type="text"].search-input:focus {
     padding: 8px 12px;
     border-radius: 20px;
     cursor: pointer;
+    font-size: 12px;
 }
 

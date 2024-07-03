@@ -167,7 +167,7 @@
     
 
     .navigation-buttons {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         top: 0;
         margin-bottom:300px;
@@ -397,4 +397,10 @@
         flex-direction: column !important;
     }
 
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: 12px !important; 
+    }
 }
