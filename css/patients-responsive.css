@@ -323,39 +323,6 @@
 }
 
 
-/* 
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
-    }
-
-    thead tr {
-        display: block;
-    }
-
-    tbody{
-        display: flex;
-        flex-direction: column;
-    }
-
-    tbody tr {
-        margin-bottom: .5rem;
-        display: block;
-    }
-
-    td {
-        padding: 5%;
-        width: 100% !important;
-    }
-
-    td:last-child {
-        border-bottom: 0;
-        margin-bottom: 5%;
-    }
-}
- */
-
  @media (max-width: 440px){
 
     table, thead, tbody, th, td, tr {
@@ -540,4 +507,9 @@
         justify-content: center;
         align-items: center;
     }
+}
+
+    
+#status{
+    width: 65% !important;
 }

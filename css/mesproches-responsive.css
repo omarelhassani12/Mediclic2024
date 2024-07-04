@@ -263,13 +263,19 @@
     }
 }
 
-
+#status {
+    width: 63% !important;
+}
+#searchBtn {
+    width: 23% !important;
+}
 @media (max-width: 768px) {
     .search-filter {
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center !important;
+        padding-left: 10%;
     }
     
     .input-group {
@@ -280,19 +286,27 @@
     .form-select{
         width: 95% !important;
     }
+    #Patient, 
+    #Professionel{
+        width: 92% !important;
+        padding: 0px 0px 0px 36px !important;
+        height: 40px;
+    }
+    
     #status{
+        width: 83% !important;
         position: relative;
-        left: -10px;
-        width: 85% !important;
+        left: -8px;
+        height: 40px;
         margin-bottom: 8px;
     }
-    .form-select-input {
-        width: 94% !important;
-    }
+    
     #searchBtn {
         position: relative;
-        left: -25px;
-        width: 85% !important;
+        left: -22px;
+        width: 83% !important;
+        padding: 7px 0 !important;
+        height: 38px;
     }
 }
 
@@ -313,39 +327,6 @@
     }
 }
 
-
-/* 
-@media (max-width: 768px) {
-    table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
-    }
-
-    thead tr {
-        display: block;
-    }
-
-    tbody{
-        display: flex;
-        flex-direction: column;
-    }
-
-    tbody tr {
-        margin-bottom: .5rem;
-        display: block;
-    }
-
-    td {
-        padding: 5%;
-        width: 100% !important;
-    }
-
-    td:last-child {
-        border-bottom: 0;
-        margin-bottom: 5%;
-    }
-}
- */
 
  @media (max-width: 440px){
 
@@ -521,4 +502,11 @@
     * {
         font-size: 12px !important; 
     }
+    .main-header div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
+

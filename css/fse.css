@@ -14,20 +14,22 @@
     background-image: linear-gradient(to right, #37A5E8, #255A9B);
 	color: #fff;
 	border: none;
-	padding: 8px 16px;
+	padding: 3px 8px;
 	border-radius: 5px;
 	cursor: pointer;
-    height: 50px;
+    height: 40px;
     margin: 8px;
 }
 
 .btn-note:hover {
-    background-image: linear-gradient(to right, #37A5E8, #255A9B);
+    background-image: linear-gradient(to left, #37A5E8, #255A9B);
 	color: #fff;
 	border: none;
-	padding: 8px 16px;
+	padding: 3px 8px;
 	border-radius: 5px;
 	cursor: pointer;
+    height: 40px;
+    margin: 8px;
 }
 
 .btn-note span {
@@ -35,6 +37,19 @@
 }
 
 
+.input-group{
+    width: 13% !important;
+}
+
+#Demande,
+#Paiement-mutuelle,
+#Message{
+    width: 12%;
+}
+
+#searchBtn{
+    width: 10% !important;
+}
 
 
 

@@ -247,7 +247,7 @@
     .form-select-input {
         width: 94% !important;
     }
-    .search-filter #dropleft #searchBtn {
+     #searchBtn {
         width: 240px !important;
         color: #333;
     }
@@ -329,7 +329,7 @@
     td:nth-of-type(7):before { content: "Professionnel"; }
     td:nth-of-type(8):before { content: "Spécialité"; }
     td:nth-of-type(9):before { content: "Lieu"; }
-    td:nth-of-type(10):before { content: ""; }
+    td:nth-of-type(10):before { content: "Action"; }
 
     td:last-child {
         border-bottom: 0;
@@ -393,7 +393,7 @@
     td:nth-of-type(7):before { content: "Professionnel"; }
     td:nth-of-type(8):before { content: "Spécialité"; }
     td:nth-of-type(9):before { content: "Lieu"; }
-    td:nth-of-type(10):before { content: ""; }
+    td:nth-of-type(10):before { content: "Action"; }
 
     td:last-child {
         border-bottom: 0;
@@ -413,35 +413,35 @@
     .search-filter #dropleft .dropdown-menu {
         top: 100% !important;
         left: 255px !important;
-        transform: none;
-        width: 250px;
-        padding-left: 20px;
-        background-color: #fff;
-        border-radius: 8px 8px 0 0;
-        z-index: 10;
+        transform: none !important;
+        width: 250px !important;
+        padding-left: 20px !important;
+        background-color: #fff !important;
+        border-radius: 8px 8px 0 0 !important;
+        z-index: 10 !important;
     }
 
     .search-filter #dropleft .dropdown-menu .dropdown-body{
-        position: relative;
-        top: 20px;
-        left: -80px;
+        position: relative !important;
+        top: 20px !important;
+        left: -80px !important;
     }
     .separator{
         display: none !important;
     }
     .dropdown-footer{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        position: relative;
-        left: -324px;
-        top: 720px;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        position: relative !important;
+        left: -335px !important;
+        top: 720px !important;
         height: 50px !important;
-        min-width: 250px !important;
-        background-color: #fff;
-        border-radius: 0 0 8px 8px;
-        border: 1px solid #bbb;
-        border-top: none;
+        min-width: 251px !important;
+        background-color: #fff !important;
+        border-radius: 0 0 8px 8px !important;
+        border: 1px solid #bbb !important;
+        border-top: none !important;
     }
 }
 
@@ -463,3 +463,8 @@
     }
     
 }
+
+.search-filter #dropleft .dropdown-menu {
+    z-index: 10 !important;
+}
+

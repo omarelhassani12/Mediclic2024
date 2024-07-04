@@ -310,7 +310,27 @@
         align-items: center;
         padding: 0;
         margin: 0;
+    }
 
+    .left-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .btn-note-without-bg {
+        font-size: 10px !important;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    s.btn-note-without-bg span,
+    .btn-note span{
+        margin: 0 !important;
+        font-size: 11px !important;
+        margin: 0px 8px !important;
     }
 
     .bottom-content {

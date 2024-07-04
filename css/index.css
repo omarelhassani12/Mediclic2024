@@ -566,3 +566,10 @@ td.nom-complet,td.telephone {
 .current-page {
     color: #3D8CEF;
 }
+
+.form-select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: none;
+}
