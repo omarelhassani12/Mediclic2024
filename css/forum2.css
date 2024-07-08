@@ -94,7 +94,7 @@
 
 
 .post-title {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: normal;
     color: #333;
 }
@@ -378,35 +378,3 @@
         left: 0;
     }
 }
-
-/* @media (max-width: 480px) {
-    .column-1,
-    .column-2 {
-        width: 100%;
-        margin-right: 0;
-        padding: 5px;
-    }
-
-    .post-left {
-        padding: 10px;
-    }
-
-    .post-right {
-        padding: 10px;
-    }
-
-    .profile-circle {
-        width: 90px;
-        height: 90px;
-    }
-
-    .profile-img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .button-circle {
-        width: 30px;
-        height: 30px;
-    }
-} */

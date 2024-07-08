@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/forum.css">
+    <link rel="stylesheet" href="../../css/forum3.css">
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo"/>
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="../../pages/Messages/index.html">
+                    <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                    </span>
+                </a>
+            </span>
+            <div class="dropdown" id="dropdown-user-info">
+                
+                <a href="#" class="dropdown-toggle"><img src="../../img/icons/list-icon.svg" alt="list"/></a>
+                <div class="dropdown-menu">
+                    <span class="user-info-icons-dropdown">
+                        <a href="#">
+                            <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="../../pages/Messages/index.html">
+                            <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="#">
+                            <span class="notification-badge" style="margin-right: 5px;">
+                                <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                                <span class="badge"><small>5</small></span>
+                            </span>                            
+                        </a>
+                        <a href="#">
+                            <span class="special-plus">
+                                <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil" alt="Profile Image"/>
+            <span class="user-name-mobile">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil-mobile" alt="Profile Image"/>
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="toggle-btn">
+            <button class="toggle-button">
+                <img src="../../img/icons/toggle-left.svg" class="toggle-img toggle-img-left" alt="toggle-left"/>
+                <img src="../../img/icons/toggle-right.svg" class="toggle-img toggle-img-right hidden" alt="toggle-right"/>
+            </button>
+        </div>
+        <h3 class="sidebar-title">Tableau de bord</h3>
+        <ul class="sidebar-menu">
+            <!-- First Dropdown -->
+            <div class="dropdown" id="dropdownBtn1">
+                <a onclick="toggleDropdown('dropdownContent1', 'dropdownIcon1')" class="dropdown-btn">
+                    <span class="dropdown-title">Administration</span>
+                    <i id="dropdownIcon1" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent1">
+                    <a href="../../index.html" class="other-buttons">
+                        <img src="../../img/icons/Patients.png" alt="Patients Icon">
+                        <span class="dropdown-title">Patients</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Agenda.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Agenda</span>
+                    </a>
+                    <a href="../../pages/Documents/index.html" class="other-buttons">
+                        <img src="../../img/icons/Documents.png" alt="Documents Icon">
+                        <span class="dropdown-title">Documents</span>
+                    </a>
+                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                        <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
+                        <span class="dropdown-title">Calendriers</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Suivis.png" alt="Suivis Icon">
+                        <span class="dropdown-title">Suivis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Prescriptions.png" alt="Prescriptions Icon">
+                        <span class="dropdown-title">Prescriptions</span>
+                    </a>
+                    <a href="../../pages/Absences/index.html" class="other-buttons">
+                        <img src="../../img/icons/Absences.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Absences</span>
+                    </a>
+                    <a href="../../pages/Reclamations/index.html" class="other-buttons">
+                        <img src="../../img/icons/Reclamations.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Réclamations</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/DMP.png" alt="DMP Icon">
+                        <span class="dropdown-title">DMP</span>
+                    </a>
+                    <a href="../../pages/FSE/index.html" class="other-buttons">
+                        <img src="../../img/icons/FSE.png" alt="FSE Icon">
+                        <span class="dropdown-title">FSE</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Paiements.png" alt="Paiements Icon">
+                        <span class="dropdown-title">Paiements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Statistiques.png" alt="Statistiques Icon">
+                        <span class="dropdown-title">Statistiques</span>
+                    </a>
+                
+                </div>
+            </div>
+
+            <!-- Second Dropdown -->
+            <div class="dropdown" id="dropdownBtn2">
+                <a onclick="toggleDropdown('dropdownContent2', 'dropdownIcon2')" class="dropdown-btn">
+                    <span class="dropdown-title">Communauté</span>
+                    <i id="dropdownIcon2" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent2">
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Forum.png" alt="Forum Icon">
+                        <span class="dropdown-title">Forum</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Annonces.png" alt="Annonces Icon">
+                        <span class="dropdown-title">Annonces</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Evénements.png" alt="Evénements Icon">
+                        <span class="dropdown-title">Evénements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Blog.png" alt="Blog Icon">
+                        <span class="dropdown-title">Blog</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Avis.png" alt="Avis Icon">
+                        <span class="dropdown-title">Avis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Market.png" alt="Market Icon">
+                        <span class="dropdown-title">Market</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Emploi.png" alt="Emploi Icon">
+                        <span class="dropdown-title">Emploi</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/E-learning.png" alt="E-learning Icon">
+                        <span class="dropdown-title">E-learning</span>
+                    </a>              
+                </div>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="main-header">
+        </section>
+        
+        
+        <section class="main-body">
+            <div class="column-1">
+                <div class="col-1-body">
+                    <div class="full-post">
+                        <div class="post">
+                            <div class="post-left">
+                                <img src="../../img/icons/arrow-up.svg" alt="Arrow-up" class="arrow-up">
+                                <span class="number">1</span>
+                                <img src="../../img/icons/arrow-down.svg" alt="Arrow-down" class="arrow-down">
+                            </div>                          
+                            <div class="post-right">
+                                <div class="post-header">
+                                    <div class="post-title">Demande d'informations sur la d'informations sur la césarienne</div>
+                                    <div class="post-btn">
+                                        <img src="../../img/icons/add-blue.svg" alt="add plus"/>
+                                        <input type="submit" class="btn-add-blue" value="Suivre"/>
+                                    </div>
+                                </div>
+                                <div class="post-tags">
+                                    <span class="tag">césarienne</span>
+                                    <span class="tag">info</span>
+                                    <span class="tag">info</span>
+                                    <span class="tag">info</span>
+                                    <span class="tag">opération</span>
+                                </div>
+                                <div class="post-content collapsed" id="post-content-1">
+                                    <p class="content">
+                                        Phytophanere Cheveux Et Ongles 2x120 Capsules est un complément alimentaire dont la formule contribue à la fortification des cheveux et des ongles. Sa composition associe plusieurs vitamines dont la vitamine B6 et B8 (biotine), des extraits de plantes et de l'huile de graine de Bourrache qui agissent de l'intérieur sur la qualité et la croissance des phanères. Le zinc favorise la synthèse de kératine et de collagène, aidant ainsi à prévenir le vieillissement prématuré du cheveu et à protéger sa pigmentation. Indiqué pour les cheveux dévitalisés et les ongles fragilisés. Contient 2 flacons. Format Duo. Fabriqué en France.
+                                    </p>
+                                    <button type="button" class="btn-show-more" onclick="toggleContent('post-content-1')">
+                                        Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>
+                                    </button>
+                                </div>
+                                <div class="post-footer">
+                                    <div class="post-user-info">
+                                        <img src="../../img/icons/post-img.svg" alt="post-User Image"/>
+                                        <div>
+                                            <span class="name">Mustapha Asloune</span>
+                                            <span class="date">Member</span>
+                                        </div>
+                                    </div>
+                                    <div class="reviewsDates">
+                                        <span class="date">15 mars 2023</span>
+                                        <div class="reviews">
+                                            <span class="responses">
+                                                <img src="../../img/icons/reponses-img.svg" alt="reponses-img"/>
+                                                <a href="#" class="responses-link">5 réponses</a>
+                                            </span>
+                                            <span class="views">
+                                                <img src="../../img/icons/view-img.svg" alt="view-img"/>
+                                                <a href="#" class="views-link">54 Vues</a>
+                                            </span>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="second-footer">
+                                    <div class="reviews">
+                                        <span class="responses">
+                                            <img src="../../img/icons/reponses-img.svg" alt="reponses-img"/>
+                                            <a href="#" class="responses-link">Répondre</a>
+                                        </span>
+                                        <span class="shares">
+                                            <img src="../../img/icons/share.svg" alt="share-img"/>
+                                            <a href="#" class="share-link">share</a>
+                                        </span>
+                                        <span class="favoris">
+                                            <img src="../../img/icons/favoris.svg" alt="favoris-img"/>
+                                            <a href="#" class="favoris-link">favoris</a>
+                                        </span>
+                                    </div>
+                                    <img src="../../img/icons/more-options.svg" alt="more-options-img"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="sub-posts">
+                            <div class="full-post">
+                                <div class="post">
+                                    <div class="sub-post-left">
+                                        <div class="post-left">
+                                            <img src="../../img/icons/arrow-up.svg" alt="Arrow-up" class="arrow-up"/>
+                                            <span class="number">1</span>
+                                            <img src="../../img/icons/arrow-down.svg" alt="Arrow-down" class="arrow-down"/>
+                                        </div>
+                                    </div>
+                                    <div class="post-right">
+                                        <div class="post-footer">
+                                            <div class="post-user-info">
+                                                <img src="../../img/icons/post-img.svg" alt="post-User Image"/>
+                                                <div>
+                                                    <span class="name">Alami Karim</span>
+                                                    <span class="date">Member</span>
+                                                </div>
+                                            </div>
+                                            <div class="post-user-info">
+                                                <span class="date">15 mars 2023</span>
+                                            </div>
+                                        </div>
+                                        <div class="post-content">
+                                            <p class="content">
+                                                Phytophanere Cheveux Et Ongles 2x120 <span>Capsules</span> est un complément alimentaire dont la formule contribue à la fortification des cheveux.                                            </p>
+                                        </div>
+                                        <div class="second-footer">
+                                            <div class="reviews">
+                                                <span class="responses">
+                                                    <img src="../../img/icons/reponses-img.svg" alt="reponses-img"/>
+                                                    <a href="#" class="responses-link">Répondre</a>
+                                                </span>
+                                                <span class="shares">
+                                                    <img src="../../img/icons/share.svg" alt="share-img"/>
+                                                    <a href="#" class="share-link">share</a>
+                                                </span>
+                                                <span class="favoris">
+                                                    <img src="../../img/icons/favoris.svg" alt="favoris-img"/>
+                                                    <a href="#" class="favoris-link">favoris</a>
+                                                </span>
+                                            </div>
+                                            <button class="more-options-btn">
+                                                <img src="../../img/icons/more-options.svg" alt="more-options-img"/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="separator"></div> -->
+                                <div class="sub-posts">
+                                    <div class="full-post">
+                                        <div class="post">
+                                            <div class="sub-post-left">
+                                                <div class="post-left">
+                                                    <img src="../../img/icons/arrow-up.svg" alt="Arrow-up" class="arrow-up"/>
+                                                    <span class="number">1</span>
+                                                    <img src="../../img/icons/arrow-down.svg" alt="Arrow-down" class="arrow-down"/>
+                                                </div>
+                                            </div>
+                                            <div class="post-right">
+                                                <div class="post-footer">
+                                                    <div class="post-user-info">
+                                                        <img src="../../img/icons/post-img.svg" alt="post-User Image"/>
+                                                        <div>
+                                                            <span class="name">Mohammed Zahir</span>
+                                                            <span class="date">Member</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-user-info">
+                                                        <span class="date">1h30min</span>
+                                                    </div>
+                                                </div>
+                                                <div class="post-content">
+                                                    <p class="content">
+                                                        Phytophanere Cheveux Et Ongles 2x120 <span>Capsules</span> est un complément alimentaire dont la formule contribue à la fortification des cheveux.                                                    </p>
+                                                </div>
+                                                <div class="second-footer">
+                                                    <div class="reviews">
+                                                        <span class="responses">
+                                                            <img src="../../img/icons/reponses-img.svg" alt="reponses-img"/>
+                                                            <a href="#" class="responses-link">Répondre</a>
+                                                        </span>
+                                                        <span class="shares">
+                                                            <img src="../../img/icons/share.svg" alt="share-img"/>
+                                                            <a href="#" class="share-link">share</a>
+                                                        </span>
+                                                        <span class="favoris">
+                                                            <img src="../../img/icons/favoris.svg" alt="favoris-img"/>
+                                                            <a href="#" class="favoris-link">favoris</a>
+                                                        </span>
+                                                    </div>
+      <button class="more-options-btn">
+                                                <img src="../../img/icons/more-options.svg" alt="more-options-img"/>
+                                            </button>                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="separator"></div> -->
+                                        <div class="sub-posts">
+                                            <div class="full-post">
+                                                <div class="post">
+                                                    <div class="sub-post-left">
+                                                        <div class="post-left">
+                                                            <img src="../../img/icons/arrow-up.svg" alt="Arrow-up" class="arrow-up"/>
+                                                            <span class="number">1</span>
+                                                            <img src="../../img/icons/arrow-down.svg" alt="Arrow-down" class="arrow-down"/>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-right">
+                                                        <div class="post-footer">
+                                                            <div class="post-user-info">
+                                                                <img src="../../img/icons/post-img.svg" alt="post-User Image"/>
+                                                                <div>
+                                                                    <span class="name">Alami Karim</span>
+                                                                    <span class="date">Member</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="post-user-info">
+                                                                <span class="date">15 mars 2023</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-content">
+                                                            <p class="content">
+                                                                Phytophanere Cheveux Et Ongles 2x120 <span>Capsules</span> est un complément alimentaire dont la formule contribue à la fortification des cheveux.                                            </p>
+                                                            </div>
+                                                        <div class="second-footer">
+                                                            <div class="reviews">
+                                                                <span class="responses">
+                                                                    <img src="../../img/icons/reponses-img.svg" alt="reponses-img"/>
+                                                                    <a href="#" class="responses-link">Répondre</a>
+                                                                </span>
+                                                                <span class="shares">
+                                                                    <img src="../../img/icons/share.svg" alt="share-img"/>
+                                                                    <a href="#" class="share-link">share</a>
+                                                                </span>
+                                                                <span class="favoris">
+                                                                    <img src="../../img/icons/favoris.svg" alt="favoris-img"/>
+                                                                    <a href="#" class="favoris-link">favoris</a>
+                                                                </span>
+                                                            </div>
+              <button class="more-options-btn">
+                                                <img src="../../img/icons/more-options.svg" alt="more-options-img"/>
+                                            </button>                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="separator"></div> -->
+                                                <div class="sub-posts">
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="full-post">
+                                            <div class="post">
+                                                <div class="sub-post-left">
+                                                    <div class="post-left">
+                                                        <img src="../../img/icons/arrow-up.svg" alt="Arrow-up" class="arrow-up"/>
+                                                        <span class="number">1</span>
+                                                        <img src="../../img/icons/arrow-down.svg" alt="Arrow-down" class="arrow-down"/>
+                                                    </div>
+                                                </div>
+                                                <div class="post-right">
+                                                    <div class="post-footer">
+                                                        <div class="post-user-info">
+                                                            <img src="../../img/icons/post-img.svg" alt="post-User Image"/>
+                                                            <div>
+                                                                <span class="name">Ghita El Ouadghiri</span>
+                                                                <span class="date">Member</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-user-info">
+                                                            <span class="date">15 mars 2023</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <p class="content">
+                                                            Phytophanere Cheveux Et Ongles 2x120 <span>Capsules</span> est un complément alimentaire dont la formule contribue à la fortification des cheveux.                                            </p>
+                                                        </p>
+                                                    </div>
+                                                    <div class="second-footer">
+                                                        <div class="reviews">
+                                                            <span class="responses">
+                                                                <img src="../../img/icons/reponses-img.svg" alt="reponses-img"/>
+                                                                <a href="#" class="responses-link">Répondre</a>
+                                                            </span>
+                                                            <span class="shares">
+                                                                <img src="../../img/icons/share.svg" alt="share-img"/>
+                                                                <a href="#" class="share-link">share</a>
+                                                            </span>
+                                                            <span class="favoris">
+                                                                <img src="../../img/icons/favoris.svg" alt="favoris-img"/>
+                                                                <a href="#" class="favoris-link">favoris</a>
+                                                            </span>
+                                                        </div>
+          <button class="more-options-btn">
+                                                <img src="../../img/icons/more-options.svg" alt="more-options-img"/>
+                                            </button>                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="separator"></div> -->
+                                            <div class="sub-posts">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="vertical-separator"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="column-2">
+                <div class="profile-circle">
+                    <img src="../../img/icons/user-icon.png" alt="Profile Image" class="profile-img">
+                </div>
+                <div class="profile-details">
+                    <p class="profile-name">Dr. Alami Karim</p>
+                    <p class="profile-xp">0xp</p>
+                    <nav class="nav-profile">
+                        <ul>
+                            <li><a href="#Mesposts">Mes posts</a></li>
+                            <li><a href="#Favoris">Favoris</a></li>
+                            <li><a href="#Suivis" class="active">Suivis</a></li>
+                            <li><a href="#Etiquettes">Etiquettes</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+          
+        
+
+
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/side-bar-toggles.js"></script>
+    <script src="../../js/index-responsive.js"></script>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('expanded');
+            content.classList.toggle('collapsed');
+
+            const button = content.querySelector('.btn-show-more');
+            if (content.classList.contains('expanded')) {
+                button.innerHTML = 'Afficher moins <img src="../../img/icons/chev-up.svg" alt="arrow-up"/>';
+            } else {
+                button.innerHTML = 'Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>';
+            }
+        }
+    
+    </script>
+        
+        
+</body>
+</html>
