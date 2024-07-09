@@ -429,6 +429,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    .main-content{
+        padding: 0;
+    }
 
     .main-header {
         height: auto;
@@ -459,7 +462,7 @@ p {
 
 
     .main-body {
-        padding-left: 15px;
+        padding: 15px;
         justify-content: center;
     }
 
