@@ -319,11 +319,20 @@
     left: -45px;
 }
 
-.vertical-separator {
+/* .vertical-separator {
     position: absolute;
     top: 110%;
     left: 24%;
     height: 100%;
+    width: 1px;
+    background-color: #D7D7D7;
+    opacity: 0.5;
+} */
+.vertical-separator {
+    position: relative;
+    top: 150px;
+    left: -99.2%;
+    height: 550px;
     width: 1px;
     background-color: #D7D7D7;
     opacity: 0.5;
@@ -350,8 +359,12 @@
 }
 
   
+/* /////////// */
 
 
+
+
+/* /////////// */
 .btn-add-blue{
     color: #1678F2;
     background-color: transparent;
@@ -403,7 +416,7 @@
     left: 0;
     width: 100%;
     height: 80px; 
-    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.4));
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
     pointer-events: none;
     transition: opacity 0.5s ease;
 }
@@ -489,8 +502,17 @@
     .post-content{
         max-height: 450px;
     }
+
     .post-content .content{
         font-size: 10px;
+    }
+
+    .btn-show-more {
+        font-size: 8px;
+    }
+
+    .post-content.collapsed::after {
+        bottom: 30px;
     }
 
     .second-footer{
@@ -623,3 +645,4 @@
     }
 
 }
+
