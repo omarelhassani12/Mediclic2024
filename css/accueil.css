@@ -288,14 +288,14 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding-left: 75px;
+    padding-left: 60px;
 }
 
 .card {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
-    width: 300px;
+    width: 350px;
     margin-bottom: 20px;    
     margin-right: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);

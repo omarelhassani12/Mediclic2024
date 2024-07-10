@@ -1,0 +1,396 @@
+
+.main-header{
+    background: linear-gradient(to top, #3A8EF6, #225390);
+    height: 200px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.main-body{
+    width: 100%;
+}
+
+.left-body{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    top: -172px;
+}
+
+.image {
+    height: 150px;
+}
+
+.card .content{
+    text-decoration: none;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.join-cours{
+    background: linear-gradient(to right, #37A5E8, #255A9B);
+    color: white;
+    border: none;
+    padding: 1px 50px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    flex: 1;
+}
+.share-cours{
+    background-color: #fff;
+    border: none;
+    border: .5px solid #cecece ; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.share-cours img{
+    width: 25px;
+    height: 25px;
+}
+
+.info {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #333;
+}
+
+.info-item > span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #667085;
+}
+
+
+.info-item > span img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.stars .star img{
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+}
+
+/* bottom of the left body */
+
+.review-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0px;
+    position: relative;
+    top: -172px;
+}
+
+.overall-rating {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.overall-rating .stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overall-rating .stars .star img{
+    width: 30px;
+    height: 30px;
+}
+
+.bottom-rating{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+.rating-number span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.comments-counts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.comments-counts .squares .square img  {
+    width: 20px;
+    height: 20px;
+}
+
+.comments-counts .comments-count {
+    font-size: 13px;
+    color: #666;
+}
+
+
+
+.rating-breakdown {
+    margin-bottom: 20px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.star-line {
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+}
+
+.star-line .star img{
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+}
+
+
+.bar-fill {
+    height: 6px;
+    border-radius: 5px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.bar-green{
+    background-color: #2EA47C;
+}
+.bar-blue{
+    background-color: #1678F2;
+}
+.bar-orange{
+    background-color: #F3B414;
+}
+.bar-brown{
+    background-color: #D28327;
+}
+.bar-red{
+    background-color: #E40D0D;
+}
+
+.count {
+    width: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.individual-review {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.review-header .squares .square img{
+    width: 15px;
+    height: 15px;
+}
+
+.review-date {
+    font-size: 10px;
+    color: #667085;
+}
+
+.btn-show-more {
+    color: #6C87AE;
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 10px;
+    z-index: 1000 !important;
+}
+
+.post-content {
+    max-height: 180px;
+    position: relative;
+    transition: max-height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.post-content .content{
+    color: #667085;
+    text-decoration: none;
+}
+
+.post-content.expanded {
+    max-height: none;
+}
+
+.post-content.collapsed::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 60px; 
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.post-content.expanded::after {
+    opacity: 0;
+}
+
+
+.review-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reviewer-image {
+    width: 50px;
+    height: 50px;
+}
+
+.reviewer-details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.reviewer-name {
+    display: block;
+    font-size: 14px
+}
+
+.reviewer-reviews {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.review-actions {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.more-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+
+
+/* right one */
+
+
+.right-body  {
+    max-width: 70%;
+    width: 66%;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section-header {
+    background-color: #e7f1ff;
+    padding: 10px 20px;
+    padding-left: 55px;
+    font-weight: normal;
+    color: #333;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #fff;
+    color: #333333;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon-bg{
+    background-color: #E9F3FE;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.action {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    height: 40px;
+}
+
+.action img{
+    margin: 10px;
+}

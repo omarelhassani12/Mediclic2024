@@ -184,29 +184,29 @@
     width: 93%;
     background-color: #D7D7D7; 
     opacity: 0.5;
-  }
+}
   
-  .separator::before,
-  .separator::after {
+.separator::before,
+.separator::after {
     content: '';
     position: absolute;
     width: 5px; 
     height: 5px; 
     background-color: #667085; 
     border-radius: 50%;
-  }
+}
   
-  .separator::before {
+.separator::before {
     left: -5px;
-  }
+}
   
-  .separator::after {
+.separator::after {
     right: -5px;
-  }
+}
   
 /* for the column-2 */
   
-  .profile-circle {
+.profile-circle {
     display: flex;
     justify-content: center;
     align-items: center;
