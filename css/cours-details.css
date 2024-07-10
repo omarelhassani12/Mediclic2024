@@ -135,7 +135,6 @@
     margin-top: 20px;
 }
 
-
 .rating-number span {
     font-size: 2em;
     font-weight: bold;
@@ -158,8 +157,6 @@
     color: #666;
 }
 
-
-
 .rating-breakdown {
     margin-bottom: 20px;
 }
@@ -173,7 +170,7 @@
 .star-line {
     display: flex;
     justify-content: flex-end;
-    width: 50px;
+    width: 70px;
 }
 
 .star-line .star img{
@@ -181,7 +178,6 @@
     height: 10px;
     margin-right: 2px;
 }
-
 
 .bar-fill {
     height: 6px;
@@ -393,4 +389,120 @@
 
 .action img{
     margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-body {
+        padding: 0; 
+        margin: 0;
+        width: 100%;
+    }
+
+    .left-body {
+        width: 100%;
+        padding: 0;
+        margin-right: 10px; 
+        margin-left: 10px; 
+        position: relative;
+        top: 20px;
+    }
+
+    .left-body .card{
+        width: 100%;
+    }
+
+    .join-cours{
+        font-size: 12px;
+    }
+
+    .info-item{
+        font-size: 12px;
+    }
+
+    .category{
+        font-size: 12px;
+    }
+
+    .stars .star img{
+        margin: 1px;
+    }
+
+    .overall-rating .stars .star img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .rating-number span {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .comments-counts .squares .square img  {
+        width: 15px;
+        height: 15px;
+    }
+
+    .comments-counts .comments-count {
+        font-size: 10px;
+        color: #666;
+    }
+
+    .review-header .squares .square img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .btn-show-more {
+        font-size: 9px;
+    }
+
+    .reviewer-name {
+        display: block;
+        font-size: 10px
+    }
+
+    .reviewer-reviews {
+        font-size: 0.6em;
+        color: #666;
+    }
+
+    .reviewer-image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .right-body {
+        width: 95%;
+        min-width: 95%;
+        margin: 0;
+        margin-right: 20px !important;
+        margin-left: 20px !important;
+        position: relative;
+        top: -120px;
+    }
+
+    .section-header{
+        font-size: 11px;
+        padding: 10px 20px;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+
+    .icon-bg .icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .action{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .action img{
+        width: 20px;
+        height: 20px;
+    }
 }
