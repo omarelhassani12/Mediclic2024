@@ -371,52 +371,39 @@
     border: transparent;
 }
 
-.more-options-btn{
-    color: transparent;
-    background-color: transparent;
-    border: transparent;
-}
-
-
-.post-content .content{
-    font-size: 13px;
-    color: #333;
-    text-decoration: none;
-}
-
-.post-content .content span{
-    color: #F3B414;
-}
-
 .btn-show-more {
     color: #6C87AE;
     background-color: transparent;
     border: none;
     font-size: 12px;
     cursor: pointer;
-    align-items: center;
     padding: 5px 10px;
-    z-index: 1000 !important;
+    z-index: 10 !important;
 }
 
 .post-content {
-    max-height: 180px;
     position: relative;
     transition: max-height 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    overflow: hidden; 
 }
 
-.post-content.expanded {
-    max-height: none;
+.post-content .content {
+    color: #667085;
+    text-decoration: none;
 }
 
 .post-content.collapsed::after {
     content: "";
     position: absolute;
-    bottom: 40px;
+    bottom: 0px;
     left: 0;
     width: 100%;
-    height: 80px; 
-    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7));
+    height: 100px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     pointer-events: none;
     transition: opacity 0.5s ease;
 }
@@ -424,8 +411,6 @@
 .post-content.expanded::after {
     opacity: 0;
 }
-
-
 
 /* ////////// */
 

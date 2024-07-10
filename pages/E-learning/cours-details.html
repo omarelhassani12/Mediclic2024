@@ -497,13 +497,32 @@
             content.classList.toggle('collapsed');
 
             const button = content.querySelector('.btn-show-more');
+            const fullText = content.querySelector('.content').dataset.fullText;
+
             if (content.classList.contains('expanded')) {
+                content.querySelector('.content').innerText = fullText;
                 button.innerHTML = 'Afficher moins <img src="../../img/icons/chev-up.svg" alt="arrow-up"/>';
             } else {
+                const shortText = getShortText(fullText, 20);
+                content.querySelector('.content').innerText = shortText;
                 button.innerHTML = 'Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>';
             }
         }
-    
+
+        function getShortText(fullText, wordCount) {
+            const words = fullText.split(' ');
+            return words.slice(0, wordCount).join(' ') + '...';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const contents = document.querySelectorAll('.post-content .content');
+            contents.forEach(content => {
+                const fullText = content.innerText;
+                content.dataset.fullText = fullText;
+                content.innerText = getShortText(fullText, 20);
+            });
+        });
     </script>
+
 </body>
 </html>
