@@ -64,6 +64,7 @@
 }
 .post-right{
     flex: 1; 
+    padding: 20px;
 }
 
 .post-left {
@@ -406,6 +407,13 @@
     opacity: 0;
 }
 
+.more-options-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
 /* ////////// */
 
 .reviewsDates{
@@ -625,3 +633,6 @@
 
 }
 
+.full-post{
+    overflow-x: hidden;
+    }
