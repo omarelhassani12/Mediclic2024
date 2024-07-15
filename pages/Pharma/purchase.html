@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/patient-modal.css">
+    <!-- <link rel="stylesheet" href="../../css/index.css"> -->
+    <link rel="stylesheet" href="../../css/index-no-sidebar.css">
+    <link rel="stylesheet" href="../../css/index-no-sidebar-respo.css">
+    <link rel="stylesheet" href="../../css/buttons-style.css">
+    <link rel="stylesheet" href="../../css/purchase.css">
+    <!-- <link rel="stylesheet" href="../../css/patients-responsive.css"> -->
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo"/>
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="../../pages/Messages/index.html">
+                    <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                    </span>
+                </a>
+            </span>
+            <div class="dropdown" id="dropdown-user-info">
+                
+                <a href="#" class="dropdown-toggle"><img src="../../img/icons/list-icon.svg" alt="list"/></a>
+                <div class="dropdown-menu">
+                    <span class="user-info-icons-dropdown">
+                        <a href="#">
+                            <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="../../pages/Messages/index.html">
+                            <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="#">
+                            <span class="notification-badge" style="margin-right: 5px;">
+                                <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                                <span class="badge"><small>5</small></span>
+                            </span>                            
+                        </a>
+                        <a href="#">
+                            <span class="special-plus">
+                                <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil" alt="Profile Image"/>
+            <span class="user-name-mobile">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil-mobile" alt="Profile Image"/>
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="main-header">
+            <div>
+                <h1>purchase</h1>
+            </div>
+            <button class="btn-new-patient" data-bs-toggle="modal" data-bs-target="#NVPatientModal">Nouveau patient</button>
+        </section>
+        
+
+        <!-- Search Filter -->
+        <form id="searchForm" >
+            <section class="search-filter">
+                <div class="tables-nav">
+                    <div class="input-group table-active">
+                        <input type="submit" id="table-1" name="table-1" value="Articles" class="form-select">
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" id="table-2" name="table-2" value="Autres informations" class="form-select">
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" id="table-3" name="table-3" value="API Request/Response" class="form-select">
+                    </div>
+                </div>
+                
+                <div class="article-find">
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="text" id="article" name="article" placeholder="Nom de article">
+                    </div>
+                    
+                    <button id="searchBtn" type="submit" class="btn">
+                        <img src="../../img/icons/filter.png" alt="filter" > Rechercher
+                    </button>
+                </div>
+            </section>
+        </form>
+        
+        <!-- Data Table -->
+        <section class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Article</th>
+                        <th>Description</th>
+                        <th>Qté demandée</th>
+                        <th>Date prévue</th>
+                        <th>Prix unitaire</th>
+                        <th>Taxes</th>
+                        <th>Sous-total</th>
+                        <th>Qté</th>
+                        <th>Date de péremption</th>
+                        <th>Commentaires</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>93</td>
+                        <td>ABBOTICINE Granulés pour suspension buvable 200 mg/5 ml</td>
+                        <td>ABBOTICINE Granulés pour suspension buvable 200 mg/5 ml</td>
+                        <td><input type="number" id="Qté-demandée" name="Qté-demandée" value="1"/></td>
+                        <td><input type="date" id="Date-prévue" name="Date-prévue" /></td>
+                        <td>93</td>
+                        <td class="taxes">0% X</td>
+                        <td>93</td>
+                        <td><input type="number" id="Qté" name="Qté" value="1"/></td>
+                        <td><input type="date" id="Date-péremption" name="Date-péremption" /></td>
+                        <td><textarea name="commentaires" id="commentaires" rows="1"></textarea></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Navigation Card -->
+        <section class="navigation-card">
+            <div class="card-navigation">
+                <button id="prevBtn" class="btn-nav">
+                    <img src="../../img/icons/arrow-left.png" alt="arrow-left"/>Previous
+                </button>
+                <span class="pages">
+                 </span>
+                <button id="nextBtn" class="btn-nav">
+                    Next<img src="../../img/icons/arrow-right.png" alt="arrow-right"/>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- //Modals -->
+    <!-- //NV Patient Modal -->
+    <div class="modal fade" id="NVPatientModal" tabindex="-1" aria-labelledby="NVPatientModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="NVPatientModalLabel">Nouveau four</h5>
+
+              <button type="button" class="btn-close-blue" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+          <div class="modal-body">
+      
+              <form action="">
+                       
+                <div class="col-sm-12">
+                    <label for="Fournisseur">Fournisseur<span>*</span></label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="text" id="Fournisseur" name="Fournisseur" placeholder="Nom de fournisseur">
+                    </div>
+                </div>
+                
+                <div class="col-sm-12">
+                    <label for="Référence-fournisseur">Référence fournisseur<span>*</span></label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="text" id="Référence-fournisseur" name="Référence-fournisseur" placeholder="Référence fournisseur">
+                    </div>
+                </div>            
+                
+                <div class="col-sm-12">
+                    <label for="Devise">Devise<span>*</span></label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="text" id="Devise" name="Devise" placeholder="Devise">
+                    </div>
+                </div>
+
+                <div class="col-sm-12 checkbox">
+                    <label for="Est-expédié">Est expédié<span>*</span></label>
+                    <div class="new-comment">
+                        <input type="checkbox" id="Est-expédié" name="Est-expédié" placeholder="Est-expédié">
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="Date-de-commande">Date de la commande<span>*</span></label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="date" id="Date-de-commande" name="Date-de-commande" placeholder="Date de la commande">
+                    </div>
+                </div>
+
+                <div class="col-sm-12 checkbox">
+                    <label for="Double-validation">Double validation<span>*</span></label>
+                    <div class="new-comment">
+                        <input type="checkbox" id="Double-validation" name="Double-validation" placeholder="Double-validation">
+                    </div>
+                </div>
+                
+                <div class="col-sm-12">
+                    <label for="Documents">Documents</label>
+                    <div class="new-comment new-comment-file">
+                        <div class="file-upload">
+                            <label for="fileInput" class="label-file">
+                                <span class="img-cercle">
+                                    <img src="../../img/icons/upload.png" alt="">
+                                </span> Cliquer pour importer
+                                <br>
+                                <span class="upload-text">ou juste dropper and dragger</span>
+                            </label>
+                            <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                        </div>
+                        <button class="btn-importer">Importer</button>
+                    </div>
+                </div>
+                <div id="uploadedFilesContainer" class="col-sm-12">
+                </div>
+
+                <div class="col-sm-12">
+                    <label for="Société">Société<span>*</span></label>
+                    <div class="new-comment">
+                        <i class="icon-lieu"></i>
+                        <input type="text" id="Société" name="Société" placeholder="Nom de Société">
+                    </div>
+                </div>
+                
+            </form>
+              
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-fermer" data-bs-dismiss="modal" aria-label="Close">Fermer</button>
+              <button type="button" class="btn btn-primary2">Valider</button>
+          </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/messages.js"></script>
+    <script src="../../js/side-bar-toggles.js"></script>
+    <script src="../../js/index-responsive.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('Date-prévue').value = today;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+@media (max-width: 440px){
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    thead tr th {
+        text-align: left !important;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 0.625rem;
+    }
+
+    td {
+        text-align: right;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        left: 20px;
+        padding-left: 150px;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 100%;
+
+    }
+
+    td:before {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        width: auto; 
+        padding-right: 0;
+        color: #333;
+    }
+
+    td:nth-of-type(1):before { content: "Référence"; }
+    td:nth-of-type(2):before { content: "Date de la commande"; }
+    td:nth-of-type(3):before { content: "Fournisseur"; }
+    td:nth-of-type(4):before { content: "Date prévus"; }
+    td:nth-of-type(5):before { content: "Responsable Achats"; }
+    td:nth-of-type(6):before { content: "Document d'origine"; }
+    td:nth-of-type(7):before { content: "Hors taxe"; }
+    td:nth-of-type(8):before { content: "Total"; }
+    td:nth-of-type(9):before { content: "Statut"; }
+
+    td:last-child {
+        border-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    td:empty {
+        padding-bottom: 30px !important;
+    }
+}

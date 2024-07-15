@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ventes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index-no-sidebar.css">
+    <link rel="stylesheet" href="../../css/index-no-sidebar-respo.css">
+    <link rel="stylesheet" href="../../css/ventes.css">
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo"/>
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="../../pages/Messages/index.html">
+                    <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                    </span>
+                </a>
+            </span>
+            <div class="dropdown" id="dropdown-user-info">
+                
+                <a href="#" class="dropdown-toggle"><img src="../../img/icons/list-icon.svg" alt="list"/></a>
+                <div class="dropdown-menu">
+                    <span class="user-info-icons-dropdown">
+                        <a href="#">
+                            <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="../../pages/Messages/index.html">
+                            <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="#">
+                            <span class="notification-badge" style="margin-right: 5px;">
+                                <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                                <span class="badge"><small>5</small></span>
+                            </span>                            
+                        </a>
+                        <a href="#">
+                            <span class="special-plus">
+                                <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil" alt="Profile Image"/>
+            <span class="user-name-mobile">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil-mobile" alt="Profile Image"/>
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="main-header">
+            <div>
+                <h1>Ventes</h1>
+            </div>
+        </section>
+
+        <!-- Data Table -->
+        <section class="data-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Numéro de devis</th>
+                        <th>Date du devis</th>
+                        <th>Patient</th>
+                        <th>Vendeur</th>
+                        <th>Total</th>
+                        <th>Statut</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>SO006</td>
+                        <td>2023-11-06 15:30:02</td>
+                        <td>client</td>
+                        <td>Admin</td>
+                        <td>3.0</td>
+                        <td>sale</td>
+                    </tr>
+                    <tr>
+                        <td>SO006</td>
+                        <td>2023-11-06 15:30:02</td>
+                        <td>client</td>
+                        <td>Admin</td>
+                        <td>3.0</td>
+                        <td>sale</td>
+                    </tr>
+                    <tr>
+                        <td>SO006</td>
+                        <td>2023-11-06 15:30:02</td>
+                        <td>client</td>
+                        <td>Admin</td>
+                        <td>3.0</td>
+                        <td>sale</td>
+                    </tr>
+                    <tr>
+                        <td>SO003</td>
+                        <td>2023-09-12 15:58:00	</td>
+                        <td>RADI Amin	</td>
+                        <td>Admin</td>
+                        <td>215.38</td>
+                        <td>draft</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Navigation Card -->
+        <section class="navigation-card">
+            <div class="card-navigation">
+                <button id="prevBtn" class="btn-nav">
+                    <img src="../../img/icons/arrow-left.png" alt="arrow-left"/>Previous
+                </button>
+                <span class="pages">
+                 </span>
+                <button id="nextBtn" class="btn-nav">
+                    Next<img src="../../img/icons/arrow-right.png" alt="arrow-right"/>
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/side-bar-toggles.js"></script>
+    <script src="../../js/index-responsive.js"></script>
+</body>
+</html>
