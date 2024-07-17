@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/patient-modal.css">
-    <!-- <link rel="stylesheet" href="../../css/index.css"> -->
     <link rel="stylesheet" href="../../css/index-no-sidebar.css">
     <link rel="stylesheet" href="../../css/index-no-sidebar-respo.css">
     <link rel="stylesheet" href="../../css/buttons-style.css">
     <link rel="stylesheet" href="../../css/purchase.css">
-    <!-- <link rel="stylesheet" href="../../css/patients-responsive.css"> -->
 </head>
 <body>
 
@@ -107,22 +105,108 @@
             <div>
                 <h1>purchase</h1>
             </div>
-            <button class="btn-new-patient" data-bs-toggle="modal" data-bs-target="#NVPatientModal">Nouveau patient</button>
         </section>
         
+
+        <div class="form-container">
+                  
+            <form action="">
+                <div class="form-row">
+                    <div class="col-sm-6">
+                        <label for="Fournisseur">Fournisseur</label>
+                        <div class="new-comment">
+                            <i class="icon-lieu"></i>
+                            <input type="text" id="Fournisseur" name="Fournisseur" placeholder="Nom de fournisseur">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Référence-fournisseur">Référence fournisseur</label>
+                        <div class="new-comment">
+                            <i class="icon-lieu"></i>
+                            <input type="text" id="Référence-fournisseur" name="Référence-fournisseur" placeholder="Référence fournisseur">
+                        </div>
+                    </div>            
+                </div>
+
+                <div class="form-row">
+                    <div class="col-sm-6">
+                        <label for="Devise">Devise</label>
+                        <div class="new-comment">
+                            <i class="icon-lieu"></i>
+                            <input type="text" id="Devise" name="Devise" placeholder="Devise">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 checkbox">
+                        <label for="Est-expédié">Est expédié</label>
+                        <div class="new-comment">
+                            <input type="checkbox" id="Est-expédié" name="Est-expédié" placeholder="Est-expédié">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-sm-6">
+                        <label for="Date-de-commande">Date de la commande</label>
+                        <div class="new-comment">
+                            <i class="icon-lieu"></i>
+                            <input type="date" id="Date-de-commande" name="Date-de-commande" placeholder="Date de la commande">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 checkbox">
+                        <label for="Double-validation">Double validation</label>
+                        <div class="new-comment">
+                            <input type="checkbox" id="Double-validation" name="Double-validation" placeholder="Double-validation">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-sm-6" id="uploadedFilesContainer">
+                        <label for="Documents">Documents</label>
+                        <div class="new-comment new-comment-file" >
+                            <div class="file-upload">
+                                <label for="fileInput" class="label-file">
+                                    <span class="img-cercle">
+                                        <img src="../../img/icons/upload.png" alt="">
+                                    </span> Cliquer pour importer
+                                    <br>
+                                    <span class="upload-text">ou juste dropper and dragger</span>
+                                </label>
+                                <input type="file" id="fileInput" name="Documents" multiple onchange="displayUploadedFiles(this)">
+                            </div>
+                            <button class="btn-importer">Importer</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="Société">Société</label>
+                        <div class="new-comment">
+                            <i class="icon-lieu"></i>
+                            <input type="text" id="Société" name="Société" placeholder="Nom de Société"/>
+                        </div>
+                        <div class="form-buttons">
+                            <input type="reset" class="btn btn btn-fermer btn-annuler" value="Annuler"/>
+                            <input type="submit" class="btn btn btn-primary2 btn-sauvegarder" value="Sauvegarder"/>
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
 
         <!-- Search Filter -->
         <form id="searchForm" >
             <section class="search-filter">
                 <div class="tables-nav">
-                    <div class="input-group table-active">
-                        <input type="submit" id="table-1" name="table-1" value="Articles" class="form-select">
+                    <div class="input-group">
+                        <input type="button" id="table-1" name="table-1" value="Articles" class="form-select table-active">
                     </div>
                     <div class="input-group">
-                        <input type="submit" id="table-2" name="table-2" value="Autres informations" class="form-select">
+                        <input type="button" id="table-2" name="table-2" value="Autres informations" class="form-select">
                     </div>
                     <div class="input-group">
-                        <input type="submit" id="table-3" name="table-3" value="API Request/Response" class="form-select">
+                        <input type="button" id="table-3" name="table-3" value="API Request/Response" class="form-select">
                     </div>
                 </div>
                 
@@ -140,7 +224,7 @@
         </form>
         
         <!-- Data Table -->
-        <section class="data-table">
+        <section class="data-table" id="section-table-1">
             <table>
                 <thead>
                     <tr>
@@ -165,7 +249,7 @@
                         <td><input type="number" id="Qté-demandée" name="Qté-demandée" value="1" min="1"/></td>
                         <td><input type="date" id="Date-prévue" name="Date-prévue" /></td>
                         <td>93</td>
-                        <td class="taxes">0% X</td>
+                        <td class="taxes"><span>0% X</span></td>
                         <td>93</td>
                         <td><input type="number" id="Qté" name="Qté" value="1" min="1"/></td>
                         <td><input type="date" id="Date-péremption" name="Date-péremption" /></td>
@@ -175,8 +259,89 @@
             </table>
         </section>
 
+        <section class="autre-info" id="section-table-2">
+            <div class="form-container">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date-prevue">Date prévue</label>
+                        <input type="date" id="date-prevue" name="date-prevue" value="2024-07-16"/>
+                        <button type="button">DÉFINIR LA DATE POUR TOUTES LES LIGNES DE LA COMMANDE</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="livrer-a">Livrer à</label>
+                        <input type="text" id="livrer-a" name="livrer-a"/>
+                        <button type="button" name="open-new-tab-1" class="open-new-tab">
+                            <img src="../../img/icons/open-outline.svg" alt="open-new-tab">
+                        </button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="adresse-livraison">Adresse de livraison directe</label>
+                        <input type="text" id="adresse-livraison" name="adresse-livraison">
+                    </div>
+                    <div class="form-group">
+                        <label for="type-emplacement">Type d'emplacement de destination</label>
+                        <input type="text" id="type-emplacement" name="type-emplacement" value="Emplacement interne" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="incoterm">Incoterm</label>
+                        <input type="text" id="incoterm" name="incoterm">
+                    </div>
+                    <div class="form-group">
+                        <label for="responsable-achats">Responsable Achats</label>
+                        <input type="text" id="responsable-achats" name="responsable-achats">
+                        <button type="button" name="open-new-tab-2" class="open-new-tab">
+                            <img src="../../img/icons/open-outline.svg" alt="open-new-tab">
+                        </button>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="etat-facturation">État de facturation</label>
+                        <input type="text" id="etat-facturation" name="etat-facturation" value="Rien à facturer" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="conditions-paiement">Conditions de paiement</label>
+                        <input type="text" id="conditions-paiement" name="conditions-paiement">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="position-fiscale">Position fiscale</label>
+                        <input type="text" id="position-fiscale" name="position-fiscale">
+                    </div>
+                    <div class="form-group">
+                        <label for="date-approbation">Date d'approbation</label>
+                        <input type="date" id="date-approbation" name="date-approbation">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+   
+        <section class="api-req-res" id="section-table-3">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="comment-supplier">Comment Supplier</label>
+                    <textarea id="comment-supplier" name="comment-supplier"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="supplier-order">Supplier Order</label>
+                    <textarea id="supplier-order" name="supplier-order"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="answer-supplier">Answer Supplier</label>
+                    <textarea id="answer-supplier" name="answer-supplier"></textarea>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Navigation Card -->
-        <section class="navigation-card">
+        <section class="navigation-card" id="navigation-card">
             <div class="card-navigation">
                 <button id="prevBtn" class="btn-nav">
                     <img src="../../img/icons/arrow-left.png" alt="arrow-left"/>Previous
@@ -194,7 +359,7 @@
 
     <!-- //Modals -->
     <!-- //NV Patient Modal -->
-    <div class="modal fade" id="NVPatientModal" tabindex="-1" aria-labelledby="NVPatientModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="NVPatientModal" tabindex="-1" aria-labelledby="NVPatientModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
           <div class="modal-content">
             <div class="modal-header">
@@ -289,7 +454,7 @@
           </div>
           </div>
         </div>
-    </div>
+    </div> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -306,5 +471,43 @@
             document.getElementById('Date-prévue').value = today;
         });
     </script>
+
+
+<script>
+    
+
+    document.getElementById('table-1').addEventListener('click', function() {
+        document.getElementById('section-table-1').style.display = 'block';
+        document.getElementById('section-table-2').style.display = 'none';
+        document.getElementById('section-table-3').style.display = 'none';
+        
+        document.getElementById('table-1').classList.add('table-active');
+        document.getElementById('table-2').classList.remove('table-active');
+        document.getElementById('table-3').classList.remove('table-active');
+    });
+
+    document.getElementById('table-2').addEventListener('click', function() {
+        document.getElementById('section-table-1').style.display = 'none';
+        document.getElementById('section-table-2').style.display = 'block';
+        document.getElementById('section-table-3').style.display = 'none';
+        document.getElementById('navigation-card').style.display = 'none';
+        document.getElementById('table-1').classList.remove('table-active');
+        document.getElementById('table-2').classList.add('table-active');
+        document.getElementById('table-3').classList.remove('table-active');
+    });
+
+    document.getElementById('table-3').addEventListener('click', function() {
+        document.getElementById('section-table-1').style.display = 'none';
+        document.getElementById('section-table-2').style.display = 'none';
+        document.getElementById('section-table-3').style.display = 'block';
+        document.getElementById('navigation-card').style.display = 'none';
+        document.getElementById('table-1').classList.remove('table-active');
+        document.getElementById('table-2').classList.remove('table-active');
+        document.getElementById('table-3').classList.add('table-active');
+    });
+</script>
+
+
+
 </body>
 </html>

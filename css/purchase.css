@@ -104,7 +104,7 @@
 .new-comment-file{
     background-color: rgba(58, 142, 246, 0.1);
     border: 3px dotted #3A8EF6;
-    padding: 20px;
+    padding: 15px;
 }
 
 .file-upload {
@@ -264,7 +264,7 @@
     margin-right: 0;
 }
 
-.table-active input{
+.table-active{
     background-color: #2196F3;
     color: #fff;
 }
@@ -319,4 +319,380 @@ td input{
     margin: 0;
     width: 100%;
     height: 100%;
+}
+
+/* second one */
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.form-group label {
+    width: 110px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 34px;
+    font-size: 12px;
+}
+
+.form-group button {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 7px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.form-group button:hover {
+    background-color: #2196F3;
+    color: #fff;
+    border-color: #2196F3;
+}
+
+.form-group .open-new-tab{
+    padding: 3px;
+}
+
+.form-group .open-new-tab img{
+    width: 15px;
+    height: 15px;
+}
+
+.api-req-res .form-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.autre-info,
+.api-req-res{
+    display: none;
+}
+
+
+/* for the main-sub-header */
+
+.form-container {
+    font-size: 12px;
+    margin: 0 auto;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.col-sm-6 {
+    flex: 0 0 48%;
+}
+.new-comment {
+    display: flex;
+    align-items: center;
+}
+.new-comment input[type="text"],
+.new-comment input[type="date"] {
+    width: 100%;
+    height: 40px;
+    padding: 0px 0 0 45px;
+}
+
+.new-comment input::placeholder{
+    font-size: 12px;
+}
+
+.new-comment input[type="date"] {
+    font-size: 12px !important;
+}
+
+.label-file {
+    padding: 0;
+    cursor: pointer;
+}
+
+.file-upload {
+    display: flex;
+    flex-direction: column;
+}
+
+.img-cercle img{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.btn-importer {
+    padding: 3px 8px;
+    font-size: 12px;
+}
+
+.form-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.btn-annuler{
+    padding: 8px 12px;
+    font-size: 12px;
+}
+.btn-sauvegarder{
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.checkbox label{
+    width: 200px;
+}
+
+
+@media (max-width: 768px) {
+    .main-content{
+        padding: 0;
+        margin: 0;
+    }
+
+    .col-sm-12.checkbox {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col-sm-12.checkbox label {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label {
+        width: 100%;
+    }
+
+    .file-upload {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .new-comment-file {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .uploaded-files-list li .file-actions {
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .search-filter,
+    .article-find {
+        flex-direction: column;
+    }
+
+    .article-find .new-comment,
+    .article-find #searchBtn {
+        width: 100% !important;
+    }
+
+    .form-buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .btn-importer,
+    .btn-annuler,
+    .btn-sauvegarder {
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-filter{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tables-nav,
+    .article-find{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 85%;
+    }
+
+    .tables-nav .input-group{
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tables-nav .input-group .form-select{
+        margin: 0;
+        width: 100% !important;
+        margin: 10px 0;
+    }
+
+    .article-find{
+        height: auto;
+    }
+
+    .article-find #searchBtn{
+        margin: 0;
+        padding: 0;
+        left: 0px;
+    }
+
+    /* table */
+    .data-table{
+        margin: 10px 30px 0 0px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    thead tr th {
+        text-align: left !important;
+    }
+
+    tr {
+        border: 1px solid #ccc;
+        margin-bottom: 0.625rem;
+    }
+
+    td {
+        text-align: right;
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        left: 20px;
+        padding: 15px 0px;
+        padding-left: 100px;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 30%;
+        padding-right: 0.625rem;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        width: auto; 
+        padding-right: 0;
+    }
+
+    td:nth-of-type(1):before { content: ""; }
+    td:nth-of-type(2):before { content: "Article"; }
+    td:nth-of-type(3):before { content: "Description"; }
+    td:nth-of-type(4):before { content: "Qté demandée"; }
+    td:nth-of-type(5):before { content: "Date prévue"; }
+    td:nth-of-type(6):before { content: "Prix unitaire"; }
+    td:nth-of-type(7):before { content: "Taxes"; }
+    td:nth-of-type(8):before { content: "Sous-total"; }
+    td:nth-of-type(9):before { content: "Qté"; }
+    td:nth-of-type(10):before { content: "Date de péremption"; }
+    td:nth-of-type(11):before { content: "Commentaires"; }
+
+
+    .taxes{
+        background-color: transparent;
+        color: #333;
+    }
+
+    .taxes span {
+        background-color: #808080;
+        color: #fff;
+        padding: 2px 5px; 
+        border-radius: 3px;
+    }
+    
+
+    td input,
+    td textarea{
+        width: 70%;
+    }
+
+    .form-group input,
+    .form-group button{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .api-req-res {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 68%;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .api-req-res .form-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .api-req-res .form-container .form-group{
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
 }
