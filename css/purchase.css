@@ -298,7 +298,7 @@
 
 .taxes{
     background-color: #808080;
-    color: #fff;
+    color: #333;
 }
 
 th{
@@ -654,7 +654,7 @@ td input{
 
     .taxes span {
         background-color: #808080;
-        color: #fff;
+        color: #333;
         padding: 2px 5px; 
         border-radius: 3px;
     }
