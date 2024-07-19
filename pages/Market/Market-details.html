@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market place</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- for font family style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/market.css">
+    <link rel="stylesheet" href="../../css/market-details.css">
+</head>
+<body>
+
+    <!-- First Header -->
+    <header class="header1">
+        <div>
+            <img src="../../img/Logo.png" alt="Logo"/>
+        </div>
+        <div class="user-info">
+            <span class="user-info-icons ">
+                <a href="#">
+                    <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="../../pages/Messages/index.html">
+                    <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                </a>
+                <a href="#">
+                    <span class="notification-badge" style="margin-right: 5px;">
+                        <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                        <span class="badge"><small>5</small></span>
+                    </span>                            
+                </a>
+                <a href="#">
+                    <span class="special-plus">
+                        <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                    </span>
+                </a>
+            </span>
+            <div class="dropdown" id="dropdown-user-info">
+                
+                <a href="#" class="dropdown-toggle"><img src="../../img/icons/list-icon.svg" alt="list"/></a>
+                <div class="dropdown-menu">
+                    <span class="user-info-icons-dropdown">
+                        <a href="#">
+                            <img src="../../img/icons/file.svg" alt="File Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="../../pages/Messages/index.html">
+                            <img src="../../img/icons/chat.svg" alt="Comment Icon" style="margin-right: 15px;"/>
+                        </a>
+                        <a href="#">
+                            <span class="notification-badge" style="margin-right: 5px;">
+                                <img src="../../img/icons/bell.svg" alt="Notification Icon"/>
+                                <span class="badge"><small>5</small></span>
+                            </span>                            
+                        </a>
+                        <a href="#">
+                            <span class="special-plus">
+                                <img src="../../img/icons/plus-add.svg" alt="Plus Icon"/>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <span class="user-name">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil" alt="Profile Image"/>
+            <span class="user-name-mobile">DR Alami Karim</span>
+            <img src="../../img/doctor.png" class="photo-profil-mobile" alt="Profile Image"/>
+        </div>
+    </header>
+
+    <!-- Second Header -->
+    <header class="header2">
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+        <div class="header-content">
+            <span class="circle-background">
+                <img src="../../img/doctor.png" alt="Header Image">
+            </span>
+            <b class="title-header2">Avis N°12</b>
+            <p class="content">Il a des douleurs abdominales sévères, des nausées et des ...</p>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="toggle-btn">
+            <button class="toggle-button">
+                <img src="../../img/icons/toggle-left.svg" class="toggle-img toggle-img-left" alt="toggle-left"/>
+                <img src="../../img/icons/toggle-right.svg" class="toggle-img toggle-img-right hidden" alt="toggle-right"/>
+            </button>
+        </div>
+        <h3 class="sidebar-title">Tableau de bord</h3>
+        <ul class="sidebar-menu">
+            <!-- First Dropdown -->
+            <div class="dropdown" id="dropdownBtn1">
+                <a onclick="toggleDropdown('dropdownContent1', 'dropdownIcon1')" class="dropdown-btn">
+                    <span class="dropdown-title">Administration</span>
+                    <i id="dropdownIcon1" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent1">
+                    <a href="../../index.html" class="other-buttons">
+                        <img src="../../img/icons/Patients.png" alt="Patients Icon">
+                        <span class="dropdown-title">Patients</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Agenda.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Agenda</span>
+                    </a>
+                    <a href="../../pages/Documents/index.html" class="other-buttons">
+                        <img src="../../img/icons/Documents.png" alt="Documents Icon">
+                        <span class="dropdown-title">Documents</span>
+                    </a>
+                    <a href="../../pages/Calendars/index.html" class="other-buttons">
+                        <img src="../../img/icons/Calendriers.png" alt="Calendriers Icon">
+                        <span class="dropdown-title">Calendriers</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Suivis.png" alt="Suivis Icon">
+                        <span class="dropdown-title">Suivis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Prescriptions.png" alt="Prescriptions Icon">
+                        <span class="dropdown-title">Prescriptions</span>
+                    </a>
+                    <a href="../../pages/Absences/index.html" class="other-buttons">
+                        <img src="../../img/icons/Absences.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Absences</span>
+                    </a>
+                    <a href="../../pages/Reclamations/index.html" class="other-buttons">
+                        <img src="../../img/icons/Reclamations.png" alt="Agenda Icon">
+                        <span class="dropdown-title">Réclamations</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/DMP.png" alt="DMP Icon">
+                        <span class="dropdown-title">DMP</span>
+                    </a>
+                    <a href="../../pages/FSE/index.html" class="other-buttons">
+                        <img src="../../img/icons/FSE.png" alt="FSE Icon">
+                        <span class="dropdown-title">FSE</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Paiements.png" alt="Paiements Icon">
+                        <span class="dropdown-title">Paiements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Statistiques.png" alt="Statistiques Icon">
+                        <span class="dropdown-title">Statistiques</span>
+                    </a>
+                
+                </div>
+            </div>
+
+            <!-- Second Dropdown -->
+            <div class="dropdown" id="dropdownBtn2">
+                <a onclick="toggleDropdown('dropdownContent2', 'dropdownIcon2')" class="dropdown-btn">
+                    <span class="dropdown-title">Communauté</span>
+                    <i id="dropdownIcon2" class="fas fa-chevron-up rotate-icon"></i>
+                </a>
+                <div class="dropdown-content" id="dropdownContent2">
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Forum.png" alt="Forum Icon">
+                        <span class="dropdown-title">Forum</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Annonces.png" alt="Annonces Icon">
+                        <span class="dropdown-title">Annonces</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Evénements.png" alt="Evénements Icon">
+                        <span class="dropdown-title">Evénements</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Blog.png" alt="Blog Icon">
+                        <span class="dropdown-title">Blog</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Avis.png" alt="Avis Icon">
+                        <span class="dropdown-title">Avis</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Market.png" alt="Market Icon">
+                        <span class="dropdown-title">Market</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/Emploi.png" alt="Emploi Icon">
+                        <span class="dropdown-title">Emploi</span>
+                    </a>
+                    <a href="#" class="other-buttons">
+                        <img src="../../img/icons/E-learning.png" alt="E-learning Icon">
+                        <span class="dropdown-title">E-learning</span>
+                    </a>              
+                </div>
+            </div>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <section class="main-header">
+            <div>
+                <span class="first-nav">Produits</span> > <span class="second-nav">Phytophanere Cheveux Et Ongles 2x120 Capsules</span>
+            </div>
+        </section>
+
+        <section class="details-body">
+            <div class="details-header">
+                <div class="left-header"><img src="../../img/icons/prod-img.svg" alt="produit image"></div>
+                <div class="right-header">
+                    <div class="product-header">
+                        <h6 class="product-title">Diabètique</h6>
+                    </div>
+                    <p class="product-description">Phytophanere Cheveux Et Ongles 2x120 Capsules</p>
+                    <div class="product-footer">
+                        <span class="product-stars">
+                            <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                            <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                            <span class="star"><img src="../../img/icons/star-half.svg" alt="star-half"/></span>
+                            <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                            <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                        </span>
+                        <span class="product-ratings">
+                            4.5 <span>(Total 216 avis)</span>
+                        </span>
+                    </div>
+                    <div class="post-user-info">
+                        <img src="../../img/icons/post-img.svg" alt="post-User Image"/>
+                        <div>
+                            <span class="name">Mustapha Asloune</span>
+                            <span class="date">Member</span>
+                        </div>
+                    </div>
+                    <div class="post-content collapsed" id="post-content-1">
+                        <p class="content">
+                            Phytophanere Cheveux Et Ongles 2x120 Capsules est un complément alimentaire dont la formule contribue à la fortification des cheveux et des ongles. Sa composition associe plusieurs vitamines dont la vitamine B6 et B8 (biotine), des extraits de plantes et de l'huile de graine de Bourrache qui agissent de l'intérieur sur la qualité et la croissance des phanères. Le zinc favorise la synthèse de kératine et de collagène, aidant ainsi à prévenir le vieillissement prématuré du cheveu et à protéger sa pigmentation. Indiqué pour les cheveux dévitalisés et les ongles fragilisés. Contient 2 flacons. Format Duo. Fabriqué en France.                        </p>
+                        <button type="button" class="btn-show-more" onclick="toggleContent('post-content-1')">
+                            Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>
+                        </button>
+                    </div>
+                    <div class="bottom-content">
+                        <p class="price">120,00 DH</p>
+                        <div class="product-buttons">
+                            <button type="button" class="btn favoris" title="Ajouter au panier">
+                                Ajouter au panier
+                            </button>
+                            <button type="button" class="btn favoris" title="favoris">
+                                <img src="../../img/icons/white-heart.svg" alt="favoris"/>
+                            </button>
+                            <button type="button" class="btn favoris" title="comparer">
+                                <img src="../../img/icons/comparer.svg" alt="comparer"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details-body-1">
+                <div class="card-icons">
+                    <img src="../../img/icons/liversion-icon.svg" alt="livraison partout au maroc">
+                    <span class="content-title">
+                        livraison partout au maroc
+                    </span>
+                </div>
+                <div class="card-icons">
+                    <img src="../../img/icons/rembourse-icon.svg" alt="100% satisfait ou remboursé">
+                    <span class="content-title">
+                        100% satisfait ou remboursé
+                    </span>
+                </div>
+                <div class="card-icons">
+                    <img src="../../img/icons/garanti-icon.svg" alt="Paiement garanti  sécurisé">
+                    <span class="content-title">
+                        Paiement garanti  sécurisé
+                    </span>
+                </div>
+                <div class="card-icons">
+                    <img src="../../img/icons/retour-icon.svg" alt="Retours sans frais sous 14jours">
+                    <span class="content-title">
+                        Retours sans frais sous 14jours
+                    </span>
+                </div>
+            </div>
+            <div class="details-body-2">
+                <span class="details-body-title">Spécifications</span>
+                <div class="details-body-content">
+                    <div class="details-body-content-left">
+                        <div class="body-content">
+                            <span class="details-body-sub-title">
+                                <img src="../../img/icons/4-sides-star.svg" alt="4 sides star"/>Description
+                            </span>
+                            <div class="post-content collapsed" id="post-content-2">
+                                <p class="content">
+                                    Phytophanere Cheveux Et Ongles 2x120 Capsules est un complément alimentaire dont la formule contribue à la fortification des cheveux et des ongles. Sa composition associe plusieurs vitamines dont la vitamine B6 et B8 (biotine), des extraits de plantes et de l'huile de graine de Bourrache qui agissent de l'intérieur sur la qualité et la croissance des phanères. Le zinc favorise la synthèse de kératine et de collagène, aidant ainsi à prévenir le vieillissement prématuré du cheveu et à protéger sa pigmentation. Indiqué pour les cheveux dévitalisés et les ongles fragilisés. Contient 2 flacons. Format Duo. Fabriqué en France.                        </p>
+                                <button type="button" class="btn-show-more" onclick="toggleContent('post-content-2')">
+                                    Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="body-content">
+                            <span class="details-body-sub-title">
+                                <img src="../../img/icons/4-sides-star.svg" alt="4 sides star"/>Conseil pharmaceutique
+                            </span>
+                            <div class="post-content collapsed" id="post-content-3">
+                                <p class="content">
+                                    Phytophanere Cheveux Et Ongles 2x120 Capsules est un complément alimentaire dont la formule contribue à la fortification des cheveux et des ongles. Sa composition associe plusieurs vitamines dont la vitamine B6 et B8 (biotine), des extraits de plantes et de l'huile de graine de Bourrache qui agissent de l'intérieur sur la qualité et la croissance des phanères. Le zinc favorise la synthèse de kératine et de collagène, aidant ainsi à prévenir le vieillissement prématuré du cheveu et à protéger sa pigmentation. Indiqué pour les cheveux dévitalisés et les ongles fragilisés. Contient 2 flacons. Format Duo. Fabriqué en France.                        </p>
+                                <button type="button" class="btn-show-more" onclick="toggleContent('post-content-3')">
+                                    Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-body-content-right">
+                        <div class="body-content">
+                            <span class="details-body-sub-title">
+                                <img src="../../img/icons/4-sides-star.svg" alt="4 sides star"/>Composition
+                            </span>
+                            <div class="post-content collapsed" id="post-content-4">
+                                <p class="content">
+                                    Phytophanere Cheveux Et Ongles 2x120 Capsules est un complément alimentaire dont la formule contribue à la fortification des cheveux et des ongles. Sa composition associe plusieurs vitamines dont la vitamine B6 et B8 (biotine), des extraits de plantes et de l'huile de graine de Bourrache qui agissent de l'intérieur sur la qualité et la croissance des phanères. Le zinc favorise la synthèse de kératine et de collagène, aidant ainsi à prévenir le vieillissement prématuré du cheveu et à protéger sa pigmentation. Indiqué pour les cheveux dévitalisés et les ongles fragilisés. Contient 2 flacons. Format Duo. Fabriqué en France.                        </p>
+                                <button type="button" class="btn-show-more" onclick="toggleContent('post-content-4')">
+                                    Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="body-content">
+                            <span class="details-body-sub-title">
+                                <img src="../../img/icons/4-sides-star.svg" alt="4 sides star"/>Mode d’emploi
+                            </span>
+                            <div class="post-content collapsed" id="post-content-5">
+                                <p class="content">
+                                    Phytophanere Cheveux Et Ongles 2x120 Capsules est un complément alimentaire dont la formule contribue à la fortification des cheveux et des ongles. Sa composition associe plusieurs vitamines dont la vitamine B6 et B8 (biotine), des extraits de plantes et de l'huile de graine de Bourrache qui agissent de l'intérieur sur la qualité et la croissance des phanères. Le zinc favorise la synthèse de kératine et de collagène, aidant ainsi à prévenir le vieillissement prématuré du cheveu et à protéger sa pigmentation. Indiqué pour les cheveux dévitalisés et les ongles fragilisés. Contient 2 flacons. Format Duo. Fabriqué en France.                        </p>
+                                <button type="button" class="btn-show-more" onclick="toggleContent('post-content-5')">
+                                    Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="details-body-3">
+                <span class="details-body-title">
+                    Avis
+                    <div class="review-actions">
+                        <button type="button" class="more-button">
+                            <img src="../../img/icons/left-cercle-image.svg" alt="left-cercle-image" class="left-cercle-image"/>
+                        </button>
+                        <button type="button" class="more-button">
+                            <img src="../../img/icons/right-cercle-image.svg" alt="right-cercle-image" class="right-cercle-image"/>
+                        </button>
+                    </div>
+                </span>
+                <div class="details-body-content">
+                    <div class="details-body-content-left">
+                        <div class="rating-content">
+                            <div class="overall-rating">
+                                <div class="bottom-rating">
+                                    <div class="rating-number">
+                                        <p>Moyen d’avis</p>
+                                        <span>4.0</span>
+                                    </div>
+                                    <div class="comments-counts">
+                                        <span class="squares">
+                                            <span class="square"><img src="../../img/icons/filled-sqaure.svg" alt="filled-square"/></span>
+                                            <span class="square"><img src="../../img/icons/filled-sqaure.svg" alt="filled-square"/></span>
+                                            <span class="square"><img src="../../img/icons/filled-sqaure.svg" alt="filled-square"/></span>
+                                            <span class="square"><img src="../../img/icons/empty-square.svg" alt="empty-square"/></span>
+                                            <span class="square"><img src="../../img/icons/empty-square.svg" alt="empty-square"/></span>
+                                        </span>
+                                        <span class="comments-count">83 commentaires</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rating-breakdown">
+                                <div class="rating-row">
+                                    <span class="star-line">
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                    </span>
+                                    <div class="bar-fill bar-green" style="width: 45%;"></div>
+                                    <span class="count">36</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span class="star-line">
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                    </span>
+                                    <div class="bar-fill bar-blue" style="width: 35%;"></div>
+                                    <span class="count">25</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span class="star-line">
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                    </span>
+                                    <div class="bar-fill bar-orange " style="width: 20%;"></div>
+                                    <span class="count">14</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span class="star-line">
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                    </span>
+                                    <div class="bar-fill bar-brown" style="width: 10%;"></div>
+                                    <span class="count">6</span>
+                                </div>
+                                <div class="rating-row">
+                                    <span class="star-line">
+                                        <span class="star"><img src="../../img/icons/star-empty.svg" alt="empty-star"/></span>
+                                    </span>
+                                    <div class="bar-fill bar-red" style="width: 5%;"></div>
+                                    <span class="count">1</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <textarea name="Envoyer-message" id="Envoyer-message" placeholder="Envoyer un message" rows="5"> </textarea> -->
+                        <!-- <div class="textarea">
+                            <textarea name="Envoyer-message" id="Envoyer-message" placeholder="Envoyer un message" rows="5"></textarea>
+                            <a href="#" class="share">
+                                <img src="../../img/icons/send-image.svg" alt="send image">
+                            </a>
+                            <a href="#" class="upload-file">
+                                <img src="../../img/icons/upload-file-img.svg" alt="upload-file image">
+                            </a>
+                        </div> -->
+                        <div class="textarea-container">
+                            <textarea name="Envoyer-message" id="Envoyer-message" placeholder="Envoyer un message" rows="5"></textarea>
+                            <a href="#" class="icon-link share">
+                                <img src="../../img/icons/send-image.svg" alt="send image">
+                            </a>
+                            <a href="#" class="icon-link upload-file">
+                                <img src="../../img/icons/upload-file-img.svg" alt="upload-file image">
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="details-body-content-right">
+                        <div class="comments-counts horizontal">
+                            <span class="squares">
+                                <span class="square"><img src="../../img/icons/filled-sqaure.svg" alt="filled-square"/></span>
+                                <span class="square"><img src="../../img/icons/filled-sqaure.svg" alt="filled-square"/></span>
+                                <span class="square"><img src="../../img/icons/filled-sqaure.svg" alt="filled-square"/></span>
+                                <span class="square"><img src="../../img/icons/empty-square.svg" alt="empty-square"/></span>
+                                <span class="square"><img src="../../img/icons/empty-square.svg" alt="empty-square"/></span>
+                            </span>
+                            <span class="comments-count">83 commentaires</span>
+                        </div>
+                        
+                        <div class="body-3-bottom">
+                            <div class="post-content collapsed" id="post-content-6">
+                                <p class="content">
+                                    Phytophanere Cheveux Et Ongles 2x120 Capsules est un complément alimentaire dont la formule contribue à la fortification des cheveux et des ongles. Sa composition associe plusieurs vitamines dont la vitamine B6 et B8 (biotine), des extraits de plantes et de l'huile de graine de Bourrache qui agissent de l'intérieur sur la qualité et la croissance des phanères. Le zinc favorise la synthèse de kératine et de collagène, aidant ainsi à prévenir le vieillissement prématuré du cheveu et à protéger sa pigmentation. Indiqué pour les cheveux dévitalisés et les ongles fragilisés. Contient 2 flacons. Format Duo. Fabriqué en France.                        </p>
+                                <button type="button" class="btn-show-more" onclick="toggleContent('post-content-6')">
+                                    Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>
+                                </button>
+                            </div>
+                            <div class="post-user-info">
+                                <img src="../../img/icons/post-img.svg" alt="post-User Image"/>
+                                <div>
+                                    <span class="name">Mustapha Asloune</span>
+                                    <span class="date">3 avis</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="details-body-3">
+                <span class="details-body-title">
+                    Articles vus récemment
+                    <div class="review-actions">
+                        <button type="button" class="more-button">
+                            <img src="../../img/icons/left-cercle-image.svg" alt="left-cercle-image" class="left-cercle-image"/>
+                        </button>
+                        <button type="button" class="more-button">
+                            <img src="../../img/icons/right-cercle-image.svg" alt="right-cercle-image" class="right-cercle-image"/>
+                        </button>
+                    </div>
+                </span>
+                <div class="details-body-content">
+                    <div class="product-card">
+                        <img src="../../img/icons/product-img.svg" alt="Product Image" class="product-image"/>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h6 class="product-title">Diabètique</h6>
+                                <img src="../../img/icons/heart.svg" alt="Favorite" class="favorite-icon"/>
+                            </div>
+                            <p class="product-description">
+                                Vichy Liftactiv Crema B3 Antimanchas Spf50 50ml
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-stars">
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-half.svg" alt="star-half"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                </span>
+                                <span class="product-price">
+                                    129,50 DH
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../img/icons/product-img.svg" alt="Product Image" class="product-image"/>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h6 class="product-title">Diabètique</h6>
+                                <img src="../../img/icons/heart.svg" alt="Favorite" class="favorite-icon"/>
+                            </div>
+                            <p class="product-description">
+                                Vichy Liftactiv Crema B3 Antimanchas Spf50 50ml
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-stars">
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-half.svg" alt="star-half"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                </span>
+                                <span class="product-price">
+                                    129,50 DH
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../img/icons/product-img.svg" alt="Product Image" class="product-image"/>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h6 class="product-title">Diabètique</h6>
+                                <img src="../../img/icons/heart.svg" alt="Favorite" class="favorite-icon"/>
+                            </div>
+                            <p class="product-description">
+                                Vichy Liftactiv Crema B3 Antimanchas Spf50 50ml
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-stars">
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-half.svg" alt="star-half"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                </span>
+                                <span class="product-price">
+                                    129,50 DH
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="../../img/icons/product-img.svg" alt="Product Image" class="product-image"/>
+                        <div class="product-details">
+                            <div class="product-header">
+                                <h6 class="product-title">Diabètique</h6>
+                                <img src="../../img/icons/heart.svg" alt="Favorite" class="favorite-icon"/>
+                            </div>
+                            <p class="product-description">
+                                Vichy Liftactiv Crema B3 Antimanchas Spf50 50ml
+                            </p>
+                            <div class="product-footer">
+                                <span class="product-stars">
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-filled.svg" alt="star-filled"/></span>
+                                    <span class="star"><img src="../../img/icons/star-half.svg" alt="star-half"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                    <span class="star"><img src="../../img/icons/star-empty.svg" alt="star-empty"/></span>
+                                </span>
+                                <span class="product-price">
+                                    129,50 DH
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/side-bar-toggles.js"></script>
+    <script src="../../js/index-responsive.js"></script>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('expanded');
+            content.classList.toggle('collapsed');
+
+            const button = content.querySelector('.btn-show-more');
+            const fullText = content.querySelector('.content').dataset.fullText;
+
+            if (content.classList.contains('expanded')) {
+                content.querySelector('.content').innerText = fullText;
+                button.innerHTML = 'Afficher moins <img src="../../img/icons/chev-up.svg" alt="arrow-up"/>';
+            } else {
+                const shortText = getShortText(fullText, 30);
+                content.querySelector('.content').innerText = shortText;
+                button.innerHTML = 'Afficher plus <img src="../../img/icons/chev-down.svg" alt="arrow-down"/>';
+            }
+        }
+
+        function getShortText(fullText, wordCount) {
+            const words = fullText.split(' ');
+            return words.slice(0, wordCount).join(' ') + '...';
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const contents = document.querySelectorAll('.post-content .content');
+            contents.forEach(content => {
+                const fullText = content.innerText;
+                content.dataset.fullText = fullText;
+                content.innerText = getShortText(fullText, 30);
+            });
+        });
+    </script>
+</body>
+</html>
