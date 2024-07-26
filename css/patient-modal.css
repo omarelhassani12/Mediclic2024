@@ -1,22 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*,
-*:before,
-*:after {
+*{
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif; 
 }
 
-
-:root {
-	--c-grey-100: #f4f6f8;
-	--c-grey-200: #e3e3e3;
-	--c-grey-300: #b2b2b2;
-	--c-grey-400: #7b7b7b;
-	--c-grey-500: #3d3d3d;
-
-	--c-blue-500: #688afd;
-}
 
 body {
 	line-height: 1.5;
